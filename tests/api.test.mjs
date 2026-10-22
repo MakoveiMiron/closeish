@@ -5,7 +5,7 @@ import {createApp,dateInZone} from '../src/server.mjs';
 import {loadContent,hints,scoreAnswer,validateDay} from '../src/content.mjs';
 const days=loadContent();
 async function serve(options,run) {
-  const {server}=createApp({days,rateLimit:0,previewDate:'2026-10-22',...options});
+  const {server}=createApp({days,rateLimit:0,writeRateLimit:0,apiKeys:[],previewDate:'2026-10-22',...options});
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   try{await run('http://127.0.0.1:'+server.address().port)}finally{await new Promise(resolve=>server.close(resolve))}
 }
@@ -73,6 +73,27 @@ test('rate limit bounds requests; draft sets are never published',async()=>{
   await serve({rateLimit:2},async base=>{for(let i=0;i<2;i++)assert.equal((await fetch(base+'/api/v1/today')).status,200);assert.equal((await fetch(base+'/api/v1/today')).status,429)});
   const copy=new Map(days),current=copy.get('2026-10-22');copy.set('2026-10-22',{...current,day:{...current.day,publication_status:'draft'}});
   await serve({days:copy},async base=>{assert.equal((await (await fetch(base+'/api/v1/today')).json()).available,false)});
+});
+test('write limit is stricter than read limit and only counts answer/result POSTs',async()=>serve({writeRateLimit:2},async base=>{
+  const today=await (await fetch(base+'/api/v1/today')).json(),id=today.questions.q1.id;
+  const post=()=>fetch(base+`/api/v1/questions/${id}/answer`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({date:today.date,revision:today.revision,raw:'',kind:'skipped'})});
+  assert.equal((await post()).status,200);assert.equal((await post()).status,200);
+  const third=await post();assert.equal(third.status,429);assert.equal(third.headers.get('retry-after'),'60');
+  for(let i=0;i<5;i++)assert.equal((await fetch(base+'/api/v1/today')).status,200);
+}));
+test('optional API key: required on /api/* when configured, health endpoints stay open, CORS allows the header',async()=>{
+  const key='k'.repeat(32),other='o'.repeat(32);
+  await serve({apiKeys:[key,other]},async base=>{
+    assert.equal((await fetch(base+'/api/v1/today')).status,401);
+    assert.equal((await fetch(base+'/api/v1/today',{headers:{'X-API-Key':'wrong'}})).status,401);
+    assert.equal((await fetch(base+'/api/v1/today',{headers:{'X-API-Key':key}})).status,200);
+    assert.equal((await fetch(base+'/api/v1/today',{headers:{'X-API-Key':other}})).status,200);
+    assert.equal((await fetch(base+'/healthz')).status,200);
+    const pre=await fetch(base+'/api/v1/results',{method:'OPTIONS',headers:{Origin:'http://localhost:5173','Access-Control-Request-Headers':'content-type,x-api-key'}});
+    assert.equal(pre.status,204);assert.match(pre.headers.get('access-control-allow-headers'),/X-API-Key/);
+  });
+  await serve({},async base=>assert.equal((await fetch(base+'/api/v1/today')).status,200));
+  assert.throws(()=>createApp({days,apiKeys:['short']}),/at least 24/);
 });
 test('content validation rejects inconsistent scores, filenames and duplicate identities',()=>{
   const day=JSON.parse(fs.readFileSync(new URL('../content/days/2026-10-22.json',import.meta.url)));
