@@ -149,6 +149,6 @@ if(process.argv[1]===fileURLToPath(import.meta.url)) {
   for(const signal of ['SIGTERM','SIGINT']) process.on(signal,()=>{
     if(stopping)return;stopping=true;
     app.close().then(()=>process.exit(0)).catch(()=>process.exit(1));
-    setTimeout(()=>process.exit(1),10000).unref();
+    setTimeout(()=>process.exit(1),10000).unref(); 
   });
 }
