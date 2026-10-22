@@ -79,6 +79,10 @@ test('write limit is stricter than read limit and only counts answer/result POST
   const post=()=>fetch(base+`/api/v1/questions/${id}/answer`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({date:today.date,revision:today.revision,raw:'',kind:'skipped'})});
   assert.equal((await post()).status,200);assert.equal((await post()).status,200);
   const third=await post();assert.equal(third.status,429);assert.equal(third.headers.get('retry-after'),'60');
+  const cors=await fetch(base+'/api/v1/today',{headers:{Origin:'http://localhost:5173'}});
+  assert.equal(cors.headers.get('access-control-expose-headers'),'ETag, Retry-After');assert.ok(cors.headers.get('etag'));
+  const limited=await fetch(base+`/api/v1/questions/${id}/answer`,{method:'POST',headers:{'Content-Type':'application/json',Origin:'http://localhost:5173'},body:'{}'});
+  assert.equal(limited.status,429);assert.equal(limited.headers.get('access-control-expose-headers'),'ETag, Retry-After');
   for(let i=0;i<5;i++)assert.equal((await fetch(base+'/api/v1/today')).status,200);
 }));
 test('optional API key: required on /api/* when configured, health endpoints stay open, CORS allows the header',async()=>{

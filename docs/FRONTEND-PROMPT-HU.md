@@ -8,7 +8,7 @@ A CLOSEISH frontend egy build nélküli statikus oldal a `https://closeish.eu` c
 
 - **API-origin:** `https://closeish-production.up.railway.app`
 - **Formátum:** JSON, UTF-8. Minden POST-hoz `Content-Type: application/json` kell, különben 415.
-- **CORS:** csak a `https://closeish.eu` origin engedélyezett (záró `/` nélkül). Más origin 403 `ORIGIN_REJECTED`. Helyi fejlesztéshez a `http://localhost:5173` csak akkor működik, ha a backend `ALLOWED_ORIGINS` változójába is felvették.
+- **CORS:** csak a `https://closeish.eu` origin engedélyezett (záró `/` nélkül). A backend `Access-Control-Expose-Headers: ETag, Retry-After` fejlécet küld, így a böngésző kiolvashatja az ETaget és a Retry-Aftert. Más origin 403 `ORIGIN_REJECTED`. Helyi fejlesztéshez a `http://localhost:5173` csak akkor működik, ha a backend `ALLOWED_ORIGINS` változójába is felvették.
 - **Nincs süti, nincs login.** `credentials` ne legyen `include`.
 
 ## 1. Konfiguráció

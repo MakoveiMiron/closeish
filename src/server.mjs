@@ -69,7 +69,7 @@ export function createApp({days=loadContent(),zone=process.env.GAME_TIMEZONE||'E
     stats.requests++;
     const origin=req.headers.origin;
     if(origin && !allowedOrigins.includes(origin)) return error(req,res,403,'ORIGIN_REJECTED','Origin is not allowed');
-    if(origin) res.setHeader('Access-Control-Allow-Origin',origin);
+    if(origin) {res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Access-Control-Expose-Headers','ETag, Retry-After');}
     if(req.method==='OPTIONS') {res.writeHead(204,{'Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Content-Type, X-API-Key','Access-Control-Max-Age':'600',Vary:'Origin'});res.end();return;}
     try {
       if((req.url||'').length>2048) return error(req,res,414,'URL_TOO_LONG','URL too long');
