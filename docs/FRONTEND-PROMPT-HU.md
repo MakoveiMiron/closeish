@@ -4,11 +4,11 @@ Ezt add át a frontenden dolgozó agentnek/fejlesztőnek. A frontend meglévő m
 
 ---
 
-A CLOSEISH frontend egy build nélküli statikus oldal a `https://closeish.com` címen. A backend külön Railway-szolgáltatás:
+A CLOSEISH frontend egy build nélküli statikus oldal a `https://closeish.eu` címen. A backend külön Railway-szolgáltatás:
 
 - **API-origin:** `https://closeish-production.up.railway.app`
 - **Formátum:** JSON, UTF-8. Minden POST-hoz `Content-Type: application/json` kell, különben 415.
-- **CORS:** csak a `https://closeish.com` origin engedélyezett (záró `/` nélkül). Más origin 403 `ORIGIN_REJECTED`. Helyi fejlesztéshez a `http://localhost:5173` csak akkor működik, ha a backend `ALLOWED_ORIGINS` változójába is felvették.
+- **CORS:** csak a `https://closeish.eu` origin engedélyezett (záró `/` nélkül). Más origin 403 `ORIGIN_REJECTED`. Helyi fejlesztéshez a `http://localhost:5173` csak akkor működik, ha a backend `ALLOWED_ORIGINS` változójába is felvették.
 - **Nincs süti, nincs login.** `credentials` ne legyen `include`.
 
 ## 1. Konfiguráció
@@ -22,7 +22,7 @@ window.CLOSEISH_CONFIG = {
 };
 ```
 
-- Ha azonos origines `/api/` proxy működik a `closeish.com` alatt, az `apiBase` maradjon üres, és a relatív `/api/...` útvonalakat használd.
+- Ha azonos origines `/api/` proxy működik a `closeish.eu` alatt, az `apiBase` maradjon üres, és a relatív `/api/...` útvonalakat használd.
 - **API-kulcs:** ha az `apiKey` nem üres, minden `/api/` kérés `X-API-Key: <apiKey>` fejlécet kapjon. Ha üres, a fejléc ne kerüljön a kérésbe. Ez a kulcs a böngészőben látható, ezért nem titok. Ne kezeld biztonsági garanciaként, és ne tegyél a frontendbe más titkot (pl. `SIGNING_SECRET`, adatbázis-URL).
 - **CSP:** `connect-src 'self' https://closeish-production.up.railway.app`.
 - Az `/api/` válaszokat a CDN/statikus tárhely ne cache-elje. A `config.js` és az `index.html` frissítése jusson el a böngészőkhöz (rövid cache vagy verziózott URL).
