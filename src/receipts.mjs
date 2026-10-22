@@ -29,5 +29,5 @@ export function createReceipts({secret,playerSecret,clock=()=>new Date()}) {
     if(input.date!==first.d||input.revision!==first.r)throw clientError('Result date or revision mismatch');
     return {date:first.d,revision:first.r,playerHash:hash,runId,score:receipts.reduce((sum,x)=>sum+x.s,0),questionIds:receipts.map(x=>x.q)};
   }
-  return {issue,completion,playerHash,run};
+  return {issue,verify,completion,playerHash,run};
 }

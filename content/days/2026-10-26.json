@@ -8,7 +8,7 @@
   "questions": {
     "q1": {
       "id": "closeish_20261024_q1",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "day_number": 5,
       "topic": "videogames",
       "bank_id": "closeish-v9-games",
@@ -10810,7 +10810,7 @@
     },
     "q2": {
       "id": "closeish_20261024_q2",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "day_number": 5,
       "topic": "natural-wonders",
       "bank_id": "closeish-v9-falls",
@@ -12857,7 +12857,7 @@
     },
     "q3": {
       "id": "closeish_20261024_q3",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "day_number": 5,
       "topic": "civic-life",
       "bank_id": "closeish-v9-election",
@@ -13837,7 +13837,7 @@
     },
     "q4": {
       "id": "closeish_20261024_q4",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "day_number": 5,
       "topic": "music-technology",
       "bank_id": "closeish-v9-instruments",
@@ -15867,7 +15867,7 @@
     },
     "q5": {
       "id": "closeish_20261024_q5",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "day_number": 5,
       "topic": "international-money",
       "bank_id": "closeish-v9-currencies",
@@ -18662,7 +18662,7 @@
     },
     "q6": {
       "id": "closeish_20261024_q6",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "day_number": 5,
       "topic": "river-history",
       "bank_id": "closeish-v9-nile",

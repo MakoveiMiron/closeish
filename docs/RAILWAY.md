@@ -91,3 +91,7 @@ Az adatbázis automatikus törlés nélkül nő. 150 000 új eredmény/nap éven
 - https://docs.railway.com/databases/postgresql
 - https://docs.railway.com/networking/public-networking/specs-and-limits
 - https://node-postgres.com/features/pooling
+
+### 17.5-es frissítés
+
+A PostgreSQL a játékos-előrehaladás elsődleges tárolója is lett. Kötelező mindhárom SQL-migráció (különösen `002_player_progress.sql` és `003_statistics_player_history_index.sql`) és a közös frontend/backend 17.5 verzió. Az API hidegindulási késleltetése érdekében célszerű kikapcsolni a Railway **Serverless / App Sleeping** módot. A privát Postgres URL, az azonos régió és a folyamatos p95/p99 mérés kiemelten fontos. Teljes útmutató: `docs/POSTGRES-PROGRESS-PERFORMANCE.md`.

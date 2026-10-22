@@ -59,9 +59,9 @@ function compileQuestion(q) {
   for(const a of [...sorted,...(q.recognized_category_candidates||[])]) searchTexts.set(a,[a.canonical,...(a.aliases||[]).map(x=>x.input)].map(Core.norm).join('\n'));
   return {q,index,keys,excluded,pools,searchTexts,searchCache:new Map()};
 }
-export function loadContent(directory=contentDir) {
+export function loadContent(directory=contentDir, onlyDate=null) {
   const days=new Map(), ids=new Set(), numbers=new Set();
-  for(const file of fs.readdirSync(directory).filter(x=>x.endsWith('.json')).sort()) {
+  for(const file of fs.readdirSync(directory).filter(x=>x.endsWith('.json')&&(!onlyDate||x===onlyDate+'.json')).sort()) {
     const raw=fs.readFileSync(new URL(file, directory));
     const day=validateDay(JSON.parse(raw),file,ids);
     if(numbers.has(day.day_number)) throw new Error(`Duplicate day number ${day.day_number}`);
@@ -122,4 +122,33 @@ export function catalogue(compiled,{query='',filter='all',offset=0,limit=120}={}
     compiled.searchCache.set(cacheKey,matches);
   }
   return {total:matches.length,offset,limit,entries:matches.slice(offset,offset+limit).map(a=>({canonical:a.canonical,metric_value:a.metric_value??null,points:a.points??0,membership_status:a.membership_status}))};
+}
+
+// Production loads only the active day's large answer bank; future/historic
+// JSONs are never compiled just to boot the service. Deployment validation
+// still checks ALL daily packages (npm run validate).
+export function createLazyContent(directory=contentDir,{cacheSize=2}={}) {
+  const names=fs.readdirSync(directory).filter(x=>/^\d{4}-\d{2}-\d{2}\.json$/.test(x)).sort();
+  const metadata=new Map();
+  for(const file of names){
+    const fd=fs.openSync(new URL(file,directory),'r');let head='';
+    try{const buf=Buffer.alloc(1024);const n=fs.readSync(fd,buf,0,buf.length,0);head=buf.toString('utf8',0,n)}finally{fs.closeSync(fd)}
+    const status=head.match(/"publication_status"\s*:\s*"(scheduled|draft)"/);
+    if(!status)throw new Error(file+': publication status missing from JSON header');
+    metadata.set(file.slice(0,10),{day:{publication_status:status[1]}});
+  }
+  const cache=new Map();
+  return {get size(){return metadata.size},
+    keys(){return metadata.keys()},
+    has(date){return metadata.has(date)},
+    [Symbol.iterator](){return metadata[Symbol.iterator]()},
+    get(date){
+      if(!metadata.has(date))return undefined;
+      if(metadata.get(date).day.publication_status==='draft')return metadata.get(date);
+      if(cache.has(date))return cache.get(date);
+      const value=loadContent(directory,date).get(date);
+      cache.set(date,value);
+      if(cache.size>cacheSize)cache.delete(cache.keys().next().value);
+      return value;
+    }};
 }

@@ -30,6 +30,12 @@ export class PgStatsStore {
     const result=await this.pool.query('SELECT content_revision AS revision,run_id AS "runId",score,completed_at AS "completedAt" FROM daily_results WHERE game_date=$1 AND player_hash=$2',[date,playerHash]);
     return result.rows[0]||null;
   }
+  async month(month,hash){
+    const {rows}=await this.pool.query(`SELECT game_date::text AS date, content_revision AS revision,
+      score,completed_at AS "completedAt" FROM daily_results
+      WHERE player_hash=$1 AND game_date>=$2::date AND game_date<($2::date+INTERVAL '1 month')`,[hash,month+'-01']);
+    return rows;
+  }
   async aggregate(date,revision){
     const result=await this.pool.query('SELECT score,SUM(player_count)::bigint AS count FROM daily_score_counts WHERE game_date=$1 AND content_revision=$2 GROUP BY score ORDER BY score',[date,revision]);
     return result.rows;
@@ -42,6 +48,7 @@ export class MemoryStatsStore {
   async ready(){}
   async record(value){const key=value.date+':'+value.playerHash;if(!this.results.has(key))this.results.set(key,{...value,completedAt:new Date()});return this.results.get(key)}
   async find(date,hash){return this.results.get(date+':'+hash)||null}
+  async month(month,hash){return [...this.results.values()].filter(x=>x.date.startsWith(month)&&x.playerHash===hash).map(x=>({date:x.date,revision:x.revision,score:x.score,completedAt:x.completedAt}))}
   async aggregate(date,revision){const counts=new Map();for(const row of this.results.values())if(row.date===date&&row.revision===revision)counts.set(row.score,(counts.get(row.score)||0)+1);return [...counts].map(([score,count])=>({score,count}))}
   async close(){}
 }

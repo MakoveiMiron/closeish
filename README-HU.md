@@ -63,3 +63,9 @@ npm test
 A 11 API- és statisztikai tesztcsoporthoz nem kell frontendmappa. Az SQL-integrációs teszthez `TEST_DATABASE_URL` mutasson külön, eldobható adatbázisra, majd `npm run test:postgres`. Ez DDL-t és tesztadat-törlést is végez, ezért éles DB-n tilos futtatni.
 
 A `docs/ELLENORZES.md` a V17 közös projekt ellenőrzési történetét őrzi. A külön csomagok új ellenőrzése: `docs/KULON-CSOMAG-ELLENORZES.md`. Az élő Railway-telepítés és terhelés nem lett elvégezve ebben a környezetben.
+
+## V17.5 – Hivatalos PostgreSQL-előrehaladás
+
+A napi állapot már nem a `localStorage`-ban él: a hat szerver által ellenőrzött választ a `player_progress` PostgreSQL-tábla tartósan rögzíti. A részletek, az API szerződése, a 002–003 migrációk, a Railway deploy és a teljesítményellenőrzés: **[docs/POSTGRES-PROGRESS-PERFORMANCE.md](docs/POSTGRES-PROGRESS-PERFORMANCE.md)**.
+
+Fontos: a V17.5 frontend csak a V17.5 backenddel együtt működik, és újraindítás előtt futnia kell a migrációnak.

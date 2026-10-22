@@ -8,7 +8,7 @@
   "questions": {
     "q1": {
       "id": "closeish_20261022_q1",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "day_number": 3,
       "topic": "sports",
       "bank_id": "20261021-day3-q1-summer-olympics-country-participation",
@@ -1049,7 +1049,7 @@
     },
     "q2": {
       "id": "closeish_20261022_q2",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "day_number": 3,
       "topic": "literature",
       "bank_id": "20261021-day3-q2-nobel-literature-official-1901-2026",
@@ -3078,7 +3078,7 @@
     },
     "q3": {
       "id": "closeish_20261022_q3",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "day_number": 3,
       "topic": "geography",
       "bank_id": "20261021-day3-q3-uscounties-shape-geodesy",
@@ -102999,7 +102999,7 @@
     },
     "q4": {
       "id": "closeish_20261022_q4",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "day_number": 3,
       "topic": "society",
       "bank_id": "20261021-day3-q4-statecrime-2009-violent",
@@ -104181,7 +104181,7 @@
     },
     "q5": {
       "id": "closeish_20261022_q5",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "day_number": 3,
       "topic": "demography",
       "bank_id": "20261021-day3-q5-countryinfo-frozen-demographic",
@@ -111503,7 +111503,7 @@
     },
     "q6": {
       "id": "closeish_20261022_q6",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "day_number": 3,
       "topic": "history",
       "bank_id": "20261021-day3-q6-us-presidential-terms-1953-2009",

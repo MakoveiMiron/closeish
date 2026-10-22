@@ -8,6 +8,7 @@ import {randomUUID} from 'node:crypto';
 import {createPool} from '../src/database.mjs';
 import {migrate} from '../src/migrate.mjs';
 import {PgStatsStore,createStatistics} from '../src/statistics.mjs';
+import {PgProgressStore} from '../src/progress.mjs';
 const enabled=!!(process.env.TEST_DATABASE_URL||process.env.PGLITE_MODULE);
 test('actual PostgreSQL SQL: migrations, atomic counters, uniqueness, rollback, two stores', {skip:!enabled},async()=>{
  let pool;
@@ -18,7 +19,7 @@ test('actual PostgreSQL SQL: migrations, atomic counters, uniqueness, rollback, 
  }else pool=createPool({...process.env,DATABASE_URL:process.env.TEST_DATABASE_URL});
  try{
   await migrate(pool);await migrate(pool);
-  assert.equal(Number((await pool.query('SELECT count(*) FROM schema_migrations')).rows[0].count),1);
+  assert.equal(Number((await pool.query('SELECT count(*) FROM schema_migrations')).rows[0].count),3);
   const a=new PgStatsStore(pool),b=new PgStatsStore(pool),stats=createStatistics(a,{cacheMs:0});await a.ready();
   const date='2099-01-01',revision='a'.repeat(24),hash=randomUUID().replaceAll('-','').repeat(2),runId=randomUUID();
   const value={date,revision,playerHash:hash,runId,score:200};
@@ -40,6 +41,18 @@ test('actual PostgreSQL SQL: migrations, atomic counters, uniqueness, rollback, 
    FULL JOIN (SELECT game_date,content_revision,score,sum(player_count)::bigint AS n FROM daily_score_counts GROUP BY 1,2,3) c
    USING(game_date,content_revision,score) WHERE r.n IS DISTINCT FROM c.n`);
   assert.equal(audit.rows.length,0);
+  const progressStore=new PgProgressStore(pool);await progressStore.ready();
+  const ph='7'.repeat(64),rid=randomUUID();
+  for(let round=0;round<6;round++){
+   const pr=await progressStore.answer({date,hash:ph,revision,runId:rid,round,
+     response:{points:200,kind:'scored',raw:'demo',receipt:'test-signature'}});
+   assert.equal(pr.responses.length,round+1);
+  }
+  const complete=await progressStore.one(date,ph);assert.equal(complete.completed,true);
+  assert.equal((await progressStore.month('2099-01',ph))[0].answers,6);
+  assert.equal((await progressStore.answer({date,hash:ph,revision,runId:rid,round:0,response:{points:1200}})).responses[0].points,200);
+  await assert.rejects(progressStore.answer({date,hash:ph,revision,runId:randomUUID(),round:0,response:{points:1200}}),/different run/i);
+  await pool.query('DELETE FROM player_progress WHERE game_date=$1',[date]);
   await pool.query('DELETE FROM daily_results WHERE game_date=$1',[date]);await pool.query('DELETE FROM daily_score_counts WHERE game_date=$1',[date]);
  }finally{await pool.end()}
 });
