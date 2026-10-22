@@ -1,0 +1,19 @@
+day,round,question,eligible_record_count,1200,1000,800,600,400,200,0,source
+4,1,Name a film among IMDb’s 100 top-rated titles with a runtime of at least 119 minutes.,102,2,5,1,7,12,17,58,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+4,2,Name an iPhone model first introduced in 2018 or earlier.,54,3,3,3,2,2,2,39,https://support.apple.com/en-us/108044
+4,3,"Name a song in Spotify’s 2023 Top 100 that had at most 1,814 million streams.",100,2,2,4,6,9,16,61,https://github.com/ditzaa/spotify-2023-data-insights/blob/main/spotify-2023.csv
+4,4,Name a Formula One driver from the archived driver selection who was born in 1958 or later.,155,2,6,12,14,22,41,58,https://github.com/TracingInsights/RaceData/blob/main/data/drivers.csv
+4,5,"Name a city within 4792 km of Budapest, by great-circle distance.",971,2,11,24,42,66,109,717,https://github.com/joke2k/faker/blob/master/faker/providers/geo/en_US/__init__.py
+4,6,Name an IANA city time zone whose UTC offset on 15 January 2026 was at most +390 minutes.,386,2,10,27,63,47,99,138,https://www.iana.org/time-zones
+5,1,"Name a video game in the historical Top 40 sales ranking with at least 14,640,000 copies sold on its best-selling platform.",40,2,2,4,6,9,8,9,https://gist.github.com/MNishita/93bdaa8e1db0b2d3a5f341e6d580fe35
+5,2,Name a natural waterfall with an overall height of at most 850 m.,41,1,4,2,6,10,12,6,https://en.wikipedia.org/wiki/List_of_waterfalls_by_height
+5,3,"Name a Montréal electoral district that recorded at least 8,060 votes in the 2013 mayoral election.",58,1,2,4,6,9,1,35,https://plotly.com/python/plotly-express/
+5,4,Name a General MIDI instrument whose standard program number is at most 126.,128,1,3,8,14,21,35,46,https://www.midi.org/specifications-old/item/gm-level-1-sound-set
+5,5,Name a currency whose three-digit ISO 4217 numeric code is at least 52.,179,1,5,10,19,28,48,68,https://www.iso.org/iso-4217-currency-codes.html
+5,6,"Name a year when the recorded Nile annual flow at Aswan was at most 1,120 hundred million cubic metres.",100,2,4,4,8,14,23,45,https://www.statsmodels.org/stable/datasets/generated/nile.html
+6,1,Name a U.S. national park officially designated in 1988 or earlier.,63,1,10,2,1,8,16,25,https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States
+6,2,"Name a month (YYYY-MM) when at least 6,655,000 people were unemployed in the United States.",574,2,11,25,42,66,110,318,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv
+6,3,Name a year when the annual sunspot activity index reached at least 63.5.,309,2,3,6,11,17,28,242,https://www.statsmodels.org/stable/datasets/generated/sunspots.html
+6,4,Name a book from the documented 50-million-copy bestsellers whose first publication was in 1992 or earlier.,27,1,2,4,6,9,1,4,https://en.wikipedia.org/wiki/List_of_best-selling_books
+6,5,Name a country whose fertility rate fell by at most 72% from 1960 to 2010 (rounded to the nearest whole percent).,190,2,7,9,24,30,45,73,https://www.statsmodels.org/stable/datasets/generated/fertility.html
+6,6,"Name a completed road or rail suspension bridge with a main span of at least 1,200 m.",33,2,3,3,6,9,5,5,https://thebridgeeng.com/rankings

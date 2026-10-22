@@ -1,0 +1,24 @@
+CLOSEISH — AZ ELSŐDLEGES JOGOSULTSÁGI SZABÁLY (V5, 2026-10-21)
+
+KÖTELEZŐ ÉS MINDEN KÉRDÉSKATEGÓRIÁRA ÉRVÉNYES
+
+1. Kérdésenként külön, pontosan definiálni kell a jogosult entitáshalmazt (entity eligibility universe). A jogosultságot a kérdés valamennyi állítása határozza meg: entitástípus, esetleges időszak, esemény, szereplés, státusz, földrajzi vagy egyéb tényfeltétel.
+
+2. Az összes lehetséges és hitelesített JOGOSULT entitást kell importálni. NEM a világ minden létező entitását az általános kategóriából. Futballkérdés esetén nem alapértelmezés a több százezer focista, csak a kérdés ténylegesen meghatározott játékosai.
+
+3. A jogosultsági halmazba bekerüléshez minden feltételnek bizonyítottnak kell lennie. Elegendő a név ismerete nem: például egy 2022-es vb-n gólt szerző focistára vonatkozó kérdésben csak az adott vb dokumentált gólszerzői jogosultak. Egy 2025-ös adott versenyen pályára lépett játékost kérő feladatban csak a megfelelő versenyen és időszakban ténylegesen pályára lépők jogosultak, nem a nevezett tartalékok és nem a más versenyen szereplő játékosok.
+
+4. A számszerű küszöb nem jogosultsági szűrő. A jogosult entitás a küszöb rossz oldalán vagy a pontozási ablaktól messze is a katalógusban marad, ellenőrzött 0 ponttal. A jogosultság (IDENTITY/SCOPE), a mérés (MEASUREMENT) és a pontozás (SCORING) egymástól független döntés.
+
+5. A ténylegesen jogosulatlan név (pl. 2022-es vb-gólt nem szerző, bár létező focista) nem szerepelhet a megengedett válaszkatalógusban, még az UNSCORED fülön sem. Az alkalmazás pontos névegyezéskor felismerheti és INELIGIBLE-ként elutasíthatja, de nem javasolhatja jogosult válaszként, nem pontozhatja és nem számolhatja bele a jogosult katalógus méretébe.
+
+6. Ha a jogosultság bizonyított, de a mérési érték hiányzik, az entitás jogosult, de 'MEASUREMENT PENDING' — nem kap kitalált nullát. Ha viszont a jogosultság sem bizonyított, nincs automatikus elfogadás; csak kézi ellenőrzési kérelem.
+
+7. A kérdésszöveg természetes angol mondatban közölje az entitáshalmazt és minden szükséges tényfeltételt. Nem kell külön zárójeles hosszú figyelmeztetés; a játék általános szabályai rögzítik a kötelező jogosultsági ellenőrzést. A forráslista és részletes módszertan a katalógusban jelenjen meg.
+
+8. Publikálás előtti automatizált ellenőrzések: (i) minden katalógusentitás megfelel az esemény/időszak/kategória feltételeinek; (ii) minden ellenőrzött jogosult entitás bekerül, negatív és 0 pontos is; (iii) jogosulatlan entitás nem szerepel a válaszkatalógusban, az autocomplete-ban és a pontozható adatok között; (iv) a források és mérések kétség esetén nem adnak fiktív bizonyosságot.
+
+MEGVALÓSULT JAVÍTÁS – 2. NAP, 6. KÉRDÉS
+A 2022-es férfi FIFA-vb-n első gólt szerző játékosok a jogosult halmaz; a helyi forrás 118 külön játékost tartalmaz. A 158, a torna forrásaival ellenőrzött, vb-n gólt nem szerző focista nem válasz; ineligible állapotot kap és nincs a katalógusban. Továbbra is 0 pontos, de érvényes válasz a gólszerző, akinek az első gólja a 60. perc előtt született.
+
+A 12 további nap-2 és nap-3 kérdés metaadatai 'eligibility_rule' mezőt tartalmaznak. Az eredeti első nap JSON-ja változatlan; a futtatott általános jogosultsági szabály rá is vonatkozik. A 4–7. nap tartalmi véglegesítéséhez is ezt az alapelvet kell használni.

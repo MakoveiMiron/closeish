@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://closeish.local/schemas/day.schema.json",
+  "title": "CLOSEISH daily content v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "date",
+    "day_number",
+    "revision",
+    "publication_status",
+    "questions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "day_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publication_status": {
+      "enum": [
+        "draft",
+        "scheduled"
+      ]
+    },
+    "editorial_note": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "object",
+      "required": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "properties": {
+        "q1": {
+          "$ref": "#/$defs/question"
+        },
+        "q2": {
+          "$ref": "#/$defs/question"
+        },
+        "q3": {
+          "$ref": "#/$defs/question"
+        },
+        "q4": {
+          "$ref": "#/$defs/question"
+        },
+        "q5": {
+          "$ref": "#/$defs/question"
+        },
+        "q6": {
+          "$ref": "#/$defs/question"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "alias": {
+      "type": "object",
+      "required": [
+        "input"
+      ],
+      "properties": {
+        "input": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "answer": {
+      "type": "object",
+      "required": [
+        "canonical",
+        "metric_value",
+        "points"
+      ],
+      "properties": {
+        "entity_id": {
+          "type": "string"
+        },
+        "canonical": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alias"
+          }
+        },
+        "metric_value": {
+          "type": "number"
+        },
+        "points": {
+          "enum": [
+            0,
+            200,
+            400,
+            600,
+            800,
+            1000,
+            1200
+          ]
+        },
+        "source_refs": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "id",
+        "date",
+        "day_number",
+        "topic",
+        "prompt",
+        "unit",
+        "limit",
+        "direction",
+        "time_limit_seconds",
+        "score_bands",
+        "scoring_window",
+        "answers"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "day_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "topic": {
+          "type": "string"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "direction": {
+          "enum": [
+            "above",
+            "below"
+          ]
+        },
+        "time_limit_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 300
+        },
+        "input_max_length": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 300
+        },
+        "score_bands": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": [
+              "max_gap_inclusive",
+              "points"
+            ],
+            "properties": {
+              "max_gap_inclusive": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "points": {
+                "enum": [
+                  200,
+                  400,
+                  600,
+                  800,
+                  1000
+                ]
+              }
+            }
+          }
+        },
+        "scoring_window": {
+          "type": "object",
+          "required": [
+            "max_scoring_distance"
+          ],
+          "properties": {
+            "max_scoring_distance": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "answers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/answer"
+          }
+        },
+        "recognized_category_candidates": {
+          "type": "array"
+        },
+        "excluded_answers": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

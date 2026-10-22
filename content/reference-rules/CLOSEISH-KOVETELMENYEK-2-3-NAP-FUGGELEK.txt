@@ -1,0 +1,751 @@
+# CLOSEISH – Teljes kérdésgenerálási, válaszadatbázis- és minőségbiztosítási követelményrendszer
+
+## A FELADAT
+
+A meglévő CLOSEISH webalkalmazás következő 6 napjához készíts összesen **36 teljesen új, valóban változatos, angol nyelvű, szabad szöveges válaszokra épülő kérdést**, a hozzájuk tartozó lehető legteljesebb, ellenőrzött válaszadatbázisokkal.
+
+A feladat nem 36 kérdésszöveg megírása, hanem **36 működő, teljesen feldolgozott kérdésbank létrehozása**, amelyek közvetlenül játszhatók a meglévő alkalmazásban.
+
+A jelenlegi, nem megfelelő második–hetedik napi kérdésbankokat teljes egészében cseréld le.
+
+Az eredeti első napi tartalmat őrizd meg. A meglévő felületet, dizájnt, kétlépcsős válaszadást, 30 másodperces időkeretet, archívumot és eredménymegjelenítést tartsd meg.
+
+**A legfontosabb követelmény: a játék minden nap valóban másfajta tudást, másfajta gondolkodást és új felfedezéseket kívánjon meg.**
+
+Tilos a kényelmesen hozzáférhető néhány adatbázisból újra és újra kérdéseket generálni.
+
+---
+
+## 1. A CLOSEISH játékmechanikája
+
+A CLOSEISH napi 6 fordulóból álló tudáskvíz.
+
+A játékos egy kérdésben megadott számszerű határértéket próbál minél pontosabban megközelíteni egy általa megnevezett entitás segítségével.
+
+A játékos **nem számértéket ír be, hanem egy konkrét dolgot nevez meg**.
+
+Például egy film címét, zeneszámot, állatfajt, történelmi személyt, sportolót, várost, épületet, találmányt vagy más, egyértelműen azonosítható entitást.
+
+Minden kérdéshez előre meghatározott közelítési irány tartozik.
+
+- **FROM BELOW:** a válasz mért értéke legfeljebb a célérték lehet (≤).
+- **FROM ABOVE:** a válasz mért értéke legalább a célérték lehet (≥).
+
+A játékos nem választhat közelítési irányt.
+
+A kérdés angol szövegének egyértelműen tartalmaznia kell az irányt.
+
+Minden kérdés 30 másodperces.
+
+Kérdésenként maximum 1200 pont, naponta maximum 7200 pont szerezhető.
+
+A pontozás kizárólag az entitáshoz tartozó, ellenőrzött mérési értéken alapulhat.
+
+---
+
+## 2. A legfontosabb szabály: VALÓDI KÉRDÉSVÁLTOZATOSSÁG
+
+Ez a projekt egyik legszigorúbb követelménye.
+
+**A kérdések nem alapulhatnak újra és újra ugyanazon néhány adatkészleten, mérőszámon, entitáskategórián vagy gondolkodási feladaton.**
+
+### 2.1. Napon belüli változatosság
+
+Mind a 6 napon pontosan 6 kérdés legyen.
+
+A napi hat kérdés:
+
+- Hat valóban különböző tématerülethez tartozzon.
+- Eltérő entitástípusokat kérjen.
+- Eltérő mérési tulajdonságokat vizsgáljon.
+- Eltérő tudásra és gondolkodásra épüljön.
+- Lehetőleg hat független adatforráscsaládból származzon.
+- Ne használja ugyanazt a válaszkategóriát többféle mérőszámmal.
+
+**Nem elfogadható**, ha egy nap mind a hat kérdése például különböző földrajzi területekre, országstatisztikákra vagy amerikai megyékre vonatkozik.
+
+Attól, hogy a kérdések eltérő mezőket használnak egy adatbázisból, még nem lesznek változatosak.
+
+### 2.2. Napok közötti változatosság
+
+A változatosságot nemcsak napon belül, hanem a teljes hatnapos időszakban is biztosítani kell.
+
+- Két egymást követő napon nem ismétlődhet ugyanaz a kérdéscsalád.
+- Két egymást követő napon nem használható újra ugyanaz a forráscsalád.
+- A teljes hatnapos időszakban se ismétlődjön egy adatbank egyszerű határérték-, dátum- vagy mérőszámcserével.
+- A teljes 36 kérdés között ne domináljon egyetlen témakör vagy entitáskategória.
+- Azonos típusú gondolkodási feladat nem kerülhet vissza más szövegezéssel.
+
+Ha egyszer szerepel egy film játékideje, egy másik napon nem elég az IMDb másik mezőjét használni ahhoz, hogy az új feladat eredetinek számítson.
+
+Ha egyszer országterületekről kérdezel, az országok népsűrűségére vagy másik év népességére vonatkozó kérdés nem automatikusan új, kreatív kérdéstípus.
+
+Az egész 36 kérdéses bankot együtt kell optimalizálni, nem kérdésenként egymástól függetlenül.
+
+### 2.3. Keresendő tudásterületek
+
+A kreatív kutatás a világ lehető legtöbb területére terjedjen ki.
+
+Például:
+
+- Film, televízió és szórakoztatóipar
+- Zene és popkultúra
+- Sport és sporttörténelem
+- Állatvilág, növényvilág és természet
+- Történelem és régészet
+- Irodalom, könyvek és képzőművészet
+- Technológia, találmányok és informatika
+- Videojátékok és játéktörténet
+- Földrajz, közlekedés és utazás
+- Űrkutatás és csillagászat
+- Társadalom és emberi tevékenységek
+- Gazdaság és ipar
+- Építészet és infrastruktúra
+- Nyelvek és kommunikáció
+- Ételek, italok és gasztronómia
+- Orvostudomány és az emberi test
+- Kulturális jelenségek és meglepő történelmi összefüggések
+
+**Ez a lista inspiráció, nem rögzített kérdésgenerálási sablon.**
+
+Nem szabad minden nap mechanikusan ugyanebből a hat kiválasztott témából kérdést készíteni.
+
+A cél az állandó felfedezés.
+
+---
+
+## 3. A kérdések legyenek kreatívak, de közérthetők
+
+A CLOSEISH nem tudományos szakkifejezések bemagolására épülő játék.
+
+Olyan kérdésekre van szükség, amelyeket a játékos első olvasásra megért, még akkor is, ha a megfelelő választ nehéz megtalálnia.
+
+**A nehézség a válasz kiválasztásából következzen, ne a kérdés megértéséből.**
+
+### Kerülendő kérdések
+
+Például:
+
+- Melyik kémiai elem kovalens sugara legalább 127 pikométer?
+- Melyik elem van der Waals-sugara kisebb 202 pikométernél?
+- Melyik amerikai megye térképi középpontjának közelítő távolsága legalább 80 kilométer egy másik földrajzi referenciától?
+- Melyik ország 1972-es, speciális módszertannal számított GDP-mutatója közelít meg egy meghatározott értéket?
+
+Ezek technikailag pontozhatók lehetnek, de túlzottan adatbázis-központúak, szűkek vagy szakmaiak.
+
+### Előnyben részesítendő szemlélet
+
+Olyan dolgokat keress, amelyeket a játékos ismerhet, és amelyekhez érdekes, összehasonlítható számértékek tartoznak.
+
+A film hosszát, egy állat súlyát, egy sportoló eredményét vagy egy történelmi esemény időtartamát például könnyebb értelmezni, mint egy speciális tudományos paramétert.
+
+Az ilyen típusú példák sem válhatnak állandó sablonná.
+
+### A kérdések nyelvezete
+
+- Angol nyelvű.
+- Természetes.
+- Rövid, lehetőleg egy mondat.
+- Első olvasásra értelmezhető.
+- Egyértelmű közelítési iránnyal.
+- Egyértelmű határértékkel és mértékegységgel.
+- Egyértelmű mérési időponttal, ha szükséges.
+- A kerekítési szabály feltüntetésével, ha alkalmazandó.
+
+Ne használj felesleges megszorításokat és szűkítő feltételeket.
+
+Például nem ideális olyan kérdés, amely egyszerre határoz meg országot, régiót, korszakot, műfajt, alfajt és több további kritériumot.
+
+Ezek a feltételek akaratlan segítséget adnak azzal, hogy túlzottan leszűkítik a lehetséges válaszokat.
+
+**A válaszok köre legyen tág, a feladat pedig világos.**
+
+---
+
+## 4. Hatalmas, lehetőleg teljes válaszadatbázisok
+
+Ez kiemelten fontos.
+
+**Nem elegendő összesen néhány tízezer kérdés–válasz rekord 36 kérdésre, ha közben a kérdések jelentős részéhez csak 100–200 válasz tartozik.**
+
+Minden kérdés válaszkategóriáját külön kell értékelni.
+
+### 4.1. Nagy, nyitott kategóriák
+
+Ha a válaszkategória több ezer vagy több tízezer ismert entitást tartalmaz, nem elfogadható ezekből csupán egy kis részhalmazt összegyűjteni.
+
+Követelmények:
+
+- Legalább **3000 különböző, azonosított entitás** egy nagy, nyitott kategóriában.
+- Lehetőleg 5000–20 000 vagy még több ellenőrzött válasz.
+- Ha a kategóriában 50 000 dokumentált entitás található, a cél ezek lehető legteljesebb importálása.
+- Ha több százezer entitás létezik, a feldolgozás nem állhat meg önkényesen 5000 rekordnál.
+- A pontozás szempontjából értéktelen vagy 0 pontos entitások is bekerüljenek.
+
+A 3000 csak minimális alsó korlát, nem kívánatos célérték.
+
+Egy 3000 rekordos részhalmaz nem tekinthető teljesnek, ha a tényleges válaszkategória 80 000 elemből áll.
+
+### 4.2. Kisebb, véges kategóriák
+
+Ha egy kategóriában természetesen csak kevés entitás létezik, nem kell és nem is szabad mesterségesen több ezret létrehozni.
+
+Például egy 88 elemű, hivatalosan lezárt kategória 88 valódi rekorddal teljes lehet.
+
+De az ilyen kis válaszkategóriák ne uralják a hatnapos kérdésbankot.
+
+A naponta kiválasztott témák között elsőbbséget élvezzenek azok, amelyek valóban gazdag, változatos válaszlehetőségeket kínálnak.
+
+### 4.3. Nem elég a rekordok összesített száma
+
+A minőséget legalább az alábbiak alapján kell vizsgálni:
+
+- Kérdésenkénti pontozható entitásszám.
+- Kérdésenkénti összes azonosított entitásszám.
+- Az ismert kategória lefedettségi aránya.
+- A még nem ellenőrzött mérések száma.
+- Különböző entitások száma a teljes hatnapos időszakban.
+- Az ismételten felhasznált entitások száma.
+- A valóban különböző forráscsaládok száma.
+- Az egyes pontkategóriák válaszszáma.
+
+**Tilos ugyanazt az adatbankot különböző kérdések alatt újraszámolva mesterségesen nagy összesített válaszszámot kommunikálni.**
+
+---
+
+## 5. A válaszadatbázis létrehozásának kötelező sorrendje
+
+A kérdésgenerálás során az alábbi sorrend kötelező:
+
+1. Kreatív, eredeti kérdésötlet felfedezése.
+2. A válaszkategória pontos meghatározása.
+3. A lehető legteljesebb entitásállomány felkutatása és importálása.
+4. Az entitások egyedi azonosítása és deduplikálása.
+5. Az alternatív nevek, rövidítések és szinonimák összegyűjtése.
+6. A kérdésspecifikus mérések beszerzése.
+7. A forrásadatok ellenőrzése.
+8. A hiányzó és bizonytalan mérések elkülönítése.
+9. A teljes numerikus eloszlás elemzése.
+10. Természetes, megfelelő határérték kiválasztása.
+11. Pontkategóriák távolsági sávjainak kialakítása.
+12. Minden ellenőrzött entitás pontozása.
+13. A kérdés megfogalmazása.
+14. Változatossági és ismétlődés-ellenőrzés.
+15. Teljes körű minőségbiztosítás.
+
+A legfontosabb:
+
+**Nem szabad először megkeresni néhány tucat jó pontot érő választ, majd ezek köré építeni egy hiányos adatbázist.**
+
+A teljes kategóriát először ismerni kell, és csak utána következhet a pontozás.
+
+---
+
+## 6. Az entitások felismerése és jogosultsága
+
+Három egymástól független folyamat létezik:
+
+**IDENTITY:** mit nevezett meg a játékos?
+
+**MEASUREMENT:** milyen ellenőrzött mérési értéke van az entitásnak?
+
+**SCORING:** az ellenőrzött érték hány pontot ér?
+
+Ezeket tilos összemosni.
+
+A rendszer különböztesse meg:
+
+- Jogosult, ellenőrzött mérésű entitás.
+- Jogosult, de még nem ellenőrzött mérésű entitás.
+- Hibás oldalon elhelyezkedő entitás.
+- Megfelelő oldalon, de túl messze lévő entitás.
+- Egyértelműen nem jogosult entitás.
+- Többértelmű név.
+- Valóban ismeretlen válasz.
+
+**A hiányzó mérés nem egyenlő a nulla mérési értékkel.**
+
+Nem szabad értéket vagy pontszámot kitalálni egy entitáshoz.
+
+### Jogosultsági szabályok
+
+A kérdés szövege és az adatforrás jogosultsági köre pontosan egyezzen.
+
+Ha a kérdés országokat kér, előre meg kell határozni, hogy:
+
+- ENSZ-tagállamokat,
+- ENSZ-tagállamokat és megfigyelő államokat,
+- vagy országokat és különálló területeket
+
+engedünk-e meg.
+
+Ha ENSZ-tagállamokról kérdezünk, Nyugat-Szahara nem kerülhet a jogosult válaszok közé.
+
+Ha országokat és területeket egyaránt elfogadunk, ezt a kérdésnek egyértelműen közölnie kell.
+
+Ugyanez az elv vonatkozik filmekre, könyvekre, játékokra, sportolókra, állatfajokra és minden más entitáskategóriára.
+
+A forrásban nem szereplő vagy a kérdés definíciójának nem megfelelő entitás nem lehet tökéletes találat.
+
+---
+
+## 7. Pontozási rendszer: hét kategória
+
+A CLOSEISH pontértékei:
+
+| Pontszám | Kategória |
+|---|---|
+| 1200 | PERFECT HIT |
+| 1000 | RAZOR EDGE |
+| 800 | CLOSE CALL |
+| 600 | SOLID HIT |
+| 400 | IN THE ZONE |
+| 200 | ON THE BOARD |
+| 0 | TOO FAR / CROSSED LIMIT |
+
+A kihagyott válasz (`SKIPPED`) és az ellenőrizetlen válasz külön állapot, nem önálló pozitív pontkategória.
+
+### 7.1. A tökéletes találat
+
+1200 pont kizárólag akkor adható, ha a ténylegesen pontozott mérési érték pontosan megegyezik a határértékkel.
+
+Ha előre deklarált kerekítés történik, a kerekítést a határérték-ellenőrzés előtt kell elvégezni.
+
+Ha nincs deklarált kerekítés, a rendszer nem kezelhet például 3018 km-t 3000 km-nek.
+
+### 7.2. A pontkategóriák kívánatos eloszlása
+
+A cél a természetesen ritka magas pontszám és a fokozatosan szélesedő alacsonyabb kategóriák.
+
+Nagy és kellően gazdag válaszkategóriáknál szerkesztői célként:
+
+| Pont | Kívánatos válaszszám |
+|---|---|
+| 1200 | 1–2 |
+| 1000 | Körülbelül 10 |
+| 800 | Körülbelül 20–40 |
+| 600 | Körülbelül 40–80 |
+| 400 | Körülbelül 80–150 vagy több |
+| 200 | Szélesebb, akár több száz |
+| 0 | Valamennyi túl távoli vagy rossz oldali válasz |
+
+**Ezek célértékek, NEM kötelező darabszámkvóták.**
+
+Kisebb, teljesen lefedett kategóriákban természetesen más lehet a tényleges eloszlás.
+
+Soha nem szabad valódi válaszokat eltávolítani, adatértékeket átírni, entitásokat duplikálni vagy kitalált válaszokat létrehozni a kívánt eloszlás érdekében.
+
+Ha egy kérdésnél a megfelelő eloszlás nem érhető el, módosítsd a természetes határértéket, a szakmailag indokolható pontsávokat, vagy válassz teljesen másik kérdésötletet.
+
+**A kérdést igazítsd a valós adateloszláshoz, ne a valós adatokat a kívánt ponteloszláshoz.**
+
+### 7.3. Véges pontozási távolság
+
+A pontozás nem terjedhet ki korlátlan távolságra.
+
+A jó oldalon lévő, de túl távoli válasz is 0 pontot kap.
+
+Például egy 200 hektáros, alulról megközelítendő cél esetén egy 50 hektáros válasz nem kaphat 200 pontot csak azért, mert még mindig a megfelelő oldalon található.
+
+Egy ilyen kérdésnél például 150 hektár lehet a legalacsonyabb pontszerző érték, ha ezt az adatok eloszlása is indokolja.
+
+A pontozási ablak nagyságát az adott mérőszám értelmes léptéke és valódi eloszlása alapján határozd meg.
+
+Tilos minden kérdésre ugyanazt a mechanikus távolságképletet alkalmazni, ha az értelmetlen eredményhez vezet.
+
+### 7.4. Kötelező kategórialefedettség
+
+Minden publikált kérdésnél legyen legalább egy valós, ellenőrzött válasz az alábbi pontértékekhez:
+
+1200, 1000, 800, 600, 400, 200 és 0.
+
+Az 1200 és 1000 pontos válaszok lehetőleg természetesen ritkák legyenek, a 200 pontos tartomány pedig kínáljon bőséges lehetőséget.
+
+Ha ez nem megoldható, a kérdés nem publikálható.
+
+---
+
+## 8. Határértékek és kerekítés
+
+### Mennyiségi adatok
+
+A célérték legalább 50 legyen.
+
+Ez minimum, nem ajánlott alapértelmezett érték.
+
+Nem szabad önkényesen átváltani a mértékegységet kizárólag azért, hogy a számszerű határ elérje az 50-et.
+
+### Százalékos adatok
+
+A célérték 8% és 92% közé essen.
+
+**A százalékos kérdések pontozása egész százalékos értékeken alapuljon.**
+
+A forrás eredeti, részletesebb értékét külön meg lehet őrizni.
+
+A kérdés szövegében kötelező jelezni:
+
+> Percentages are rounded to the nearest whole percent before scoring.
+
+A kerekített érték legyen a válaszkatalógusban megjelenített és a pontozásra ténylegesen használt érték is.
+
+### Más mértékegységek
+
+Ha kilométerek, kilogrammok, percek vagy más mérési adatok kerekítése történik, azt is jelezni kell a kérdésben.
+
+Például:
+
+> Distances are rounded to the nearest 100 km before scoring.
+
+A kérdés nem sugallhat hamis mérési pontosságot.
+
+A kerekítés matematikai szabályát egységesen kell implementálni és tesztelni.
+
+---
+
+## 9. Források és adatminőség
+
+Minden kérdés mögött valós, ellenőrizhető adatforrás álljon.
+
+Lehetőleg elsődleges és hivatalos adatforrásokat használj, vagy olyan megbízható szakmai adatbázisokat, amelyek egyértelmű mérési módszertannal rendelkeznek.
+
+Ne részesíts előnyben egy kérdést pusztán azért, mert egy népszerű CSV-ből könnyen lekérhető.
+
+### Kötelező metaadatok
+
+Minden kérdéshez tárolni kell:
+
+- A forrás nevét és elérhetőségét.
+- A felhasznált adatállomány vagy kiadás verzióját.
+- A releváns időpontot vagy időszakot.
+- Az entitáskategória pontos definícióját.
+- A mérőszám meghatározását.
+- A mértékegységet.
+- A kerekítési szabályt.
+- A pontozási határértéket.
+- A pontsávok határait.
+- A jogosult és nem jogosult válaszok szabályát.
+- A teljes ismert entitásszámot.
+- A pontozható rekordok számát.
+- A hiányzó mérések számát.
+- A forráslefedettség esetleges korlátait.
+
+Változó adatoknál minden játékos ugyanazon rögzített adatpillanatkép alapján kapjon pontot.
+
+Régi adatot nem szabad aktuális adatként feltüntetni.
+
+A pontozási adatok tényleges importálása kötelező. Nem elég egy külső forrást belinkelni, ha annak teljes releváns adatállománya nem került feldolgozásra.
+
+---
+
+## 10. Szinonimák és válaszfelismerés
+
+Minden entitáshoz tartozzon egy egyedi, kanonikus azonosító.
+
+A rendszer ismerje fel az elfogadott:
+
+- Alternatív neveket.
+- Rövidítéseket.
+- Közismert beceneveket.
+- Elterjedt idegen nyelvű neveket.
+- Ékezet nélküli alakokat.
+- Ismert alternatív írásmódokat.
+
+A különböző aliasok ne számítsanak külön válasznak.
+
+Ha egy név több entitásra is vonatkozhat, a rendszer nem választhat közülük önkényesen.
+
+A meglévő, kétszeri Enterrel működő bevitel maradjon meg:
+
+1. Gépelés közben a legvalószínűbb, egyértelmű kiegészítés jelenjen meg közvetlenül a beviteli mezőben.
+2. Az első Enter fogadja el a javasolt entitást.
+3. A második Enter küldje be a választ.
+4. Ne jelenjen meg legördülő találati lista.
+5. Többértelmű találat esetén ne történjen automatikus, önkényes kiválasztás.
+
+A nagy válaszadatbázisok mellett is gyorsan kell működnie a keresésnek és a javaslatok megjelenítésének.
+
+---
+
+## 11. A válaszkatalógus szabályai
+
+A válaszkatalógusban valamennyi ellenőrzött, jogosult entitás jelenjen meg, pontszámtól függetlenül.
+
+Az `ALL` nézet sorrendje:
+
+**1200 → 1000 → 800 → 600 → 400 → 200 → 0**
+
+Azonos pontkategóriában elsőként a határértékhez közelebbi válaszok jelenjenek meg.
+
+A katalógus tartalmazza:
+
+- Az entitás nevét.
+- A pontozott mérési értékét.
+- A mértékegységet.
+- A pontszámot.
+- A megfelelő pontkategóriát.
+- A kérdés forrását és módszertani információját.
+
+A nulla pontos válaszoknál legyen megkülönböztethető a `TOO FAR` és a `CROSSED LIMIT`.
+
+Az ismeretlen mérési értékű entitás ne kapjon kitalált pontszámot.
+
+A felhasználó saját válasza és pontszáma jelenjen meg a katalógus fejlécében és a napi összesítőben is.
+
+Nagy, akár több tízezer válaszos katalógusoknál a felület maradjon gyors és használható. Szükség esetén használj indexelést és hatékony, részleges listamegjelenítést, de az adatok teljes köre maradjon kereshető.
+
+---
+
+## 12. A jelenlegi UI és játékmenet megőrzése
+
+A meglévő CLOSEISH dizájnt ne tervezd újra.
+
+Tartsd meg:
+
+- A jelenlegi arculatot és elrendezést.
+- A napi hatfordulós játékot.
+- A 30 másodperces kérdésidőt.
+- A kétszeri Enteres válaszadást.
+- Az inline válaszkiegészítést.
+- A pontkategóriák megjelenítését.
+- A válaszkatalógust.
+- A simított eloszlási diagramot.
+- A napi összesítőt.
+- A szabadon játszható archívumot.
+- A játék közbeni visszalépési és időzítési védekezést.
+
+A már megkezdett kérdés időkerete oldalfrissítéssel vagy navigációval nem indulhat újra.
+
+Az archívumban minden elkészült nap szabadon elérhető és kipróbálható legyen a fejlesztési változatban.
+
+A felhasználó saját eredményei legyenek egyértelműen elkülönítve a demonstrációs statisztikáktól.
+
+A megjelenítési módosítások kizárólag akkor indokoltak, ha a sokkal nagyobb válaszkatalógusok kezeléséhez vagy a helyes működéshez szükségesek.
+
+---
+
+## 13. Kötelező kreatív kérdésgenerálási munkafolyamat
+
+**Ne egy előre meghatározott statisztikai sablonlistából dolgozz.**
+
+### Első fázis – Felfedezés
+
+Végezz széles körű kutatást számos, egymástól független témában.
+
+Először érdekes tényeket, furcsa összefüggéseket és szokatlan összehasonlítási lehetőségeket keress.
+
+A kreatív kutatás ne a legkönnyebben letölthető CSV-kből induljon ki.
+
+### Második fázis – Ötletek összehasonlítása
+
+Gyűjts több lehetséges kérdésötletet, mint amennyire szükség van.
+
+A kérdéseket értékeld:
+
+- Eredetiség.
+- Közérthetőség.
+- Érdekesség.
+- Válaszkategória mérete.
+- Források minősége.
+- Pontozhatóság.
+- Természetes ponteloszlás.
+- Más kérdésekkel való hasonlóság.
+
+A 36 végleges kérdést csak az összehasonlító szelekció után válaszd ki.
+
+### Harmadik fázis – Teljes adatkutatás
+
+A kiválasztott kérdésekhez importáld a lehető legteljesebb válaszkategóriát.
+
+Ne állj le néhány tucat vagy néhány száz jó válasz megtalálása után.
+
+### Negyedik fázis – Mérés
+
+Ellenőrizd a numerikus értékeket és az entitások jogosultságát.
+
+A bizonytalan vagy hiányzó adatokat különítsd el.
+
+### Ötödik fázis – Eloszláselemzés
+
+A teljes ellenőrzött adatbankon keress megfelelő határértéket és pontsávokat.
+
+Vizsgáld, hány valódi válasz tartozik mindegyik pontkategóriába.
+
+### Hatodik fázis – Globális változatosság
+
+A készülő kérdéseket együtt vizsgáld.
+
+Ha túl sok közöttük az ország-, terület-, népesség-, évszám-, sportstatisztika- vagy más ismétlődő feladat, cseréld le a gyengébb ötleteket.
+
+### Hetedik fázis – Publikálás előtti tesztelés
+
+Minden kérdésre futtasd le a teljes ellenőrzési rendszert.
+
+Csak ezután integráld a végleges hatnapos kérdésbankba.
+
+---
+
+## 14. Automatizált minőségellenőrzés
+
+Készíts valódi, futtatható validációt.
+
+Minden kérdésnél ellenőrizze:
+
+1. A kérdés egyedi-e az egész kérdésbankban.
+2. A kérdéscsalád nem egy korábbi feladat változata-e.
+3. A napi témakörök valóban különböznek-e.
+4. Nem ismétlődik-e forráscsalád a szomszédos napokon.
+5. Nem dominálja-e egyetlen adatbázis a hatnapos időszakot.
+6. A kérdés természetes, egyértelmű angol mondat-e.
+7. A célérték és az irány megfelelő-e.
+8. A kerekítés pontosan egyezik-e a kérdésben írt szabállyal.
+9. A jogosult entitások köre megegyezik-e a kérdés szövegével.
+10. Van-e duplikált entitás.
+11. Az aliasok helyesen működnek-e.
+12. A mért értékek ellenőrizhetők-e.
+13. Minden pontkategória rendelkezik-e valódi válasszal.
+14. A pontsávok nem fedik-e egymást.
+15. A rossz oldali válaszok biztosan 0 pontot kapnak-e.
+16. A jó oldali, de túl távoli válaszok biztosan 0 pontot kapnak-e.
+17. Az 1200 pontos válasz valóban a pontozott célértéken van-e.
+18. A hiányzó mérési adatokat nem kezeljük-e nullaként.
+19. A teljes válaszkategória lefedettsége megfelelő-e.
+20. A válaszkatalógus pontjai megegyeznek-e a játékban adott pontokkal.
+21. A 30 másodperces és kétlépcsős válaszadási működés változatlanul helyes-e.
+22. A több ezer vagy több tízezer rekordos kérdések használhatók-e asztali és mobilnézetben.
+
+A kérdés nem kaphat automatikusan publikálható státuszt pusztán attól, hogy a JSON szintaktikailag helyes.
+
+### Ponteloszlási audit
+
+Minden kérdéshez készíts külön összesítést:
+
+| Pont | Válaszok száma |
+|---|---:|
+| 1200 | tényleges szám |
+| 1000 | tényleges szám |
+| 800 | tényleges szám |
+| 600 | tényleges szám |
+| 400 | tényleges szám |
+| 200 | tényleges szám |
+| 0 – Too Far | tényleges szám |
+| 0 – Crossed Limit | tényleges szám |
+
+A jelentés mutassa a teljes ellenőrzött válaszkatalógus méretét és a még nem mért entitások számát is.
+
+---
+
+## 15. Publikálási feltételek
+
+Egy új kérdés csak akkor publikálható, ha:
+
+- Kreatív és önálló tudásfeladat.
+- Könnyen érthető, nem indokolatlanul technikai.
+- Nem ismétli a korábbi kérdések tényleges tartalmát.
+- A válaszkategóriája egyértelmű.
+- A nagy, nyitott kategóriája megfelelően nagy és lehetőleg teljes.
+- Az entitások ellenőrzött, valós adatokra épülnek.
+- A 0 pontos entitások is szerepelnek.
+- A kerekítési szabály egyértelmű.
+- A pontozási távolságok értelmesek.
+- Minden pontkategóriához van valódi válasz.
+- A magas pontszámok értékesek és természetesen ritkák.
+- Nem történt mesterséges adatritkítás vagy adatnövelés.
+- A források dokumentáltak.
+- A teljes minőségellenőrzés sikeres.
+
+**Ha egy kérdés nem felel meg a követelményeknek, ne próbáld mindenképpen megtartani. Helyette keress jobb kérdést.**
+
+---
+
+## 16. Kötelező végső átadandók
+
+A munka végén az alábbiakat add át:
+
+**1. Teljes, működő CLOSEISH HTML**
+
+Az eredeti első nap és a következő hat új nap összesen 42 kérdéssel.
+
+**2. Teljes projekt ZIP**
+
+Tartalmazza a forráskódot, az összes napi kérdésbankot, a forrásadatokat, az importálóprogramokat és a teszteket.
+
+**3. Frissített kérdésgenerálási TXT**
+
+A jelen dokumentumban meghatározott követelményekkel és a tényleges implementáció tanulságaival.
+
+**4. Részletes pontozási audit CSV**
+
+Mind a 36 új kérdéshez a hét pontkategória tényleges válaszszámával.
+
+**5. Teljes lefedettségi jelentés**
+
+Tartalmazza:
+
+- Kérdésenkénti entitásszámokat.
+- Összes pontozható kérdés–válasz rekordot.
+- Az egész időszakban szereplő különböző entitások számát.
+- Adatforrások és forráscsaládok számát.
+- Kérdésenkénti forráslefedettséget.
+- Az ellenőrizetlen rekordokat.
+- A kérdéscsaládok közötti hasonlósági audit eredményét.
+- A sikeres és sikertelen teszteket.
+
+**6. Tesztelt és kész, játszható alkalmazás**
+
+Mind a hat új nap teljes hatfordulós játékmenetét ellenőrizni kell, legalább asztali és mobilméretben.
+
+---
+
+## 17. Szigorú munkavégzési utasítás
+
+**NE adj át egy újabb hiányos, előzetes kérdésgyűjteményt végleges megoldásként.**
+
+Ne állj meg az ötleteknél.
+
+Ne állj meg a kérdésszövegeknél.
+
+Ne állj meg akkor, amikor az egyes kérdésekhez csak néhány jó válasz tartozik.
+
+Ne készíts hamis, kitalált vagy duplikált entitásokat a válaszadatbázis mesterséges bővítésére.
+
+Ne használj újra néhány könnyen hozzáférhető adatbázist az egész 36 kérdéshez.
+
+Ha egy kérdéshez több tízezer megfelelő entitás tartozik, törekedj a lehető legteljesebb, hitelesített importálásukra.
+
+A cél az összes jogosult válasz felismerése és a forrásadatok alapján lehetséges helyes pontozása.
+
+Dolgozz tovább a kutatással, az adatimporttal, az eloszláselemzéssel, a kérdéscserével és a teszteléssel, amíg az összes publikálási feltétel teljesül.
+
+Ha egy külső szolgáltatás, adatforrás vagy tényleges technikai korlát miatt egy feltétel nem teljesíthető, azt bizonyíthatóan dokumentáld. Ne állítsd, hogy a kérdés teljesen ellenőrzött, ha nem az.
+
+Az előrehaladás önmagában nem helyettesíti a végterméket.
+
+---
+
+## VÉGSŐ ALAPELV
+
+**A CLOSEISH nem egy statisztikai adatbázisokra épülő számkitaláló játék.**
+
+Egy olyan tudásjáték, amelyben a játékos a világ legkülönfélébb, ismert és kevésbé ismert dolgait próbálja felhasználni egy számszerű célérték lehető legpontosabb, egyirányú megközelítésére.
+
+A kérdések legyenek meglepők, de érthetők.
+
+A válaszlehetőségek legyenek bőségesek, de valósak.
+
+A pontozás legyen szigorú, de igazságos.
+
+A legjobb válaszok legyenek ritkák, de ne mesterségesen ritkítottak.
+
+A hat nap ne érződjön hat különböző statisztikai tesztnek.
+
+**Minden egyes új kérdésnél azt szeretném érezni, hogy a világ egy új, érdekes területéből kaptam kihívást — nem pedig azt, hogy ugyanazt az adatbázist kérdezik le újra.**
+
+A feladat kizárólag akkor tekinthető befejezettnek, ha a következő hat nap mind a 36 kérdése ténylegesen megvalósult, rendelkezik ellenőrzött válaszadatbázissal, megfelel a változatossági és pontozási feltételeknek, és közvetlenül játszható a CLOSEISH alkalmazásban.
+
+
+---
+
+# 2026-10-21 – Második és harmadik nap megvalósítási függeléke
+
+A teljes, eredeti publikálási követelményrendszer változatlanul érvényes. A jelenlegi két naphoz 12 kérdés és 12 különböző forráscsalád került, összesen 121 592 pontozható rekorddal. Az 1. nap eredeti állománya változatlan. A napi témák különböznek; a hét pontkategóriát minden kérdésben újraszámoltuk. Az eredeti specifikáció teljes lefedettségi követelményét a forrásspecifikus részhalmazok NEM teljesítik; ezért a 2. és 3. nap sem minősíthető szerkesztőileg véglegesnek. Lásd `docs/DAY-02-03-COVERAGE-REPORT-HU.md` és `docs/DAY-02-03-AUDIT.csv`. A 4–7. nap tartalma még korábbi kutatási bank.

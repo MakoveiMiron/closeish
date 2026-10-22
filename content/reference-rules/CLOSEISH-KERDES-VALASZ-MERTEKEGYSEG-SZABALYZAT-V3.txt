@@ -1,0 +1,134 @@
+CLOSEISH – KÉRDÉS–VÁLASZ–MÉRTÉKEGYSÉG SZABÁLYRENDSZER V3
+2026. október 21. · első három nap vizsgálata és a következő napok kötelező alapja
+
+ALAPELV
+A játék nem adott CSV-k ismételgetésére, hanem a világ számos területéről származó, tág,
+szabad szöveges válaszok szigorú, adatalapú pontozására épül. A játékkérdés nem a rendelkezésre
+álló adatállomány méretéhez igazított, mesterségesen beszűkített szöveg. Minden ismert, potenciálisan
+válaszoló entitás és minden pontozható entitás külön halmaz.
+
+1. ELŐSZÖR AZ ENTITÁSUNIVERZUM, CSAK UTÁNA A PONTOZÁS
+1.1. A kérdésötlet után rögzíteni kell, hogy milyen típusú dolog egyáltalán megnevezhető: autómodell,
+     focista, emlősfaj, irodalmi Nobel-díjas, film, zeneszám, folyó stb.
+1.2. Importáld az adott kategória összes ellenőrizhető tagját, lehetőleg több egymástól független
+     nyilvántartásból, teljes verzióazonosítóval, dátummal és licenccel.
+1.3. Nagy és nyitott kategóriát nem lehet 38–118 mintasor alapján késznek nyilvánítani. A következő
+     napokban a sok ezres/tízezres, nyitott univerzumoknál a nagy forrásokat teljesen kell feldolgozni.
+1.4. Véges hivatalos kategóriánál a valódi elemszám az elvárt (például 88 csillagkép vagy 45 különböző
+     amerikai elnök), nem kell mesterségesen több ezer rekord.
+1.5. Az importot kanonikus azonosítókhoz kell kötni. Egy entitás sok néven felismerhető, de egy
+     mértékértékét és egy pontszámát nem szabad többször beszámolni.
+1.6. Különböző kérdések rekordjainak egyszerű összeadása nem egyedi entitásszám. A kiadás összesített
+     számát kérdésenkénti és globálisan deduplikált számmal is mellékelni kell.
+
+2. KÜLÖN ENTITÁSFELISMERÉS / JOGOSULTSÁG / MÉRÉS / PONTOZÁS
+2.1. ISMERETLEN: a név nem azonosítható. A játékos szabadon beírhatja felülvizsgálatra; nincs
+     kitalált érték vagy 1200 pont.
+2.2. KÉTÉRTELMŰ: több azonos nevű entitás. Nem szabad véletlenszerűen kiválasztani.
+2.3. FELISMERT, DE JOGOSULATLAN: például 2022-ben nem gólszerző játékos, amikor a kérdés a
+     2022-es vb-n szerzett első góljának percéről szól. Nem értelmezhető a gólperc mint 0 perc.
+2.4. FELISMERT, JOGOSULT, MÉRÉSE HIÁNYZIK: meg kell jeleníteni mérésre váróként, de tilos
+     kitalált nulla mérésként vagy tényleges nulla pontszámként megőrizni.
+2.5. FELISMERT, MÉRT: a tárolt forrásérték, a deklarált kerekítés és a szigorú pontozási szabály
+     együtt határozza meg a pontszámot. A rossz oldalon vagy túl messze álló mért válasz 0 pont.
+2.6. Példa focistára: minden ismert futballista nevet érdemes importálni a személyuniverzumba.
+     Attól, hogy valaki focista, még nincs 2022-es világbajnoki góljának perce. A katalógusban
+     külön jelenjenek meg a gólszerzők (mért), a bizonyítottan nem gólszerzők (nem jogosultak)
+     és az ellenőrzésre váró személyek (ismeretlen jogosultság/mérés). A második és harmadik
+     csoportot nem szabad automatikusan a 0 pontos, MEGMÉRT halmazhoz hozzáadni.
+
+3. KÉRDÉSMEGFOGALMAZÁS
+3.1. Angolul, természetesen, lehetőleg egy mondatban: Name a ... at most/at least [target] [unit].
+3.2. Közelítési irány fix: FROM BELOW legfeljebb (<=), FROM ABOVE legalább (>=).
+3.3. A kérdésből ne derüljön ki a konkrét adatszolgáltató vagy a CSV neve, hacsak maga a
+     feladat közérthető és tisztességes definíciójához nem szükséges.
+3.4. A módszertant, kiadási dátumot, kategóriakorlátokat és forráslinket a VÁLASZKATALÓGUS
+     külön forrásblokkjában kell közölni; a nem nyilvánvaló jogosultságot viszont a kérdés
+     szövege se hallgathatja el.
+3.5. A magyarázó zárójel a kérdő mondat után álljon, pl. (A = 1, ..., Z = 26.)
+3.6. A szokatlan paramétereket rövid, világos magyarázat kísérje; ne a fogalmazás legyen a kihívás.
+3.7. Ne legyen túl sok ország/időszak/régió/altípus-szűkítés, amely elárulja vagy túlzottan
+     korlátozza a válaszkört.
+3.8. Az értékadatok kerekítése a kérdésben átlátható legyen, különösen százaléknál.
+
+4. NAPI ÉS GLOBÁLIS VÁLTOZATOSSÁG
+4.1. Egy napon hat lényegesen különböző témát, entitástípust, mérőszámot és lehetőleg hat
+     különálló forráscsaládot használj.
+4.2. Két szomszédos napon nem szerepelhet ugyanaz a forráscsalád vagy gyakorlatilag ugyanaz
+     a kérdésforma új célszámmal.
+4.3. A teljes hatnapos perióduson belül sem dominálhat földrajzi/adatsor-/évszámtípus.
+4.4. A kész 36 kérdést egyben auditálni kell. Azonos mérőszám eltérő országra vagy évre
+     önmagában nem új ötlet.
+
+5. HÉT PONTKATEGÓRIA
+1200: tökéletes találat, a TÉNYLEGESEN PONTOZOTT (kerekített, ha deklarált) mérték a célérték.
+1000, 800, 600, 400, 200: a kérdésre szabott monoton, nem fedő, egyre távolodó sávok.
+0: igazoltan rossz oldali vagy túl messzi mért eredmény; a két ok elkülönítve megjelenítendő.
+A HIÁNYZÓ MÉRÉS nem egyenlő 0 ponttal; külön REVIEW/PENDING állapotot kell fenntartani.
+A kihagyott forduló 0 összpontot eredményez, de SKIPPED névvel elkülönül.
+Minden publikált kérdésnél mind a hét pontkategóriához legalább egy igazolt válasz legyen.
+A ritka 1200 és 1000 szerkesztői cél, nem érdekében nem ritkítható mesterségesen a rekordhalmaz.
+A pontsávok a teljes importált értékeloszláson legyenek meghatározva, ne tíz kiszemelt válaszra.
+
+6. MÉRTÉKEGYSÉG-VÁLASZTÁS: METRIC / US
+6.1. Az egész játékra vonatkozó, bármikor átváltható beállítás; megjegyzett preferencia.
+6.2. Metrikus: km, m, cm, kg, g, liter, km², hektár.
+6.3. USA: mile, feet, inches, pounds, ounces, US gallon, square miles, acres.
+6.4. A kérdésben lévő határértéket, a célpanelt, pontsávot és a válaszkatalógus mért értékét
+     EGYFORMÁN konvertálni kell. Az USA gallon 3.785411784 liter (nem birodalmi gallon).
+6.5. A játékos által választott egység nem változtatja meg sem a belső kanonikus mérést,
+     sem a határhoz viszonyított irányt, sem a ténylegesen adott pontot.
+6.6. A konvertált kijelző kerekítése csak megjelenítés. Külön jelölni kell, ha az adatok
+     a forrásban egész kg-ra/km²-re/mph-ra kerekítettek: a belső kerekítést nem írhatja
+     felül az UI.
+6.7. Az aktív 30 másodperces határidő egységváltáskor nem indul újra.
+6.8. Mértékegység nélküli vagy években, százalékban, pénznemben mért kérdéseknél
+     ne végezz látszatátváltást; az amerikai pénznem nem automatikusan EUR/ HUF kérdés.
+6.9. Az eltérő rendszerek nem feltétlenül egyértelműen párosíthatók (pl. Celsius / Fahrenheit
+     külön ellenőrzött szabály); ilyenkor csak hiteles átváltással szabad új egységet felvenni.
+
+7. VÁLASZKATALÓGUS
+7.1. Az ALL lap 1200 -> 1000 -> 800 -> 600 -> 400 -> 200 -> 0 sorrendben rendezett,
+     egyenlő pont esetén a célhoz közelebbi valódi érték következik.
+7.2. Minden pontozott 0-s válasz is szerepeljen. A felismerhető, de nem pontozható nevek
+     külön UNSCORED fülön kereshetők, és az általános keresésből is felfedezhetők.
+7.3. A katalógus külön írja ki: X pontozható, Y felismert, nem pontozható, X+Y ismert név,
+     valamint ebből hány SOR VAN ÉPP MEGJELENÍTVE.
+7.4. A 240 soros képernyőnkénti kirajzolás nem 240 elemre vágott adatbázis. Egy második
+     kattintás újabb 240-et jeleníthet meg; keresés a teljes importált halmazon fusson.
+7.5. Név, ellenőrzött érték, kijelzett egység, pontszám, forrás és adatlefedettségi
+     figyelmeztetés legyen elérhető.
+7.6. Az input gépelés közben inline javasoljon; 1. Enter = egyértelmű elfogadás;
+     2. Enter = véglegesítés; nincs automatikus találatválasztás kétértelmű névnél.
+
+8. KÖTELEZŐ ADATMINŐSÉGI ELLENŐRZÉSEK
+8.1. Minden rekordhoz entitásazonosító, kanonikus név és ismert aliasok; mért rekordnál
+     érték, egység, időpont és konkrét forrás.
+8.2. A nagy nyitott univerzumokra külön referencia-entitásszám vagy becsült ismert halmaz,
+     importált hányad, hiányzó mérések és jogosultsági státusz.
+8.3. A bevitel, két Enter, automatikus időzítés, lapfrissítési védelem, egységváltás,
+     archívum és katalógus mobil/asztali nézetben is tesztelt.
+8.4. A teljes kérdésbank minden rekordját pontozd újra automatizált auditorral;
+     a deklarált sávok és az alkalmazásban látható pontok pontosan egyezzenek.
+8.5. A forrás- és lefedettségi hiányosság nem kozmetikázható új kérdésszöveggel, dupla
+     aliaslistával vagy a meglévő adatsor mesterséges duplikálásával.
+8.6. A nagy forrásokat minősített mérőszám-kutatással teljes körűen ki kell egészíteni
+     még a végleges publikálás előtt; egy kérdés csak minden szigorú feltétel teljesítésekor
+     kaphat READY státuszt.
+
+9. KÖTELEZŐ PÉLDÁK AZ ELSŐ HÁROM NAPBÓL
+- 2/4, autók: a régi 38 pontos minta helyett 436 forrásból ismert 2008-as modell van,
+  ebből 411 pontozható és 25 mérésre váró. Ez NEM bizonyít világszintű teljességet.
+- 2/6, labdarúgók: a 118 2022-es gólszerző mellett további 158 gólt nem szerző
+  2022-es résztvevő név azonosított. Ez még NEM a több százezres labdarúgó-univerzum.
+- 2/1, szavak: a 117 493 szavas forrás külön kérdés; nem használható a másik 11
+  kérdés alacsony lefedettségének szépítésére.
+- 3/6, elnökök: a 45 különböző elnök teljes, természetesen véges kategória.
+- 1/1–1/6: az eredeti kérdésbank változatlan, így még külön fejlesztendő az UNESCO,
+  földrajzi és egyes gazdasági források világszintű teljessége.
+
+ÁLLAPOT
+Az itt részletezett szabályok a következő napokhoz kötelezőek. A jelenlegi első három nap
+mechanikailag működik és pontozási auditon átment, de több nyitott kérdés bankja még
+RESEARCH_DRAFT, NEM TELJESEN PUBLIKÁLHATÓ. Az átlátható hiányjelzés fontosabb a
+fiktív »minden lehetséges válasz« állításnál.

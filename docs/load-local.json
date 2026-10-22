@@ -1,0 +1,20 @@
+{
+  "kind": "local closed-loop mixed API benchmark, no TLS/CDN",
+  "date": "2026-10-22T16:51:27.116Z",
+  "node": "v24.19.0",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "cpu_count": 9,
+  "concurrency": 40,
+  "elapsed_seconds": 20.008256445,
+  "requests": 122646,
+  "requests_per_second": 6129.76949476519,
+  "error_count": 0,
+  "statuses": {
+    "200": 122646
+  },
+  "p50_ms": 5.379342000000179,
+  "p95_ms": 14.275338000001284,
+  "p99_ms": 22.32835100000011,
+  "response_bytes": 170331309,
+  "workload": "50% hints, 30% score, 10% catalogue first page, 10% daily; largest dictionary day; repeated queries; server process separate from load generator"
+}

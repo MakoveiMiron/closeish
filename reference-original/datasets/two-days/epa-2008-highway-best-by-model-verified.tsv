@@ -1,0 +1,47 @@
+ACURA|MDX:20;RDX:22;RL:24;TL:27;TSX:28
+ASTON MARTIN|DB9:18;DB9 Volante:17;V8 Vantage:20
+AUDI|A3:29;A4:30;A4 Avant:25;A4 Cabriolet:25;A6:27;A6 Avant:25;A8:23;A8 L:23;Q7:20;R8:20;RS4:20;RS4 Cabriolet:19;S4:21;S4 Avant:21;S4 Cabriolet:21;S5:21;S6:19;S8:19;TT Coupe:31;TT Roadster:29
+BENTLEY|Arnage:15;Azure:15;Continental Flying Spur:17;Continental GT:17;Continental GTC:17
+BMW|328ci:31;328ci Convertible:30;328cxi:28;328i:31;328i Sport Wagon:29;328xi:28;328xi Sport Wagon:28;335ci:28;335ci Convertible:28;335cxi:27;335i:28;335xi:27;528i:30;528xi:28;535i:28;535xi:27;535xi Sport Wagon:26;550i:25;650ci:25;650ci Convertible:25;750i:25;750li:25;760li:22;Alpina B7:23;M5:18;M6:18;M6 Convertible:19;X3:26;X5:23;Z4:31;Z4 Coupe:31
+BUGATTI|Veyron:14
+BUICK|Allure:28;Enclave:24;LaCrosse:28;Lucerne:25;Terraza:23
+CADILLAC|CTS:26;DTS:23;Escalade:19;Limousine:18;SRX:22;STS:26;XLR:24
+CHEVROLET|Avalanche 1500:20;Aveo:34;Aveo 5:34;Classic:31;Cobalt:33;Colorado:24;Corvette:26;Equinox:24;Express 1500:16;Express 2500:16;Express 3500:?;HHR:30;Impala:29;Malibu:30;Malibu Hybrid:32;Silverado 15:20;Silverado 25:?;Silverado 35:?;Suburban 1500:20;Suburban 2500:?;Tahoe 1500:20;Tahoe 1500 Hybrid:22;Trailblazer:20;Uplander:23;Van 1500:20;Van 2500:20;Van 3500:?
+CHRYSLER|300:26;Aspen:19;Crossfire:25;Pacifica:23;PT Cruiser:26;PT Cruiser Convertible:26;Sebring:30;Sebring Convertible:29;SRT-8:26;Town & Country:24
+DODGE|3500:?;Avenger:30;Caliber:27;Caravan:24;Challenger:18;Charger:26;Dakota:20;Durango:19;Magnum:26;Nitro:22;RAM 1500:19;RAM 2500:?;RAM 3500:?;Sprinter 2500:?;Viper:22;Viper Convertible:22
+FERRARI|599 GTB Fiorano:15;612 Scaglietti:16
+FORD|Crown Victoria FFV:23;E150:?;E150 Club Wagon FFV:?;E150 FFV:?;E250:?;E250 FFV:?;E350:?;Edge:24;Escape:28;Escape Hybrid:30;Expedition:18;Explorer:20;Explorer Sport Trac:20;F150:20;F150 FFV:18;F150 STX SE:19;F150 STX SE FFV:19;F150 Supercharged:15;F250:?;F350:?;Focus:35;Fusion:29;Mustang:26;Ranger:26;Taurus:28;Taurus X:24
+FREIGHTLINER|2500:?;3500:?
+GMC|Acadia:24;Canyon:24;Envoy:20;Savana 1500:20;Savana 2500:20;Savana 3500:?;Sierra 15:20;Sierra 25:?;Sierra 35:?;Yukon 1500:20;Yukon 1500 Hybrid:22;Yukon 2500:?
+HONDA|Accord:31;Civic:36;Civic Hybrid:45;CR-V:27;Element:25;Fit:34;Odyssey:25;Pilot:22;Ridgeline:20;S2000:25
+HUMMER|H2:?;H3:18
+HYUNDAI|Accent:33;Azera:26;Elantra:33;Entourage:23;Santa Fe:24;Sonata:31;Tiburon:28;Tucson:25;Veracruz:23
+INFINITI|FX35:22;FX45:17;G35:25;G35X:23;G37:26;M35:23;M35X:22;M45:21;M45X:20;QX56:18
+ISUZU|Ascender:20;I-290:24;I-370:22
+JEEP|Commander:19;Compass:28;Grand Cherokee:23;Liberty:22;Patriot:28;Wrangler:21
+KIA|Amanti:24;Optima:31;Rio:35;Rondo:26;Sedona:23;Sorento:21;Spectra:32;Sportage:25
+LAMBORGHINI|Gallardo Coupe:17;Gallardo Spyder:16;Murcielago:14;Murcielago Reventon:14;Murcielago Roadster:14
+LAND ROVER|LR2:23;LR3:17;Range Rover:18;Range Rover Sport:18
+LEXUS|ES 350:27;GS 350:27;GS 450h:25;GS 460:24;GX 470:18;IS 250:29;IS 350:25;LS 460:24;LS 460 L:24;LS 600HL:22;LX 570:18;RX 350:23;RX 400H:24;SC 430:23
+LINCOLN|Mark LT:17;MKX:24;MKZ:28;Navigator:18
+LOTUS|Elise:27;Exige:27
+MASERATI|Granturismo:21;Quattroporte:19
+MAZDA|3:32;5:28;6:29;B2300:26;B3000:21;B4000:20;CX-7:23;CX-9:22;MX-5:28;RX-8:23;Tribute:28;Tribute Hybrid:30
+MERCEDES-BENZ|C300:26;C350:25;CL550:21;CL600:17;CL63 AMG:18;CL65 AMG:17;CLK350:25;CLK350 Cabriolet:25;CLK550:22;CLK550 Cabriolet:21;CLK63 AMG:19;CLK63 AMG Cabriolet:18;CLS550:21;CLS63 AMG:18;E320 Bluetec:32;E350:24;E550:22;E550 4Matic:19;E63 AMG:19;E63 AMG Wagon:18;G500:15;G55 AMG:13;GL320 CDI 4Matic:24;GL450 4Matic:18;GL550 4Matic:17;Maybach 57:16;Maybach 57S:16;Maybach 62:16;Maybach 62S:16;ML320 CDI 4Matic:24;ML350 4Matic:20;ML550 4Matic:18;R320 CDI 4Matic:24;R350:20;R350 4Matic:19;S550:21;S550 4Matic:20;S600:17;S63 AMG:17;S65 AMG:17;SL55 AMG:17;SL550:21;SL600:18;SL65 AMG:18;SLK280:25;SLK350:23;SLK55 AMG:20;SLR:16
+MERCURY|Grand Marquis FFV:23;Mariner:26;Mariner Hybrid:30;Milan:29;Mountaineer:20;Sable:28
+MINI|Mini Cooper Convertible:35;Mini Cooper S Convertible:31
+MITSUBISHI|Eclipse:28;Eclipse Spyder:26;Endeavor:22;Galant:27;Lancer:29;Outlander:25;Raider:20
+NISSAN|350Z:25;350Z Roadster:24;Altima:32;Altima Hybrid:33;Armada:18;Frontier:23;Maxima:25;Pathfinder:22;Quest:24;Rogue:27;Sentra:33;Titan:17;Versa:33;Xterra:20
+PONTIAC|G5:33;G6:30;G8:24;Grand Prix:28;Pursuit:33;Solstice:28;Torrent:24;Vibe:33
+PORSCHE|911 GT2:23;911 GT3:22;911 GT3 RS:22;911 Turbo:23;911 Turbo Cabriolet:24;Boxster:29;Boxster S:26;Carrera Cabriolet:26;Carrera Coupe:26;Carrera Targa:25;Cayenne:20;Cayenne GTS:?;Cayenne S:19;Cayenne Turbo:19;Cayman:29;Cayman S:26
+ROLLS-ROYCE|Phantom:19
+ROUSH|Stage 3 F150:15;Stage 3 Mustang:20
+SAAB|9-3 Convertible:27;9-3 Sport Sedan:29;9-3 Sportcombi:29;9-5:28;9-5 Sportcombi:28;9-7X:20
+SALEEN|S281:18
+SATURN|Aura:30;Aura Hybrid:32;Outlook:24;Sky:28;Vue:26;Vue Hybrid:32
+SHELBY|Mustang GT:22
+SUBARU|Forester:27;Impreza:27;Impreza Wagon:27;Legacy:27;Outback Sport:27;Outback Wagon:26;Tribeca:21
+SUZUKI|Forenza:28;Forenza Wagon:27;Grand Vitara:22;Reno:28;SX4:31;XL7:22
+TOYOTA|4Runner:21;Avalon:28;Camry:31;Camry Hybrid:34;Corolla:37;FJ Cruiser:20;Highlander:24;Highlander Hybrid:25;Land Cruiser:18;Matrix:33;Prius:45;RAV4:27;Scion TC:29;Scion XB:28;Scion XD:33;Sequoia:19;Sienna:23;Solara:31;Solara Convertible:26;Tacoma:25;Tundra:19;Yaris:36
+VOLKSWAGEN|Eos:30;GTI:29;Jetta:29;Jetta Wagon:29;New Beetle:29;New Beetle Convertible:28;Passat:29;Passat Wagon:29;R32:23;Rabbit:29;Touareg:20
+VOLVO|C30:28;C70 Convertible:27;S40:28;S60:27;S80:24;V50:28;V70:24;XC 70:22;XC 90:20

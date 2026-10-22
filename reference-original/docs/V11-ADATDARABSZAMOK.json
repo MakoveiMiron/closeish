@@ -1,0 +1,21 @@
+{
+  "version": "V11",
+  "video_games": {
+    "before": 40,
+    "new": 309,
+    "now": 349,
+    "full_corpus": false
+  },
+  "waterfalls": {
+    "before": 41,
+    "new": 38,
+    "now": 79,
+    "full_corpus": false
+  },
+  "nile": {
+    "measured": 100,
+    "unverified_years_new": 56,
+    "total_identified_years": 156,
+    "coverage": "1871–1970 actually measured; 1971–2026 no verified comparable measurement; 0 game points"
+  }
+}

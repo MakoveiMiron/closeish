@@ -1,0 +1,14 @@
+{
+  "source_url": "https://github.com/plotly/datasets/blob/master/gapminder_unfiltered.csv",
+  "selection": "Original unfiltered Gapminder country historical records with both requested years previously omitted from frozen filtered day dataset. Entity aliases were reconciled against existing canonical answers.",
+  "Cape Verde": {
+    "1952": {
+      "pop": 155037,
+      "gdpPercap": 594.7341659
+    },
+    "2007": {
+      "pop": 423613,
+      "gdpPercap": 3205.479398
+    }
+  }
+}

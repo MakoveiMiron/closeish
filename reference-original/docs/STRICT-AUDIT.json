@@ -1,0 +1,1344 @@
+{
+  "date": "2026-10-21",
+  "publication_approved": false,
+  "total_questions": 36,
+  "unique_topics": 15,
+  "unique_source_families": 17,
+  "total_scored_records": 137032,
+  "total_recognized_unverified": 258,
+  "unique_canonical_names": 121364,
+  "unique_source_entity_ids": 122260,
+  "cross_source_name_collisions": 3666,
+  "source_question_counts": {
+    "cmudict-0.7b": 1,
+    "msleep-body-mass": 1,
+    "css4-named-colors": 1,
+    "mpg-2008-cars": 2,
+    "txhousing-2010-03": 2,
+    "openfootball-fifa-worldcup-2022": 1,
+    "summer-olympics-country-participation": 1,
+    "nobel-literature-official-1901-2026": 1,
+    "uscounties-shape-geodesy": 1,
+    "statecrime-2009-violent": 2,
+    "countryinfo-frozen-demographic": 1,
+    "us-presidential-terms-1953-2009": 2,
+    "gap-frozen-snapshot": 4,
+    "element-frozen-snapshot": 4,
+    "basemap-county-shapes": 4,
+    "heritage_country-frozen-snapshot": 4,
+    "country-frozen-snapshot": 4
+  },
+  "topic_question_counts": {
+    "language": 1,
+    "biology": 1,
+    "design": 1,
+    "transport": 2,
+    "economics": 3,
+    "sports": 2,
+    "literature": 1,
+    "geography": 10,
+    "society": 1,
+    "demography": 1,
+    "history": 3,
+    "science": 4,
+    "culture": 4,
+    "housing": 1,
+    "public-safety": 1
+  },
+  "blocking_failures": [
+    {
+      "day": 4,
+      "round": "ALL",
+      "kind": "daily_topics_not_distinct",
+      "detail": "5 topics across 6 rounds: ['economics', 'science', 'geography', 'culture', 'housing', 'geography']"
+    },
+    {
+      "day": 5,
+      "round": "ALL",
+      "kind": "daily_topics_not_distinct",
+      "detail": "5 topics across 6 rounds: ['economics', 'science', 'geography', 'culture', 'history', 'geography']"
+    },
+    {
+      "day": 5,
+      "round": "ALL",
+      "kind": "source_repeated_across_adjacent_days",
+      "detail": "basemap-county-shapes, country-frozen-snapshot, element-frozen-snapshot, gap-frozen-snapshot, heritage_country-frozen-snapshot"
+    },
+    {
+      "day": 6,
+      "round": "ALL",
+      "kind": "daily_topics_not_distinct",
+      "detail": "5 topics across 6 rounds: ['history', 'science', 'geography', 'culture', 'transport', 'geography']"
+    },
+    {
+      "day": 6,
+      "round": "ALL",
+      "kind": "source_repeated_across_adjacent_days",
+      "detail": "basemap-county-shapes, country-frozen-snapshot, element-frozen-snapshot, gap-frozen-snapshot, heritage_country-frozen-snapshot"
+    },
+    {
+      "day": 7,
+      "round": "ALL",
+      "kind": "daily_topics_not_distinct",
+      "detail": "4 topics across 6 rounds: ['geography', 'science', 'geography', 'culture', 'public-safety', 'geography']"
+    },
+    {
+      "day": 7,
+      "round": "ALL",
+      "kind": "source_repeated_across_adjacent_days",
+      "detail": "basemap-county-shapes, country-frozen-snapshot, element-frozen-snapshot, gap-frozen-snapshot, heritage_country-frozen-snapshot"
+    },
+    {
+      "day": "ALL",
+      "round": "ALL",
+      "kind": "source_concentration",
+      "detail": "36 questions from 17 source-family identifiers, most repeated: [('gap-frozen-snapshot', 4), ('element-frozen-snapshot', 4), ('basemap-county-shapes', 4), ('heritage_country-frozen-snapshot', 4), ('country-frozen-snapshot', 4), ('mpg-2008-cars', 2), ('txhousing-2010-03', 2), ('statecrime-2009-violent', 2), ('us-presidential-terms-1953-2009', 2)]"
+    },
+    {
+      "day": "ALL",
+      "round": "ALL",
+      "kind": "source_family_overrepresented",
+      "detail": "[('gap-frozen-snapshot', 4), ('element-frozen-snapshot', 4), ('basemap-county-shapes', 4), ('heritage_country-frozen-snapshot', 4), ('country-frozen-snapshot', 4), ('mpg-2008-cars', 2), ('txhousing-2010-03', 2), ('statecrime-2009-violent', 2)]"
+    }
+  ],
+  "warnings": [
+    {
+      "day": 2,
+      "round": 2,
+      "kind": "incomplete_open_category",
+      "detail": "83 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 2,
+      "round": 4,
+      "kind": "incomplete_open_category",
+      "detail": "38 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 2,
+      "round": 5,
+      "kind": "incomplete_open_category",
+      "detail": "46 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 2,
+      "round": 6,
+      "kind": "incomplete_open_category",
+      "detail": "118 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 3,
+      "round": 3,
+      "kind": "alias_ambiguity",
+      "detail": "14 aliases refer to multiple IDs; examples: ['baltimoremd', 'baltimoremaryland', 'stlouismo', 'stlouismissouri', 'bedfordva', 'bedfordvirginia', 'fairfaxva', 'fairfaxvirginia']"
+    },
+    {
+      "day": 3,
+      "round": 4,
+      "kind": "incomplete_open_category",
+      "detail": "51 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 3,
+      "round": 5,
+      "kind": "incomplete_open_category",
+      "detail": "231 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 3,
+      "round": 6,
+      "kind": "incomplete_open_category",
+      "detail": "11 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 4,
+      "round": 1,
+      "kind": "incomplete_open_category",
+      "detail": "142 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 4,
+      "round": 2,
+      "kind": "incomplete_open_category",
+      "detail": "118 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 4,
+      "round": 3,
+      "kind": "alias_ambiguity",
+      "detail": "14 aliases refer to multiple IDs; examples: ['baltimoremd', 'baltimoremaryland', 'stlouismo', 'stlouismissouri', 'bedfordva', 'bedfordvirginia', 'fairfaxva', 'fairfaxvirginia']"
+    },
+    {
+      "day": 4,
+      "round": 4,
+      "kind": "incomplete_open_category",
+      "detail": "121 measured + 53 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 4,
+      "round": 5,
+      "kind": "incomplete_open_category",
+      "detail": "46 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 4,
+      "round": 6,
+      "kind": "incomplete_open_category",
+      "detail": "230 measured + 3 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 5,
+      "round": 1,
+      "kind": "incomplete_open_category",
+      "detail": "142 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 5,
+      "round": 2,
+      "kind": "incomplete_open_category",
+      "detail": "95 measured + 23 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 5,
+      "round": 3,
+      "kind": "alias_ambiguity",
+      "detail": "14 aliases refer to multiple IDs; examples: ['baltimoremd', 'baltimoremaryland', 'stlouismo', 'stlouismissouri', 'bedfordva', 'bedfordvirginia', 'fairfaxva', 'fairfaxvirginia']"
+    },
+    {
+      "day": 5,
+      "round": 4,
+      "kind": "incomplete_open_category",
+      "detail": "121 measured + 53 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 5,
+      "round": 5,
+      "kind": "incomplete_open_category",
+      "detail": "11 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 5,
+      "round": 6,
+      "kind": "incomplete_open_category",
+      "detail": "230 measured + 3 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 6,
+      "round": 1,
+      "kind": "incomplete_open_category",
+      "detail": "142 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 6,
+      "round": 2,
+      "kind": "incomplete_open_category",
+      "detail": "118 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 6,
+      "round": 3,
+      "kind": "alias_ambiguity",
+      "detail": "14 aliases refer to multiple IDs; examples: ['baltimoremd', 'baltimoremaryland', 'stlouismo', 'stlouismissouri', 'bedfordva', 'bedfordvirginia', 'fairfaxva', 'fairfaxvirginia']"
+    },
+    {
+      "day": 6,
+      "round": 4,
+      "kind": "incomplete_open_category",
+      "detail": "174 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 6,
+      "round": 5,
+      "kind": "incomplete_open_category",
+      "detail": "38 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 6,
+      "round": 6,
+      "kind": "incomplete_open_category",
+      "detail": "158 measured + 75 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 7,
+      "round": 1,
+      "kind": "incomplete_open_category",
+      "detail": "142 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 7,
+      "round": 2,
+      "kind": "incomplete_open_category",
+      "detail": "117 measured + 1 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 7,
+      "round": 3,
+      "kind": "alias_ambiguity",
+      "detail": "14 aliases refer to multiple IDs; examples: ['baltimoremd', 'baltimoremaryland', 'stlouismo', 'stlouismissouri', 'bedfordva', 'bedfordvirginia', 'fairfaxva', 'fairfaxvirginia']"
+    },
+    {
+      "day": 7,
+      "round": 4,
+      "kind": "incomplete_open_category",
+      "detail": "174 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 7,
+      "round": 5,
+      "kind": "incomplete_open_category",
+      "detail": "51 measured + 0 pending; source subset NOT proven globally complete"
+    },
+    {
+      "day": 7,
+      "round": 6,
+      "kind": "incomplete_open_category",
+      "detail": "190 measured + 43 pending; source subset NOT proven globally complete"
+    }
+  ],
+  "questions": [
+    {
+      "day": 2,
+      "round": 1,
+      "topic": "language",
+      "source_family": "cmudict-0.7b",
+      "metric_family": "english-word-a1z26",
+      "question": "Name a CMU dictionary headword whose letter score (A=1 to Z=26, added together) is at most 226.",
+      "measured": 117493,
+      "unverified": 0,
+      "recognized": 117493,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 10,
+        "800": 26,
+        "600": 50,
+        "400": 97,
+        "200": 377,
+        "0": 116932
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "full_alphabetic_headwords_of_installed_cmudict",
+        "claimed_exhaustive": false,
+        "entity_scope": "Every unique alphabetic CMU Pronouncing Dictionary headword in the installed release; includes proper names and loanwords.",
+        "dataset_count": 117493
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 2,
+      "round": 2,
+      "topic": "biology",
+      "source_family": "msleep-body-mass",
+      "metric_family": "mammal-study-bodymass",
+      "question": "Name a mammal from the published sleep study whose recorded body mass is at most 56 kg (rounded to the nearest kg).",
+      "measured": 83,
+      "unverified": 0,
+      "recognized": 83,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 2,
+        "600": 4,
+        "400": 9,
+        "200": 9,
+        "0": 57
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_ggplot2_research_sample_only",
+        "claimed_exhaustive": false,
+        "entity_scope": "All measured mammal names from the finite ggplot2 msleep research sample; not all living mammal species.",
+        "dataset_count": 83
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 2,
+      "round": 3,
+      "topic": "design",
+      "source_family": "css4-named-colors",
+      "metric_family": "css4-colour-brightness",
+      "question": "Name a named CSS4 colour whose perceived RGB brightness is at least 201 out of 255 (rounded to an integer).",
+      "measured": 148,
+      "unverified": 0,
+      "recognized": 148,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 3,
+        "800": 3,
+        "600": 8,
+        "400": 16,
+        "200": 4,
+        "0": 113
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_148_css4_names",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly the 148 named CSS4 colours; RGB brightness uses weighted channel sum, rounded to integer.",
+        "dataset_count": 148
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 2,
+      "round": 4,
+      "topic": "transport",
+      "source_family": "mpg-2008-cars",
+      "metric_family": "automobiles-2008-fuel-efficiency",
+      "question": "Name a 2008 car model in the historic fuel-economy dataset that could travel at least 360 highway miles on 15 gallons.",
+      "measured": 38,
+      "unverified": 0,
+      "recognized": 38,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 2,
+        "600": 2,
+        "400": 3,
+        "200": 9,
+        "0": 19
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_ggplot2_mpg_2008_sample_only",
+        "claimed_exhaustive": false,
+        "entity_scope": "All 38 distinct 2008 car model labels in ggplot2 mpg; not every 2008 vehicle sold.",
+        "dataset_count": 38
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 2,
+      "round": 5,
+      "topic": "economics",
+      "source_family": "txhousing-2010-03",
+      "metric_family": "texas-2010-housing-market",
+      "question": "Name a Texas housing market area with a March 2010 median sale price at most $108,200 (nearest $100).",
+      "measured": 46,
+      "unverified": 0,
+      "recognized": 46,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 2,
+        "400": 4,
+        "200": 1,
+        "0": 36
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_bundled_tseries_month_only",
+        "claimed_exhaustive": false,
+        "entity_scope": "All 46 MLS market areas reported in the bundled March 2010 Texas housing source.",
+        "dataset_count": 46
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 2,
+      "round": 6,
+      "topic": "sports",
+      "source_family": "openfootball-fifa-worldcup-2022",
+      "metric_family": "football-first-goal-minute",
+      "question": "Name a goalscorer at the 2022 men’s World Cup whose earliest listed goal was in minute 60 or later.",
+      "measured": 118,
+      "unverified": 0,
+      "recognized": 118,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 4,
+        "600": 9,
+        "400": 15,
+        "200": 8,
+        "0": 79
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_2022_public_match_goal_event_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "Distinct named 2022 World Cup goalscorers in the openfootball goal-event feed; name and own-goal details are source dependent.",
+        "dataset_count": 118
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 3,
+      "round": 1,
+      "topic": "sports",
+      "source_family": "summer-olympics-country-participation",
+      "metric_family": "summer-olympics-national-delegations",
+      "question": "Name a Summer Olympics edition (1896–2024) with at most 140 participating nations in the historic series.",
+      "measured": 30,
+      "unverified": 0,
+      "recognized": 30,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 2,
+        "400": 4,
+        "200": 8,
+        "0": 13
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_all_30_held_summer_olympic_editions_to_2024",
+        "claimed_exhaustive": true,
+        "entity_scope": "30 Summer Olympics held from 1896 through 2024; cancelled 1916, 1940, 1944 and the unofficial 1906 games excluded.",
+        "dataset_count": 30
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 3,
+      "round": 2,
+      "topic": "literature",
+      "source_family": "nobel-literature-official-1901-2026",
+      "metric_family": "nobel-literature-award-year",
+      "question": "Name a Nobel Prize in Literature laureate who received the award in 2000 or later.",
+      "measured": 123,
+      "unverified": 0,
+      "recognized": 123,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 4,
+        "600": 6,
+        "400": 7,
+        "200": 7,
+        "0": 96
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "full_nobel_prize_literature_1901_2026",
+        "claimed_exhaustive": true,
+        "entity_scope": "Entire Nobel Prize in Literature laureate category, award years 1901 through 2026.",
+        "dataset_count": 123
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 3,
+      "round": 3,
+      "topic": "geography",
+      "source_family": "uscounties-shape-geodesy",
+      "metric_family": "us-counties-geodesic-area",
+      "question": "Name a U.S. county or county equivalent whose approximate mapped land area is at most 2,074 km² (nearest km²).",
+      "measured": 3220,
+      "unverified": 0,
+      "recognized": 3220,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 10,
+        "800": 30,
+        "600": 60,
+        "400": 107,
+        "200": 443,
+        "0": 2569
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_bundled_basemap_county_polygons",
+        "claimed_exhaustive": false,
+        "entity_scope": "All 3,220 valid US county/county-equivalent shapes with known mapped geodesic area in bundled snapshot.",
+        "dataset_count": 3220
+      },
+      "has_ambiguous_alias": true,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 3,
+      "round": 4,
+      "topic": "society",
+      "source_family": "statecrime-2009-violent",
+      "metric_family": "us-2009-violent-crime-rate",
+      "question": "Name a U.S. state or Washington, D.C., with at least 358 recorded violent crimes per 100,000 residents in 2009.",
+      "measured": 51,
+      "unverified": 0,
+      "recognized": 51,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 2,
+        "600": 4,
+        "400": 7,
+        "200": 11,
+        "0": 25
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_statecrime_2009_source",
+        "claimed_exhaustive": false,
+        "entity_scope": "50 US states and District of Columbia, as tabulated in 2009 statsmodels statecrime snapshot.",
+        "dataset_count": 51
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 3,
+      "round": 5,
+      "topic": "demography",
+      "source_family": "countryinfo-frozen-demographic",
+      "metric_family": "world-country-frozen-population",
+      "question": "Name a country or territory whose historical countryinfo population is at most 25,000,000 people (nearest million).",
+      "measured": 231,
+      "unverified": 0,
+      "recognized": 231,
+      "tier_counts": {
+        "1200": 2,
+        "1000": 3,
+        "800": 3,
+        "600": 3,
+        "400": 14,
+        "200": 97,
+        "0": 109
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "historic_countryinfo_sample_not_exhaustive",
+        "claimed_exhaustive": false,
+        "entity_scope": "Countries and territories with nonzero recorded population in bundled countryinfo snapshot; outdated/source-varying years.",
+        "dataset_count": 231
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 3,
+      "round": 6,
+      "topic": "history",
+      "source_family": "us-presidential-terms-1953-2009",
+      "metric_family": "president-first-office-year",
+      "question": "Name a U.S. president in the 1953–2009 timeline who first took office in 1977 or later.",
+      "measured": 11,
+      "unverified": 0,
+      "recognized": 11,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 1,
+        "400": 1,
+        "200": 1,
+        "0": 5
+      },
+      "scope": {
+        "type": "finite_frozen_dataset",
+        "coverage": "complete_for_bundled_1953_2009_presidential_timeline",
+        "claimed_exhaustive": false,
+        "entity_scope": "All eleven presidents in the bounded ggplot2 1953–2009 presidential timeline.",
+        "dataset_count": 11
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 4,
+      "round": 1,
+      "topic": "economics",
+      "source_family": "gap-frozen-snapshot",
+      "metric_family": "gap-gdp",
+      "question": "Name a country or territory listed by Gapminder with 1972 GDP per person of at most US$12,800. (Rounded to the nearest US$100.)",
+      "measured": 142,
+      "unverified": 0,
+      "recognized": 142,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 4,
+        "400": 6,
+        "200": 9,
+        "0": 120
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 142
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 4,
+      "round": 2,
+      "topic": "science",
+      "source_family": "element-frozen-snapshot",
+      "metric_family": "element-vdw_pm",
+      "question": "Name a chemical element with van der Waals radius at least 202 pm. (Values rounded to the nearest whole unit.)",
+      "measured": 118,
+      "unverified": 0,
+      "recognized": 118,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 11,
+        "800": 11,
+        "600": 2,
+        "400": 8,
+        "200": 20,
+        "0": 65
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 118
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 4,
+      "round": 3,
+      "topic": "geography",
+      "source_family": "basemap-county-shapes",
+      "metric_family": "basemap-county-shapes-width",
+      "question": "Name a U.S. county or county equivalent whose mapped east–west span is at least 108 km. (Approximate bounding-box width; nearest km.)",
+      "measured": 3220,
+      "unverified": 1,
+      "recognized": 3221,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 4,
+        "800": 7,
+        "600": 4,
+        "400": 22,
+        "200": 55,
+        "0": 3127
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "source_snapshot",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 3221 source records (measured and pending separately)",
+        "dataset_count": 3221
+      },
+      "has_ambiguous_alias": true,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 4,
+      "round": 4,
+      "topic": "culture",
+      "source_family": "heritage_country-frozen-snapshot",
+      "metric_family": "heritage_country-max_area",
+      "question": "Name a country or territory named in the UNESCO World Heritage dataset whose area of its largest UNESCO World Heritage site is at least 2,441,200 hectares. (Values rounded to the nearest whole unit.)",
+      "measured": 121,
+      "unverified": 53,
+      "recognized": 174,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 1,
+        "400": 1,
+        "200": 3,
+        "0": 113
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 174
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 4,
+      "round": 5,
+      "topic": "housing",
+      "source_family": "txhousing-2010-03",
+      "metric_family": "texas-city-txhousing-2010-03",
+      "question": "Name a Texas housing-market area whose median home sale price in March 2010 was at least $108,200. (Prices are rounded to the nearest $100.)",
+      "measured": 46,
+      "unverified": 0,
+      "recognized": 46,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 2,
+        "600": 4,
+        "400": 3,
+        "200": 8,
+        "0": 27
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "complete_for_bundled_snapshot_not_global_category",
+        "claimed_exhaustive": false,
+        "entity_scope": "Only the 46 Texas MLS market areas in the source sample; includes counties and metropolitan areas, not just cities.",
+        "dataset_count": 46
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 4,
+      "round": 6,
+      "topic": "geography",
+      "source_family": "country-frozen-snapshot",
+      "metric_family": "country-capital_greenwich_distance",
+      "question": "Name a country or territory whose east-west equatorial arc distance of its capital longitude from Greenwich is at least 6,250 km. (Values rounded to the nearest 10 kilometres.)",
+      "measured": 230,
+      "unverified": 3,
+      "recognized": 233,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 6,
+        "400": 12,
+        "200": 15,
+        "0": 194
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 233
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 5,
+      "round": 1,
+      "topic": "economics",
+      "source_family": "gap-frozen-snapshot",
+      "metric_family": "gap-gdp_gain",
+      "question": "Name a country or territory listed by Gapminder whose inflation-adjusted GDP per person increased by at most US$29,000 between 1952 and 2007. (Rounded to the nearest US$100.)",
+      "measured": 142,
+      "unverified": 0,
+      "recognized": 142,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 3,
+        "400": 7,
+        "200": 8,
+        "0": 121
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 142
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 5,
+      "round": 2,
+      "topic": "science",
+      "source_family": "element-frozen-snapshot",
+      "metric_family": "element-bohr_pm",
+      "question": "Name a chemical element with Rb0 atomic radius parameter at most 235 pm. (Values rounded to the nearest whole unit.)",
+      "measured": 95,
+      "unverified": 23,
+      "recognized": 118,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 7,
+        "400": 14,
+        "200": 15,
+        "0": 56
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 118
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 5,
+      "round": 3,
+      "topic": "geography",
+      "source_family": "basemap-county-shapes",
+      "metric_family": "basemap-county-shapes-perimeter",
+      "question": "Name a U.S. county or county equivalent whose mapped perimeter is at most 308 km. (Approximate polygon boundary; nearest km.)",
+      "measured": 3220,
+      "unverified": 1,
+      "recognized": 3221,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 2,
+        "600": 70,
+        "400": 170,
+        "200": 376,
+        "0": 2600
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "source_snapshot",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 3221 source records (measured and pending separately)",
+        "dataset_count": 3221
+      },
+      "has_ambiguous_alias": true,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 5,
+      "round": 4,
+      "topic": "culture",
+      "source_family": "heritage_country-frozen-snapshot",
+      "metric_family": "heritage_country-median_area",
+      "question": "Name a country or territory named in the UNESCO World Heritage dataset whose median inscribed area of its UNESCO World Heritage sites is at most 119 hectares. (Values rounded to the nearest whole unit.)",
+      "measured": 121,
+      "unverified": 53,
+      "recognized": 174,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 1,
+        "400": 3,
+        "200": 4,
+        "0": 110
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 174
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 5,
+      "round": 5,
+      "topic": "history",
+      "source_family": "us-presidential-terms-1953-2009",
+      "metric_family": "president-us-presidential-terms-1953-2009",
+      "question": "Name a US president who first took office in 1,993 or earlier, among presidents who took office from 1953 to 2009.",
+      "measured": 11,
+      "unverified": 0,
+      "recognized": 11,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 1,
+        "400": 1,
+        "200": 3,
+        "0": 3
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "complete_for_bundled_snapshot_not_global_category",
+        "claimed_exhaustive": false,
+        "entity_scope": "Finite list of the 11 presidencies documented in this 1953–2009 snapshot; does not cover every US president.",
+        "dataset_count": 11
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 5,
+      "round": 6,
+      "topic": "geography",
+      "source_family": "country-frozen-snapshot",
+      "metric_family": "country-lat_difference_km",
+      "question": "Name a country or territory whose north-south separation of its capital from its mapped centre is at most 350 km. (Values rounded to the nearest 10 kilometres.)",
+      "measured": 230,
+      "unverified": 3,
+      "recognized": 233,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 5,
+        "400": 9,
+        "200": 15,
+        "0": 198
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 233
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 6,
+      "round": 1,
+      "topic": "history",
+      "source_family": "gap-frozen-snapshot",
+      "metric_family": "gap-pop_ratio",
+      "question": "Name a country or territory listed by Gapminder whose population grew by at least 34% between 1952 and 2007. (Percentages are rounded to the nearest whole percent.)",
+      "measured": 142,
+      "unverified": 0,
+      "recognized": 142,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 2,
+        "400": 2,
+        "200": 5,
+        "0": 130
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 142
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 6,
+      "round": 2,
+      "topic": "science",
+      "source_family": "element-frozen-snapshot",
+      "metric_family": "element-isotope_mass",
+      "question": "Name a chemical element with mass of its most common isotope at least 208 u. (Values rounded to the nearest whole unit.)",
+      "measured": 118,
+      "unverified": 0,
+      "recognized": 118,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 1,
+        "600": 4,
+        "400": 10,
+        "200": 12,
+        "0": 88
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 118
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 6,
+      "round": 3,
+      "topic": "geography",
+      "source_family": "basemap-county-shapes",
+      "metric_family": "basemap-county-shapes-height",
+      "question": "Name a U.S. county or county equivalent whose mapped north–south span is at least 118 km. (Approximate bounding-box height; nearest km.)",
+      "measured": 3220,
+      "unverified": 1,
+      "recognized": 3221,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 6,
+        "800": 2,
+        "600": 3,
+        "400": 13,
+        "200": 37,
+        "0": 3158
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "source_snapshot",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 3221 source records (measured and pending separately)",
+        "dataset_count": 3221
+      },
+      "has_ambiguous_alias": true,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 6,
+      "round": 4,
+      "topic": "culture",
+      "source_family": "heritage_country-frozen-snapshot",
+      "metric_family": "heritage_country-natural_share",
+      "question": "Name a country or territory named in the UNESCO World Heritage dataset whose share of its listed UNESCO sites classified as natural is at least 16%. (Values rounded to the nearest whole percent.)",
+      "measured": 174,
+      "unverified": 0,
+      "recognized": 174,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 1,
+        "600": 5,
+        "400": 3,
+        "200": 10,
+        "0": 152
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 174
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 6,
+      "round": 5,
+      "topic": "transport",
+      "source_family": "mpg-2008-cars",
+      "metric_family": "car-model-mpg-2008-cars",
+      "question": "Name a 2008 car model that could travel at least 330 highway miles on 15 US gallons of fuel. (Calculated from its best listed highway MPG trim.)",
+      "measured": 38,
+      "unverified": 0,
+      "recognized": 38,
+      "tier_counts": {
+        "1200": 2,
+        "1000": 1,
+        "800": 2,
+        "600": 2,
+        "400": 5,
+        "200": 5,
+        "0": 21
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "complete_for_bundled_snapshot_not_global_category",
+        "claimed_exhaustive": false,
+        "entity_scope": "Only the 2008 makes and models in ggplot2 mpg; each model takes the most efficient recorded configuration.",
+        "dataset_count": 38
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 6,
+      "round": 6,
+      "topic": "geography",
+      "source_family": "country-frozen-snapshot",
+      "metric_family": "country-population_per_neighbor",
+      "question": "Name a country or territory whose inhabitants per land-bordering neighbor is at least 7,700,000 people. (Values rounded to the nearest 100,000 people.)",
+      "measured": 158,
+      "unverified": 75,
+      "recognized": 233,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 2,
+        "600": 2,
+        "400": 5,
+        "200": 7,
+        "0": 140
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 233
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 7,
+      "round": 1,
+      "topic": "geography",
+      "source_family": "gap-frozen-snapshot",
+      "metric_family": "gap-pop_gain",
+      "question": "Name a country or territory listed by Gapminder whose population rose by at least 18,000,000 people between 1952 and 2007. (Rounded to the nearest million people.)",
+      "measured": 142,
+      "unverified": 0,
+      "recognized": 142,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 1,
+        "600": 2,
+        "400": 2,
+        "200": 5,
+        "0": 129
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 142
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 7,
+      "round": 2,
+      "topic": "science",
+      "source_family": "element-frozen-snapshot",
+      "metric_family": "element-neutrons",
+      "question": "Name a chemical element with neutron count in its most abundant isotope at most 176 neutrons. (Values rounded to the nearest whole unit.)",
+      "measured": 117,
+      "unverified": 1,
+      "recognized": 118,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 2,
+        "600": 8,
+        "400": 11,
+        "200": 16,
+        "0": 77
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 118
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 7,
+      "round": 3,
+      "topic": "geography",
+      "source_family": "basemap-county-shapes",
+      "metric_family": "basemap-county-shapes-dc_distance",
+      "question": "Name a U.S. county or county equivalent whose mapped centre is at least 1,460 km from Washington, DC. (Approximate bounding-box centre; nearest km.)",
+      "measured": 3220,
+      "unverified": 1,
+      "recognized": 3221,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 4,
+        "600": 51,
+        "400": 117,
+        "200": 269,
+        "0": 2777
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "source_snapshot",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 3221 source records (measured and pending separately)",
+        "dataset_count": 3221
+      },
+      "has_ambiguous_alias": true,
+      "is_globally_exhaustive": true
+    },
+    {
+      "day": 7,
+      "round": 4,
+      "topic": "culture",
+      "source_family": "heritage_country-frozen-snapshot",
+      "metric_family": "heritage_country-modern_share",
+      "question": "Name a country or territory named in the UNESCO World Heritage dataset whose share of its listed UNESCO sites inscribed since 2000 is at most 47%. (Values rounded to the nearest whole percent.)",
+      "measured": 174,
+      "unverified": 0,
+      "recognized": 174,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 2,
+        "800": 1,
+        "600": 4,
+        "400": 10,
+        "200": 15,
+        "0": 141
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 174
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 7,
+      "round": 5,
+      "topic": "public-safety",
+      "source_family": "statecrime-2009-violent",
+      "metric_family": "us-state-statecrime-2009-violent",
+      "question": "Name a US state or Washington, DC with at most 358 violent crimes per 100,000 residents in 2009. (Rates rounded to the nearest whole incident.)",
+      "measured": 51,
+      "unverified": 0,
+      "recognized": 51,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 2,
+        "600": 3,
+        "400": 5,
+        "200": 9,
+        "0": 30
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "complete_for_bundled_snapshot_not_global_category",
+        "claimed_exhaustive": false,
+        "entity_scope": "The source is a 2009 historical snapshot for the 50 states and Washington, DC, not today’s statistics.",
+        "dataset_count": 51
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    },
+    {
+      "day": 7,
+      "round": 6,
+      "topic": "geography",
+      "source_family": "country-frozen-snapshot",
+      "metric_family": "country-area_per_timezone",
+      "question": "Name a country or territory whose land area per listed time zone is at most 390,800 km². (Values rounded to the nearest 100 square kilometres.)",
+      "measured": 190,
+      "unverified": 43,
+      "recognized": 233,
+      "tier_counts": {
+        "1200": 1,
+        "1000": 1,
+        "800": 1,
+        "600": 3,
+        "400": 6,
+        "200": 7,
+        "0": 171
+      },
+      "scope": {
+        "type": "finite_source_world",
+        "coverage": "frozen_source_snapshot",
+        "claimed_exhaustive": false,
+        "entity_scope": "All entities in the frozen source snapshot; broader completeness not guaranteed",
+        "dataset_count": 233
+      },
+      "has_ambiguous_alias": false,
+      "is_globally_exhaustive": false
+    }
+  ]
+}

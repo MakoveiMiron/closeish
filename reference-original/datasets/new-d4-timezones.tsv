@@ -1,0 +1,387 @@
+canonical	metric_value
+Africa/Abidjan	0
+Africa/Accra	0
+Africa/Addis Ababa	180
+Africa/Algiers	60
+Africa/Asmara	180
+Africa/Asmera	180
+Africa/Bamako	0
+Africa/Bangui	60
+Africa/Banjul	0
+Africa/Bissau	0
+Africa/Blantyre	120
+Africa/Brazzaville	60
+Africa/Bujumbura	120
+Africa/Cairo	120
+Africa/Casablanca	60
+Africa/Ceuta	60
+Africa/Conakry	0
+Africa/Dakar	0
+Africa/Dar es Salaam	180
+Africa/Djibouti	180
+Africa/Douala	60
+Africa/El Aaiun	60
+Africa/Freetown	0
+Africa/Gaborone	120
+Africa/Harare	120
+Africa/Johannesburg	120
+Africa/Juba	120
+Africa/Kampala	180
+Africa/Khartoum	120
+Africa/Kigali	120
+Africa/Kinshasa	60
+Africa/Lagos	60
+Africa/Libreville	60
+Africa/Lome	0
+Africa/Luanda	60
+Africa/Lubumbashi	120
+Africa/Lusaka	120
+Africa/Malabo	60
+Africa/Maputo	120
+Africa/Maseru	120
+Africa/Mbabane	120
+Africa/Mogadishu	180
+Africa/Monrovia	0
+Africa/Nairobi	180
+Africa/Ndjamena	60
+Africa/Niamey	60
+Africa/Nouakchott	0
+Africa/Ouagadougou	0
+Africa/Porto-Novo	60
+Africa/Sao Tome	0
+Africa/Timbuktu	0
+Africa/Tripoli	120
+Africa/Tunis	60
+Africa/Windhoek	120
+America/Adak	-600
+America/Anchorage	-540
+America/Anguilla	-240
+America/Antigua	-240
+America/Araguaina	-180
+America/Argentina/Buenos Aires	-180
+America/Argentina/Catamarca	-180
+America/Argentina/ComodRivadavia	-180
+America/Argentina/Cordoba	-180
+America/Argentina/Jujuy	-180
+America/Argentina/La Rioja	-180
+America/Argentina/Mendoza	-180
+America/Argentina/Rio Gallegos	-180
+America/Argentina/Salta	-180
+America/Argentina/San Juan	-180
+America/Argentina/San Luis	-180
+America/Argentina/Tucuman	-180
+America/Argentina/Ushuaia	-180
+America/Aruba	-240
+America/Asuncion	-180
+America/Atikokan	-300
+America/Atka	-600
+America/Bahia	-180
+America/Bahia Banderas	-360
+America/Barbados	-240
+America/Belem	-180
+America/Belize	-360
+America/Blanc-Sablon	-240
+America/Boa Vista	-240
+America/Bogota	-300
+America/Boise	-420
+America/Buenos Aires	-180
+America/Cambridge Bay	-420
+America/Campo Grande	-240
+America/Cancun	-300
+America/Caracas	-240
+America/Catamarca	-180
+America/Cayenne	-180
+America/Cayman	-300
+America/Chicago	-360
+America/Chihuahua	-360
+America/Ciudad Juarez	-420
+America/Coral Harbour	-300
+America/Cordoba	-180
+America/Costa Rica	-360
+America/Coyhaique	-180
+America/Creston	-420
+America/Cuiaba	-240
+America/Curacao	-240
+America/Danmarkshavn	0
+America/Dawson	-420
+America/Dawson Creek	-420
+America/Denver	-420
+America/Detroit	-300
+America/Dominica	-240
+America/Edmonton	-420
+America/Eirunepe	-300
+America/El Salvador	-360
+America/Ensenada	-480
+America/Fort Nelson	-420
+America/Fort Wayne	-300
+America/Fortaleza	-180
+America/Glace Bay	-240
+America/Godthab	-120
+America/Goose Bay	-240
+America/Grand Turk	-300
+America/Grenada	-240
+America/Guadeloupe	-240
+America/Guatemala	-360
+America/Guayaquil	-300
+America/Guyana	-240
+America/Halifax	-240
+America/Havana	-300
+America/Hermosillo	-420
+America/Indiana/Indianapolis	-300
+America/Indiana/Knox	-360
+America/Indiana/Marengo	-300
+America/Indiana/Petersburg	-300
+America/Indiana/Tell City	-360
+America/Indiana/Vevay	-300
+America/Indiana/Vincennes	-300
+America/Indiana/Winamac	-300
+America/Indianapolis	-300
+America/Inuvik	-420
+America/Iqaluit	-300
+America/Jamaica	-300
+America/Jujuy	-180
+America/Juneau	-540
+America/Kentucky/Louisville	-300
+America/Kentucky/Monticello	-300
+America/Knox IN	-360
+America/Kralendijk	-240
+America/La Paz	-240
+America/Lima	-300
+America/Los Angeles	-480
+America/Louisville	-300
+America/Lower Princes	-240
+America/Maceio	-180
+America/Managua	-360
+America/Manaus	-240
+America/Marigot	-240
+America/Martinique	-240
+America/Matamoros	-360
+America/Mazatlan	-420
+America/Mendoza	-180
+America/Menominee	-360
+America/Merida	-360
+America/Metlakatla	-540
+America/Mexico City	-360
+America/Miquelon	-180
+America/Moncton	-240
+America/Monterrey	-360
+America/Montevideo	-180
+America/Montreal	-300
+America/Montserrat	-240
+America/Nassau	-300
+America/New York	-300
+America/Nipigon	-300
+America/Nome	-540
+America/Noronha	-120
+America/North Dakota/Beulah	-360
+America/North Dakota/Center	-360
+America/North Dakota/New Salem	-360
+America/Nuuk	-120
+America/Ojinaga	-360
+America/Panama	-300
+America/Pangnirtung	-300
+America/Paramaribo	-180
+America/Phoenix	-420
+America/Port-au-Prince	-300
+America/Port of Spain	-240
+America/Porto Acre	-300
+America/Porto Velho	-240
+America/Puerto Rico	-240
+America/Punta Arenas	-180
+America/Rainy River	-360
+America/Rankin Inlet	-360
+America/Recife	-180
+America/Regina	-360
+America/Resolute	-360
+America/Rio Branco	-300
+America/Rosario	-180
+America/Santa Isabel	-480
+America/Santarem	-180
+America/Santiago	-180
+America/Santo Domingo	-240
+America/Sao Paulo	-180
+America/Scoresbysund	-120
+America/Shiprock	-420
+America/Sitka	-540
+America/St Barthelemy	-240
+America/St Johns	-210
+America/St Kitts	-240
+America/St Lucia	-240
+America/St Thomas	-240
+America/St Vincent	-240
+America/Swift Current	-360
+America/Tegucigalpa	-360
+America/Thule	-240
+America/Thunder Bay	-300
+America/Tijuana	-480
+America/Toronto	-300
+America/Tortola	-240
+America/Vancouver	-480
+America/Virgin	-240
+America/Whitehorse	-420
+America/Winnipeg	-360
+America/Yakutat	-540
+America/Yellowknife	-420
+Asia/Aden	180
+Asia/Almaty	300
+Asia/Amman	180
+Asia/Anadyr	720
+Asia/Aqtau	300
+Asia/Aqtobe	300
+Asia/Ashgabat	300
+Asia/Ashkhabad	300
+Asia/Atyrau	300
+Asia/Baghdad	180
+Asia/Bahrain	180
+Asia/Baku	240
+Asia/Bangkok	420
+Asia/Barnaul	420
+Asia/Beirut	120
+Asia/Bishkek	360
+Asia/Brunei	480
+Asia/Calcutta	330
+Asia/Chita	540
+Asia/Choibalsan	480
+Asia/Chongqing	480
+Asia/Chungking	480
+Asia/Colombo	330
+Asia/Dacca	360
+Asia/Damascus	180
+Asia/Dhaka	360
+Asia/Dili	540
+Asia/Dubai	240
+Asia/Dushanbe	300
+Asia/Famagusta	120
+Asia/Gaza	120
+Asia/Harbin	480
+Asia/Hebron	120
+Asia/Ho Chi Minh	420
+Asia/Hong Kong	480
+Asia/Hovd	420
+Asia/Irkutsk	480
+Asia/Istanbul	180
+Asia/Jakarta	420
+Asia/Jayapura	540
+Asia/Jerusalem	120
+Asia/Kabul	270
+Asia/Kamchatka	720
+Asia/Karachi	300
+Asia/Kashgar	360
+Asia/Kathmandu	345
+Asia/Katmandu	345
+Asia/Khandyga	540
+Asia/Kolkata	330
+Asia/Krasnoyarsk	420
+Asia/Kuala Lumpur	480
+Asia/Kuching	480
+Asia/Kuwait	180
+Asia/Macao	480
+Asia/Macau	480
+Asia/Magadan	660
+Asia/Makassar	480
+Asia/Manila	480
+Asia/Muscat	240
+Asia/Nicosia	120
+Asia/Novokuznetsk	420
+Asia/Novosibirsk	420
+Asia/Omsk	360
+Asia/Oral	300
+Asia/Phnom Penh	420
+Asia/Pontianak	420
+Asia/Pyongyang	540
+Asia/Qatar	180
+Asia/Qostanay	300
+Asia/Qyzylorda	300
+Asia/Rangoon	390
+Asia/Riyadh	180
+Asia/Saigon	420
+Asia/Sakhalin	660
+Asia/Samarkand	300
+Asia/Seoul	540
+Asia/Shanghai	480
+Asia/Singapore	480
+Asia/Srednekolymsk	660
+Asia/Taipei	480
+Asia/Tashkent	300
+Asia/Tbilisi	240
+Asia/Tehran	210
+Asia/Tel Aviv	120
+Asia/Thimbu	360
+Asia/Thimphu	360
+Asia/Tokyo	540
+Asia/Tomsk	420
+Asia/Ujung Pandang	480
+Asia/Ulaanbaatar	480
+Asia/Ulan Bator	480
+Asia/Urumqi	360
+Asia/Ust-Nera	600
+Asia/Vientiane	420
+Asia/Vladivostok	600
+Asia/Yakutsk	540
+Asia/Yangon	390
+Asia/Yekaterinburg	300
+Asia/Yerevan	240
+Europe/Amsterdam	60
+Europe/Andorra	60
+Europe/Astrakhan	240
+Europe/Athens	120
+Europe/Belfast	0
+Europe/Belgrade	60
+Europe/Berlin	60
+Europe/Bratislava	60
+Europe/Brussels	60
+Europe/Bucharest	120
+Europe/Budapest	60
+Europe/Busingen	60
+Europe/Chisinau	120
+Europe/Copenhagen	60
+Europe/Dublin	0
+Europe/Gibraltar	60
+Europe/Guernsey	0
+Europe/Helsinki	120
+Europe/Isle of Man	0
+Europe/Istanbul	180
+Europe/Jersey	0
+Europe/Kaliningrad	120
+Europe/Kiev	120
+Europe/Kirov	180
+Europe/Kyiv	120
+Europe/Lisbon	0
+Europe/Ljubljana	60
+Europe/London	0
+Europe/Luxembourg	60
+Europe/Madrid	60
+Europe/Malta	60
+Europe/Mariehamn	120
+Europe/Minsk	180
+Europe/Monaco	60
+Europe/Moscow	180
+Europe/Nicosia	120
+Europe/Oslo	60
+Europe/Paris	60
+Europe/Podgorica	60
+Europe/Prague	60
+Europe/Riga	120
+Europe/Rome	60
+Europe/Samara	240
+Europe/San Marino	60
+Europe/Sarajevo	60
+Europe/Saratov	240
+Europe/Simferopol	180
+Europe/Skopje	60
+Europe/Sofia	120
+Europe/Stockholm	60
+Europe/Tallinn	120
+Europe/Tirane	60
+Europe/Tiraspol	120
+Europe/Ulyanovsk	240
+Europe/Uzhgorod	120
+Europe/Vaduz	60
+Europe/Vatican	60
+Europe/Vienna	60
+Europe/Vilnius	120
+Europe/Volgograd	180
+Europe/Warsaw	60
+Europe/Zagreb	60
+Europe/Zaporozhye	120
+Europe/Zurich	60

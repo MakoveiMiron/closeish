@@ -1,0 +1,517 @@
+{
+  "source_id": "statsmodels-statecrime-2009",
+  "records": [
+    {
+      "name": "Alabama",
+      "violent": 459.9,
+      "murder": 7.1,
+      "hs_grad": 82.1,
+      "poverty": 17.5,
+      "single": 29.0,
+      "white": 70.0,
+      "urban": 48.65
+    },
+    {
+      "name": "Alaska",
+      "violent": 632.6,
+      "murder": 3.2,
+      "hs_grad": 91.4,
+      "poverty": 9.0,
+      "single": 25.5,
+      "white": 68.3,
+      "urban": 44.46
+    },
+    {
+      "name": "Arizona",
+      "violent": 423.2,
+      "murder": 5.5,
+      "hs_grad": 84.2,
+      "poverty": 16.5,
+      "single": 25.7,
+      "white": 80.0,
+      "urban": 80.07
+    },
+    {
+      "name": "Arkansas",
+      "violent": 530.3,
+      "murder": 6.3,
+      "hs_grad": 82.4,
+      "poverty": 18.8,
+      "single": 26.3,
+      "white": 78.4,
+      "urban": 39.54
+    },
+    {
+      "name": "California",
+      "violent": 473.4,
+      "murder": 5.4,
+      "hs_grad": 80.6,
+      "poverty": 14.2,
+      "single": 27.8,
+      "white": 62.7,
+      "urban": 89.73
+    },
+    {
+      "name": "Colorado",
+      "violent": 340.9,
+      "murder": 3.2,
+      "hs_grad": 89.3,
+      "poverty": 12.9,
+      "single": 21.4,
+      "white": 84.6,
+      "urban": 76.86
+    },
+    {
+      "name": "Connecticut",
+      "violent": 300.5,
+      "murder": 3.0,
+      "hs_grad": 88.6,
+      "poverty": 9.4,
+      "single": 25.0,
+      "white": 79.1,
+      "urban": 84.83
+    },
+    {
+      "name": "Delaware",
+      "violent": 645.1,
+      "murder": 4.6,
+      "hs_grad": 87.4,
+      "poverty": 10.8,
+      "single": 27.6,
+      "white": 71.9,
+      "urban": 68.71
+    },
+    {
+      "name": "District of Columbia",
+      "violent": 1348.9,
+      "murder": 24.2,
+      "hs_grad": 87.1,
+      "poverty": 18.4,
+      "single": 48.0,
+      "white": 38.7,
+      "urban": 100.0
+    },
+    {
+      "name": "Florida",
+      "violent": 612.6,
+      "murder": 5.5,
+      "hs_grad": 85.3,
+      "poverty": 14.9,
+      "single": 26.6,
+      "white": 76.9,
+      "urban": 87.44
+    },
+    {
+      "name": "Georgia",
+      "violent": 432.6,
+      "murder": 6.0,
+      "hs_grad": 83.9,
+      "poverty": 16.5,
+      "single": 29.3,
+      "white": 61.9,
+      "urban": 65.38
+    },
+    {
+      "name": "Hawaii",
+      "violent": 274.1,
+      "murder": 1.8,
+      "hs_grad": 90.4,
+      "poverty": 10.4,
+      "single": 26.3,
+      "white": 26.9,
+      "urban": 71.46
+    },
+    {
+      "name": "Idaho",
+      "violent": 238.5,
+      "murder": 1.5,
+      "hs_grad": 88.4,
+      "poverty": 14.3,
+      "single": 19.0,
+      "white": 92.3,
+      "urban": 50.51
+    },
+    {
+      "name": "Illinois",
+      "violent": 618.2,
+      "murder": 8.4,
+      "hs_grad": 86.4,
+      "poverty": 13.3,
+      "single": 26.0,
+      "white": 72.5,
+      "urban": 79.97
+    },
+    {
+      "name": "Indiana",
+      "violent": 366.4,
+      "murder": 5.3,
+      "hs_grad": 86.6,
+      "poverty": 14.4,
+      "single": 24.5,
+      "white": 85.7,
+      "urban": 59.17
+    },
+    {
+      "name": "Iowa",
+      "violent": 294.5,
+      "murder": 1.3,
+      "hs_grad": 90.5,
+      "poverty": 11.8,
+      "single": 20.3,
+      "white": 92.3,
+      "urban": 41.66
+    },
+    {
+      "name": "Kansas ",
+      "violent": 412.0,
+      "murder": 4.7,
+      "hs_grad": 89.7,
+      "poverty": 13.4,
+      "single": 22.8,
+      "white": 86.3,
+      "urban": 50.17
+    },
+    {
+      "name": "Kentucky ",
+      "violent": 265.5,
+      "murder": 4.3,
+      "hs_grad": 81.7,
+      "poverty": 18.6,
+      "single": 25.4,
+      "white": 88.8,
+      "urban": 40.99
+    },
+    {
+      "name": "Louisiana",
+      "violent": 628.4,
+      "murder": 12.3,
+      "hs_grad": 82.2,
+      "poverty": 17.3,
+      "single": 31.4,
+      "white": 63.7,
+      "urban": 61.33
+    },
+    {
+      "name": "Maine",
+      "violent": 119.9,
+      "murder": 2.0,
+      "hs_grad": 90.2,
+      "poverty": 12.3,
+      "single": 22.0,
+      "white": 94.9,
+      "urban": 26.21
+    },
+    {
+      "name": "Maryland",
+      "violent": 590.0,
+      "murder": 7.7,
+      "hs_grad": 88.2,
+      "poverty": 9.1,
+      "single": 27.3,
+      "white": 60.2,
+      "urban": 83.53
+    },
+    {
+      "name": "Massachusetts",
+      "violent": 465.6,
+      "murder": 2.7,
+      "hs_grad": 89.0,
+      "poverty": 10.3,
+      "single": 25.0,
+      "white": 82.4,
+      "urban": 90.3
+    },
+    {
+      "name": "Michigan",
+      "violent": 504.4,
+      "murder": 6.3,
+      "hs_grad": 87.9,
+      "poverty": 16.2,
+      "single": 25.6,
+      "white": 79.9,
+      "urban": 66.37
+    },
+    {
+      "name": "Minnesota",
+      "violent": 214.2,
+      "murder": 1.5,
+      "hs_grad": 91.5,
+      "poverty": 11.0,
+      "single": 20.2,
+      "white": 87.4,
+      "urban": 58.0
+    },
+    {
+      "name": "Mississippi",
+      "violent": 306.7,
+      "murder": 6.9,
+      "hs_grad": 80.4,
+      "poverty": 21.9,
+      "single": 32.8,
+      "white": 59.6,
+      "urban": 27.62
+    },
+    {
+      "name": "Missouri",
+      "violent": 500.3,
+      "murder": 6.6,
+      "hs_grad": 86.8,
+      "poverty": 14.6,
+      "single": 25.3,
+      "white": 83.9,
+      "urban": 56.61
+    },
+    {
+      "name": "Montana ",
+      "violent": 283.9,
+      "murder": 3.2,
+      "hs_grad": 90.8,
+      "poverty": 15.1,
+      "single": 20.3,
+      "white": 89.4,
+      "urban": 26.49
+    },
+    {
+      "name": "Nebraska",
+      "violent": 305.5,
+      "murder": 2.5,
+      "hs_grad": 89.8,
+      "poverty": 12.3,
+      "single": 20.9,
+      "white": 88.1,
+      "urban": 53.78
+    },
+    {
+      "name": "Nevada",
+      "violent": 704.6,
+      "murder": 5.9,
+      "hs_grad": 83.9,
+      "poverty": 12.4,
+      "single": 28.5,
+      "white": 76.2,
+      "urban": 86.51
+    },
+    {
+      "name": "New Hampshire",
+      "violent": 169.5,
+      "murder": 0.9,
+      "hs_grad": 91.3,
+      "poverty": 8.5,
+      "single": 19.5,
+      "white": 94.5,
+      "urban": 47.34
+    },
+    {
+      "name": "New Jersey",
+      "violent": 311.3,
+      "murder": 3.7,
+      "hs_grad": 87.4,
+      "poverty": 9.4,
+      "single": 25.8,
+      "white": 70.7,
+      "urban": 92.24
+    },
+    {
+      "name": "New Mexico",
+      "violent": 652.8,
+      "murder": 10.0,
+      "hs_grad": 82.8,
+      "poverty": 18.0,
+      "single": 29.1,
+      "white": 72.5,
+      "urban": 53.75
+    },
+    {
+      "name": "New York",
+      "violent": 385.5,
+      "murder": 4.0,
+      "hs_grad": 84.7,
+      "poverty": 14.2,
+      "single": 30.2,
+      "white": 67.4,
+      "urban": 82.66
+    },
+    {
+      "name": "North Carolina",
+      "violent": 414.0,
+      "murder": 5.4,
+      "hs_grad": 84.3,
+      "poverty": 16.3,
+      "single": 26.3,
+      "white": 70.5,
+      "urban": 54.88
+    },
+    {
+      "name": "North Dakota",
+      "violent": 223.6,
+      "murder": 2.0,
+      "hs_grad": 90.1,
+      "poverty": 11.7,
+      "single": 18.2,
+      "white": 90.2,
+      "urban": 40.0
+    },
+    {
+      "name": "Ohio",
+      "violent": 358.1,
+      "murder": 5.0,
+      "hs_grad": 87.6,
+      "poverty": 15.2,
+      "single": 26.3,
+      "white": 84.0,
+      "urban": 65.31
+    },
+    {
+      "name": "Oklahoma",
+      "violent": 510.4,
+      "murder": 6.5,
+      "hs_grad": 85.6,
+      "poverty": 16.2,
+      "single": 25.9,
+      "white": 75.4,
+      "urban": 45.79
+    },
+    {
+      "name": "Oregon",
+      "violent": 261.2,
+      "murder": 2.3,
+      "hs_grad": 89.1,
+      "poverty": 14.3,
+      "single": 22.7,
+      "white": 85.6,
+      "urban": 62.47
+    },
+    {
+      "name": "Pennsylvania",
+      "violent": 388.9,
+      "murder": 5.4,
+      "hs_grad": 87.9,
+      "poverty": 12.5,
+      "single": 24.5,
+      "white": 83.5,
+      "urban": 70.68
+    },
+    {
+      "name": "Rhode Island",
+      "violent": 254.3,
+      "murder": 3.0,
+      "hs_grad": 84.7,
+      "poverty": 11.5,
+      "single": 27.3,
+      "white": 82.6,
+      "urban": 90.46
+    },
+    {
+      "name": "South Carolina",
+      "violent": 675.1,
+      "murder": 6.7,
+      "hs_grad": 83.6,
+      "poverty": 17.1,
+      "single": 28.4,
+      "white": 67.6,
+      "urban": 55.78
+    },
+    {
+      "name": "South Dakota",
+      "violent": 201.0,
+      "murder": 3.6,
+      "hs_grad": 89.9,
+      "poverty": 14.2,
+      "single": 20.8,
+      "white": 86.3,
+      "urban": 29.92
+    },
+    {
+      "name": "Tennessee",
+      "violent": 666.0,
+      "murder": 7.4,
+      "hs_grad": 83.1,
+      "poverty": 17.1,
+      "single": 26.3,
+      "white": 79.1,
+      "urban": 54.38
+    },
+    {
+      "name": "Texas",
+      "violent": 491.4,
+      "murder": 5.4,
+      "hs_grad": 79.9,
+      "poverty": 17.2,
+      "single": 27.6,
+      "white": 73.8,
+      "urban": 75.35
+    },
+    {
+      "name": "Utah",
+      "violent": 216.2,
+      "murder": 1.4,
+      "hs_grad": 90.4,
+      "poverty": 11.5,
+      "single": 17.9,
+      "white": 89.3,
+      "urban": 81.17
+    },
+    {
+      "name": "Vermont",
+      "violent": 135.1,
+      "murder": 1.3,
+      "hs_grad": 91.0,
+      "poverty": 11.4,
+      "single": 21.3,
+      "white": 95.8,
+      "urban": 17.38
+    },
+    {
+      "name": "Virginia",
+      "violent": 230.0,
+      "murder": 4.7,
+      "hs_grad": 86.6,
+      "poverty": 10.5,
+      "single": 24.0,
+      "white": 70.4,
+      "urban": 69.79
+    },
+    {
+      "name": "Washington",
+      "violent": 338.3,
+      "murder": 2.8,
+      "hs_grad": 89.7,
+      "poverty": 12.3,
+      "single": 22.2,
+      "white": 80.2,
+      "urban": 74.97
+    },
+    {
+      "name": "West Virginia",
+      "violent": 331.2,
+      "murder": 4.9,
+      "hs_grad": 82.8,
+      "poverty": 17.7,
+      "single": 23.3,
+      "white": 94.3,
+      "urban": 33.2
+    },
+    {
+      "name": "Wisconsin",
+      "violent": 259.7,
+      "murder": 2.6,
+      "hs_grad": 89.8,
+      "poverty": 12.4,
+      "single": 22.2,
+      "white": 88.4,
+      "urban": 55.8
+    },
+    {
+      "name": "Wyoming",
+      "violent": 219.3,
+      "murder": 2.0,
+      "hs_grad": 91.8,
+      "poverty": 9.8,
+      "single": 18.9,
+      "white": 91.3,
+      "urban": 24.51
+    }
+  ],
+  "source_note": "::\n\n    Number of observations: 51\n    Number of variables: 8\n    Variable name definitions:\n\n    state\n        All 50 states plus DC.\n    violent\n        Rate of violent crimes / 100,000 population. Includes murder, forcible\n        rape, robbery, and aggravated assault. Numbers for Illinois and\n        Minnesota do not include forcible rapes. Footnote included with the\n        American Statistical Abstract table reads:\n        \"The data collection methodology for the offense of forcible\n        rape used by the Illinois and the Minnesota state Uniform Crime\n        Reporting (UCR) Programs (with the exception of Rockford, Illinois,\n        and Minneapolis and St. Paul, Minnesota) does not comply with\n        national UCR guidelines. Consequently, their state figures for\n        forcible rape and violent crime (of which forcible rape is a part)\n        are not published in this table.\"\n    murder\n        Rate of murders / 100,000 population.\n    hs_grad\n        Percent of population having graduated from high school or higher.\n    poverty\n        % of individuals below the poverty line\n    white\n        Percent of population that is one race - white only. From 2009 American\n        Community Survey\n    single\n        Calculated from 2009 1-year American Community Survey obtained obtained\n        from Census. Variable is Male householder, no wife present, family\n        household combined with Female householder, no husband present, family\n        household, divided by the total number of Family households.\n    urban\n        % of population in Urbanized Areas as of 2010 Census. Urbanized\n        Areas are area of 50,000 or more people.",
+  "source": "\nAll data is for 2009 and was obtained from the American Statistical Abstracts except as indicated below.\n"
+}

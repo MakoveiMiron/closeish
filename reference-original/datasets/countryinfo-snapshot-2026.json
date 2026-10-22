@@ -1,0 +1,1878 @@
+{
+  "source_id": "countryinfo-2026-secondary",
+  "version": "0.1.2",
+  "records": [
+    {
+      "name": "Afghanistan",
+      "iso3": "AFG",
+      "source_key": "afghanistan",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 34.526011
+    },
+    {
+      "name": "Albania",
+      "iso3": "ALB",
+      "source_key": "albania",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 41.326873
+    },
+    {
+      "name": "Algeria",
+      "iso3": "DZA",
+      "source_key": "algeria",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 36.775361
+    },
+    {
+      "name": "American Samoa",
+      "iso3": "ASM",
+      "source_key": "american samoa",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 14.275479
+    },
+    {
+      "name": "Angola",
+      "iso3": "AGO",
+      "source_key": "angola",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 8.82727
+    },
+    {
+      "name": "Anguilla",
+      "iso3": "AIA",
+      "source_key": "anguilla",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 41.559572
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "source_key": "antigua and barbuda",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 47.561701
+    },
+    {
+      "name": "Argentina",
+      "iso3": "ARG",
+      "source_key": "argentina",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 34.607568
+    },
+    {
+      "name": "Armenia",
+      "iso3": "ARM",
+      "source_key": "armenia",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 40.177612
+    },
+    {
+      "name": "Aruba",
+      "iso3": "ABW",
+      "source_key": "aruba",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 12.526874
+    },
+    {
+      "name": "Australia",
+      "iso3": "AUS",
+      "source_key": "australia",
+      "border_count": 0,
+      "timezone_count": 8,
+      "capital_abs_latitude": 35.297591
+    },
+    {
+      "name": "Austria",
+      "iso3": "AUT",
+      "source_key": "austria",
+      "border_count": 8,
+      "timezone_count": 1,
+      "capital_abs_latitude": 48.208354
+    },
+    {
+      "name": "Azerbaijan",
+      "iso3": "AZE",
+      "source_key": "azerbaijan",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 40.375443
+    },
+    {
+      "name": "The Bahamas",
+      "iso3": "BHS",
+      "source_key": "the bahamas",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 25.078346
+    },
+    {
+      "name": "Bahrain",
+      "iso3": "BHR",
+      "source_key": "bahrain",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 26.223504
+    },
+    {
+      "name": "Bangladesh",
+      "iso3": "BGD",
+      "source_key": "bangladesh",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 23.759357
+    },
+    {
+      "name": "Barbados",
+      "iso3": "BRB",
+      "source_key": "barbados",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.097783
+    },
+    {
+      "name": "Belarus",
+      "iso3": "BLR",
+      "source_key": "belarus",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 53.902334
+    },
+    {
+      "name": "Belgium",
+      "iso3": "BEL",
+      "source_key": "belgium",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 50.846557
+    },
+    {
+      "name": "Belize",
+      "iso3": "BLZ",
+      "source_key": "belize",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 17.250199
+    },
+    {
+      "name": "Benin",
+      "iso3": "BEN",
+      "source_key": "benin",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.499072
+    },
+    {
+      "name": "Bermuda",
+      "iso3": "BMU",
+      "source_key": "bermuda",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 43.25608
+    },
+    {
+      "name": "Bhutan",
+      "iso3": "BTN",
+      "source_key": "bhutan",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 27.472762
+    },
+    {
+      "name": "Bolivia",
+      "iso3": "BOL",
+      "source_key": "bolivia",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 19.047725
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "source_key": "bosnia and herzegovina",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 43.851977
+    },
+    {
+      "name": "Botswana",
+      "iso3": "BWA",
+      "source_key": "botswana",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 24.658136
+    },
+    {
+      "name": "Brazil",
+      "iso3": "BRA",
+      "source_key": "brazil",
+      "border_count": 10,
+      "timezone_count": 4,
+      "capital_abs_latitude": 10.333333
+    },
+    {
+      "name": "British Indian Ocean Territory",
+      "iso3": "IOT",
+      "source_key": "british indian ocean territory",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 7.338358
+    },
+    {
+      "name": "Brunei",
+      "iso3": "BRN",
+      "source_key": "brunei",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 4.889545
+    },
+    {
+      "name": "Bulgaria",
+      "iso3": "BGR",
+      "source_key": "bulgaria",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 15.25384
+    },
+    {
+      "name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_key": "burkina faso",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 12.368187
+    },
+    {
+      "name": "Burundi",
+      "iso3": "BDI",
+      "source_key": "burundi",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 3.363812
+    },
+    {
+      "name": "Cambodia",
+      "iso3": "KHM",
+      "source_key": "cambodia",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 11.568271
+    },
+    {
+      "name": "Cameroon",
+      "iso3": "CMR",
+      "source_key": "cameroon",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 3.868987
+    },
+    {
+      "name": "Canada",
+      "iso3": "CAN",
+      "source_key": "canada",
+      "border_count": 1,
+      "timezone_count": 6,
+      "capital_abs_latitude": 45.421106
+    },
+    {
+      "name": "Cape Verde",
+      "iso3": "CPV",
+      "source_key": "cape verde",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 14.916017
+    },
+    {
+      "name": "Cayman Islands",
+      "iso3": "CYM",
+      "source_key": "cayman islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 5.414568
+    },
+    {
+      "name": "Central African Republic",
+      "iso3": "CAF",
+      "source_key": "central african republic",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 4.390715
+    },
+    {
+      "name": "Chad",
+      "iso3": "TCD",
+      "source_key": "chad",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 12.119154
+    },
+    {
+      "name": "Chile",
+      "iso3": "CHL",
+      "source_key": "chile",
+      "border_count": 3,
+      "timezone_count": 2,
+      "capital_abs_latitude": 9.869479
+    },
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "source_key": "china",
+      "border_count": 15,
+      "timezone_count": 1,
+      "capital_abs_latitude": 39.906217
+    },
+    {
+      "name": "Christmas Island",
+      "iso3": "CXR",
+      "source_key": "christmas island",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 10.426665
+    },
+    {
+      "name": "Cocos (Keeling) Islands",
+      "iso3": "CCK",
+      "source_key": "cocos (keeling) islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 12.189848
+    },
+    {
+      "name": "Colombia",
+      "iso3": "COL",
+      "source_key": "colombia",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 4.59808
+    },
+    {
+      "name": "Comoros",
+      "iso3": "COM",
+      "source_key": "comoros",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 11.693126
+    },
+    {
+      "name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_key": "republic of the congo",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 4.269441
+    },
+    {
+      "name": "Democratic Republic of the Congo",
+      "iso3": "COD",
+      "source_key": "democratic republic of the congo",
+      "border_count": 9,
+      "timezone_count": 2,
+      "capital_abs_latitude": 4.321706
+    },
+    {
+      "name": "Cook Islands",
+      "iso3": "COK",
+      "source_key": "cook islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 21.207474
+    },
+    {
+      "name": "Costa Rica",
+      "iso3": "CRI",
+      "source_key": "costa rica",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 9.932543
+    },
+    {
+      "name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_key": "ivory coast",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.809107
+    },
+    {
+      "name": "Croatia",
+      "iso3": "HRV",
+      "source_key": "croatia",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 45.813177
+    },
+    {
+      "name": "Cuba",
+      "iso3": "CUB",
+      "source_key": "cuba",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 23.135305
+    },
+    {
+      "name": "Cyprus",
+      "iso3": "CYP",
+      "source_key": "cyprus",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 35.17393
+    },
+    {
+      "name": "Czech Republic",
+      "iso3": "CZE",
+      "source_key": "czech republic",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 50.087465
+    },
+    {
+      "name": "Denmark",
+      "iso3": "DNK",
+      "source_key": "denmark",
+      "border_count": 1,
+      "timezone_count": 5,
+      "capital_abs_latitude": 55.686724
+    },
+    {
+      "name": "Djibouti",
+      "iso3": "DJI",
+      "source_key": "djibouti",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 11.814597
+    },
+    {
+      "name": "Dominica",
+      "iso3": "DMA",
+      "source_key": "dominica",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 48.771037
+    },
+    {
+      "name": "Dominican Republic",
+      "iso3": "DOM",
+      "source_key": "dominican republic",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 18.480197
+    },
+    {
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "source_key": "ecuador",
+      "border_count": 2,
+      "timezone_count": 2,
+      "capital_abs_latitude": 0.220164
+    },
+    {
+      "name": "Egypt",
+      "iso3": "EGY",
+      "source_key": "egypt",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 30.048819
+    },
+    {
+      "name": "El Salvador",
+      "iso3": "SLV",
+      "source_key": "el salvador",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.698994
+    },
+    {
+      "name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_key": "equatorial guinea",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 3.752828
+    },
+    {
+      "name": "Eritrea",
+      "iso3": "ERI",
+      "source_key": "eritrea",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 15.338967
+    },
+    {
+      "name": "Estonia",
+      "iso3": "EST",
+      "source_key": "estonia",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 59.437216
+    },
+    {
+      "name": "Ethiopia",
+      "iso3": "ETH",
+      "source_key": "ethiopia",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 9.010793
+    },
+    {
+      "name": "Falkland Islands",
+      "iso3": "FLK",
+      "source_key": "falkland islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 51.695058
+    },
+    {
+      "name": "Faroe Islands",
+      "iso3": "FRO",
+      "source_key": "faroe islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 62.012
+    },
+    {
+      "name": "Fiji",
+      "iso3": "FJI",
+      "source_key": "fiji",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 18.141588
+    },
+    {
+      "name": "Finland",
+      "iso3": "FIN",
+      "source_key": "finland",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 60.16741
+    },
+    {
+      "name": "France",
+      "iso3": "FRA",
+      "source_key": "france",
+      "border_count": 8,
+      "timezone_count": 12,
+      "capital_abs_latitude": 48.856697
+    },
+    {
+      "name": "French Guiana",
+      "iso3": "GUF",
+      "source_key": "french guiana",
+      "border_count": 2,
+      "timezone_count": null,
+      "capital_abs_latitude": 4.937114
+    },
+    {
+      "name": "French Polynesia",
+      "iso3": "PYF",
+      "source_key": "french polynesia",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 17.537384
+    },
+    {
+      "name": "French Southern and Antarctic Lands",
+      "iso3": "ATF",
+      "source_key": "french southern and antarctic lands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 49.353677
+    },
+    {
+      "name": "Gabon",
+      "iso3": "GAB",
+      "source_key": "gabon",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 0.390002
+    },
+    {
+      "name": "The Gambia",
+      "iso3": "GMB",
+      "source_key": "the gambia",
+      "border_count": 1,
+      "timezone_count": null,
+      "capital_abs_latitude": 13.441346
+    },
+    {
+      "name": "Georgia",
+      "iso3": "GEO",
+      "source_key": "georgia",
+      "border_count": 4,
+      "timezone_count": null,
+      "capital_abs_latitude": 41.693459
+    },
+    {
+      "name": "Germany",
+      "iso3": "DEU",
+      "source_key": "germany",
+      "border_count": 9,
+      "timezone_count": 1,
+      "capital_abs_latitude": 52.517036
+    },
+    {
+      "name": "Ghana",
+      "iso3": "GHA",
+      "source_key": "ghana",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 5.560014
+    },
+    {
+      "name": "Gibraltar",
+      "iso3": "GIB",
+      "source_key": "gibraltar",
+      "border_count": 1,
+      "timezone_count": null,
+      "capital_abs_latitude": 36.140807
+    },
+    {
+      "name": "Greece",
+      "iso3": "GRC",
+      "source_key": "greece",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 37.983941
+    },
+    {
+      "name": "Greenland",
+      "iso3": "GRL",
+      "source_key": "greenland",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 64.175029
+    },
+    {
+      "name": "Grenada",
+      "iso3": "GRD",
+      "source_key": "grenada",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 48.658138
+    },
+    {
+      "name": "Guadeloupe",
+      "iso3": "GLP",
+      "source_key": "guadeloupe",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 16.000078
+    },
+    {
+      "name": "Guam",
+      "iso3": "GUM",
+      "source_key": "guam",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 13.472745
+    },
+    {
+      "name": "Guatemala",
+      "iso3": "GTM",
+      "source_key": "guatemala",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 14.622233
+    },
+    {
+      "name": "Guernsey",
+      "iso3": "GGY",
+      "source_key": "guernsey",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 49.456814
+    },
+    {
+      "name": "Guinea",
+      "iso3": "GIN",
+      "source_key": "guinea",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 9.51706
+    },
+    {
+      "name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_key": "guinea-bissau",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 11.861324
+    },
+    {
+      "name": "Guyana",
+      "iso3": "GUY",
+      "source_key": "guyana",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.802577
+    },
+    {
+      "name": "Haiti",
+      "iso3": "HTI",
+      "source_key": "haiti",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 18.547327
+    },
+    {
+      "name": "Heard Island and McDonald Islands",
+      "iso3": "HMD",
+      "source_key": "heard island and mcdonald islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": null
+    },
+    {
+      "name": "Honduras",
+      "iso3": "HND",
+      "source_key": "honduras",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 14.105686
+    },
+    {
+      "name": "Hong Kong",
+      "iso3": "HKG",
+      "source_key": "hong kong",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 36.59861
+    },
+    {
+      "name": "Hungary",
+      "iso3": "HUN",
+      "source_key": "hungary",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 47.498382
+    },
+    {
+      "name": "Iceland",
+      "iso3": "ISL",
+      "source_key": "iceland",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 64.145981
+    },
+    {
+      "name": "India",
+      "iso3": "IND",
+      "source_key": "india",
+      "border_count": 8,
+      "timezone_count": 1,
+      "capital_abs_latitude": 28.614179
+    },
+    {
+      "name": "Indonesia",
+      "iso3": "IDN",
+      "source_key": "indonesia",
+      "border_count": 3,
+      "timezone_count": 3,
+      "capital_abs_latitude": 6.175394
+    },
+    {
+      "name": "Iran",
+      "iso3": "IRN",
+      "source_key": "iran",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 35.700618
+    },
+    {
+      "name": "Iraq",
+      "iso3": "IRQ",
+      "source_key": "iraq",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 33.302431
+    },
+    {
+      "name": "Ireland",
+      "iso3": "IRL",
+      "source_key": "ireland",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 53.349764
+    },
+    {
+      "name": "Israel",
+      "iso3": "ISR",
+      "source_key": "israel",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 31.778345
+    },
+    {
+      "name": "Italy",
+      "iso3": "ITA",
+      "source_key": "italy",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 41.89332
+    },
+    {
+      "name": "Jamaica",
+      "iso3": "JAM",
+      "source_key": "jamaica",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 17.971215
+    },
+    {
+      "name": "Japan",
+      "iso3": "JPN",
+      "source_key": "japan",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 35.682839
+    },
+    {
+      "name": "Jersey",
+      "iso3": "JEY",
+      "source_key": "jersey",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 47.384387
+    },
+    {
+      "name": "Jordan",
+      "iso3": "JOR",
+      "source_key": "jordan",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 31.951569
+    },
+    {
+      "name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_key": "kazakhstan",
+      "border_count": 5,
+      "timezone_count": 2,
+      "capital_abs_latitude": 51.12822
+    },
+    {
+      "name": "Kenya",
+      "iso3": "KEN",
+      "source_key": "kenya",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 1.283253
+    },
+    {
+      "name": "Kiribati",
+      "iso3": "KIR",
+      "source_key": "kiribati",
+      "border_count": 0,
+      "timezone_count": 3,
+      "capital_abs_latitude": 1.349078
+    },
+    {
+      "name": "North Korea",
+      "iso3": "PRK",
+      "source_key": "north korea",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 39.019474
+    },
+    {
+      "name": "South Korea",
+      "iso3": "KOR",
+      "source_key": "south korea",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 37.566679
+    },
+    {
+      "name": "Kuwait",
+      "iso3": "KWT",
+      "source_key": "kuwait",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 29.379709
+    },
+    {
+      "name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_key": "kyrgyzstan",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 42.876562
+    },
+    {
+      "name": "Laos",
+      "iso3": "LAO",
+      "source_key": "laos",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 17.964099
+    },
+    {
+      "name": "Latvia",
+      "iso3": "LVA",
+      "source_key": "latvia",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 56.949398
+    },
+    {
+      "name": "Lebanon",
+      "iso3": "LBN",
+      "source_key": "lebanon",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 33.89592
+    },
+    {
+      "name": "Lesotho",
+      "iso3": "LSO",
+      "source_key": "lesotho",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 29.310054
+    },
+    {
+      "name": "Liberia",
+      "iso3": "LBR",
+      "source_key": "liberia",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.328034
+    },
+    {
+      "name": "Libya",
+      "iso3": "LBY",
+      "source_key": "libya",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 32.896672
+    },
+    {
+      "name": "Liechtenstein",
+      "iso3": "LIE",
+      "source_key": "liechtenstein",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 47.139286
+    },
+    {
+      "name": "Lithuania",
+      "iso3": "LTU",
+      "source_key": "lithuania",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 54.687046
+    },
+    {
+      "name": "Luxembourg",
+      "iso3": "LUX",
+      "source_key": "luxembourg",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 49.815868
+    },
+    {
+      "name": "Macau",
+      "iso3": "MAC",
+      "source_key": "macau",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": null
+    },
+    {
+      "name": "Republic of Macedonia",
+      "iso3": "MKD",
+      "source_key": "republic of macedonia",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 41.996092
+    },
+    {
+      "name": "Madagascar",
+      "iso3": "MDG",
+      "source_key": "madagascar",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 18.910012
+    },
+    {
+      "name": "Malawi",
+      "iso3": "MWI",
+      "source_key": "malawi",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.987511
+    },
+    {
+      "name": "Malaysia",
+      "iso3": "MYS",
+      "source_key": "malaysia",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 3.151696
+    },
+    {
+      "name": "Maldives",
+      "iso3": "MDV",
+      "source_key": "maldives",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 16.370036
+    },
+    {
+      "name": "Mali",
+      "iso3": "MLI",
+      "source_key": "mali",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 12.605033
+    },
+    {
+      "name": "Malta",
+      "iso3": "MLT",
+      "source_key": "malta",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 35.898982
+    },
+    {
+      "name": "Isle of Man",
+      "iso3": "IMN",
+      "source_key": "isle of man",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 39.762842
+    },
+    {
+      "name": "Marshall Islands",
+      "iso3": "MHL",
+      "source_key": "marshall islands",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 7.090992
+    },
+    {
+      "name": "Martinique",
+      "iso3": "MTQ",
+      "source_key": "martinique",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 14.602796
+    },
+    {
+      "name": "Mauritania",
+      "iso3": "MRT",
+      "source_key": "mauritania",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 18.079238
+    },
+    {
+      "name": "Mauritius",
+      "iso3": "MUS",
+      "source_key": "mauritius",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 20.163728
+    },
+    {
+      "name": "Mayotte",
+      "iso3": "MYT",
+      "source_key": "mayotte",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 12.780586
+    },
+    {
+      "name": "Mexico",
+      "iso3": "MEX",
+      "source_key": "mexico",
+      "border_count": 3,
+      "timezone_count": 3,
+      "capital_abs_latitude": 19.43263
+    },
+    {
+      "name": "Federated States of Micronesia",
+      "iso3": "FSM",
+      "source_key": "federated states of micronesia",
+      "border_count": 0,
+      "timezone_count": 2,
+      "capital_abs_latitude": 6.920744
+    },
+    {
+      "name": "Moldova",
+      "iso3": "MDA",
+      "source_key": "moldova",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 47.024471
+    },
+    {
+      "name": "Monaco",
+      "iso3": "MCO",
+      "source_key": "monaco",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 43.732349
+    },
+    {
+      "name": "Mongolia",
+      "iso3": "MNG",
+      "source_key": "mongolia",
+      "border_count": 2,
+      "timezone_count": 2,
+      "capital_abs_latitude": 47.918468
+    },
+    {
+      "name": "Montserrat",
+      "iso3": "MSR",
+      "source_key": "montserrat",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 50.371266
+    },
+    {
+      "name": "Morocco",
+      "iso3": "MAR",
+      "source_key": "morocco",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 34.022405
+    },
+    {
+      "name": "Mozambique",
+      "iso3": "MOZ",
+      "source_key": "mozambique",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 25.966213
+    },
+    {
+      "name": "Namibia",
+      "iso3": "NAM",
+      "source_key": "namibia",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 22.574392
+    },
+    {
+      "name": "Nauru",
+      "iso3": "NRU",
+      "source_key": "nauru",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 0.547101
+    },
+    {
+      "name": "Nepal",
+      "iso3": "NPL",
+      "source_key": "nepal",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 27.708317
+    },
+    {
+      "name": "Netherlands",
+      "iso3": "NLD",
+      "source_key": "netherlands",
+      "border_count": 2,
+      "timezone_count": null,
+      "capital_abs_latitude": 52.37276
+    },
+    {
+      "name": "New Caledonia",
+      "iso3": "NCL",
+      "source_key": "new caledonia",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 22.274526
+    },
+    {
+      "name": "New Zealand",
+      "iso3": "NZL",
+      "source_key": "new zealand",
+      "border_count": 0,
+      "timezone_count": 5,
+      "capital_abs_latitude": 41.288795
+    },
+    {
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "source_key": "nicaragua",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 12.145991
+    },
+    {
+      "name": "Niger",
+      "iso3": "NER",
+      "source_key": "niger",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.524834
+    },
+    {
+      "name": "Nigeria",
+      "iso3": "NGA",
+      "source_key": "nigeria",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 9.06433
+    },
+    {
+      "name": "Niue",
+      "iso3": "NIU",
+      "source_key": "niue",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 19.053416
+    },
+    {
+      "name": "Norfolk Island",
+      "iso3": "NFK",
+      "source_key": "norfolk island",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 17.971215
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "source_key": "northern mariana islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 15.190983
+    },
+    {
+      "name": "Norway",
+      "iso3": "NOR",
+      "source_key": "norway",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 59.91333
+    },
+    {
+      "name": "Oman",
+      "iso3": "OMN",
+      "source_key": "oman",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 23.599786
+    },
+    {
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "source_key": "pakistan",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 33.693812
+    },
+    {
+      "name": "Palau",
+      "iso3": "PLW",
+      "source_key": "palau",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 7.500619
+    },
+    {
+      "name": "Panama",
+      "iso3": "PAN",
+      "source_key": "panama",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 8.971449
+    },
+    {
+      "name": "Papua New Guinea",
+      "iso3": "PNG",
+      "source_key": "papua new guinea",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 9.47433
+    },
+    {
+      "name": "Paraguay",
+      "iso3": "PRY",
+      "source_key": "paraguay",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 25.280046
+    },
+    {
+      "name": "Peru",
+      "iso3": "PER",
+      "source_key": "peru",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 12.062106
+    },
+    {
+      "name": "Philippines",
+      "iso3": "PHL",
+      "source_key": "philippines",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 14.590622
+    },
+    {
+      "name": "Pitcairn Islands",
+      "iso3": "PCN",
+      "source_key": "pitcairn islands",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 25.066667
+    },
+    {
+      "name": "Poland",
+      "iso3": "POL",
+      "source_key": "poland",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 52.233717
+    },
+    {
+      "name": "Portugal",
+      "iso3": "PRT",
+      "source_key": "portugal",
+      "border_count": 1,
+      "timezone_count": 2,
+      "capital_abs_latitude": 38.707751
+    },
+    {
+      "name": "Puerto Rico",
+      "iso3": "PRI",
+      "source_key": "puerto rico",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 18.465299
+    },
+    {
+      "name": "Qatar",
+      "iso3": "QAT",
+      "source_key": "qatar",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 25.285633
+    },
+    {
+      "name": "Réunion",
+      "iso3": "REU",
+      "source_key": "réunion",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 48.935773
+    },
+    {
+      "name": "Romania",
+      "iso3": "ROU",
+      "source_key": "romania",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 44.436141
+    },
+    {
+      "name": "Russia",
+      "iso3": "RUS",
+      "source_key": "russia",
+      "border_count": 14,
+      "timezone_count": 9,
+      "capital_abs_latitude": 55.750446
+    },
+    {
+      "name": "Rwanda",
+      "iso3": "RWA",
+      "source_key": "rwanda",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 1.88596
+    },
+    {
+      "name": "Saint Helena",
+      "iso3": "SHN",
+      "source_key": "saint helena",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 37.210443
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "iso3": "KNA",
+      "source_key": "saint kitts and nevis",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 17.296092
+    },
+    {
+      "name": "Saint Lucia",
+      "iso3": "LCA",
+      "source_key": "saint lucia",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.952589
+    },
+    {
+      "name": "Saint Pierre and Miquelon",
+      "iso3": "SPM",
+      "source_key": "saint pierre and miquelon",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 48.383272
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "iso3": "VCT",
+      "source_key": "saint vincent and the grenadines",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.156186
+    },
+    {
+      "name": "Samoa",
+      "iso3": "WSM",
+      "source_key": "samoa",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.834369
+    },
+    {
+      "name": "San Marino",
+      "iso3": "SMR",
+      "source_key": "san marino",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 43.9364
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "iso3": "STP",
+      "source_key": "são tomé and príncipe",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 0.338924
+    },
+    {
+      "name": "Saudi Arabia",
+      "iso3": "SAU",
+      "source_key": "saudi arabia",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 24.631969
+    },
+    {
+      "name": "Scotland",
+      "iso3": "",
+      "source_key": "scotland",
+      "border_count": null,
+      "timezone_count": null,
+      "capital_abs_latitude": null
+    },
+    {
+      "name": "Senegal",
+      "iso3": "SEN",
+      "source_key": "senegal",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 14.693425
+    },
+    {
+      "name": "Serbia",
+      "iso3": "SRB",
+      "source_key": "serbia",
+      "border_count": 9,
+      "timezone_count": 2,
+      "capital_abs_latitude": 44.817813
+    },
+    {
+      "name": "Seychelles",
+      "iso3": "SYC",
+      "source_key": "seychelles",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 36.59861
+    },
+    {
+      "name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_key": "sierra leone",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 8.479004
+    },
+    {
+      "name": "Singapore",
+      "iso3": "SGP",
+      "source_key": "singapore",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 1.357107
+    },
+    {
+      "name": "Slovakia",
+      "iso3": "SVK",
+      "source_key": "slovakia",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 48.151699
+    },
+    {
+      "name": "Slovenia",
+      "iso3": "SVN",
+      "source_key": "slovenia",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 46.04998
+    },
+    {
+      "name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_key": "solomon islands",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 9.431077
+    },
+    {
+      "name": "Somalia",
+      "iso3": "SOM",
+      "source_key": "somalia",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 2.042778
+    },
+    {
+      "name": "South Africa",
+      "iso3": "ZAF",
+      "source_key": "south africa",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 25.745937
+    },
+    {
+      "name": "South Georgia",
+      "iso3": "SGS",
+      "source_key": "south georgia",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 54.283545
+    },
+    {
+      "name": "South Sudan",
+      "iso3": "SSD",
+      "source_key": "south sudan",
+      "border_count": 6,
+      "timezone_count": 1,
+      "capital_abs_latitude": 4.847202
+    },
+    {
+      "name": "Spain",
+      "iso3": "ESP",
+      "source_key": "spain",
+      "border_count": 5,
+      "timezone_count": 2,
+      "capital_abs_latitude": 40.416705
+    },
+    {
+      "name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_key": "sri lanka",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.934997
+    },
+    {
+      "name": "Sudan",
+      "iso3": "SDN",
+      "source_key": "sudan",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 15.593325
+    },
+    {
+      "name": "Suriname",
+      "iso3": "SUR",
+      "source_key": "suriname",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 5.821609
+    },
+    {
+      "name": "Svalbard and Jan Mayen",
+      "iso3": "SJM",
+      "source_key": "svalbard and jan mayen",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 78.223156
+    },
+    {
+      "name": "Swaziland",
+      "iso3": "SWZ",
+      "source_key": "swaziland",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 26.446285
+    },
+    {
+      "name": "Sweden",
+      "iso3": "SWE",
+      "source_key": "sweden",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 59.325117
+    },
+    {
+      "name": "Switzerland",
+      "iso3": "CHE",
+      "source_key": "switzerland",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 46.948271
+    },
+    {
+      "name": "Syria",
+      "iso3": "SYR",
+      "source_key": "syria",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 33.51307
+    },
+    {
+      "name": "Taiwan",
+      "iso3": "TWN",
+      "source_key": "taiwan",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 25.03752
+    },
+    {
+      "name": "Tajikistan",
+      "iso3": "TJK",
+      "source_key": "tajikistan",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 38.542584
+    },
+    {
+      "name": "Tanzania",
+      "iso3": "TZA",
+      "source_key": "tanzania",
+      "border_count": 8,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.337282
+    },
+    {
+      "name": "Thailand",
+      "iso3": "THA",
+      "source_key": "thailand",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 13.754253
+    },
+    {
+      "name": "East Timor",
+      "iso3": "TLS",
+      "source_key": "east timor",
+      "border_count": 1,
+      "timezone_count": 1,
+      "capital_abs_latitude": 28.651718
+    },
+    {
+      "name": "Togo",
+      "iso3": "TGO",
+      "source_key": "togo",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 6.130419
+    },
+    {
+      "name": "Tokelau",
+      "iso3": "TKL",
+      "source_key": "tokelau",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 9.374305
+    },
+    {
+      "name": "Tonga",
+      "iso3": "TON",
+      "source_key": "tonga",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 21.13434
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "iso3": "TTO",
+      "source_key": "trinidad and tobago",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 10.657268
+    },
+    {
+      "name": "Tunisia",
+      "iso3": "TUN",
+      "source_key": "tunisia",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 33.843941
+    },
+    {
+      "name": "Turkey",
+      "iso3": "TUR",
+      "source_key": "turkey",
+      "border_count": 8,
+      "timezone_count": 1,
+      "capital_abs_latitude": 39.920777
+    },
+    {
+      "name": "Turkmenistan",
+      "iso3": "TKM",
+      "source_key": "turkmenistan",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 37.939668
+    },
+    {
+      "name": "Tuvalu",
+      "iso3": "TUV",
+      "source_key": "tuvalu",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 8.534995
+    },
+    {
+      "name": "Uganda",
+      "iso3": "UGA",
+      "source_key": "uganda",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 0.317714
+    },
+    {
+      "name": "Ukraine",
+      "iso3": "UKR",
+      "source_key": "ukraine",
+      "border_count": 7,
+      "timezone_count": 1,
+      "capital_abs_latitude": 50.450034
+    },
+    {
+      "name": "United Arab Emirates",
+      "iso3": "ARE",
+      "source_key": "united arab emirates",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 24.474796
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "source_key": "united kingdom",
+      "border_count": 1,
+      "timezone_count": 9,
+      "capital_abs_latitude": 51.507322
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "source_key": "united states",
+      "border_count": 2,
+      "timezone_count": 11,
+      "capital_abs_latitude": 38.894986
+    },
+    {
+      "name": "Uruguay",
+      "iso3": "URY",
+      "source_key": "uruguay",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 34.905904
+    },
+    {
+      "name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_key": "uzbekistan",
+      "border_count": 5,
+      "timezone_count": 1,
+      "capital_abs_latitude": 41.312336
+    },
+    {
+      "name": "Vanuatu",
+      "iso3": "VUT",
+      "source_key": "vanuatu",
+      "border_count": 0,
+      "timezone_count": 1,
+      "capital_abs_latitude": 17.741497
+    },
+    {
+      "name": "Venezuela",
+      "iso3": "VEN",
+      "source_key": "venezuela",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 10.506098
+    },
+    {
+      "name": "Vietnam",
+      "iso3": "VNM",
+      "source_key": "vietnam",
+      "border_count": 3,
+      "timezone_count": 1,
+      "capital_abs_latitude": 21.02945
+    },
+    {
+      "name": "Wales",
+      "iso3": "GBR",
+      "source_key": "wales",
+      "border_count": null,
+      "timezone_count": null,
+      "capital_abs_latitude": null
+    },
+    {
+      "name": "Wallis and Futuna",
+      "iso3": "WLF",
+      "source_key": "wallis and futuna",
+      "border_count": 0,
+      "timezone_count": null,
+      "capital_abs_latitude": 13.282042
+    },
+    {
+      "name": "Western Sahara",
+      "iso3": "ESH",
+      "source_key": "western sahara",
+      "border_count": 3,
+      "timezone_count": null,
+      "capital_abs_latitude": 27.154512
+    },
+    {
+      "name": "Yemen",
+      "iso3": "YEM",
+      "source_key": "yemen",
+      "border_count": 2,
+      "timezone_count": 1,
+      "capital_abs_latitude": 15.353857
+    },
+    {
+      "name": "Zambia",
+      "iso3": "ZMB",
+      "source_key": "zambia",
+      "border_count": 8,
+      "timezone_count": 1,
+      "capital_abs_latitude": 15.416449
+    },
+    {
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_key": "zimbabwe",
+      "border_count": 4,
+      "timezone_count": 1,
+      "capital_abs_latitude": 17.831773
+    }
+  ]
+}

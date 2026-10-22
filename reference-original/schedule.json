@@ -1,0 +1,108 @@
+{
+  "product": "CLOSEISH",
+  "start": "2026-10-20",
+  "end": "2026-10-26",
+  "timezone": "browser-local",
+  "target_days": 7,
+  "target_questions": 42,
+  "days": [
+    {
+      "day_number": 1,
+      "date": "2026-10-20",
+      "file": "days/day-01.json",
+      "question_ids": [
+        "closeish_20261020_q1",
+        "closeish_20261020_q2",
+        "closeish_20261020_q3",
+        "closeish_20261020_q4",
+        "closeish_20261020_q5",
+        "closeish_20261020_q6"
+      ],
+      "editorial_status": "existing_day"
+    },
+    {
+      "day_number": 2,
+      "date": "2026-10-21",
+      "file": "days/day-02.json",
+      "question_ids": [
+        "closeish_20261021_q1",
+        "closeish_20261021_q2",
+        "closeish_20261021_q3",
+        "closeish_20261021_q4",
+        "closeish_20261021_q5",
+        "closeish_20261021_q6"
+      ],
+      "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE"
+    },
+    {
+      "day_number": 3,
+      "date": "2026-10-22",
+      "file": "days/day-03.json",
+      "question_ids": [
+        "closeish_20261022_q1",
+        "closeish_20261022_q2",
+        "closeish_20261022_q3",
+        "closeish_20261022_q4",
+        "closeish_20261022_q5",
+        "closeish_20261022_q6"
+      ],
+      "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE"
+    },
+    {
+      "day_number": 4,
+      "date": "2026-10-23",
+      "file": "days/day-04.json",
+      "question_ids": [
+        "closeish_20261023_q1",
+        "closeish_20261023_q2",
+        "closeish_20261023_q3",
+        "closeish_20261023_q4",
+        "closeish_20261023_q5",
+        "closeish_20261023_q6"
+      ],
+      "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE"
+    },
+    {
+      "day_number": 5,
+      "date": "2026-10-24",
+      "file": "days/day-05.json",
+      "question_ids": [
+        "closeish_20261024_q1",
+        "closeish_20261024_q2",
+        "closeish_20261024_q3",
+        "closeish_20261024_q4",
+        "closeish_20261024_q5",
+        "closeish_20261024_q6"
+      ],
+      "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE"
+    },
+    {
+      "day_number": 6,
+      "date": "2026-10-25",
+      "file": "days/day-06.json",
+      "question_ids": [
+        "closeish_20261025_q1",
+        "closeish_20261025_q2",
+        "closeish_20261025_q3",
+        "closeish_20261025_q4",
+        "closeish_20261025_q5",
+        "closeish_20261025_q6"
+      ],
+      "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE"
+    },
+    {
+      "day_number": 7,
+      "date": "2026-10-26",
+      "file": "days/day-07.json",
+      "question_ids": [
+        "closeish_20261026_q1",
+        "closeish_20261026_q2",
+        "closeish_20261026_q3",
+        "closeish_20261026_q4",
+        "closeish_20261026_q5",
+        "closeish_20261026_q6"
+      ],
+      "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE"
+    }
+  ]
+}
