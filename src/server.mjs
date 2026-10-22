@@ -14,7 +14,12 @@ export function dateInZone(now, zone='Europe/Budapest') {
 export function createApp({days=loadContent(),zone=process.env.GAME_TIMEZONE||'Europe/Budapest',clock=()=>new Date(),
   previewDate=process.env.DEV_DATE||'',production=process.env.NODE_ENV==='production',
   allowedOrigins=(process.env.ALLOWED_ORIGINS||'http://localhost:5173,http://127.0.0.1:5173').split(',').map(x=>x.trim()).filter(Boolean),rateLimit=Number(process.env.RATE_LIMIT_PER_MINUTE||600),
+  writeRateLimit=Number(process.env.WRITE_RATE_LIMIT_PER_MINUTE||120),
+  apiKeys=(process.env.API_KEYS||'').split(',').map(x=>x.trim()).filter(Boolean),
   store=null,signingSecret=process.env.SIGNING_SECRET,playerSecret=process.env.PLAYER_HASH_SECRET,trustProxy=process.env.TRUST_PROXY==='railway'}={}) {
+  if(!Number.isInteger(rateLimit)||rateLimit<0||!Number.isInteger(writeRateLimit)||writeRateLimit<0)throw new Error('Rate limits must be non-negative integers');
+  if(apiKeys.some(k=>k.length<24))throw new Error('Each API_KEYS entry must be at least 24 characters');
+  const keyDigests=apiKeys.map(k=>crypto.createHash('sha256').update(k).digest());
   if(production && previewDate) throw new Error('DEV_DATE is forbidden in production');
   if(production && !store)throw new Error('Production requires PostgreSQL statistics storage');
   if(production && store?.mode!=='postgres')throw new Error('Production requires PostgreSQL, never memory statistics');
@@ -23,7 +28,7 @@ export function createApp({days=loadContent(),zone=process.env.GAME_TIMEZONE||'E
   const statistics=store?createStatistics(store):null;
   if(previewDate && (!/^\d{4}-\d{2}-\d{2}$/.test(previewDate)||!days.has(previewDate))) throw new Error('DEV_DATE must be an installed date');
   dateInZone(clock(),zone); // Fail fast on invalid timezone.
-  const buckets=new Map(), dailyBuffers=new Map();
+  const buckets=new Map(), writeBuckets=new Map(), dailyBuffers=new Map();
   const stats={requests:0,errors:0,rateLimited:0};
   const today=()=>previewDate||dateInZone(clock(),zone);
   function send(req,res,status,value,cache='no-store') {
@@ -33,18 +38,26 @@ export function createApp({days=loadContent(),zone=process.env.GAME_TIMEZONE||'E
     res.writeHead(status,{...headers,'Content-Length':body.length}); res.end(body);
   }
   const error=(req,res,status,code,message)=>{stats.errors++;send(req,res,status,{error:{code,message},date:today()});};
-  function limited(req) {
-    if(rateLimit===0) return false;
+  function validKey(req) {
+    if(!keyDigests.length) return true;
+    const given=req.headers['x-api-key'];
+    if(typeof given!=='string'||!given) return false;
+    const digest=crypto.createHash('sha256').update(given).digest();
+    let ok=false; for(const d of keyDigests) if(crypto.timingSafeEqual(d,digest)) ok=true;
+    return ok;
+  }
+  function limited(req,map=buckets,limit=rateLimit) {
+    if(limit===0) return false;
     // Only enable this deployment-specific header trust behind Railway's managed HTTP ingress.
     // X-Forwarded-For is never read; local/direct deployments use the socket address.
     const forwarded=req.headers['x-real-ip'];
-    const ip=trustProxy&&typeof forwarded==='string'&&isIP(forwarded)?forwarded:req.socket.remoteAddress, minute=Math.floor(Date.now()/60000), found=buckets.get(ip);
+    const ip=trustProxy&&typeof forwarded==='string'&&isIP(forwarded)?forwarded:req.socket.remoteAddress, minute=Math.floor(Date.now()/60000), found=map.get(ip);
     if(!found||found.minute!==minute) {
-      if(buckets.size>=50000) {for(const [k,b] of buckets) if(b.minute!==minute) buckets.delete(k);}
-      if(buckets.size>=50000) return true;
-      buckets.set(ip,{minute,count:1});return false;
+      if(map.size>=50000) {for(const [k,b] of map) if(b.minute!==minute) map.delete(k);}
+      if(map.size>=50000) return true;
+      map.set(ip,{minute,count:1});return false;
     }
-    return ++found.count>rateLimit;
+    return ++found.count>limit;
   }
   async function body(req,maxBytes=4096) {
     if(!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type']||'')) throw Object.assign(new Error('JSON required'),{status:415});
@@ -57,7 +70,7 @@ export function createApp({days=loadContent(),zone=process.env.GAME_TIMEZONE||'E
     const origin=req.headers.origin;
     if(origin && !allowedOrigins.includes(origin)) return error(req,res,403,'ORIGIN_REJECTED','Origin is not allowed');
     if(origin) res.setHeader('Access-Control-Allow-Origin',origin);
-    if(req.method==='OPTIONS') {res.writeHead(204,{'Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Content-Type','Access-Control-Max-Age':'600',Vary:'Origin'});res.end();return;}
+    if(req.method==='OPTIONS') {res.writeHead(204,{'Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Content-Type, X-API-Key','Access-Control-Max-Age':'600',Vary:'Origin'});res.end();return;}
     try {
       if((req.url||'').length>2048) return error(req,res,414,'URL_TOO_LONG','URL too long');
       const url=new URL(req.url,'http://localhost');
@@ -67,6 +80,9 @@ export function createApp({days=loadContent(),zone=process.env.GAME_TIMEZONE||'E
         catch{return error(req,res,503,'DATABASE_UNAVAILABLE','Database readiness check failed')}
       }
       if(limited(req)) {stats.rateLimited++;res.setHeader('Retry-After','60');return error(req,res,429,'RATE_LIMIT','Too many requests');}
+      if(url.pathname.startsWith('/api/') && !validKey(req)) return error(req,res,401,'API_KEY_REQUIRED','Missing or invalid API key');
+      const write=req.method==='POST' && (url.pathname==='/api/v1/results' || /^\/api\/v1\/questions\/[^/]+\/answer$/.test(url.pathname));
+      if(write && limited(req,writeBuckets,writeRateLimit)) {stats.rateLimited++;res.setHeader('Retry-After','60');return error(req,res,429,'RATE_LIMIT','Too many write requests');}
       if(!['GET','POST'].includes(req.method)) {res.setHeader('Allow','GET, POST, OPTIONS');return error(req,res,405,'METHOD','Method not allowed');}
       const date=today(), active=days.get(date), published=active?.day.publication_status==='scheduled';
       if(['/api/v1/results','/api/v1/statistics'].includes(url.pathname)){

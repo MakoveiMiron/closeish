@@ -26,6 +26,8 @@ A backend Node.js 24 + PostgreSQL. A frontend külön statikus oldal. A kérdés
 | `PG_POOL_MAX` | Kezdetben `10` minden API-példányon. |
 | `TRUST_PROXY` | `railway`, kizárólag közvetlen Railway HTTP-ingress mögött. |
 | `RATE_LIMIT_PER_MINUTE` | Kezdetben `600`, kliens-IP-nként, példányonként. |
+| `WRITE_RATE_LIMIT_PER_MINUTE` | Alap `120`: pontozás + eredménybeküldés, kliens-IP-nként, példányonként. Egy játék 6+1 írás. |
+| `API_KEYS` | Opcionális, vesszővel elválasztott kulcsok (min. 24 karakter; több kulcs = rotáció). Ha be van állítva, minden `/api/` kéréshez `X-API-Key` kell. Böngészős frontendben a kulcs nyilvános: csak a hívó azonosítására és a véletlen/naiv scriptelés kiszűrésére alkalmas, nem titok. Valódi védelemhez azonos origines proxy tegye hozzá a kulcsot szerveroldalon. |
 
 Az adatbázis-kapcsolatot privát hálózaton használd; a publikus TCP proxyt ne nyisd meg csak az API kedvéért. Ha a tényleges végpont TLS-t igényel, ellenőrzött tanúsítvánnyal konfiguráld: `PG_SSL_MODE=verify-full`, szükség esetén `PG_SSL_CA`. Ne kapcsolj be `rejectUnauthorized:false` módot. A connection string SSL-paraméterei és a `PG_SSL_*` változók ne mondjanak egymásnak ellent.
 

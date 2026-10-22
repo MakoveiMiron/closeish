@@ -79,7 +79,8 @@ Válasz: `{ error: { code, message }, date }`.
 - 409 `DAY_CHANGED`: régi nap vagy tartalomverzió egy kérdéskérésben; mai játék újratöltendő.
 - 413: normál kérés 4096 bájtnál, eredmény/statisztika 16384 bájtnál nagyobb.
 - 415: POST nem application/json.
-- 429: IP-korlát, `Retry-After: 60`.
+- 401 `API_KEY_REQUIRED`: be van állítva `API_KEYS`, de a kérés `X-API-Key` fejléce hiányzik vagy hibás. A `/healthz` és `/readyz` kulcs nélkül is elérhető.
+- 429 `RATE_LIMIT`: IP-korlát, `Retry-After: 60`. Két szint replikánként: minden `/api/` kérés (`RATE_LIMIT_PER_MINUTE`, alap 600/perc), valamint a `POST .../answer` és `POST /api/v1/results` írások külön (`WRITE_RATE_LIMIT_PER_MINUTE`, alap 120/perc).
 - 503 `STATS_NOT_CONFIGURED`: nincs bekötött statisztikatár.
 - 503 `STATS_UNAVAILABLE`: eredmény/statisztika DB-művelet nem sikerült; a küldés később ismételhető.
 - 503 `DATABASE_UNAVAILABLE`: readiness DB-ellenőrzése hibás.
