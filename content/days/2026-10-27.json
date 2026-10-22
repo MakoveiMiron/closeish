@@ -8,7 +8,7 @@
   "questions": {
     "q1": {
       "id": "closeish_20261025_q1",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "day_number": 6,
       "topic": "protected-places",
       "bank_id": "closeish-v9-parks",
@@ -1063,7 +1063,7 @@
     },
     "q2": {
       "id": "closeish_20261025_q2",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "day_number": 6,
       "topic": "jobs-economy",
       "bank_id": "closeish-v9-unemployment",
@@ -9783,7 +9783,7 @@
     },
     "q3": {
       "id": "closeish_20261025_q3",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "day_number": 6,
       "topic": "solar-science",
       "bank_id": "closeish-v9-sunspots",
@@ -14528,7 +14528,7 @@
     },
     "q4": {
       "id": "closeish_20261025_q4",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "day_number": 6,
       "topic": "published-books",
       "bank_id": "closeish-v9-books",
@@ -15043,7 +15043,7 @@
     },
     "q5": {
       "id": "closeish_20261025_q5",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "day_number": 6,
       "topic": "human-development",
       "bank_id": "closeish-v9-fertility",
@@ -18008,7 +18008,7 @@
     },
     "q6": {
       "id": "closeish_20261025_q6",
-      "date": "2026-10-25",
+      "date": "2026-10-27",
       "day_number": 6,
       "topic": "infrastructure",
       "bank_id": "closeish-v9-bridges",

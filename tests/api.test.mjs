@@ -58,13 +58,13 @@ test('Budapest midnight, DST, no stale date clamp and production preview rejecti
     const first=await fetch(base+'/api/v1/today'),etag=first.headers.get('etag');
     now=new Date('2026-10-22T22:00:00Z');
     const next=await fetch(base+'/api/v1/today',{headers:{'If-None-Match':etag}});assert.equal(next.status,200);assert.equal((await next.json()).date,'2026-10-23');
-    now=new Date('2026-10-27T12:00:00Z');const absent=await (await fetch(base+'/api/v1/today')).json();assert.equal(absent.available,false);assert.deepEqual(absent.questions,{});
+    now=new Date('2026-10-29T12:00:00Z');const absent=await (await fetch(base+'/api/v1/today')).json();assert.equal(absent.available,false);assert.deepEqual(absent.questions,{});
   });
 });
 test('large dictionary, frozen city snapshot, no runtime external lookup',()=>{
-  const word=days.get('2026-10-21').questions[0];assert.equal(word.q.answers.length,188798);
+  const word=days.get('2026-10-23').questions[0];assert.equal(word.q.answers.length,188798);
   assert.ok(hints(word,'inter').length<=4);
-  const city=days.get('2026-10-23').questions[4];assert.equal(city.q.answers.length,2035);
+  const city=days.get('2026-10-25').questions[4];assert.equal(city.q.answers.length,2035);
   assert.equal(scoreAnswer(city,'Aksu, CN').points,1200);
   assert.equal(scoreAnswer(city,'Unlisted fictional town').metric_value,null);
   assert.ok(!fs.readFileSync(new URL('../src/content.mjs',import.meta.url),'utf8').includes('geocoding-api'));

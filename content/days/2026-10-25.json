@@ -8,7 +8,7 @@
   "questions": {
     "q1": {
       "id": "closeish_20261023_q1",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "day_number": 4,
       "topic": "cinema",
       "bank_id": "imdb-top1000-2020-ranked-first-100",
@@ -1648,7 +1648,7 @@
     },
     "q2": {
       "id": "closeish_20261023_q2_iphone_intro",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "day_number": 4,
       "topic": "technology",
       "bank_id": "apple_iphone_all_marketed_models_20261021",
@@ -2639,7 +2639,7 @@
     },
     "q3": {
       "id": "closeish_20261023_q3",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "day_number": 4,
       "topic": "music",
       "bank_id": "spotify-2023-top100-by-streams",
@@ -4249,7 +4249,7 @@
     },
     "q4": {
       "id": "closeish_20261023_q4",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "day_number": 4,
       "topic": "motorsport",
       "bank_id": "ergast-racedata-155-driver-subset",
@@ -6684,7 +6684,7 @@
     },
     "q5": {
       "id": "closeish_20261023_q5",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "day_number": 4,
       "topic": "travel",
       "bank_id": "city_budapest_distance_large_cities_200k",
@@ -61873,7 +61873,7 @@
     },
     "q6": {
       "id": "closeish_20261023_q6",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "day_number": 4,
       "topic": "timekeeping",
       "bank_id": "iana-tzdb-python2026",
