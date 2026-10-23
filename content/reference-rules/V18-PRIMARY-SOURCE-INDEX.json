@@ -1,0 +1,22 @@
+{
+  "version": "V18",
+  "dates": [
+    "2026-10-30",
+    "2026-10-31"
+  ],
+  "source_snapshots": [
+    "bipm-24-si-prefixes.csv",
+    "fide-64-chess-squares.csv",
+    "folger-38-plays-title-length.csv",
+    "icao-26-phonetic-words.csv",
+    "pokemon-original-151-speed.csv",
+    "three-digit-primes.csv"
+  ],
+  "source_urls": {
+    "chess": "https://handbook.fide.com/chapter/E012023",
+    "plays": "https://folgerpedia.folger.edu/List_of_Shakespeare%27s_works",
+    "pokemon": "https://raw.githubusercontent.com/codedex-io/datasets/main/pokemon/pokemon.csv",
+    "si": "https://www.bipm.org/en/-/2022-12-19-si-prefixes",
+    "icao": "https://www.faa.gov/air_traffic/publications/aim_html/chap4_section_2.html"
+  }
+}

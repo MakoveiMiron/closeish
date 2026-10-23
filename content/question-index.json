@@ -464,24 +464,24 @@
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q1",
-    "topic": "public-health",
-    "prompt": "Name a country where life expectancy at birth was at least 60 years in 2007. (Rounded to the nearest year.)",
+    "topic": "mathematics",
+    "prompt": "Name a three-digit prime number whose digits add up to at least 16.",
     "direction": "above",
-    "limit": 60,
-    "unit": "years",
-    "answers": 142,
-    "content_revision": "2026-10-30-editorial-v17-q1"
+    "limit": 16,
+    "unit": "digit sum",
+    "answers": 143,
+    "content_revision": "2026-10-23-complete-source-universe-v18"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q2",
-    "topic": "political-geography",
-    "prompt": "Name a country or territory that borders at most seven other countries or territories.",
-    "direction": "below",
-    "limit": 7,
-    "unit": "border codes",
-    "answers": 232,
-    "content_revision": "2026-10-30-editorial-v17-q2"
+    "topic": "strategy-games",
+    "prompt": "Name a chessboard square at least 5 squares away from a1 in a straight line, measured between square centres.",
+    "direction": "above",
+    "limit": 5,
+    "unit": "squares",
+    "answers": 64,
+    "content_revision": "2026-10-23-complete-source-universe-v18"
   },
   {
     "date": "2026-10-30",
@@ -497,13 +497,13 @@
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q4",
-    "topic": "chemistry",
-    "prompt": "Name a chemical element with an atomic number of at most 59.",
-    "direction": "below",
-    "limit": 59,
-    "unit": "protons",
-    "answers": 118,
-    "content_revision": "2026-10-30-editorial-v17-q4"
+    "topic": "theatre",
+    "prompt": "Name a Shakespeare play with at least 15 letters in its title, ignoring spaces and punctuation.",
+    "direction": "above",
+    "limit": 15,
+    "unit": "letters",
+    "answers": 38,
+    "content_revision": "2026-10-23-complete-source-universe-v18"
   },
   {
     "date": "2026-10-30",
@@ -519,13 +519,13 @@
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q6",
-    "topic": "economic-history",
-    "prompt": "Name a year between 1959 and 2008 when U.S. real personal consumption averaged at most 4,500 billion inflation-adjusted 2005 dollars.",
-    "direction": "below",
-    "limit": 4500,
-    "unit": "billion chained-2005 USD",
-    "answers": 50,
-    "content_revision": "2026-10-30-editorial-v17-q6"
+    "topic": "measurement",
+    "prompt": "Name an SI metric prefix representing at least one million times a base unit.",
+    "direction": "above",
+    "limit": 6,
+    "unit": "power of ten",
+    "answers": 24,
+    "content_revision": "2026-10-23-complete-source-universe-v18"
   },
   {
     "date": "2026-10-31",
@@ -552,13 +552,13 @@
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q3",
-    "topic": "car-engineering",
-    "prompt": "Name a car model from 1999 or 2008 offered with an engine of at least 4,000 cm³. Include its manufacturer and model year.",
+    "topic": "videogames",
+    "prompt": "Name one of the original 151 Pokémon whose standard-form base Speed stat is at least 85.",
     "direction": "above",
-    "limit": 4000,
-    "unit": "cm³",
-    "answers": 76,
-    "content_revision": "2026-10-31-editorial-v17-q3"
+    "limit": 85,
+    "unit": "Speed",
+    "answers": 151,
+    "content_revision": "2026-10-23-complete-source-universe-v18"
   },
   {
     "date": "2026-10-31",
@@ -574,13 +574,13 @@
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q5",
-    "topic": "population-geography",
-    "prompt": "Name a country or territory with a historically recorded population density of at least 113 people/km².",
-    "direction": "above",
-    "limit": 113,
-    "unit": "people/km²",
-    "answers": 224,
-    "content_revision": "2026-10-31-editorial-v17-q5"
+    "topic": "communication",
+    "prompt": "Name an aviation phonetic alphabet code word containing at most 50% vowels.",
+    "direction": "below",
+    "limit": 50,
+    "unit": "%",
+    "answers": 26,
+    "content_revision": "2026-10-23-complete-source-universe-v18"
   },
   {
     "date": "2026-10-31",
