@@ -89,3 +89,15 @@ Válasz: `{ error: { code, message }, date }`.
 - 503 `DATABASE_UNAVAILABLE`: readiness DB-ellenőrzése hibás.
 
 Hálózati időtúllépés után a kliens nem feltételez sikert vagy végleges kudarcot: eltárolja és újraküldi az azonos eredményt. Egy sikeres DB-commit után elveszett HTTP-válasz sem duplázza az eredményt.
+
+## Suggest – kizárólag szerverre mentett javaslatok
+
+`POST /api/v1/suggestions` – publikus, anonim kérdésjavaslat-fogadó. JSON body:
+
+```json
+{"question":"Name a film that lasts at most 120 minutes.","direction":"below"}
+```
+
+A `question` 8–350 karakteres, a `direction` `below` vagy `above`. Siker: HTTP 202, `{ "ok": true }` **csak sikeres PostgreSQL INSERT után**. PostgreSQL-hiánynál 503, érvénytelen kérésnél 400, túl sok kérésnél 429. A szolgáltatáshoz kötelező a `005_question_suggestions.sql` migráció (`npm run migrate` vagy Railway pre-deploy). `SUGGEST_LIMIT_PER_HOUR` alapérték 4 / IP / API-példány; a rendszer általános POST-korlátja szintén érvényes. Nagy forgalomhoz Redis/edge-oldali globális limiter és spamszűrés szükséges.
+
+**Nincs GET/LIST/EXPORT API és nincs kliensoldali javaslattörténet.** A javaslatok az adatbázis `question_suggestions` táblájában maradnak, csak DB-adminisztrátori hozzáféréssel olvashatók. A böngészőből nem kérhető le mások vagy saját korábbi javaslatlistája. A régi, lokálisan eltárolt demó-javaslatokat a frissített frontend a betöltéskor törli (azok korábban nem jutottak el a szerverre). Az API CORS-szűrése nem hitelesítés; a publikus POST ellen további abuse-védelem ajánlott.

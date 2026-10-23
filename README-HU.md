@@ -46,13 +46,13 @@ npm run export:questions
 
 Mindkét parancs önállóan, ebben a backendmappában működik. A friss AI-ZIP ide, a mappa gyökerébe készül. Az új napi JSON szakmai ellenőrzés és `scheduled` állapot után backend-újratelepítéssel kerül kiszolgálásra. A frontendbe nem kerül teljes kérdésbank.
 
-A mellékelt hét nap 2026-10-23–29-re szól. Hiányzó napon nincs napi kérdéscsomag; az éles szerver nem dátumozza át a játékot.
+A mellékelt kilenc nap 2026-10-23–31-re szól; október 29–31. még `draft`, így nem publikus. Hiányzó napon nincs napi kérdéscsomag; az éles szerver nem dátumozza át a játékot.
 
 ## Számláló, mentés, statisztika
 
 A **30 másodperces visszaszámlálót a frontend futtatja helyben**. A backend csak a kérdés egyszeri időkeretét adja át, nem küld másodpercenként időadatot. Nincs timer endpoint, WebSocket vagy szerveres tick. A lejáratkor elküldött válasz/időtúllépés a normál pontozási útvonalat használja.
 
-Az előrehaladás a böngészőben mentődik. A befejezett napi pontszám aláírt részpontok alapján PostgreSQL-be kerül. Az első sikeresen tárolt napi eredmény számít; retry és újrajátszás nem dupláz. A napi eloszlás, átlag és százalék valódi tárolt eredményekből készül. A saját eredmény a „hány százaléknál voltál jobb” összehasonlításból ki van véve; a holtverseny nem megelőzés. Teljes leírás: `docs/RAILWAY.md`, `docs/API.md`.
+Az előrehaladás PostgreSQL-ben mentődik, böngészőoldalon csak az átmeneti, hálózathiba esetén újraküldendő adatok maradnak. A befejezett napi pontszám aláírt részpontok alapján PostgreSQL-be kerül. Az első sikeresen tárolt napi eredmény számít; retry és újrajátszás nem dupláz. A napi eloszlás, átlag és százalék valódi tárolt eredményekből készül. A saját eredmény a „hány százaléknál voltál jobb” összehasonlításból ki van véve; a holtverseny nem megelőzés. Teljes leírás: `docs/RAILWAY.md`, `docs/API.md`.
 
 ## Tesztek
 
@@ -83,3 +83,7 @@ A migráció a korábbi eredményeket és számlálókat is egy nappal előrébb
 a napi tartalomhash-eket az új JSON-okhoz igazítja. Telepítés előtt készíts
 adatbázis-mentést és ütemezz karbantartást. A részletek a
 `docs/LAUNCH-2026-10-23.md` dokumentumban találhatók.
+
+## V17.8: privát javaslatbeérkeztetés és teljes tartalom átadása
+
+A Suggest új `POST /api/v1/suggestions` művelete a `005_question_suggestions.sql` migrációval létrehozott PostgreSQL táblába ír. Nincs publikus listázás/export, a frontend nem tart javaslattörténetet. Adminisztáció: `docs/SUGGEST-ADMIN-HU.md`. A teljes forrásbeli napi bankokat megőrizzük, de a 29–31-i természetes kérdések teljessége még **nem bizonyított**. Lásd `content/reference-rules/BANK-COVERAGE-AND-SUGGEST-2026-10-23-HU.md`.

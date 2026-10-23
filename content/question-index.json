@@ -399,198 +399,198 @@
     "date": "2026-10-29",
     "id": "closeish_20261029_q1",
     "topic": "biology",
-    "prompt": "Name a mammal in the published 83-species sleep dataset that sleeps at most 11 hours per day on average (rounded to the nearest whole hour).",
+    "prompt": "Name a mammal that typically sleeps for at most 11 hours a day. (Daily totals are rounded to the nearest hour.)",
     "direction": "below",
     "limit": 11,
     "unit": "hours",
     "answers": 83,
-    "content_revision": "2026-10-29-frozen-series-v1"
+    "content_revision": "2026-10-29-editorial-v17-q1"
   },
   {
     "date": "2026-10-29",
     "id": "closeish_20261029_q2",
     "topic": "international-standards",
-    "prompt": "Name a country or territory with at least 32 ISO 3166-2 subdivision entries in the frozen pycountry catalogue.",
+    "prompt": "Name a country or territory with at least 32 registered ISO 3166-2 subdivision codes.",
     "direction": "above",
     "limit": 32,
     "unit": "subdivision codes",
     "answers": 249,
-    "content_revision": "2026-10-29-frozen-series-v1"
+    "content_revision": "2026-10-29-editorial-v17-q2"
   },
   {
     "date": "2026-10-29",
     "id": "closeish_20261029_q3",
     "topic": "oceanography",
-    "prompt": "Name a year from 1950–2010 with at least 4 months warmer than 23 °C in the NOAA Niño 1+2 sea-surface-temperature dataset.",
+    "prompt": "Name a year from 1950 to 2010 when sea-surface temperatures in the Niño 1+2 region exceeded 23 °C in at least four months.",
     "direction": "above",
     "limit": 4,
     "unit": "months",
     "answers": 61,
-    "content_revision": "2026-10-29-frozen-series-v1"
+    "content_revision": "2026-10-29-editorial-v17-q3"
   },
   {
     "date": "2026-10-29",
     "id": "closeish_20261029_q4",
     "topic": "automotive-history",
-    "prompt": "Name a car in the 1973–74 Motor Trend test dataset whose gross engine power is at least 82 kW (converted from mechanical horsepower, nearest kW).",
+    "prompt": "Name a car model from 1973 or 1974 with gross engine power of at least 82 kW.",
     "direction": "above",
     "limit": 82,
     "unit": "kW",
     "answers": 32,
-    "content_revision": "2026-10-29-frozen-series-v1"
+    "content_revision": "2026-10-29-editorial-v17-q4"
   },
   {
     "date": "2026-10-29",
     "id": "closeish_20261029_q5",
     "topic": "local-demography",
-    "prompt": "Name a county in the frozen 437-county Midwest dataset whose 2000 population was at most 91000 people (nearest 1,000 people).",
+    "prompt": "Name a county in the U.S. Midwest with at most 91,000 residents in 2000. (Populations are rounded to the nearest 1,000.)",
     "direction": "below",
     "limit": 91000,
     "unit": "people",
     "answers": 437,
-    "content_revision": "2026-10-29-frozen-series-v1"
+    "content_revision": "2026-10-29-editorial-v17-q5"
   },
   {
     "date": "2026-10-29",
     "id": "closeish_20261029_q6",
     "topic": "digital-design",
-    "prompt": "Name a CSS4 named colour with an HSV saturation of at least 46% (computed from its sRGB hex code, nearest whole percent).",
+    "prompt": "Name a named CSS colour with an HSV saturation of at least 46%.",
     "direction": "above",
     "limit": 46,
     "unit": "%",
     "answers": 148,
-    "content_revision": "2026-10-29-frozen-series-v1"
+    "content_revision": "2026-10-29-editorial-v17-q6"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q1",
     "topic": "public-health",
-    "prompt": "Name a country in the frozen Gapminder dataset with life expectancy at birth of at least 60 years in 2007 (nearest whole year).",
+    "prompt": "Name a country where life expectancy at birth was at least 60 years in 2007. (Rounded to the nearest year.)",
     "direction": "above",
     "limit": 60,
     "unit": "years",
     "answers": 142,
-    "content_revision": "2026-10-30-frozen-series-v1-source-iso-collisionfix1"
+    "content_revision": "2026-10-30-editorial-v17-q1"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q2",
     "topic": "political-geography",
-    "prompt": "Name a country or territory with at most 7 bordering-area codes listed in the frozen CountryInfo borders dataset.",
+    "prompt": "Name a country or territory that borders at most seven other countries or territories.",
     "direction": "below",
     "limit": 7,
     "unit": "border codes",
     "answers": 232,
-    "content_revision": "2026-10-30-frozen-series-v1"
+    "content_revision": "2026-10-30-editorial-v17-q2"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q3",
     "topic": "food-industry",
-    "prompt": "Name a year from 1944–2023 when recorded U.S. pork production reached at least 6681 thousand metric tonnes (annual total, rounded to the nearest 1,000 tonnes).",
+    "prompt": "Name a year between 1944 and 2023 when U.S. pork production was at least 6,681 thousand metric tonnes.",
     "direction": "above",
     "limit": 6681,
     "unit": "thousand metric tonnes",
     "answers": 80,
-    "content_revision": "2026-10-30-frozen-series-v1"
+    "content_revision": "2026-10-30-editorial-v17-q3"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q4",
     "topic": "chemistry",
-    "prompt": "Name a chemical element with atomic number at most 59 (number of protons).",
+    "prompt": "Name a chemical element with an atomic number of at most 59.",
     "direction": "below",
     "limit": 59,
     "unit": "protons",
     "answers": 118,
-    "content_revision": "2026-10-30-frozen-series-v1"
+    "content_revision": "2026-10-30-editorial-v17-q4"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q5",
     "topic": "lake-science",
-    "prompt": "Name a year from 1876–1972 when Lake Huron’s annual water level changed by at least 0 cm compared with the previous year (nearest cm; a negative change is a fall).",
+    "prompt": "Name a year from 1876 to 1972 when Lake Huron’s recorded water level changed by at least 0 cm from the previous year. (Changes are rounded to the nearest centimetre.)",
     "direction": "above",
     "limit": 0,
     "unit": "cm",
     "answers": 97,
-    "content_revision": "2026-10-30-frozen-series-v1"
+    "content_revision": "2026-10-30-editorial-v17-q5"
   },
   {
     "date": "2026-10-30",
     "id": "closeish_20261030_q6",
     "topic": "economic-history",
-    "prompt": "Name a year from 1959–2008 when average quarterly U.S. real personal consumption reached at most 4500 billion chained-2005 U.S. dollars (nearest $100 billion).",
+    "prompt": "Name a year between 1959 and 2008 when U.S. real personal consumption averaged at most 4,500 billion inflation-adjusted 2005 dollars.",
     "direction": "below",
     "limit": 4500,
     "unit": "billion chained-2005 USD",
     "answers": 50,
-    "content_revision": "2026-10-30-frozen-series-v1"
+    "content_revision": "2026-10-30-editorial-v17-q6"
   },
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q1",
     "topic": "social-history",
-    "prompt": "Name a U.S. state or Washington, D.C., where at least 13% of people were below the poverty line in the frozen 2009 state data (nearest whole percent).",
+    "prompt": "Name a U.S. state or the District of Columbia where at least 13% of residents lived below the poverty line in 2009.",
     "direction": "above",
     "limit": 13,
     "unit": "%",
     "answers": 51,
-    "content_revision": "2026-10-31-frozen-series-v1"
+    "content_revision": "2026-10-31-editorial-v17-q1"
   },
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q2",
     "topic": "industrial-history",
-    "prompt": "Name a year from 1951–1975 when world copper consumption was at most 5300 thousand metric tonnes (nearest 100,000 tonnes).",
+    "prompt": "Name a year between 1951 and 1975 when worldwide copper consumption was at most 5.3 million metric tonnes.",
     "direction": "below",
     "limit": 5300,
     "unit": "thousand metric tonnes",
     "answers": 25,
-    "content_revision": "2026-10-31-frozen-series-v1"
+    "content_revision": "2026-10-31-editorial-v17-q2"
   },
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q3",
     "topic": "car-engineering",
-    "prompt": "Name a manufacturer–model–year combination in the frozen U.S. EPA 1999/2008 car sample whose largest listed engine is at least 4000 cm³.",
+    "prompt": "Name a car model from 1999 or 2008 offered with an engine of at least 4,000 cm³. Include its manufacturer and model year.",
     "direction": "above",
     "limit": 4000,
     "unit": "cm³",
     "answers": 76,
-    "content_revision": "2026-10-31-frozen-series-v1"
+    "content_revision": "2026-10-31-editorial-v17-q3"
   },
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q4",
     "topic": "financial-history",
-    "prompt": "Name a YYYY-Q# quarter from 1972-Q2 through 1998-Q4 when Germany’s nominal long-term interest rate reached at least 790 basis points (100 basis points = 1%).",
+    "prompt": "Name a quarter between 1972 and 1998 when Germany’s nominal long-term interest rate was at least 790 basis points (7.9%). Answer as YYYY-Q#.",
     "direction": "above",
     "limit": 790,
     "unit": "basis points",
     "answers": 107,
-    "content_revision": "2026-10-31-frozen-series-v1"
+    "content_revision": "2026-10-31-editorial-v17-q4"
   },
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q5",
     "topic": "population-geography",
-    "prompt": "Name a country or territory whose frozen CountryInfo population density was at least 113 people/km² (population divided by land area, nearest whole person/km²).",
+    "prompt": "Name a country or territory with a historically recorded population density of at least 113 people/km².",
     "direction": "above",
     "limit": 113,
     "unit": "people/km²",
     "answers": 224,
-    "content_revision": "2026-10-31-frozen-series-v1"
+    "content_revision": "2026-10-31-editorial-v17-q5"
   },
   {
     "date": "2026-10-31",
     "id": "closeish_20261031_q6",
     "topic": "atmospheric-science",
-    "prompt": "Name a year from 1959–2001 when the frozen Mauna Loa annual mean CO₂ concentration was at least 340 ppm (mean of available weekly readings, nearest whole ppm).",
+    "prompt": "Name a year between 1959 and 2001 when the annual mean CO₂ concentration measured at Mauna Loa was at least 340 ppm. (Rounded to the nearest ppm.)",
     "direction": "above",
     "limit": 340,
     "unit": "ppm",
     "answers": 43,
-    "content_revision": "2026-10-31-frozen-series-v1"
+    "content_revision": "2026-10-31-editorial-v17-q6"
   }
 ]

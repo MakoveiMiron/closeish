@@ -10,7 +10,7 @@ Ezt a teljes `content` mappát add át ZIP-ben. Minden nap teljes kérdés- és 
 
 ## Másolható folytatási kérés
 
-Olvasd végig a KERDES-VALASZ-SZABALYZAT.md fájlt, a day.schema.json sémát és a meglévő napokat. Készíts új napi CLOSEISH-kérdéscsomagot a kért dátumra, pontosan hat, változatos angol nyelvű kérdéssel. Ne ismételd meg a meglévő kérdéseket pusztán más határértékkel. A válaszbank legyen a kimondott kategória és a rögzített forráskészlet lehető legteljesebb lefedése, a rossz oldali és túl távoli ismert válaszokkal együtt. Minden mérési értéket, jogosultsági feltételt és aliast forrással ellenőrizz. Hiányzó számot ne találj ki és ne helyettesíts nullával. Az új fájl neve YYYY-MM-DD.json, publication_status értéke először draft legyen. Tartsd meg a dokumentált pontozást, pontosan egy megközelítési irányt és a kérdésenkénti 30 másodpercet. Adj rövid magyar auditot a lefedettségről, hiányokról, forrásokról és lehetséges névütközésekről. Ha egy teljes, ellenőrzött nap nem állítható elő, jelezd pontosan a hiányokat; ne állítsd késznek.
+Olvasd végig a KERDES-VALASZ-SZABALYZAT.md fájlt, a day.schema.json sémát és a meglévő napokat. Készíts új napi CLOSEISH-kérdéscsomagot a kért dátumra, pontosan hat, változatos angol nyelvű kérdéssel. Ne ismételd meg a meglévő kérdéseket pusztán más határértékkel, más mérőszámmal ugyanazon entitásbankból, más évvel vagy más fogalmazással. A napi hat kérdés egymástól és az összes korábbi nap kérdéseitől is érdemben különbözzön; a legutóbbi 14 napot kiemelten hasonlítsd össze. Előbb készíts hat közérthető, valóban különböző angol kérdésötletet, csak azután keress hozzájuk adatforrást. A játékosnak megjelenő promptban NE szerepeljen háttéradatbázis, könyvtár, táblázat, csomag vagy frozen/snapshot/sample megnevezés: a források a belső metadata mezőkbe kerüljenek. Legyen világos a kért entitás, a mutató, a limit, az egyértelmű at least/at most irány, és időfüggő adatnál a dátum/év. Ne rejts el minta-korlátot pusztán a forrásnév törlésével: ha a bank nem igazolja a természetesen megfogalmazott teljes kategóriát, bővítsd a forrást vagy cseréld le a kérdést.  A válaszbank legyen a kimondott kategória és a rögzített forráskészlet lehető legteljesebb lefedése, a rossz oldali és túl távoli ismert válaszokkal együtt. Minden mérési értéket, jogosultsági feltételt és aliast forrással ellenőrizz. Hiányzó számot ne találj ki és ne helyettesíts nullával. Az új fájl neve YYYY-MM-DD.json, publication_status értéke először draft legyen. Tartsd meg a dokumentált pontozást, pontosan egy megközelítési irányt és a kérdésenkénti 30 másodpercet. Adj rövid magyar auditot a lefedettségről, hiányokról, forrásokról és lehetséges névütközésekről. Ha egy teljes, ellenőrzött nap nem állítható elő, jelezd pontosan a hiányokat; ne állítsd késznek.
 
 ## Beillesztés
 
@@ -28,7 +28,7 @@ A CLOSEISH első játszható napja **2026-10-23** (CHALLENGE #001), az utolsó j
 
 ## 2026-10-29–31 tartalomellenőrzés
 
-A részletes gépi és szakmai ellenőrzés: `reference-rules/AUDIT-2026-10-23-31-HU.md`. A V15 importált napok három azonosított belső konzisztenciahibáját kijavítottuk; a többi mérés külső szakmai hitelesítése változatlanul nem teljes. A három új nap `draft`; ne állítsd `scheduled` értékre a blokkoló auditpontok és szerkesztői forrásellenőrzés nélkül. A mellékelt generálószkript dokumentáció, futtatásához külön Python-függőségek kellenek, a backendnek nem.
+A részletes gépi és szakmai ellenőrzés: `reference-rules/AUDIT-2026-10-23-31-HU.md`. A V15 importált napok három azonosított belső konzisztenciahibáját kijavítottuk; a többi mérés külső szakmai hitelesítése változatlanul nem teljes. A három új nap `draft`; a V17 tartalmi változatossági és forrásuniverzum-követelmények miatt is felülvizsgálandók. Ne állítsd `scheduled` értékre a blokkoló auditpontok és szerkesztői forrásellenőrzés nélkül. A mellékelt generálószkript dokumentáció, futtatásához külön Python-függőségek kellenek, a backendnek nem.
 
 ## Konkrét javítások és utóellenőrzés (2026-10-23)
 
@@ -37,3 +37,10 @@ A részletes gépi és szakmai ellenőrzés: `reference-rules/AUDIT-2026-10-23-3
 - A `days` fájlok és a `question-index.json` megfelelő `revision`/`content_revision` azonosítói frissültek.
 - Futatható tartalmi konzisztenciateszt: `python reference-rules/validate-content-consistency.py`. Ehhez Python 3 szükséges, a `jsonschema` opcionális.
 - A részleteket a `reference-rules/AUDIT-CORRECTIONS-2026-10-23-HU.md` fájl tartalmazza. Ez **nem** jelent külső adathitelesítést, illetve a 2026-10-29–31-i napok továbbra is `draft` állapotúak.
+
+## V17 szerkesztői szövegezés és tartalmi felülvizsgálat (2026-10-23)
+
+- A `KERDES-VALASZ-SZABALYZAT.md` 2. fejezete kötelezővé teszi a természetes, adatbázisnév nélküli angol promptokat és a valódi, archívumhoz mért változatosságot.
+- A három új draft nap mind a 18 promptját szerkesztettük; **a 18 kérdés válaszbankját nem bővítettük és nem hitelesítettük újra**.
+- Mivel több kérdés forrása szűk minta vagy a korábbi napokon használt entitáskészlet, **a három draft nap még nem felel meg maradéktalanul a V17 szabályzatnak**. A megoldandó cserék és bankhiányok: `reference-rules/EDITORIAL-REVIEW-V17-HU.md`.
+- A prompt átírása nem módosítja a jogosultságot vagy a backend pontozását, és önmagában nem igazolja a promptból sejthető összes választ.

@@ -1,6 +1,6 @@
-# CLOSEISH – kérdés- és válaszösszeállítási szabályzat, V16
+# CLOSEISH – kérdés- és válaszösszeállítási szabályzat, V17 – közérthetőség, tartalmi sokszínűség és forrásfüggetlen kérdésszöveg
 
-Ez az új napi fájlok elsődleges szabályzata. A meglévő hat (2026-10-23–28-i) nap V15-import; megőrzésük nem új tényellenőrzés. A korábbi dokumentumok `reference-rules` alatt segédanyagként maradtak meg. Meglévő kérdés vagy pontozási határ átírása külön szerkesztői döntés, nem az új napok hozzáadásának mellékhatása.
+Ez az új napi fájlok elsődleges szabályzata. **A V17 követelmények a már elkészült draft napok szerkesztői felülvizsgálatára is érvényesek.** A meglévő hat (2026-10-23–28-i) nap V15-import; megőrzésük nem új tényellenőrzés. A korábbi dokumentumok `reference-rules` alatt segédanyagként maradtak meg. Meglévő kérdés vagy pontozási határ átírása külön szerkesztői döntés, nem az új napok hozzáadásának mellékhatása.
 
 ## 1. A játék
 
@@ -12,11 +12,67 @@ Ez az új napi fájlok elsődleges szabályzata. A meglévő hat (2026-10-23–2
 - Pontosan a határ eltalálása 1200 pont. A napi maximum 7200.
 - A határt átlépő, túl távoli, kihagyott vagy ismeretlen válasz 0 játékpontot kap. A nulla játékpont nem jelent nulla mért értéket.
 
-## 2. Kérdésválasztás és ismétlődés
+## 2. Kérdésminőség és valódi változatosság – KÖTELEZŐ, publikációt blokkoló feltételek
 
-Olvasd át az összes meglévő napot; a question-index.json csak gyors áttekintés. A kérdések témája és megoldási gondolata legyen változatos a napon belül és napok között. Hat azonos típusú országstatisztika nem változatos nap. A korábbi kérdés más limitre átírása önmagában nem új ötlet.
+### 2.1 A játékosnak szóló angol kérdés: természetes, rövid, világos
 
-A jó kérdés tág, szabad választeret hagy, de az entitásosztály, mutató, időpont/kiadás, egység és irány egyértelmű. Ne szűkíts önkényes apró részletekkel pusztán a kutatás csökkentéséért. Ha a természetes kategória nagyon nagy – jellemzően 10 000 felett –, indokolható egy valós, ellenőrizhető, a szövegben kimondott szűkítés. Ez nem általános 10 000 soros adatbankkorlát: a meglévő angolszó-kérdés például 188 798 rekordos. Ne vágj le egy adatbankot technikai kényelemből.
+A `prompt` a játékos kérdése, **nem adatforrási jegyzőkönyv**. Könnyen megérthető, jól megfogalmazott angol szöveg legyen; ne legyen szükség a háttéradatbázis vagy a kutatási eszköz ismeretére. A kérdésből egyértelműen derüljön ki:
+
+1. **mit kell megnevezni** (például országot, várost, filmet, állatot, évet);
+2. **milyen jellemzőt** vizsgálunk (például lakosságszám, hossz, életkor, szegénységi arány);
+3. **mi a határ és az egyetlen megközelítési irány** (`at most` / `at least`);
+4. **melyik év/idény/kiadás** tartozik a kérdéshez, ha a tény időfüggő;
+5. az értelmezést befolyásoló **mértékegységet és lényeges kerekítést**.
+
+A mondat maga legyen természetes. Lehetőleg egy, legfeljebb két rövid mondat; kerüld a fölösleges zárójeleket, technikai függelékeket és több egymásba ágyazott megszorítást. A `Name a ...` forma megfelelő, de nem kötelező; az angol nyelvtan és a félreérthetetlenség az elsődleges.
+
+**A kérdésszövegben TILOS pusztán a forrás megnevezése miatt szerepeltetni** a forrás, könyvtár, táblázat, adatkészlet, programcsomag vagy verzió nevét (például `frozen dataset`, `sample`, `CountryInfo`, `pycountry`, `statsmodels`, `ggplot2`, `mtcars`, `Gapminder`). A forrásnév, URL, snapshot, kiválasztási szabály, licencek és mérési leírás a belső mezőkben (`source`, `source_refs`, `measurement`, `answer_scope`, `metric_provenance`, `editorial_note`) jelenjen meg. Az `ISO 3166-2` vagy más szabvány neve **csak akkor** lehet a kérdésben, ha *maga a szabvány szerinti kód* a játék tárgya, és ezt az átlagos játékos is kellően értheti. Az előbbi kivétel nem jogosít fel adathalmazfüggő, nehezen érthető kérdések gyártására.
+
+**Nem elfogadható:** `Name a U.S. state or Washington, D.C., where at least 13% of people were below the poverty line in the frozen 2009 statecrime dataset.`
+
+**Elfogadható:** `Name a U.S. state or the District of Columbia where at least 13% of residents lived below the poverty line in 2009.`
+
+A történeti mérési év (itt 2009) megmarad, a háttéradatbázis neve viszont eltűnik. Egy adatbázis nevének törlésével **nem szabad szélesebb jogosultságot sugallni annál, mint amennyit a tényleges válaszbank igazolni tud**. Ha a közérthető, forrásnév nélküli kérdéshez nincs megfelelően széles bank, a kérdést új forrásokkal kell bővíteni **vagy teljesen le kell cserélni**. Nem megoldás a szűk adatbázist más szavakkal elrejteni.
+
+### 2.2 A hat kérdés egy napra: hat különböző ötlet, nem hat adatbázis-lekérdezés
+
+**Kötelező a jelentős koncepcionális eltérés**. Lehetőleg hat eltérő nagy témacsaládot válassz (például természet, kultúra, sport, történelem, technológia, hétköznapi élet), és változtasd a gondolkodási feladat jellegét is: összehasonlítás, időbeli becslés, helyszín/objektum, rekord, fizikai tulajdonság, kulturális ismeret stb. Nem elegendő hat eltérő `topic` címkét kitölteni.
+
+**Alapszabály egy napon belül:** legfeljebb egy ország-/államstatisztikára és legfeljebb két „nevezz meg egy évet, amelyben X mutató...” típusú kérdésre építs. Egyetlen szűk forrásuniverzum vagy válasz-entitáskategória sem ismétlődhet ugyanazon a napon. Különösen kerülendő, hogy ugyanazon a napon több, tetszőleges küszöbértékre vágott idősor alkossa a kihívást. Ha a kérdés könnyen kicserélhető egy másik adatmezőre úgy, hogy a megoldási ötlet változatlan, **túl hasonló**.
+
+### 2.3 Az összes korábbi naphoz mérten újnak kell lennie
+
+Kérdésírás **előtt** olvasd át az összes korábbi nap 6-6 kérdését (nem elegendő a `question-index.json` összefoglalása), és hasonlítsd össze az új ötletet legalább négy szempontból: témacsalád; válasz-entitások köre; vizsgált mérőszám/korszak; megoldási logika. A legutóbbi **14 napnál** fokozott szerkesztői ellenőrzés szükséges, de a teljes korábbi archívum is kötelező összehasonlítási alap.
+
+- **Tilos** egy korábbi kérdést egyszerűen más határral, más évvel, más pontsávval vagy új megfogalmazással újrakiadni.
+- **Tilos** ugyanazon entitáskészletet rövid időn belül csupán más attribútumra újrahasznosítani (például 83 emlősből testtömeg után alvásidő; 148 CSS-színből fényesség után telítettség; 118 elemből atomtömeg után rendszám). Ez **külön kérdéscsaládnak nevezve is ismétlésnek számít**.
+- **Tilos** egymást követő napokon ugyanazt a mechanikát dominánssá tenni (például több egymás utáni, főként országstatisztika- vagy éves idősor-kérdésekből álló napot).
+- Ha visszatér egy tág témakör (például földrajz vagy zene), annak az entitásköre és a gondolkodási ötlete legyen egyértelműen más. A visszatérés okát az auditban indokold meg; az ismétlés nem lehet adatgyűjtési kényelem kérdése.
+
+**Nem tekinthető változatosságnak** az sem, ha hat különböző csomagból származó, de azonos szerkezetű „nevezz meg egy évet / országot, amelynek X mutatója legalább Y” kérdés kerül egymás mellé. Minőségi döntést emberi/szerkesztői szemmel is hozz, ne csak a téma-címkék különbözőségét mérd.
+
+### 2.4 Előbb a játékötlet, utána az adatforrás – ne fordítva
+
+1. Írj több egymástól valóban eltérő, *forrás említése nélkül is értelmes* kérdésötletet.
+2. Válaszd ki a hat legerősebb, jól érthető kérdést, és hasonlítsd össze az archívummal.
+3. Ezután keress hozzájuk elsődleges vagy megfelelően dokumentált, ellenőrizhető forrást, és építs a kimondott körhöz illő lehető legteljesebb válaszbankot.
+4. Ha csak egy véletlenszerűen szűk, részleges minta áll rendelkezésre, **ne a játékos számára kimondhatatlan mintakorlátot írd a promptba, hanem bővítsd a bankot vagy válassz másik kérdést**.
+5. Csak az így elkészült bankhoz válaszd ki a határt, a pontsávokat és a ponteloszlást. A játékos ne az adatforrás szerkezetét próbálja megfejteni.
+
+A széles, szabad választeret biztosító kérdés előnyt élvez az önkényesen leszűkített, csak néhány tucat rekordot kínáló kérdéssel szemben. A kategória lehet természeténél fogva kicsi (például 118 kémiai elem), de **ne legyen mesterségesen kicsi csak azért, mert egy letöltött minta ennyit tartalmaz**. Nincs kötelező, általános 10 000 soros korlát, és nincs olyan mágikus minimális darabszám sem, ami önmagában garantálná a minőséget.
+
+### 2.5 Kötelező, dokumentált szerkesztői kapu
+
+Minden új vagy átírt napnál külön, kérdésenként dokumentáld:
+
+- a játékosnak megjelenő prompt forrásnévmentességét, angol nyelvhelyességét és laikus számára egyértelmű jelentését;
+- a hat kérdésen belüli sokszínűséget, valamint a teljes archívumhoz és külön a legutóbbi 14 naphoz viszonyított ismétlődésvizsgálatot;
+- a természetes szövegből kikövetkeztethető jogosult univerzum és a tényleges bank egyezését; ha eltér, a **hiányzó jogosult válaszok számát / osztályát és a bővítés akadályát**;
+- az összes pontot érő, rossz oldali és túl távoli, de mérhető jogosult választ; ismert hiányzó mérési adatok külön listáját;
+- minden forrás, adatvintage, mérési egység és releváns kerekítés visszakereshetőségét, aliasütközéseket és a backend-ellenőrzés szükségességét;
+- melyik régi kérdést/kérdéscsaládot kerülte el az új ötlet, illetve ha volt kivétel, a szakmai indokot.
+
+**Publikálást tiltó hiba:** (a) forrásnév- vagy mintafüggő, természetellenes kérdésszöveg; (b) jelentős, indokolatlan tartalmi ismétlés; (c) a prompt által ígért, de a bankban nem ellenőrzött jogosult kategória; (d) nem igazolt mérési szabály; (e) kétértelmű névfeloldás. Ilyenkor `publication_status: draft` marad, a kérdés cseréje/bankbővítése szükséges, és **a nap nem jelenthető késznek**. A séma és pontozási teszt sikeressége önmagában nem old fel szerkesztői blokkolót.
 
 ## 3. Jogosultság és lefedettség
 
@@ -49,7 +105,7 @@ de a játékban csak az átváltott, konzisztens metrikus érték szerepeljen.
 Átváltás után minden választ és az összes pontozási sávot számold újra, majd ellenőrizd
 hogy a pontértékek helyesek-e.
 
-A kérdés, a forrásmutató és a `metric_value` ugyanazt jelentse. Ne keverd például a nagyvárost a várostérséggel, a bruttó adatot a nettóval, az állományt az éves változással vagy a folyó különböző mérőállomásait. A kerekítési lépést a kérdésben és a provenienciában is közöld. A forrásértéket a rögzített szabály szerint **pontozás előtt** kerekítsd. A `%` egységnél a rendszer egész százalékot használ, a limit is egész. Ne legyen a játékos elől elrejtett tizedes határ.
+A kérdés, a forrásmutató és a `metric_value` ugyanazt jelentse. Ne keverd például a nagyvárost a várostérséggel, a bruttó adatot a nettóval, az állományt az éves változással vagy a folyó különböző mérőállomásait. A pontozást érdemben befolyásoló kerekítést a kérdésben **közérthetően**, a provenienciában pedig részletesen közöld; ne terheld a kérdést kód- vagy táblázatnevekkel. A forrásértéket a rögzített szabály szerint **pontozás előtt** kerekítsd. A `%` egységnél a rendszer egész százalékot használ, a limit is egész. Ne legyen a játékos elől elrejtett tizedes határ.
 
 ## 6. Pontozás
 
@@ -84,4 +140,4 @@ A meglévő napi fájlok teljes, valós minták. Ne távolítsd el a provenienci
 
 `draft`: nem publikus. `scheduled`: csak az adott vagy egy korábbi napon érhető el, de legkorábban a 2026-10-23-i indulástól. A múltbeli közzétett napok a `/api/v1/days/YYYY-MM-DD` útvonalon játszhatók, a jövőbeli kérdések nem publikusak. A kérdésfájlok kizárólag backendoldalon legyenek.
 
-Az átadási audit tartalmazza: rekordok száma; forrás és snapshot; kihagyott körök; kétértelmű aliasok; sávonkénti darabszámok; kerekítés; ismétlődés-ellenőrzés; ismert kutatási bizonytalanságok. A kódbeli validálás nem helyettesíti a szakmai forrásellenőrzést.
+Az átadási audit tartalmazza: közérthetőség és forrásnévmentesség; valódi napon belüli és korábbi napokhoz mért változatosság; rekordok száma; forrás és snapshot; kihagyott körök; kétértelmű aliasok; sávonkénti darabszámok; kerekítés; ismétlődés-ellenőrzés; ismert kutatási bizonytalanságok. A kódbeli validálás nem helyettesíti a szakmai forrásellenőrzést.

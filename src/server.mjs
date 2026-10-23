@@ -5,6 +5,7 @@ import {createReceipts,clientError} from './receipts.mjs';
 import {createStatistics,MemoryStatsStore,PgStatsStore} from './statistics.mjs';
 import {createPool} from './database.mjs';
 import {PgProgressStore,MemoryProgressStore} from './progress.mjs';
+import {PgSuggestionStore,validateSuggestion} from './suggestions.mjs';
 import {gzipSync} from 'node:zlib';
 import {fileURLToPath} from 'node:url';
 import {loadContent,createLazyContent,hints,scoreAnswer,catalogue} from './content.mjs';
@@ -21,20 +22,24 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
   allowedOrigins=(process.env.ALLOWED_ORIGINS||'http://localhost:5173,http://127.0.0.1:5173').split(',').map(x=>x.trim()).filter(Boolean),rateLimit=Number(process.env.RATE_LIMIT_PER_MINUTE||600),
   writeRateLimit=Number(process.env.WRITE_RATE_LIMIT_PER_MINUTE||120),
   apiKeys=(process.env.API_KEYS||'').split(',').map(x=>x.trim()).filter(Boolean),
-  store=null,progressStore=store?.mode==='postgres'?new PgProgressStore(store.pool):store?.mode==='memory'?new MemoryProgressStore():null,signingSecret=process.env.SIGNING_SECRET,playerSecret=process.env.PLAYER_HASH_SECRET,trustProxy=process.env.TRUST_PROXY==='railway'}={}) {
+  store=null,progressStore=store?.mode==='postgres'?new PgProgressStore(store.pool):store?.mode==='memory'?new MemoryProgressStore():null,
+  suggestionStore=store?.mode==='postgres'?new PgSuggestionStore(store.pool):null,
+  suggestionLimitPerHour=Number(process.env.SUGGEST_LIMIT_PER_HOUR||4),signingSecret=process.env.SIGNING_SECRET,playerSecret=process.env.PLAYER_HASH_SECRET,trustProxy=process.env.TRUST_PROXY==='railway'}={}) {
   if(!Number.isInteger(rateLimit)||rateLimit<0||!Number.isInteger(writeRateLimit)||writeRateLimit<0)throw new Error('Rate limits must be non-negative integers');
+  if(!Number.isInteger(suggestionLimitPerHour)||suggestionLimitPerHour<1||suggestionLimitPerHour>100)throw new Error('Invalid suggestion hourly limit');
   if(apiKeys.some(k=>k.length<24))throw new Error('Each API_KEYS entry must be at least 24 characters');
   const keyDigests=apiKeys.map(k=>crypto.createHash('sha256').update(k).digest());
   if(production && previewDate) throw new Error('DEV_DATE is forbidden in production');
   if(production && !store)throw new Error('Production requires PostgreSQL statistics storage');
   if(production && progressStore?.mode!=='postgres')throw new Error('Production requires PostgreSQL player progress');
   if(production && store?.mode!=='postgres')throw new Error('Production requires PostgreSQL, never memory statistics');
+  if(production && suggestionStore?.mode!=='postgres')throw new Error('Production requires PostgreSQL suggestions storage');
   if(production && (!signingSecret||!playerSecret||!process.env.ALLOWED_ORIGINS))throw new Error('Production requires SIGNING_SECRET, PLAYER_HASH_SECRET and explicit ALLOWED_ORIGINS');
   const receipts=createReceipts({secret:signingSecret||crypto.randomBytes(32).toString('hex'),playerSecret:playerSecret||crypto.randomBytes(32).toString('hex'),clock});
   const statistics=store?createStatistics(store):null;
   if(previewDate && (!/^\d{4}-\d{2}-\d{2}$/.test(previewDate)||!days.has(previewDate))) throw new Error('DEV_DATE must be an installed date');
   dateInZone(clock(),zone); // Fail fast on invalid timezone.
-  const buckets=new Map(), writeBuckets=new Map(), dailyBuffers=new Map();
+  const buckets=new Map(), writeBuckets=new Map(), suggestBuckets=new Map(), dailyBuffers=new Map();
   const stats={requests:0,errors:0,rateLimited:0};
   const today=()=>previewDate||dateInZone(clock(),zone);
   // All access to dated questions and writes goes through this publication gate.
@@ -80,6 +85,18 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
     }
     return ++found.count>limit;
   }
+  // Capped per-process hourly throttle; global scale needs an edge WAF/distributed limiter.
+  function limitSuggestions(req){
+    const header=req.headers['x-real-ip'];
+    const ip=trustProxy&&typeof header==='string'&&isIP(header)?header:req.socket.remoteAddress;
+    const hour=Math.floor(Date.now()/3600000), found=suggestBuckets.get(ip);
+    if(!found||found.hour!==hour){
+      for(const [key,value] of suggestBuckets)if(value.hour!==hour)suggestBuckets.delete(key);
+      if(suggestBuckets.size>=50000)return true;
+      suggestBuckets.set(ip,{hour,count:1});return false;
+    }
+    return ++found.count>suggestionLimitPerHour;
+  }
   async function body(req,maxBytes=4096) {
     if(!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type']||'')) throw Object.assign(new Error('JSON required'),{status:415});
     let data='', size=0;
@@ -101,14 +118,26 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
       const url=new URL(req.url,'http://localhost');
       if(url.pathname==='/healthz' && req.method==='GET') return send(req,res,200,{status:'ok',contentDays:days.size});
       if(url.pathname==='/readyz' && req.method==='GET'){
-        try{if(store)await store.ready();if(progressStore)await progressStore.ready();return send(req,res,200,{status:'ready',statistics:store?.mode||'disabled'})}
+        try{if(store)await store.ready();if(progressStore)await progressStore.ready();if(suggestionStore)await suggestionStore.ready();return send(req,res,200,{status:'ready',statistics:store?.mode||'disabled'})}
         catch{return error(req,res,503,'DATABASE_UNAVAILABLE','Database readiness check failed')}
       }
       if(limited(req)) {stats.rateLimited++;res.setHeader('Retry-After','60');return error(req,res,429,'RATE_LIMIT','Too many requests');}
       if(url.pathname.startsWith('/api/') && !validKey(req)) return error(req,res,401,'API_KEY_REQUIRED','Missing or invalid API key');
-      const write=req.method==='POST' && (url.pathname.startsWith('/api/v1/progress/') || url.pathname==='/api/v1/results' || /^\/api\/v1\/questions\/[^/]+\/answer$/.test(url.pathname));
+      const write=req.method==='POST' && (url.pathname.startsWith('/api/v1/progress/') || url.pathname==='/api/v1/results' || url.pathname==='/api/v1/suggestions' || /^\/api\/v1\/questions\/[^/]+\/answer$/.test(url.pathname));
       if(write && limited(req,writeBuckets,writeRateLimit)) {stats.rateLimited++;res.setHeader('Retry-After','60');return error(req,res,429,'RATE_LIMIT','Too many write requests');}
       if(!['GET','POST'].includes(req.method)) {res.setHeader('Allow','GET, POST, OPTIONS');return error(req,res,405,'METHOD','Method not allowed');}
+      if(url.pathname==='/api/v1/suggestions') {
+        if(req.method!=='POST')return error(req,res,405,'METHOD','Only POST is supported');
+        if(!suggestionStore)return error(req,res,503,'SUGGESTIONS_UNAVAILABLE','Submission service unavailable');
+        const input=validateSuggestion(await body(req,2048));
+        if(!input)return error(req,res,400,'INVALID_SUGGESTION','Provide a question (8–350 characters) and an approach direction');
+        if(limitSuggestions(req)){res.setHeader('Retry-After','3600');return error(req,res,429,'SUGGEST_RATE_LIMIT','Too many question suggestions');}
+        try{await suggestionStore.create(input)}catch(err){
+          console.error(JSON.stringify({event:'suggestion_write_failed',code:err.code||'UNKNOWN'}));
+          return error(req,res,503,'SUGGESTIONS_UNAVAILABLE','Submission service unavailable');
+        }
+        return send(req,res,202,{ok:true}); // Never return prior suggestions, private IDs, or a download URL.
+      }
       const date=today(); // Compile answer banks only for question-data routes, never for statistics/history.
       if(url.pathname==='/api/v1/progress' && req.method==='GET') {
         if(!progressStore)return error(req,res,503,'PROGRESS_NOT_CONFIGURED','Player storage unavailable');
