@@ -16,11 +16,11 @@ Az anonim UUID **nem fiókhitelesítés**: akinek az UUID-ja megszerezhető, el�
 
 `GET /api/v1/progress?playerId=<uuid-v4>&month=2026-10`
 
-Válasz: `{date,month,progress,days,counted,officialScore}`. A `progress` **csak a mai** teljes, szerveres állapot; a `days` a kiválasztott hónap rövid státuszai. Nincs egyben többéves vagy teljes történetlekérdezés. Cache: private no-store. A hónapot a frontend a MY DAYS nézetében igény szerint tölti.
+Válasz: `{date,month,progress,days,counted,officialScore}`. A `progress` a kért `day` dátum teljes, szerveres állapota; a `days` a kiválasztott hónap rövid státuszai. Nincs egyben többéves vagy teljes történetlekérdezés. Cache: private no-store. A hónapot a frontend a ARCHIVE nézetében igény szerint tölti.
 
 `POST /api/v1/progress/start`
 
-JSON: `{playerId,runId,date,revision,activeRound,activeDeadline}`. Csak ma és az adott revízióra. Létrehozza/naprakészen tartja az aktív kör határidejét; nem indít újra befejezett futást. Gépelés közben *nem* hívjuk. `409 DAY_ALREADY_STARTED` vagy `DAY_ALREADY_COMPLETED` az ütközés.
+JSON: `{playerId,runId,date,revision,activeRound,activeDeadline}`. Csak már közzétett, nem jövőbeli napra és az adott revízióra. Létrehozza/naprakészen tartja az aktív kör határidejét; nem indít újra befejezett futást. Gépelés közben *nem* hívjuk. `409 DAY_ALREADY_STARTED` vagy `DAY_ALREADY_COMPLETED` az ütközés.
 
 `POST /api/v1/questions/:id/answer`
 
@@ -46,8 +46,8 @@ A `/api/v1/today`, `/api/v1/statistics`, `/api/v1/results`, `GET /api/v1/questio
 - **Lusta napi betöltés:** a szerver nem parse-olja/kompilálja egyszerre az összes (köztük ~52 MB-os) napi JSON-t. Csak a szükséges napot tölti, legfeljebb két napot tart gyorsítótárban. A `npm run validate` továbbra is az összes napot ellenőrzi telepítés előtt.
 - **Válasz-mentés egyetlen roundtripben:** a frontend válaszbeküldésekor egyben elkészül a tartós `player_progress` mentés; a kliens nem küld külön DB-szinkron hívást válaszonként.
 - **Külön napi archívum:** csak a megnyitott hónapot kérdezzük le, nem a felhasználó minden eddigi napját.
-- **HTTP gyorsítótár:** a mai nyilvános (nem személyes) kihívás `ETag`-et kap; a böngésző saját HTTP cache-ével revalidálunk, nem másoljuk `localStorage`-ba.
-- **Kevesebb polling:** a napi váltás ellenőrzése ötpercenként és tab-visszaváltáskor, a befejezett statisztikáké kétpercenként történik. Nincs időzítő-tick az API felé.
+- **HTTP gyorsítótár:** az elérhető nyilvános (nem személyes) kihívás `ETag`-et kap; a böngésző saját HTTP cache-ével revalidálunk, nem másoljuk `localStorage`-ba.
+- **Kevesebb polling:** a napi váltás ellenőrzése ötpercenként és tab-visszaváltáskor, a befejezett statisztikák lekérése csak az eredményképernyő első megjelenésekor, illetve már kész nap betöltésekor történik. Nincs időzítő-tick az API felé.
 - **`Server-Timing` fejléc:** `app;dur=<ms>` – segít elválasztani a szerveren belüli feldolgozást a hálózati/Railway késleltetéstől. A frontend szükséges öt JS-fájlja párhuzamosan töltődik és `preload` linket kap.
 
 ## Diagnosztika és tesztek
@@ -64,3 +64,12 @@ npm run latency -- https://closeish-production.up.railway.app <UUID-v4>
 A latency script 8 egymás utáni `today` és opcionálisan `progress` kérést mér; az első és a felmelegedett válaszidők eltérése különösen informatív. Ne közzétegyél valódi UUID-t. A `Server-Timing` csak a szerver saját feldolgozását méri, nem tartalmazza a böngésző–szerver hálózati utat.
 
 Felhívás: az SQL/PostgreSQL-integrációt éles/teszt PostgreSQL mellett is tesztelni kell a migráció utáni rollout előtt. A helyi Node HTTP-tesztek nem helyettesítik ezt és nem igazolják a 150 ezer napi felhasználós célterhelést.
+
+## V17.6 – korábbi napok utólagos játékának támogatása
+
+- `GET /api/v1/days/YYYY-MM-DD`: már megjelent, scheduled nap publikus kérdéseinek lekérése. A mai nap aliasa továbbra is `/api/v1/today`. Draft és jövőbeli nap tiltva.
+- `GET /api/v1/progress?playerId=...&day=YYYY-MM-DD&month=YYYY-MM`: a `progress` és `counted` a **kiválasztott napra** vonatkozik, a hónaplista csak a kijelölt hónapot tartalmazza.
+- `POST /api/v1/progress/start` és `POST /api/v1/questions/:id/answer`: korábbi közzétett napra is elfogadja az ahhoz tartozó dátumot és revíziót; első futás és már rögzített körök a korábbi módon zárolva.
+- A hatodik kör után a `daily_results` és `daily_score_counts` az **eredeti játéknaphoz** rögzül, függetlenül attól, hogy melyik napon készült el. Új SQL-migráció nem szükséges.
+- Memóriakezelés: a lazy loader legfeljebb két napi nagy válaszbankot tart egyszerre memóriában. Több régóta futó napon eloszló forgalomnál cache-miss esetén extra feldolgozás lehet; p95/p99 és RSS alapján optimalizálandó.
+- Ellenőrzés: `npm test` részeként `tests/archive-play.test.mjs` vizsgálja a régi napra történő szerveres pontozást, kétszeri beszámítás tiltását, future-day védelmet és az adott naphoz kötött statisztikát. Éles PostgreSQL integrációs teszt külön szükséges.

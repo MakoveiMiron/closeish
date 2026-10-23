@@ -9,6 +9,7 @@ import {gzipSync} from 'node:zlib';
 import {fileURLToPath} from 'node:url';
 import {loadContent,createLazyContent,hints,scoreAnswer,catalogue} from './content.mjs';
 
+const FIRST_PLAYABLE_DATE='2026-10-23';
 const zoneFormatters=new Map();
 export function dateInZone(now, zone='Europe/Budapest') {
   let format=zoneFormatters.get(zone);
@@ -36,6 +37,21 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
   const buckets=new Map(), writeBuckets=new Map(), dailyBuffers=new Map();
   const stats={requests:0,errors:0,rateLimited:0};
   const today=()=>previewDate||dateInZone(clock(),zone);
+  // All access to dated questions and writes goes through this publication gate.
+  function publishedDay(requested,now=today(),metadataOnly=false) {
+    if(typeof requested!=='string'||!/^(\d{4})-(\d{2})-(\d{2})$/.test(requested)||requested>now||requested<FIRST_PLAYABLE_DATE||
+       !Number.isFinite(Date.parse(requested+'T00:00:00Z'))||
+       new Date(requested+'T00:00:00Z').toISOString().slice(0,10)!==requested)
+      throw clientError('Unpublished or future day','DAY_NOT_AVAILABLE',404);
+    // Archive/progress metadata must never compile an enormous question bank.
+    if(metadataOnly && typeof days.status==='function') {
+      if(days.status(requested)!=='scheduled')throw clientError('Unpublished day','DAY_NOT_AVAILABLE',404);
+      return true;
+    }
+    const found=days.get(requested);
+    if(found?.day.publication_status!=='scheduled')throw clientError('Unpublished day','DAY_NOT_AVAILABLE',404);
+    return found;
+  }
   function send(req,res,status,value,cache='no-store') {
     let body=Buffer.from(JSON.stringify(value));
     const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':cache,'X-Content-Type-Options':'nosniff',Vary:'Origin, Accept-Encoding'};
@@ -93,29 +109,34 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
       const write=req.method==='POST' && (url.pathname.startsWith('/api/v1/progress/') || url.pathname==='/api/v1/results' || /^\/api\/v1\/questions\/[^/]+\/answer$/.test(url.pathname));
       if(write && limited(req,writeBuckets,writeRateLimit)) {stats.rateLimited++;res.setHeader('Retry-After','60');return error(req,res,429,'RATE_LIMIT','Too many write requests');}
       if(!['GET','POST'].includes(req.method)) {res.setHeader('Allow','GET, POST, OPTIONS');return error(req,res,405,'METHOD','Method not allowed');}
-      const date=today(), active=days.get(date), published=active?.day.publication_status==='scheduled';
+      const date=today(); // Compile answer banks only for question-data routes, never for statistics/history.
       if(url.pathname==='/api/v1/progress' && req.method==='GET') {
         if(!progressStore)return error(req,res,503,'PROGRESS_NOT_CONFIGURED','Player storage unavailable');
         const playerHash=receipts.playerHash(url.searchParams.get('playerId'));
-        const month=url.searchParams.get('month')||date.slice(0,7);
+        const selected=url.searchParams.get('day')||date;
+        // The selected day is for restoring a single historical run; month is for calendar history.
+        if(url.searchParams.has('day'))publishedDay(selected,date,true);
+        const month=url.searchParams.get('month')||selected.slice(0,7);
         if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(month))throw clientError('Invalid month');
-        const [current,daysOfMonth,official,oldResults]=await Promise.all([progressStore.one(date,playerHash),progressStore.month(month,playerHash),store?.find(date,playerHash),store?.month(month,playerHash)]);
+        const [current,monthRows,official,oldResults]=await Promise.all([progressStore.one(selected,playerHash),progressStore.month(month,playerHash),store?.find(selected,playerHash),store?.month(month,playerHash)]);
+        let daysOfMonth=monthRows;
         const known=new Set(daysOfMonth.map(x=>x.date));
         for(const item of oldResults||[])if(!known.has(item.date))daysOfMonth.push({date:item.date,revision:item.revision,answers:6,completed:true,legacyResult:true});
+        daysOfMonth=daysOfMonth.filter(item=>item.date>=FIRST_PLAYABLE_DATE);
         daysOfMonth.sort((a,b)=>a.date.localeCompare(b.date));
-        return send(req,res,200,{date,progress:current,days:daysOfMonth,month,counted:!!official,officialScore:official?.score??null},'private, no-store');
+        return send(req,res,200,{date:selected,current_date:date,progress:current,days:daysOfMonth,month,counted:!!official,officialScore:official?.score??null},'private, no-store');
       }
       if(url.pathname==='/api/v1/progress/start' && req.method==='POST') {
         if(!progressStore)return error(req,res,503,'PROGRESS_NOT_CONFIGURED','Player storage unavailable');
-        if(!published)throw clientError('No game published today','NO_DAILY_GAME',404);
         const input=await body(req);
-        if(input.date!==date||input.revision!==active.revision)throw clientError('Day changed','DAY_CHANGED',409);
+        const selected=input.date,day=publishedDay(selected,date);
+        if(input.revision!==day.revision)throw clientError('Content changed','DAY_CHANGED',409);
         const hash=receipts.playerHash(input.playerId),runId=receipts.run(input.runId);
-        if(store&&(await store.find(date,hash))&&!(await progressStore.one(date,hash)))throw clientError('This day has already been completed','DAY_ALREADY_COMPLETED',409);
+        if(store&&(await store.find(selected,hash))&&!(await progressStore.one(selected,hash)))throw clientError('This day has already been completed','DAY_ALREADY_COMPLETED',409);
         if(!Number.isInteger(input.activeRound)||input.activeRound<0||input.activeRound>5)throw clientError('Invalid round');
         const deadline=input.activeDeadline;
         if(typeof deadline!=='number'||!Number.isFinite(deadline)||Math.abs(deadline-Date.now())>300000)throw clientError('Invalid round deadline');
-        const progress=await progressStore.milestone({date,hash,revision:active.revision,runId,
+        const progress=await progressStore.milestone({date:selected,hash,revision:day.revision,runId,
           activeRound:input.activeRound,activeDeadline:deadline,phase:'play'});
         return send(req,res,200,{progress});
       }
@@ -123,7 +144,7 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
         if(!progressStore)return error(req,res,503,'PROGRESS_NOT_CONFIGURED','Player storage unavailable');
         const input=await body(req,16000);
         if(!input||typeof input!=='object'||Array.isArray(input))throw clientError('Invalid progress');
-        if(typeof input.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(input.date)||input.date>date)throw clientError('Invalid date');
+        if(typeof input.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(input.date)||input.date<FIRST_PLAYABLE_DATE||input.date>date)throw clientError('Invalid date');
         const hash=receipts.playerHash(input.playerId),runId=receipts.run(input.runId);
         if(!Array.isArray(input.responses)||input.responses.length<1||input.responses.length>6)throw clientError('Invalid responses');
         // Verify signatures/expiry before touching a potentially enormous historical bank.
@@ -146,7 +167,7 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
         if(!statistics)return error(req,res,503,'STATS_NOT_CONFIGURED','Daily statistics are not configured');
         const input=await body(req,16384);
         if(!input||typeof input!=='object'||Array.isArray(input))throw clientError('Object required');
-        if(typeof input.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(input.date)||!Number.isFinite(Date.parse(input.date+'T00:00:00Z'))||new Date(input.date+'T00:00:00Z').toISOString().slice(0,10)!==input.date||input.date>date)throw clientError('Invalid completed game date');
+        if(typeof input.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(input.date)||!Number.isFinite(Date.parse(input.date+'T00:00:00Z'))||new Date(input.date+'T00:00:00Z').toISOString().slice(0,10)!==input.date||input.date<FIRST_PLAYABLE_DATE||input.date>date)throw clientError('Invalid completed game date');
         if(typeof input.revision!=='string'||!/^[a-f0-9]{24}$/.test(input.revision))throw clientError('Invalid content revision');
         const playerHash=receipts.playerHash(input.playerId);
         let value;
@@ -158,15 +179,19 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
         }
         return send(req,res,200,{statistics:value});
       }
-      if(url.pathname==='/api/v1/today' && req.method==='GET') {
-        if(url.search) return error(req,res,400,'QUERY','This endpoint takes no date or preview parameters');
-        const key=date+':'+(published?active.revision:'none');
+      const dated=url.pathname.match(/^\/api\/v1\/days\/(\d{4}-\d{2}-\d{2})$/);
+      if((url.pathname==='/api/v1/today'||dated) && req.method==='GET') {
+        if(url.search) return error(req,res,400,'QUERY','Use the dated path without query parameters');
+        const selected=dated?dated[1]:date;
+        const chosen=dated?publishedDay(selected,date):days.get(date);
+        const ready=selected>=FIRST_PLAYABLE_DATE && chosen?.day.publication_status==='scheduled';
+        const key=selected+':'+(ready?chosen.revision:'none')+':'+date;
         if(!dailyBuffers.has(key)) {
           dailyBuffers.clear();
-          const data={date,timezone:zone,available:!!published,day_number:published?active.day.day_number:null,
-            revision:published?active.revision:null,legacy_progress_key:published?active.legacyKey:null,
-            start_date:[...days.keys()][0],published_dates:[...days].filter(([d,x])=>d<=date&&x.day.publication_status==='scheduled').map(([d])=>d),
-            questions:published?active.publicQuestions:{},preview:!!previewDate,statistics:store?.mode||'disabled'};
+          const data={date:selected,current_date:date,timezone:zone,available:!!ready,day_number:ready?chosen.day.day_number:null,
+            revision:ready?chosen.revision:null,legacy_progress_key:ready?chosen.legacyKey:null,
+            start_date:FIRST_PLAYABLE_DATE,published_dates:[...days].filter(([d,x])=>d>=FIRST_PLAYABLE_DATE&&d<=date&&x.day.publication_status==='scheduled').map(([d])=>d),
+            questions:ready?chosen.publicQuestions:{},preview:!!previewDate,statistics:store?.mode||'disabled'};
           const plain=Buffer.from(JSON.stringify(data)),gzip=gzipSync(plain);
           dailyBuffers.set(key,{plain,gzip,etag:'"'+crypto.createHash('sha256').update(plain).digest('hex').slice(0,24)+'"'});
         }
@@ -179,15 +204,15 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
       }
       const match=url.pathname.match(/^\/api\/v1\/questions\/([^/]+)\/(hints|answer|catalogue)$/);
       if(!match) return error(req,res,404,'NOT_FOUND','Endpoint not found');
-      if(!published) return error(req,res,404,'NO_DAILY_GAME','No question set is published today');
       const [_,id,action]=match;
-      const questionIndex=active.questions.findIndex(x=>x.q.id===id);
-      const compiled=active.questions[questionIndex];
-      if(!compiled) return error(req,res,404,'QUESTION_NOT_TODAY','Only today’s questions are accessible');
       if((action==='answer' && req.method!=='POST') || (action!=='answer' && req.method!=='GET')) return error(req,res,405,'METHOD','Wrong method');
       const input=action==='answer'?await body(req):Object.fromEntries(url.searchParams);
       if(!input || typeof input!=='object' || Array.isArray(input)) return error(req,res,400,'BODY','Object required');
-      if(input.date!==date || input.revision!==active.revision) return error(req,res,409,'DAY_CHANGED','The day or its content changed. Reload to fetch today’s game.');
+      const selected=input.date,chosen=publishedDay(selected,date);
+      if(input.revision!==chosen.revision) return error(req,res,409,'DAY_CHANGED','This day’s content has changed. Reload its challenge.');
+      const questionIndex=chosen.questions.findIndex(x=>x.q.id===id);
+      const compiled=chosen.questions[questionIndex];
+      if(!compiled) return error(req,res,404,'QUESTION_NOT_FOUND','This question is not part of the selected day');
       const raw=action==='answer'?input.raw:input.q||'';
       if(typeof raw!=='string' || raw.length>(compiled.q.input_max_length||115)) return error(req,res,400,'INPUT','Invalid text length');
       if(action==='hints') return send(req,res,200,{candidates:hints(compiled,raw)});
@@ -197,19 +222,19 @@ export function createApp({days=createLazyContent(),zone=process.env.GAME_TIMEZO
         if(kind==='answer'&&!raw.trim())return error(req,res,400,'EMPTY_ANSWER','Answer is empty');
         const result=kind==='answer'?scoreAnswer(compiled,raw.trim(),input.automatic===true):{raw:'',canonical:null,points:0,tier:kind==='skipped'?'SKIPPED':'TIME OUT',kind,metric_value:null};
         if(input.playerId!==undefined||input.runId!==undefined) {
-          result.receipt=receipts.issue({playerId:input.playerId,runId:input.runId,date,revision:active.revision,questionId:compiled.q.id,points:result.points});
+          result.receipt=receipts.issue({playerId:input.playerId,runId:input.runId,date:selected,revision:chosen.revision,questionId:compiled.q.id,points:result.points});
           if(progressStore){
             const playerHash=receipts.playerHash(input.playerId),runId=receipts.run(input.runId);
             // First-round shortcut cannot bypass the completed-day lock.
-            if(questionIndex===0&&store&&(await store.find(date,playerHash))&&!(await progressStore.one(date,playerHash)))
+            if(questionIndex===0&&store&&(await store.find(selected,playerHash))&&!(await progressStore.one(selected,playerHash)))
               throw clientError('This day has already been completed','DAY_ALREADY_COMPLETED',409);
-            const progress=await progressStore.answer({date,hash:playerHash,revision:active.revision,runId,round:questionIndex,response:result});
+            const progress=await progressStore.answer({date:selected,hash:playerHash,revision:chosen.revision,runId,round:questionIndex,response:result});
             // The last persisted round also records the official statistics.
             // The durable browser outbox remains a fallback if statistics are unavailable.
             let counted=false;
             if(progress.completed&&store){
               try{
-                const official=await store.record({date,revision:active.revision,playerHash,runId,
+                const official=await store.record({date:selected,revision:chosen.revision,playerHash,runId,
                   score:progress.responses.reduce((total,item)=>total+item.points,0)});
                 counted=!!official;
               }catch(e){console.error(JSON.stringify({event:'automatic_result_record_failed',code:e.code||'UNKNOWN'}))}

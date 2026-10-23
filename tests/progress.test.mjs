@@ -4,7 +4,7 @@ import {randomUUID} from 'node:crypto';
 import {createApp} from '../src/server.mjs';
 import {createLazyContent} from '../src/content.mjs';
 import {MemoryStatsStore} from '../src/statistics.mjs';
-const date='2026-10-22';
+const date='2026-10-23';
 const days=createLazyContent();
 async function scenario(callback){
  const store=new MemoryStatsStore(),app=createApp({days,store,previewDate:date,rateLimit:0,writeRateLimit:0,
@@ -15,8 +15,8 @@ async function scenario(callback){
  try{await callback({base,post})}finally{await app.close()}
 }
 test('lazy load does not deserialize all historical banks at startup',()=>{
- assert.equal(days.size,7);assert.deepEqual([...days.keys()].slice(0,2),['2026-10-22','2026-10-23']);
- assert.equal(days.get('2026-10-22').questions.length,6);
+ assert.equal(days.size,7);assert.deepEqual([...days.keys()].slice(0,2),['2026-10-23','2026-10-24']);
+ assert.equal(days.get('2026-10-23').questions.length,6);
 });
 test('progress is authoritative: persists each server-scored answer and forbids replay',async()=>scenario(async({base,post})=>{
  const boot=await (await fetch(base+'/api/v1/today')).json();

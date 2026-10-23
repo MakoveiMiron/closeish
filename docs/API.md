@@ -1,25 +1,28 @@
 # CLOSEISH V17 API
 
-JSON, HTTPS élesben. A kérdésadat dátumát a szerver határozza meg. Más nap pontozása/katalógusa nem érhető el. Éles dátumfelülírás nincs. A böngésző eredetét az ALLOWED_ORIGINS ellenőrzi; ez nem felhasználói hitelesítés.
+JSON, HTTPS élesben. A kérés napját a frontend választja, de a szerver csak a mai vagy korábbi, scheduled állapotú napot engedi. Jövőbeli, draft és **2026-10-23 előtti** napok nem érhetők el. Éles dátumfelülírás nincs. A böngésző eredetét az ALLOWED_ORIGINS ellenőrzi; ez nem felhasználói hitelesítés.
 
 | Metódus, útvonal | Feladat |
 | --- | --- |
 | `GET /healthz` | Folyamat él, tartalomnapok száma. |
 | `GET /readyz` | API és a statisztikatáblák elérhetősége; DB-hibánál 503. |
-| `GET /api/v1/today` | Aznapi hat kérdés nyilvános adatai, nap, időzóna, revision, elérhető múltbeli dátumok, statistics mód. |
+| `GET /api/v1/today` | Aznapi 6 kérdés, `current_date`, elérhető dátumok, időzóna, revízió. |
+| `GET /api/v1/days/YYYY-MM-DD` | Bármely már közzétett nap 6 kérdésének nyilvános adatai, válaszbank nélkül. Future/draft/hiányzó nap: 404. |
+| `GET /api/v1/progress?playerId=UUID&day=YYYY-MM-DD&month=YYYY-MM` | A kiválasztott nap részletes szerveres előrehaladása; hónap összefoglaló. A `day` elhagyva az aktuális nap. |
+| `POST /api/v1/progress/start` | A kiválasztott közzétett nap következő körének mentése. |
 | `GET /api/v1/questions/:id/hints` | `date`, `revision`, `q`; legfeljebb négy névjavaslat, pont nélkül. |
 | `POST /api/v1/questions/:id/answer` | Szerveroldali pontozás és aláírt részpont. |
 | `GET /api/v1/questions/:id/catalogue` | `date`, `revision`, `q`, `filter`, `offset`, `limit`; limit legfeljebb 120. |
 | `POST /api/v1/results` | Hat igazolásból első napi eredmény idempotens eltárolása. |
 | `POST /api/v1/statistics` | Napi pontos eloszlás és saját összehasonlítás. |
 
-A today nem fogad query paramétert. `statistics` értéke `postgres`, `memory` (kifejezett helyi teszt) vagy `disabled`. Az ETag újraellenőrzés használható; CDN-cache nincs. A többi válasz `no-store`, így személyes statisztikai összehasonlítás sem kerül közös cache-be.
+A `today` nem fogad query paramétert, a `/days/:date` útvonal sem. A `questions/:id` végpontok JSON-ja vagy URL-paraméterei a kiválasztott `date`-et és annak `revision`-jét küldik; a szerver ellenőrzi, hogy a kérdés ID-ja valóban ehhez a naphoz tartozik. `statistics` értéke `postgres`, `memory` (kifejezett helyi teszt) vagy `disabled`. Az ETag újraellenőrzés használható; CDN-cache nincs. A többi válasz `no-store`, így személyes statisztikai összehasonlítás sem kerül közös cache-be.
 
 ## Válasz pontozása
 
 ```json
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "revision": "A_TODAY_24_HEX_HASH_ERTEKE",
   "playerId": "VELETLEN_UUID_V4",
   "runId": "A_NAPI_FUTAS_UUID_V4_AZONOSITOJA",
@@ -37,7 +40,7 @@ A receipt a szerver által kiadott pontot, kérdést, napot, verziót, eszköz-h
 
 ```json
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "revision": "A_TODAY_24_HEX_HASH_ERTEKE",
   "playerId": "VELETLEN_UUID_V4",
   "runId": "A_NAPI_FUTAS_UUID_V4_AZONOSITOJA",
@@ -47,7 +50,7 @@ A receipt a szerver által kiadott pontot, kérdést, napot, verziót, eszköz-h
 
 Pontszámot nem kell és nem lehet megadni: a szerver összegez. A hat receipt hat külön kérdéshez, ugyanahhoz a naphoz/verzióhoz/eszközhöz/futáshoz tartozzon. Az első sikeres beszúrás számít. Azonos vagy későbbi újrajátszás beküldése 200-zal a már meglévő hivatalos napi eredményt adja vissza. Ezért hálózati retry biztonságos, még több replikán is.
 
-A teljes napi eredmény régebbi napra is összesíthető, amíg minden igazolás érvényes; régi nap kérdése/új pontozása ettől még nem hozzáférhető. Ugyanazon nap szerkesztett verziói külön eloszlásban maradnak.
+A teljes napi eredmény egy korábban közzétett napra is összesíthető. A napi részpontozás és a kérdések is elérhetők a korábbi napokra; a hatodik válasz PostgreSQL-mentésekor az adott nap statisztikája frissül. Egy nap hitelesen rögzített első futása változatlanul nem ismételhető meg. Ugyanazon nap szerkesztett verziói külön eloszlásban maradnak.
 
 ## Statisztika
 
@@ -75,8 +78,8 @@ Válasz: `{ error: { code, message }, date }`.
 
 - 400: hibás mező, aláírás, futáskeverés, ismételt kérdés, lejárt receipt (`RECEIPT_EXPIRED`), hibás lapozás.
 - 403 `ORIGIN_REJECTED`: nem engedélyezett böngésző-origin.
-- 404: nincs ilyen aznapi kérdés vagy útvonal; nincs publikus fájlrendszer-hozzáférés.
-- 409 `DAY_CHANGED`: régi nap vagy tartalomverzió egy kérdéskérésben; mai játék újratöltendő.
+- 404 `DAY_NOT_AVAILABLE`: hiányzó/draft/jövőbeli nap; más 404: nincs ilyen kérdés vagy útvonal; nincs publikus fájlrendszer-hozzáférés.
+- 409 `DAY_CHANGED`: a kiválasztott nap tartalomrevíziója változott; a kiválasztott játék újratöltendő.
 - 413: normál kérés 4096 bájtnál, eredmény/statisztika 16384 bájtnál nagyobb.
 - 415: POST nem application/json.
 - 401 `API_KEY_REQUIRED`: be van állítva `API_KEYS`, de a kérés `X-API-Key` fejléce hiányzik vagy hibás. A `/healthz` és `/readyz` kulcs nélkül is elérhető.

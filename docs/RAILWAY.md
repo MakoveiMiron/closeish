@@ -1,6 +1,8 @@
+> **V17.7, 2026-10-23:** A frissítés előtt készíts PostgreSQL-mentést. A `npm run migrate` az új 004-es migrációt is lefuttatja, amely az eredményeket egy nappal átdátumozza. A régi API írásait erre az időre célszerű leállítani. Lásd `LAUNCH-2026-10-23.md`.
+
 # Railway telepítés – CLOSEISH V17
 
-A backend Node.js 24 + PostgreSQL. A frontend külön statikus oldal. A kérdésbank fájlokban marad a backenden, a befejezett napi eredmények közös adatbázisba kerülnek. A félbehagyott játék és a naptár továbbra is az adott böngészőben él.
+A backend Node.js 24 + PostgreSQL. A frontend külön statikus oldal. A kérdésbank fájlokban marad a backenden, a befejezett napi eredmények közös adatbázisba kerülnek. A félbehagyott játék és a naptár hiteles állapota a PostgreSQL-ben él; a böngésző csak az UUID-t és a szinkronizálásra váró állapotot őrzi.
 
 ## Szolgáltatások
 

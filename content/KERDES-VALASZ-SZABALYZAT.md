@@ -35,9 +35,19 @@ Minden adatnál adj visszakereshető elsődleges vagy megfelelően dokumentált 
 
 A futó játék a backendbe telepített, rögzített rekordokkal dolgozik. Nem hív generatív AI-t, nem keres az interneten és nem talál ki mérést válaszbeküldéskor. Azonos tartalomverzióban ugyanaz az érték és pontszám járjon ugyanarra az egyértelmű válaszra. Új forrásadatot előzetes importtal és validálással adj hozzá.
 
-A 2026-10-23-i városkérdéshez a korábban használt, commitra rögzített worldcities CSV helyben beépített 200 000+ lakosságú rekordjai szerepelnek. A teljes bank 2035 városrekord. Ez történeti népességi állomány, nem 2026-os népszámlálás és nem bizonyított teljes világlista. Budapest koordinátája 47.497912, 19.040235; a gömbi Haversine-távolság 6371.0088 km sugárral, egész km-re kerekítve. A korábbi 106 rekordot megőriztük; a bővítés 1929 további rekordot adott. Eredeti CSV: https://github.com/PhilipWaldman/world-cities/blob/3151130cb4a2efd925f2afd6435215652f948463/WorldCities/worldcities.csv
+A 2026-10-26-i városkérdéshez a korábban használt, commitra rögzített worldcities CSV helyben beépített 200 000+ lakosságú rekordjai szerepelnek. A teljes bank 2035 városrekord. Ez történeti népességi állomány, nem 2026-os népszámlálás és nem bizonyított teljes világlista. Budapest koordinátája 47.497912, 19.040235; a gömbi Haversine-távolság 6371.0088 km sugárral, egész km-re kerekítve. A korábbi 106 rekordot megőriztük; a bővítés 1929 további rekordot adott. Eredeti CSV: https://github.com/PhilipWaldman/world-cities/blob/3151130cb4a2efd925f2afd6435215652f948463/WorldCities/worldcities.csv
 
 ## 5. Mérés, egység, kerekítés
+
+**Az összes fizikai mennyiség a játékos felületén kizárólag SI/metrikus egységben jelenhet meg.**
+A kérdés angol szövegében, a limitben, a `unit` mezőben, az `answers[*].metric_value` rekordokban,
+valamint a `score_bands` és `scoring_window` mezőkben ugyanaz a metrikus egység legyen.
+Tilos például mérföldben megfogalmazni a határértéket, miközben a UI kilométert mutat,
+vagy fordítva. Ha az elsődleges forrás angolszász mértékegységeket használ,
+az eredeti forrásadatot és a pontos átváltási arányt a provenienciában dokumentáld,
+de a játékban csak az átváltott, konzisztens metrikus érték szerepeljen.
+Átváltás után minden választ és az összes pontozási sávot számold újra, majd ellenőrizd
+hogy a pontértékek helyesek-e.
 
 A kérdés, a forrásmutató és a `metric_value` ugyanazt jelentse. Ne keverd például a nagyvárost a várostérséggel, a bruttó adatot a nettóval, az állományt az éves változással vagy a folyó különböző mérőállomásait. A kerekítési lépést a kérdésben és a provenienciában is közöld. A forrásértéket a rögzített szabály szerint **pontozás előtt** kerekítsd. A `%` egységnél a rendszer egész százalékot használ, a limit is egész. Ne legyen a játékos elől elrejtett tizedes határ.
 
@@ -70,6 +80,6 @@ A `days/YYYY-MM-DD.json` felső szintje: `schema_version: 1`, `date`, `day_numbe
 
 A meglévő napi fájlok teljes, valós minták. Ne távolítsd el a proveniencia-, forrás-, jogosultsági és auditmezőket csak azért, mert a felület nem jeleníti meg őket. A fő séma plusz kérdésszintű metadata mezőket megenged. A szerkesztői `revision` emberi címke; az API emellett a teljes napi fájl tartalmából hash-t számol, így a véletlenül változatlanul hagyott címke sem rejt el egy módosítást.
 
-`draft`: nem publikus. `scheduled`: csak a saját naptári napján elérhető, a beállított `GAME_TIMEZONE` szerint. A múlt és jövő kérdéseit nincs publikus archívumvégpont, amellyel ki lehetne kérni. A kérdésfájlok kizárólag backendoldalon legyenek.
+`draft`: nem publikus. `scheduled`: csak az adott vagy egy korábbi napon érhető el, de legkorábban a 2026-10-23-i indulástól. A múltbeli közzétett napok a `/api/v1/days/YYYY-MM-DD` útvonalon játszhatók, a jövőbeli kérdések nem publikusak. A kérdésfájlok kizárólag backendoldalon legyenek.
 
 Az átadási audit tartalmazza: rekordok száma; forrás és snapshot; kihagyott körök; kétértelmű aliasok; sávonkénti darabszámok; kerekítés; ismétlődés-ellenőrzés; ismert kutatási bizonytalanságok. A kódbeli validálás nem helyettesíti a szakmai forrásellenőrzést.

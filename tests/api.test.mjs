@@ -5,7 +5,7 @@ import {createApp,dateInZone} from '../src/server.mjs';
 import {loadContent,hints,scoreAnswer,validateDay} from '../src/content.mjs';
 const days=loadContent();
 async function serve(options,run) {
-  const {server}=createApp({days,rateLimit:0,writeRateLimit:0,apiKeys:[],previewDate:'2026-10-22',...options});
+  const {server}=createApp({days,rateLimit:0,writeRateLimit:0,apiKeys:[],previewDate:'2026-10-23',...options});
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   try{await run('http://127.0.0.1:'+server.address().port)}finally{await new Promise(resolve=>server.close(resolve))}
 }
@@ -23,12 +23,12 @@ test('all 42 questions: every stored numeric score validates and each scoring ti
 });
 test('daily public payload has exactly today’s six prompts; no bank or future access',async()=>serve({},async base=>{
   const r=await fetch(base+'/api/v1/today');assert.equal(r.status,200);
-  const raw=await r.text(),data=JSON.parse(raw);assert.equal(data.date,'2026-10-22');
+  const raw=await r.text(),data=JSON.parse(raw);assert.equal(data.date,'2026-10-23');
   assert.equal(Object.keys(data.questions).length,6);assert.ok(raw.length<12000);
   for(const q of Object.values(data.questions)) {assert.equal(q.date,data.date);assert.equal(q.answers,undefined);assert.equal(q.recognized_category_candidates,undefined)}
   assert.ok(data.published_dates.every(d=>d<=data.date));
-  assert.equal((await fetch(base+'/api/v1/today?date=2026-10-23')).status,400);
-  assert.equal((await fetch(base+'/backend/content/days/2026-10-23.json')).status,404);
+  assert.equal((await fetch(base+'/api/v1/today?date=2026-10-24')).status,400);
+  assert.equal((await fetch(base+'/backend/content/days/2026-10-24.json')).status,404);
   assert.equal((await fetch(base+'/api/v1/questions/closeish_20261023_q5/hints')).status,404);
   const cached=await fetch(base+'/api/v1/today',{headers:{'If-None-Match':r.headers.get('etag')}});assert.equal(cached.status,304);
 }));
@@ -58,20 +58,20 @@ test('Budapest midnight, DST, no stale date clamp and production preview rejecti
     const first=await fetch(base+'/api/v1/today'),etag=first.headers.get('etag');
     now=new Date('2026-10-22T22:00:00Z');
     const next=await fetch(base+'/api/v1/today',{headers:{'If-None-Match':etag}});assert.equal(next.status,200);assert.equal((await next.json()).date,'2026-10-23');
-    now=new Date('2026-10-29T12:00:00Z');const absent=await (await fetch(base+'/api/v1/today')).json();assert.equal(absent.available,false);assert.deepEqual(absent.questions,{});
+    now=new Date('2026-10-30T12:00:00Z');const absent=await (await fetch(base+'/api/v1/today')).json();assert.equal(absent.available,false);assert.deepEqual(absent.questions,{});
   });
 });
 test('large dictionary, frozen city snapshot, no runtime external lookup',()=>{
-  const word=days.get('2026-10-23').questions[0];assert.equal(word.q.answers.length,188798);
+  const word=days.get('2026-10-24').questions[0];assert.equal(word.q.answers.length,188798);
   assert.ok(hints(word,'inter').length<=4);
-  const city=days.get('2026-10-25').questions[4];assert.equal(city.q.answers.length,2035);
+  const city=days.get('2026-10-26').questions[4];assert.equal(city.q.answers.length,2035);
   assert.equal(scoreAnswer(city,'Aksu, CN').points,1200);
   assert.equal(scoreAnswer(city,'Unlisted fictional town').metric_value,null);
   assert.ok(!fs.readFileSync(new URL('../src/content.mjs',import.meta.url),'utf8').includes('geocoding-api'));
 });
 test('rate limit bounds requests; draft sets are never published',async()=>{
   await serve({rateLimit:2},async base=>{for(let i=0;i<2;i++)assert.equal((await fetch(base+'/api/v1/today')).status,200);assert.equal((await fetch(base+'/api/v1/today')).status,429)});
-  const copy=new Map(days),current=copy.get('2026-10-22');copy.set('2026-10-22',{...current,day:{...current.day,publication_status:'draft'}});
+  const copy=new Map(days),current=copy.get('2026-10-23');copy.set('2026-10-23',{...current,day:{...current.day,publication_status:'draft'}});
   await serve({days:copy},async base=>{assert.equal((await (await fetch(base+'/api/v1/today')).json()).available,false)});
 });
 test('write limit is stricter than read limit and only counts answer/result POSTs',async()=>serve({writeRateLimit:2},async base=>{
@@ -96,7 +96,7 @@ test('optional API key: required on /api/* when configured, health endpoints sta
   assert.throws(()=>createApp({days,apiKeys:['short']}),/at least 24/);
 });
 test('content validation rejects inconsistent scores, filenames and duplicate identities',()=>{
-  const day=JSON.parse(fs.readFileSync(new URL('../content/days/2026-10-22.json',import.meta.url)));
+  const day=JSON.parse(fs.readFileSync(new URL('../content/days/2026-10-23.json',import.meta.url)));
   assert.throws(()=>validateDay(day,'wrong.json'),/Filename/);
-  day.questions.q1.answers[0].points=999;assert.throws(()=>validateDay(day,'2026-10-22.json'),/score mismatch/);
+  day.questions.q1.answers[0].points=999;assert.throws(()=>validateDay(day,'2026-10-23.json'),/score mismatch/);
 });

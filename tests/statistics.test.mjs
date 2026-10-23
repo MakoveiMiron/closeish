@@ -5,7 +5,7 @@ import {createReceipts} from '../src/receipts.mjs';
 import {calculateStats,MemoryStatsStore,createStatistics} from '../src/statistics.mjs';
 import {createApp} from '../src/server.mjs';
 import {loadContent} from '../src/content.mjs';
-const secret='s'.repeat(64),playerSecret='p'.repeat(64),date='2026-10-22',revision='a'.repeat(24);
+const secret='s'.repeat(64),playerSecret='p'.repeat(64),date='2026-10-23',revision='a'.repeat(24);
 const signer=createReceipts({secret,playerSecret});
 function completeArgs(scores=[0,200,400,600,800,1200]){
  const playerId=randomUUID(),runId=randomUUID();
@@ -59,7 +59,7 @@ test('HTTP statistics contract: six server scores, repeat deduplication, error/r
   const retries=await Promise.all(Array.from({length:10},()=>post('/api/v1/results',payload)));assert.ok(retries.every(r=>r.body.statistics.total===1));
   reply=await post('/api/v1/statistics',{date,revision:boot.revision,playerId});assert.equal(reply.body.statistics.comparison.betterThanPercent,null);
   assert.equal((await post('/api/v1/results',{...payload,playerId:randomUUID()})).status,400);
-  assert.equal((await post('/api/v1/statistics',{date:'2026-10-23',revision:boot.revision,playerId})).status,400);
+  assert.equal((await post('/api/v1/statistics',{date:'2026-10-24',revision:boot.revision,playerId})).status,400);
   assert.equal((await fetch(base+'/readyz')).status,200);
   store.ready=async()=>{throw new Error('offline')};assert.equal((await fetch(base+'/readyz')).status,503);assert.equal((await fetch(base+'/healthz')).status,200);
   store.record=async()=>{throw Object.assign(new Error('offline'),{code:'TEST_OFFLINE'})};assert.equal((await post('/api/v1/results',payload)).status,503);

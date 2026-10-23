@@ -139,13 +139,14 @@ export function createLazyContent(directory=contentDir,{cacheSize=2}={}) {
   }
   const cache=new Map();
   return {get size(){return metadata.size},
+    status(date){return metadata.get(date)?.day.publication_status||null},
     keys(){return metadata.keys()},
     has(date){return metadata.has(date)},
     [Symbol.iterator](){return metadata[Symbol.iterator]()},
     get(date){
       if(!metadata.has(date))return undefined;
       if(metadata.get(date).day.publication_status==='draft')return metadata.get(date);
-      if(cache.has(date))return cache.get(date);
+      if(cache.has(date)){const hit=cache.get(date);cache.delete(date);cache.set(date,hit);return hit}
       const value=loadContent(directory,date).get(date);
       cache.set(date,value);
       if(cache.size>cacheSize)cache.delete(cache.keys().next().value);

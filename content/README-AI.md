@@ -21,3 +21,7 @@ Olvasd végig a KERDES-VALASZ-SZABALYZAT.md fájlt, a day.schema.json sémát é
 5. `npm run export:questions`: friss segédindexet és új AI-ZIP-et készít. Ne a régi ZIP-et egészítsd ki kézzel.
 
 A tartalom nem töltődik fel magától sehova. Az új dátumú fájlokhoz nem kell frontendkódot vagy kézi schedule-listát módosítani. A sémán túl a backend validátora ellenőrzi a pontokat és a dátumok/azonosítók összhangját.
+
+## V17.7 nyitónap és egységrendszer
+
+A CLOSEISH első játszható napja **2026-10-23** (CHALLENGE #001), az utolsó jelenleg mellékelt nap **2026-10-29** (#007). Új kérdéscsomaghoz csak metrikus fizikai mértékegységet használj; a prompt, a limit, a válaszértékek és a score-bands ugyanabban az egységben legyenek.

@@ -11,7 +11,7 @@ npm ci
 npm run demo
 ```
 
-Az API alapértelmezés szerint http://127.0.0.1:3000 címen fut. A demo a mellékelt 2026-10-22-i kérdésnapot használja. A külön frontend mappájában, másik terminálban `npm run dev`, utána http://localhost:5173.
+Az API alapértelmezés szerint http://127.0.0.1:3000 címen fut. A demo a mellékelt kérdéscsomagokkal használható; az első játszható nap 2026-10-23. A külön frontend mappájában, másik terminálban `npm run dev`, utána http://localhost:5173.
 
 A backendhez egyszer szükséges az `npm ci` a PostgreSQL-kliens telepítéséhez. Railway-en ezt a Dockerfile automatikusan elvégzi. A frontendhez nincs telepítendő csomag.
 
@@ -46,7 +46,7 @@ npm run export:questions
 
 Mindkét parancs önállóan, ebben a backendmappában működik. A friss AI-ZIP ide, a mappa gyökerébe készül. Az új napi JSON szakmai ellenőrzés és `scheduled` állapot után backend-újratelepítéssel kerül kiszolgálásra. A frontendbe nem kerül teljes kérdésbank.
 
-A mellékelt hét nap 2026-10-20–26-ra szól. Hiányzó napon nincs napi kérdéscsomag; az éles szerver nem dátumozza át a játékot.
+A mellékelt hét nap 2026-10-23–29-re szól. Hiányzó napon nincs napi kérdéscsomag; az éles szerver nem dátumozza át a játékot.
 
 ## Számláló, mentés, statisztika
 
@@ -69,3 +69,17 @@ A `docs/ELLENORZES.md` a V17 közös projekt ellenőrzési történetét őrzi. 
 A napi állapot már nem a `localStorage`-ban él: a hat szerver által ellenőrzött választ a `player_progress` PostgreSQL-tábla tartósan rögzíti. A részletek, az API szerződése, a 002–003 migrációk, a Railway deploy és a teljesítményellenőrzés: **[docs/POSTGRES-PROGRESS-PERFORMANCE.md](docs/POSTGRES-PROGRESS-PERFORMANCE.md)**.
 
 Fontos: a V17.5 frontend csak a V17.5 backenddel együtt működik, és újraindítás előtt futnia kell a migrációnak.
+
+
+## V17.6 – kihagyott napok
+
+A `GET /api/v1/days/YYYY-MM-DD` lehetővé teszi a már megjelent napi kérdések lekérését; a `progress` GET `day` paramétert kap. Az indulás és a pontozás már a kiválasztott napon működik, a szerver nem enged jövőbeli vagy draft napot, és egy nap első érvényes futása nem játszható újra. Az eredmény az eredeti napi összesítésbe kerül. A V17.6 frontend szükséges hozzá. Nincs új SQL-migráció; a Railway/PG integrációt a kiadáskor külön teszteld.
+
+## V17.7: fontos dátumváltás és adatbázis-migráció
+
+A nyitónap 2026-10-23 (#001). A korábbi V17.6 hét tartalomnapja +1 napot tolódott.
+**Kötelező a `004_shift_launch_to_oct23.sql` migráció** egy már használt PostgreSQL esetén.
+A migráció a korábbi eredményeket és számlálókat is egy nappal előrébb helyezi, és
+a napi tartalomhash-eket az új JSON-okhoz igazítja. Telepítés előtt készíts
+adatbázis-mentést és ütemezz karbantartást. A részletek a
+`docs/LAUNCH-2026-10-23.md` dokumentumban találhatók.

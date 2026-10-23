@@ -1,6 +1,6 @@
 // Local demo only. All actual scoring remains in the separately running backend.
 if(process.env.NODE_ENV==='production')throw new Error('Demo date override is forbidden in production');
-process.env.DEV_DATE='2026-10-22';
+process.env.DEV_DATE='2026-10-23';
 const {spawn}=await import('node:child_process');
 const {fileURLToPath}=await import('node:url');
 const root=fileURLToPath(new URL('../',import.meta.url));
