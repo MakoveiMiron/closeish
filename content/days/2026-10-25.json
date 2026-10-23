@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-10-25",
   "day_number": 3,
-  "revision": "cef5b3dbffe33576",
+  "revision": "fix1-7e1c731dfd72a652",
   "publication_status": "scheduled",
-  "editorial_note": "Imported V15 data; existing question-level research/editorial flags are preserved, not independently recertified.",
+  "editorial_note": "Imported V15 data; existing question-level research/editorial flags are preserved, not independently recertified. 2026-10-23 correction: q3 removed 28 ambiguous alias assignments covering 14 normalized names across 14 entities; canonical names, metric values and scoring were retained.",
   "questions": {
     "q1": {
       "id": "closeish_20261022_q1",
@@ -3124,7 +3124,7 @@
       ],
       "verification_status": "frozen_source_values_audited",
       "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE",
-      "content_revision": "2026-10-21-user-unit-catalogue-corrections-v2-scope-v5",
+      "content_revision": "2026-10-21-user-unit-catalogue-corrections-v2-scope-v5-unambiguous-aliases-fix1",
       "metric_provenance": "Complete 3,220 area estimates from local Basemap US counties polygon snapshot, approximate geometry, not census areas.",
       "measurement_snapshot": "Bundled source snapshot 2026-10-21; changing datasets must not change past scores.",
       "measurement": {
@@ -40174,16 +40174,6 @@
               "input": "Baltimore County, MD",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Baltimore, MD",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Baltimore, Maryland",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -40823,16 +40813,6 @@
           "aliases": [
             {
               "input": "Baltimore City, MD",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Baltimore, MD",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Baltimore, Maryland",
               "kind": "source_alias",
               "action": "replace_with_canonical"
             }
@@ -50094,16 +50074,6 @@
               "input": "St. Louis County, MO",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "St. Louis, MO",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "St. Louis, Missouri",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -52448,16 +52418,6 @@
           "aliases": [
             {
               "input": "St. Louis City, MO",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "St. Louis, MO",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "St. Louis, Missouri",
               "kind": "source_alias",
               "action": "replace_with_canonical"
             }
@@ -91169,16 +91129,6 @@
               "input": "Bedford County, VA",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Bedford, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Bedford, Virginia",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -91572,16 +91522,6 @@
               "input": "Fairfax County, VA",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Fairfax, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Fairfax, Virginia",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -91663,16 +91603,6 @@
           "aliases": [
             {
               "input": "Franklin County, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Franklin, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Franklin, Virginia",
               "kind": "source_alias",
               "action": "replace_with_canonical"
             }
@@ -92407,16 +92337,6 @@
           "aliases": [
             {
               "input": "Roanoke County, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Roanoke, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Roanoke, Virginia",
               "kind": "source_alias",
               "action": "replace_with_canonical"
             }
@@ -93370,16 +93290,6 @@
               "input": "Richmond County, VA",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Richmond, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Richmond, Virginia",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -93649,16 +93559,6 @@
               "input": "Bedford City, VA",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Bedford, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Bedford, Virginia",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -93897,16 +93797,6 @@
               "input": "Fairfax City, VA",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Fairfax, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Fairfax, Virginia",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -93926,16 +93816,6 @@
           "aliases": [
             {
               "input": "Franklin City, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Franklin, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Franklin, Virginia",
               "kind": "source_alias",
               "action": "replace_with_canonical"
             }
@@ -94424,16 +94304,6 @@
               "input": "Richmond City, VA",
               "kind": "source_alias",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Richmond, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Richmond, Virginia",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "source_derived_approximate",
@@ -94453,16 +94323,6 @@
           "aliases": [
             {
               "input": "Roanoke City, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Roanoke, VA",
-              "kind": "source_alias",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Roanoke, Virginia",
               "kind": "source_alias",
               "action": "replace_with_canonical"
             }

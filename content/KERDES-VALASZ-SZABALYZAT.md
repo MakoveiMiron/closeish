@@ -1,6 +1,6 @@
 # CLOSEISH – kérdés- és válaszösszeállítási szabályzat, V16
 
-Ez az új napi fájlok elsődleges szabályzata. A meglévő hét nap V15-import; megőrzésük nem új tényellenőrzés. A korábbi dokumentumok `reference-rules` alatt segédanyagként maradtak meg. Meglévő kérdés vagy pontozási határ átírása külön szerkesztői döntés, nem az új napok hozzáadásának mellékhatása.
+Ez az új napi fájlok elsődleges szabályzata. A meglévő hat (2026-10-23–28-i) nap V15-import; megőrzésük nem új tényellenőrzés. A korábbi dokumentumok `reference-rules` alatt segédanyagként maradtak meg. Meglévő kérdés vagy pontozási határ átírása külön szerkesztői döntés, nem az új napok hozzáadásának mellékhatása.
 
 ## 1. A játék
 
@@ -65,6 +65,8 @@ A kérdés, a forrásmutató és a `metric_value` ugyanazt jelentse. Ne keverd p
 | `b3 < gap ≤ b4` | 400, IN THE ZONE |
 | `b4 < gap ≤ b5` | 200, ON THE BOARD |
 | `gap > b5` | 0, TOO FAR |
+
+**Számábrázolás:** amikor nem egész a mérési egység (például 0,01 km), a tárolt, már kerekített decimalis számokból számolj pontos tizedes aritmetikával (vagy megfelelően skálázott egészekkel). Az IEEE-754 lebegőpontos ábrázolás önmagában tévesen 0 pontra vihet egy sávhatáron álló rekordot; bináris kerekítési maradék miatt nem változhat a pontszám. A backendnek is ezeket a határokat kell követnie.
 
 A `score_bands` öt eleme ebben a sorrendben tartalmazza a pozitív, szigorúan növekvő `max_gap_inclusive` értékeket és az 1000, 800, 600, 400, 200 pontot. A `scoring_window.max_scoring_distance` pontosan b5. A tárolt `points` és `tier` számításból származzon. A backend a pontot maga számolja, a kliens pontszámát figyelmen kívül hagyja.
 

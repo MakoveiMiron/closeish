@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-10-26",
   "day_number": 4,
-  "revision": "v16-frozen-cities-20261022",
+  "revision": "fix1-cce687d94363dcea",
   "publication_status": "scheduled",
-  "editorial_note": "Imported V15 data; existing question-level research/editorial flags are preserved, not independently recertified.",
+  "editorial_note": "Imported V15 data; existing question-level research/editorial flags are preserved, not independently recertified. 2026-10-23 correction: q5 removed 41 ambiguous alias assignments covering 19 normalized names across 38 entities; canonical names, metric values and scoring were retained. 2026-10-23 correction: q2 scoring_window units harmonized from years to year (same calendar-year quantity; scoring unchanged).",
   "questions": {
     "q1": {
       "id": "closeish_20261023_q1",
@@ -1694,7 +1694,7 @@
       ],
       "verification_status": "verified_apple_model_list",
       "editorial_status": "VERIFIED_COMPLETE_MARKETED_MODELS_AS_OF_2026_10_21",
-      "content_revision": "closeish-v10-day4-q2-iphone-2026-10-21",
+      "content_revision": "closeish-v10-day4-q2-iphone-2026-10-21-unit-consistencyfix1",
       "metric_provenance": "Apple Support: Identify your iPhone model; introduced year for each marketed model; regional model numbers, colors and capacities are not separate answers.",
       "measurement_snapshot": "Apple Support model identification, accessed 2026-10-21 (current released models; announced but not-yet-released products excluded)",
       "measurement": {
@@ -1727,7 +1727,7 @@
       },
       "scoring_window": {
         "max_scoring_distance": 5,
-        "units": "years",
+        "units": "year",
         "outside_window_points": 0,
         "wrong_side_points": 0,
         "exact_match_points": 1200
@@ -6737,7 +6737,7 @@
       ],
       "verification_status": "seed_verified_online_lookups_available_not_complete_offline",
       "editorial_status": "RESEARCH_DRAFT_NOT_PUBLISHABLE",
-      "content_revision": "closeish-20261023-200k-pop-city-v15-frozen-server-cities-v16",
+      "content_revision": "closeish-20261023-200k-pop-city-v15-frozen-server-cities-v16-unambiguous-aliases-fix1",
       "metric_provenance": "Population eligibility: GeoNames-derived worldcities.csv snapshot (2020) or population from Open-Meteo geocoding. Measurement: rounded Haversine kilometres from Budapest to the documented city coordinates.",
       "measurement_snapshot": "Population: fixed 2020 CSV; optional live GeoNames-backed city lookup",
       "measurement": {
@@ -8181,11 +8181,6 @@
           "entity_id": "tzdb-Europe/London",
           "canonical": "London, GB",
           "aliases": [
-            {
-              "input": "London",
-              "kind": "zone_label_city",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "London, United Kingdom",
               "kind": "source_city_name",
@@ -10450,11 +10445,6 @@
           "entity_id": "worldcities-2020-cartagena es-15",
           "canonical": "Cartagena, ES",
           "aliases": [
-            {
-              "input": "Cartagena",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Cartagena, Spain",
               "kind": "source_city_name",
@@ -13739,18 +13729,7 @@
         {
           "entity_id": "worldcities-2020-cordoba mexico-135",
           "canonical": "Córdoba, Mexico",
-          "aliases": [
-            {
-              "input": "Córdoba",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Cordoba",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -14304,11 +14283,6 @@
           "entity_id": "worldcities-2020-vitoria es-156",
           "canonical": "Vitoria, ES",
           "aliases": [
-            {
-              "input": "Vitoria",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Vitoria, Spain",
               "kind": "source_city_name",
@@ -16198,13 +16172,7 @@
         {
           "entity_id": "worldcities-2020-santa ana bolivia-226",
           "canonical": "Santa Ana, Bolivia",
-          "aliases": [
-            {
-              "input": "Santa Ana",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -16222,13 +16190,7 @@
         {
           "entity_id": "worldcities-2020-santa ana el salvador-227",
           "canonical": "Santa Ana, El Salvador",
-          "aliases": [
-            {
-              "input": "Santa Ana",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -19659,13 +19621,7 @@
         {
           "entity_id": "worldcities-2020-salem united states-355",
           "canonical": "Salem, United States",
-          "aliases": [
-            {
-              "input": "Salem",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -20777,13 +20733,7 @@
         {
           "entity_id": "worldcities-2020-reading united states-397",
           "canonical": "Reading, United States",
-          "aliases": [
-            {
-              "input": "Reading",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -22696,13 +22646,7 @@
         {
           "entity_id": "worldcities-2020-cadiz philippines-468",
           "canonical": "Cadiz, Philippines",
-          "aliases": [
-            {
-              "input": "Cadiz",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -22723,11 +22667,6 @@
           "aliases": [
             {
               "input": "Cádiz",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Cadiz",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
             },
@@ -27104,16 +27043,6 @@
           "canonical": "Córdoba, ES",
           "aliases": [
             {
-              "input": "Córdoba",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Cordoba",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
               "input": "Córdoba, Spain",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
@@ -28076,13 +28005,7 @@
         {
           "entity_id": "worldcities-2020-santa ana united states-668",
           "canonical": "Santa Ana, United States",
-          "aliases": [
-            {
-              "input": "Santa Ana",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -28204,11 +28127,6 @@
           "aliases": [
             {
               "input": "Kōchi",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Kochi",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
             }
@@ -29112,13 +29030,7 @@
         {
           "entity_id": "worldcities-2020-merida venezuela-707",
           "canonical": "Merida, Venezuela",
-          "aliases": [
-            {
-              "input": "Merida",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -29189,13 +29101,7 @@
         {
           "entity_id": "worldcities-2020-london canada-710",
           "canonical": "London, Canada",
-          "aliases": [
-            {
-              "input": "London",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -31022,11 +30928,6 @@
           "entity_id": "worldcities-2020-reading gb-778",
           "canonical": "Reading, GB",
           "aliases": [
-            {
-              "input": "Reading",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Reading, United Kingdom",
               "kind": "source_city_name",
@@ -41349,11 +41250,6 @@
           "canonical": "Al Hillah, IQ",
           "aliases": [
             {
-              "input": "Al Hillah",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
               "input": "Al Hillah, Iraq",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
@@ -41377,11 +41273,6 @@
           "entity_id": "worldcities-2020-al hillah sa-1163",
           "canonical": "Al Hillah, SA",
           "aliases": [
-            {
-              "input": "Al Hillah",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Al Hillah, Saudi Arabia",
               "kind": "source_city_name",
@@ -41689,13 +41580,7 @@
         {
           "entity_id": "worldcities-2020-barcelona venezuela-1175",
           "canonical": "Barcelona, Venezuela",
-          "aliases": [
-            {
-              "input": "Barcelona",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -44641,13 +44526,7 @@
         {
           "entity_id": "worldcities-2020-birmingham united states-1283",
           "canonical": "Birmingham, United States",
-          "aliases": [
-            {
-              "input": "Birmingham",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -46219,11 +46098,6 @@
           "entity_id": "worldcities-2020-valencia es-1341",
           "canonical": "Valencia, ES",
           "aliases": [
-            {
-              "input": "Valencia",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Valencia, Spain",
               "kind": "source_city_name",
@@ -47872,13 +47746,7 @@
         {
           "entity_id": "worldcities-2020-salem india-1402",
           "canonical": "Salem, India",
-          "aliases": [
-            {
-              "input": "Salem",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -48076,11 +47944,6 @@
           "canonical": "Newcastle, GB",
           "aliases": [
             {
-              "input": "Newcastle",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
               "input": "Newcastle, United Kingdom",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
@@ -48209,13 +48072,7 @@
         {
           "entity_id": "worldcities-2020-cartagena colombia-1415",
           "canonical": "Cartagena, Colombia",
-          "aliases": [
-            {
-              "input": "Cartagena",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -49619,11 +49476,6 @@
           "aliases": [
             {
               "input": "Mérida",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Merida",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
             }
@@ -51959,13 +51811,7 @@
         {
           "entity_id": "worldcities-2020-newcastle australia-1555",
           "canonical": "Newcastle, Australia",
-          "aliases": [
-            {
-              "input": "Newcastle",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -53018,11 +52864,6 @@
           "aliases": [
             {
               "input": "San José",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "San Jose",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
             }
@@ -54253,18 +54094,7 @@
         {
           "entity_id": "worldcities-2020-cordoba argentina-1641",
           "canonical": "Córdoba, Argentina",
-          "aliases": [
-            {
-              "input": "Córdoba",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
-              "input": "Cordoba",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -54336,11 +54166,6 @@
           "entity_id": "worldcities-2020-hyderabad pk-1644",
           "canonical": "Hyderabad, PK",
           "aliases": [
-            {
-              "input": "Hyderabad",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Hyderabad, Pakistan",
               "kind": "source_city_name",
@@ -54856,13 +54681,7 @@
         {
           "entity_id": "worldcities-2020-kochi india-1663",
           "canonical": "Kochi, India",
-          "aliases": [
-            {
-              "input": "Kochi",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -55121,13 +54940,7 @@
         {
           "entity_id": "worldcities-2020-santiago dominican republic-1673",
           "canonical": "Santiago, Dominican Republic",
-          "aliases": [
-            {
-              "input": "Santiago",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -55974,11 +55787,6 @@
               "input": "Vitória",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
-            },
-            {
-              "input": "Vitoria",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
             }
           ],
           "verified_status": "population_and_coordinates_source_verified",
@@ -56451,13 +56259,7 @@
         {
           "entity_id": "worldcities-2020-valencia venezuela-1723",
           "canonical": "Valencia, Venezuela",
-          "aliases": [
-            {
-              "input": "Valencia",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -56499,13 +56301,7 @@
         {
           "entity_id": "worldcities-2020-san jose united states-1725",
           "canonical": "San Jose, United States",
-          "aliases": [
-            {
-              "input": "San Jose",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -57816,11 +57612,6 @@
           "entity_id": "worldcities-2020-birmingham gb-1774",
           "canonical": "Birmingham, GB",
           "aliases": [
-            {
-              "input": "Birmingham",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
             {
               "input": "Birmingham, United Kingdom",
               "kind": "source_city_name",
@@ -60616,11 +60407,6 @@
           "canonical": "Barcelona, ES",
           "aliases": [
             {
-              "input": "Barcelona",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            },
-            {
               "input": "Barcelona, Spain",
               "kind": "source_city_name",
               "action": "replace_with_canonical"
@@ -60907,13 +60693,7 @@
         {
           "entity_id": "worldcities-2020-santiago chile-1892",
           "canonical": "Santiago, Chile",
-          "aliases": [
-            {
-              "input": "Santiago",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {
@@ -60955,13 +60735,7 @@
         {
           "entity_id": "worldcities-2020-hyderabad india-1894",
           "canonical": "Hyderabad, India",
-          "aliases": [
-            {
-              "input": "Hyderabad",
-              "kind": "source_city_name",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "aliases": [],
           "verified_status": "population_and_coordinates_source_verified",
           "source_refs": [
             {

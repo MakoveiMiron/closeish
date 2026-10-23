@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-10-23",
   "day_number": 1,
-  "revision": "68e4814e92f1b37c",
+  "revision": "fix1-c7205c97ffb690c7",
   "publication_status": "scheduled",
-  "editorial_note": "Imported V15 data; existing question-level research/editorial flags are preserved, not independently recertified.",
+  "editorial_note": "Imported V15 data; existing question-level research/editorial flags are preserved, not independently recertified. 2026-10-23 correction: q6 approach_rule corrected to match below/at_most; limits, measured answers, points unchanged.",
   "questions": {
     "q1": {
       "id": "closeish_20261020_q1",
@@ -42792,7 +42792,7 @@
       ],
       "verification_status": "cross_referenced_constellation_area_source",
       "editorial_status": "research_preview",
-      "content_revision": "closeish-20261020-un-members-whole-pct-v5",
+      "content_revision": "closeish-20261020-un-members-whole-pct-v5-direction-consistencyfix1",
       "metric_provenance": "IAU official set of 88 constellations; area rounded to whole square degrees as tabulated by AstroPixels (Fred Espenak).",
       "measurement_snapshot": "Astronomical boundaries fixed; source page last updated September 2014.",
       "measurement": {
@@ -42817,8 +42817,8 @@
         "rule": "exact value"
       },
       "approach_rule": {
-        "required_side": "from_above",
-        "operator": ">=",
+        "required_side": "from_below",
+        "operator": "<=",
         "exact_target_allowed": true,
         "wrong_side_points": 0,
         "exact_target_points": 1200

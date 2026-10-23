@@ -1,0 +1,410 @@
+[
+  {
+    "date": "2026-10-23",
+    "question": "q6",
+    "kind": "direction",
+    "field_changes": 2
+  },
+  {
+    "date": "2026-10-25",
+    "question": "q3",
+    "kind": "alias",
+    "ambiguous_normalized_names": 14,
+    "removed_alias_assignments": 28,
+    "affected_entities": 14,
+    "removed": [
+      [
+        "us-county-24005",
+        "Baltimore County, Maryland",
+        "Baltimore, MD"
+      ],
+      [
+        "us-county-24005",
+        "Baltimore County, Maryland",
+        "Baltimore, Maryland"
+      ],
+      [
+        "us-county-24510",
+        "Baltimore City, Maryland",
+        "Baltimore, MD"
+      ],
+      [
+        "us-county-24510",
+        "Baltimore City, Maryland",
+        "Baltimore, Maryland"
+      ],
+      [
+        "us-county-29189",
+        "St. Louis County, Missouri",
+        "St. Louis, MO"
+      ],
+      [
+        "us-county-29189",
+        "St. Louis County, Missouri",
+        "St. Louis, Missouri"
+      ],
+      [
+        "us-county-29510",
+        "St. Louis City, Missouri",
+        "St. Louis, MO"
+      ],
+      [
+        "us-county-29510",
+        "St. Louis City, Missouri",
+        "St. Louis, Missouri"
+      ],
+      [
+        "us-county-51019",
+        "Bedford County, Virginia",
+        "Bedford, VA"
+      ],
+      [
+        "us-county-51019",
+        "Bedford County, Virginia",
+        "Bedford, Virginia"
+      ],
+      [
+        "us-county-51059",
+        "Fairfax County, Virginia",
+        "Fairfax, VA"
+      ],
+      [
+        "us-county-51059",
+        "Fairfax County, Virginia",
+        "Fairfax, Virginia"
+      ],
+      [
+        "us-county-51067",
+        "Franklin County, Virginia",
+        "Franklin, VA"
+      ],
+      [
+        "us-county-51067",
+        "Franklin County, Virginia",
+        "Franklin, Virginia"
+      ],
+      [
+        "us-county-51161",
+        "Roanoke County, Virginia",
+        "Roanoke, VA"
+      ],
+      [
+        "us-county-51161",
+        "Roanoke County, Virginia",
+        "Roanoke, Virginia"
+      ],
+      [
+        "us-county-51159",
+        "Richmond County, Virginia",
+        "Richmond, VA"
+      ],
+      [
+        "us-county-51159",
+        "Richmond County, Virginia",
+        "Richmond, Virginia"
+      ],
+      [
+        "us-county-51515",
+        "Bedford City, Virginia",
+        "Bedford, VA"
+      ],
+      [
+        "us-county-51515",
+        "Bedford City, Virginia",
+        "Bedford, Virginia"
+      ],
+      [
+        "us-county-51600",
+        "Fairfax City, Virginia",
+        "Fairfax, VA"
+      ],
+      [
+        "us-county-51600",
+        "Fairfax City, Virginia",
+        "Fairfax, Virginia"
+      ],
+      [
+        "us-county-51620",
+        "Franklin City, Virginia",
+        "Franklin, VA"
+      ],
+      [
+        "us-county-51620",
+        "Franklin City, Virginia",
+        "Franklin, Virginia"
+      ],
+      [
+        "us-county-51760",
+        "Richmond City, Virginia",
+        "Richmond, VA"
+      ],
+      [
+        "us-county-51760",
+        "Richmond City, Virginia",
+        "Richmond, Virginia"
+      ],
+      [
+        "us-county-51770",
+        "Roanoke City, Virginia",
+        "Roanoke, VA"
+      ],
+      [
+        "us-county-51770",
+        "Roanoke City, Virginia",
+        "Roanoke, Virginia"
+      ]
+    ],
+    "original_collision_keys": [
+      "baltimore, maryland",
+      "baltimore, md",
+      "bedford, va",
+      "bedford, virginia",
+      "fairfax, va",
+      "fairfax, virginia",
+      "franklin, va",
+      "franklin, virginia",
+      "richmond, va",
+      "richmond, virginia",
+      "roanoke, va",
+      "roanoke, virginia",
+      "st. louis, missouri",
+      "st. louis, mo"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "question": "q5",
+    "kind": "alias",
+    "ambiguous_normalized_names": 19,
+    "removed_alias_assignments": 41,
+    "affected_entities": 38,
+    "removed": [
+      [
+        "tzdb-Europe/London",
+        "London, GB",
+        "London"
+      ],
+      [
+        "worldcities-2020-cartagena es-15",
+        "Cartagena, ES",
+        "Cartagena"
+      ],
+      [
+        "worldcities-2020-cordoba mexico-135",
+        "Córdoba, Mexico",
+        "Córdoba"
+      ],
+      [
+        "worldcities-2020-cordoba mexico-135",
+        "Córdoba, Mexico",
+        "Cordoba"
+      ],
+      [
+        "worldcities-2020-vitoria es-156",
+        "Vitoria, ES",
+        "Vitoria"
+      ],
+      [
+        "worldcities-2020-santa ana bolivia-226",
+        "Santa Ana, Bolivia",
+        "Santa Ana"
+      ],
+      [
+        "worldcities-2020-santa ana el salvador-227",
+        "Santa Ana, El Salvador",
+        "Santa Ana"
+      ],
+      [
+        "worldcities-2020-salem united states-355",
+        "Salem, United States",
+        "Salem"
+      ],
+      [
+        "worldcities-2020-reading united states-397",
+        "Reading, United States",
+        "Reading"
+      ],
+      [
+        "worldcities-2020-cadiz philippines-468",
+        "Cadiz, Philippines",
+        "Cadiz"
+      ],
+      [
+        "worldcities-2020-cadiz es-469",
+        "Cádiz, ES",
+        "Cadiz"
+      ],
+      [
+        "worldcities-2020-cordoba es-632",
+        "Córdoba, ES",
+        "Córdoba"
+      ],
+      [
+        "worldcities-2020-cordoba es-632",
+        "Córdoba, ES",
+        "Cordoba"
+      ],
+      [
+        "worldcities-2020-santa ana united states-668",
+        "Santa Ana, United States",
+        "Santa Ana"
+      ],
+      [
+        "worldcities-2020-kochi japan-673",
+        "Kōchi, Japan",
+        "Kochi"
+      ],
+      [
+        "worldcities-2020-merida venezuela-707",
+        "Merida, Venezuela",
+        "Merida"
+      ],
+      [
+        "worldcities-2020-london canada-710",
+        "London, Canada",
+        "London"
+      ],
+      [
+        "worldcities-2020-reading gb-778",
+        "Reading, GB",
+        "Reading"
+      ],
+      [
+        "worldcities-2020-al hillah iq-1162",
+        "Al Hillah, IQ",
+        "Al Hillah"
+      ],
+      [
+        "worldcities-2020-al hillah sa-1163",
+        "Al Hillah, SA",
+        "Al Hillah"
+      ],
+      [
+        "worldcities-2020-barcelona venezuela-1175",
+        "Barcelona, Venezuela",
+        "Barcelona"
+      ],
+      [
+        "worldcities-2020-birmingham united states-1283",
+        "Birmingham, United States",
+        "Birmingham"
+      ],
+      [
+        "worldcities-2020-valencia es-1341",
+        "Valencia, ES",
+        "Valencia"
+      ],
+      [
+        "worldcities-2020-salem india-1402",
+        "Salem, India",
+        "Salem"
+      ],
+      [
+        "worldcities-2020-newcastle gb-1410",
+        "Newcastle, GB",
+        "Newcastle"
+      ],
+      [
+        "worldcities-2020-cartagena colombia-1415",
+        "Cartagena, Colombia",
+        "Cartagena"
+      ],
+      [
+        "worldcities-2020-merida mexico-1468",
+        "Mérida, Mexico",
+        "Merida"
+      ],
+      [
+        "worldcities-2020-newcastle australia-1555",
+        "Newcastle, Australia",
+        "Newcastle"
+      ],
+      [
+        "worldcities-2020-san jose costa rica-1594",
+        "San José, Costa Rica",
+        "San Jose"
+      ],
+      [
+        "worldcities-2020-cordoba argentina-1641",
+        "Córdoba, Argentina",
+        "Córdoba"
+      ],
+      [
+        "worldcities-2020-cordoba argentina-1641",
+        "Córdoba, Argentina",
+        "Cordoba"
+      ],
+      [
+        "worldcities-2020-hyderabad pk-1644",
+        "Hyderabad, PK",
+        "Hyderabad"
+      ],
+      [
+        "worldcities-2020-kochi india-1663",
+        "Kochi, India",
+        "Kochi"
+      ],
+      [
+        "worldcities-2020-santiago dominican republic-1673",
+        "Santiago, Dominican Republic",
+        "Santiago"
+      ],
+      [
+        "worldcities-2020-vitoria brazil-1705",
+        "Vitória, Brazil",
+        "Vitoria"
+      ],
+      [
+        "worldcities-2020-valencia venezuela-1723",
+        "Valencia, Venezuela",
+        "Valencia"
+      ],
+      [
+        "worldcities-2020-san jose united states-1725",
+        "San Jose, United States",
+        "San Jose"
+      ],
+      [
+        "worldcities-2020-birmingham gb-1774",
+        "Birmingham, GB",
+        "Birmingham"
+      ],
+      [
+        "worldcities-2020-barcelona es-1880",
+        "Barcelona, ES",
+        "Barcelona"
+      ],
+      [
+        "worldcities-2020-santiago chile-1892",
+        "Santiago, Chile",
+        "Santiago"
+      ],
+      [
+        "worldcities-2020-hyderabad india-1894",
+        "Hyderabad, India",
+        "Hyderabad"
+      ]
+    ],
+    "original_collision_keys": [
+      "al hillah",
+      "barcelona",
+      "birmingham",
+      "cadiz",
+      "cartagena",
+      "cordoba",
+      "córdoba",
+      "hyderabad",
+      "kochi",
+      "london",
+      "merida",
+      "newcastle",
+      "reading",
+      "salem",
+      "san jose",
+      "santa ana",
+      "santiago",
+      "valencia",
+      "vitoria"
+    ]
+  }
+]

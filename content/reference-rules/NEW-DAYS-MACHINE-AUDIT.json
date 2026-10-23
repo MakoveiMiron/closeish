@@ -1,0 +1,488 @@
+[
+  {
+    "date": "2026-10-29",
+    "q": "q1",
+    "topic": "biology",
+    "n": 83,
+    "limits": 11,
+    "dir": "below",
+    "source": "msleep",
+    "score_bands": [
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      6.0
+    ],
+    "counts": {
+      "1200": 6,
+      "1000": 12,
+      "800": 8,
+      "600": 5,
+      "400": 5,
+      "200": 4
+    },
+    "zero_count": 43,
+    "candidates": 0,
+    "note": "Observational means are not universal species-level constants."
+  },
+  {
+    "date": "2026-10-29",
+    "q": "q2",
+    "topic": "international-standards",
+    "n": 249,
+    "limits": 32,
+    "dir": "above",
+    "source": "subdiv",
+    "score_bands": [
+      4.0,
+      11.0,
+      31.0,
+      46.0,
+      58.0
+    ],
+    "counts": {
+      "1200": 3,
+      "1000": 5,
+      "800": 7,
+      "600": 7,
+      "400": 7,
+      "200": 5
+    },
+    "zero_count": 215,
+    "candidates": 0,
+    "note": "Catalogue entry count, not actual total administrative divisions at a current date."
+  },
+  {
+    "date": "2026-10-29",
+    "q": "q3",
+    "topic": "oceanography",
+    "n": 61,
+    "limits": 4,
+    "dir": "above",
+    "source": "elnino",
+    "score_bands": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "counts": {
+      "1200": 6,
+      "1000": 28,
+      "800": 11,
+      "600": 7,
+      "400": 5,
+      "200": 1
+    },
+    "zero_count": 3,
+    "candidates": 0,
+    "note": "Versioned NOAA historical ERSST.V3B extract; snapshot not live."
+  },
+  {
+    "date": "2026-10-29",
+    "q": "q4",
+    "topic": "automotive-history",
+    "n": 32,
+    "limits": 82,
+    "dir": "above",
+    "source": "mtcars",
+    "score_bands": [
+      2.0,
+      30.0,
+      48.0,
+      71.0,
+      90.0
+    ],
+    "counts": {
+      "1200": 3,
+      "1000": 1,
+      "800": 4,
+      "600": 3,
+      "400": 4,
+      "200": 2
+    },
+    "zero_count": 15,
+    "candidates": 0,
+    "note": "1970s gross horsepower ratings, not modern net-power test figures."
+  },
+  {
+    "date": "2026-10-29",
+    "q": "q5",
+    "topic": "local-demography",
+    "n": 437,
+    "limits": 91000,
+    "dir": "below",
+    "source": "midwest",
+    "score_bands": [
+      15000.0,
+      26000.0,
+      40000.0,
+      55000.0,
+      69000.0
+    ],
+    "counts": {
+      "1200": 2,
+      "1000": 17,
+      "800": 16,
+      "600": 26,
+      "400": 62,
+      "200": 89
+    },
+    "zero_count": 225,
+    "candidates": 0,
+    "note": "Some historic county totals may differ from later census revisions."
+  },
+  {
+    "date": "2026-10-29",
+    "q": "q6",
+    "topic": "digital-design",
+    "n": 148,
+    "limits": 46,
+    "dir": "above",
+    "source": "css4",
+    "score_bands": [
+      3.0,
+      10.0,
+      15.0,
+      26.0,
+      39.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 5,
+      "800": 9,
+      "600": 5,
+      "400": 10,
+      "200": 12
+    },
+    "zero_count": 106,
+    "candidates": 0,
+    "note": "Identical color values may have multiple independent standard CSS keywords."
+  },
+  {
+    "date": "2026-10-30",
+    "q": "q1",
+    "topic": "public-health",
+    "n": 142,
+    "limits": 60,
+    "dir": "above",
+    "source": "gap",
+    "score_bands": [
+      2.0,
+      5.0,
+      10.0,
+      13.0,
+      18.0
+    ],
+    "counts": {
+      "1200": 3,
+      "1000": 2,
+      "800": 8,
+      "600": 7,
+      "400": 26,
+      "200": 29
+    },
+    "zero_count": 67,
+    "candidates": 0,
+    "note": "Historic source series; not every current UN member."
+  },
+  {
+    "date": "2026-10-30",
+    "q": "q2",
+    "topic": "political-geography",
+    "n": 232,
+    "limits": 7,
+    "dir": "below",
+    "source": "borders",
+    "score_bands": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "counts": {
+      "1200": 9,
+      "1000": 13,
+      "800": 22,
+      "600": 26,
+      "400": 28,
+      "200": 27
+    },
+    "zero_count": 107,
+    "candidates": 0,
+    "note": "Some records reflect historic/disputed border definitions; this is a source-list count, not an independently verified current border count."
+  },
+  {
+    "date": "2026-10-30",
+    "q": "q3",
+    "topic": "food-industry",
+    "n": 80,
+    "limits": 6681,
+    "dir": "above",
+    "source": "meat",
+    "score_bands": [
+      448.0,
+      1069.0,
+      1928.0,
+      2869.0,
+      3866.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 5,
+      "800": 5,
+      "600": 6,
+      "400": 7,
+      "200": 7
+    },
+    "zero_count": 49,
+    "candidates": 0,
+    "note": "Frozen USDA historical statistical series, not guaranteed same as live revised USDA release."
+  },
+  {
+    "date": "2026-10-30",
+    "q": "q4",
+    "topic": "chemistry",
+    "n": 118,
+    "limits": 59,
+    "dir": "below",
+    "source": "element",
+    "score_bands": [
+      7.0,
+      15.0,
+      24.0,
+      34.0,
+      44.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 7,
+      "800": 8,
+      "600": 9,
+      "400": 10,
+      "200": 10
+    },
+    "zero_count": 73,
+    "candidates": 0,
+    "note": "Atomic number is distinct from the atomic-weight question on the opening day."
+  },
+  {
+    "date": "2026-10-30",
+    "q": "q5",
+    "topic": "lake-science",
+    "n": 97,
+    "limits": 0,
+    "dir": "above",
+    "source": "huron",
+    "score_bands": [
+      4.0,
+      7.0,
+      18.0,
+      25.0,
+      36.0
+    ],
+    "counts": {
+      "1200": 5,
+      "1000": 10,
+      "800": 6,
+      "600": 10,
+      "400": 4,
+      "200": 9
+    },
+    "zero_count": 53,
+    "candidates": 1,
+    "note": "Original source foot units converted exactly; 1875 excluded from scoring because previous year is unavailable."
+  },
+  {
+    "date": "2026-10-30",
+    "q": "q6",
+    "topic": "economic-history",
+    "n": 50,
+    "limits": 4500,
+    "dir": "below",
+    "source": "macro",
+    "score_bands": [
+      400.0,
+      800.0,
+      1300.0,
+      1700.0,
+      2300.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 2,
+      "800": 5,
+      "600": 4,
+      "400": 3,
+      "200": 6
+    },
+    "zero_count": 29,
+    "candidates": 1,
+    "note": "2009 is partial through Q3 and is withheld instead of imputing Q4."
+  },
+  {
+    "date": "2026-10-31",
+    "q": "q1",
+    "topic": "social-history",
+    "n": 51,
+    "limits": 13,
+    "dir": "above",
+    "source": "statecrime",
+    "score_bands": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "counts": {
+      "1200": 4,
+      "1000": 6,
+      "800": 4,
+      "600": 3,
+      "400": 6,
+      "200": 4
+    },
+    "zero_count": 24,
+    "candidates": 0,
+    "note": "Different from 2009 violent-crime question; source vintage should be documented."
+  },
+  {
+    "date": "2026-10-31",
+    "q": "q2",
+    "topic": "industrial-history",
+    "n": 25,
+    "limits": 5300,
+    "dir": "below",
+    "source": "copper",
+    "score_bands": [
+      400.0,
+      700.0,
+      1300.0,
+      1400.0,
+      1900.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 2,
+      "800": 1,
+      "600": 2,
+      "400": 2,
+      "200": 2
+    },
+    "zero_count": 15,
+    "candidates": 0,
+    "note": "Source rights retained by original author, as described in statsmodels documentation."
+  },
+  {
+    "date": "2026-10-31",
+    "q": "q3",
+    "topic": "car-engineering",
+    "n": 76,
+    "limits": 4000,
+    "dir": "above",
+    "source": "mpg",
+    "score_bands": [
+      400.0,
+      700.0,
+      1200.0,
+      1400.0,
+      1900.0
+    ],
+    "counts": {
+      "1200": 2,
+      "1000": 2,
+      "800": 8,
+      "600": 3,
+      "400": 9,
+      "200": 8
+    },
+    "zero_count": 44,
+    "candidates": 0,
+    "note": "Only sampled models/trims in mpg; not a complete 1999/2008 U.S. vehicle market."
+  },
+  {
+    "date": "2026-10-31",
+    "q": "q4",
+    "topic": "financial-history",
+    "n": 107,
+    "limits": 790,
+    "dir": "above",
+    "source": "interest",
+    "score_bands": [
+      30.0,
+      70.0,
+      110.0,
+      170.0,
+      230.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 8,
+      "800": 12,
+      "600": 10,
+      "400": 5,
+      "200": 5
+    },
+    "zero_count": 66,
+    "candidates": 0,
+    "note": "West Germany for early observations and unified Germany in later quarters."
+  },
+  {
+    "date": "2026-10-31",
+    "q": "q5",
+    "topic": "population-geography",
+    "n": 224,
+    "limits": 113,
+    "dir": "above",
+    "source": "density",
+    "score_bands": [
+      19.0,
+      80.0,
+      113.0,
+      197.0,
+      367.0
+    ],
+    "counts": {
+      "1200": 2,
+      "1000": 11,
+      "800": 14,
+      "600": 13,
+      "400": 14,
+      "200": 13
+    },
+    "zero_count": 157,
+    "candidates": 9,
+    "note": "The historical countryinfo records do not share a reliably documented census year; result is explicitly a catalogue-specific snapshot, not a 2026 density ranking."
+  },
+  {
+    "date": "2026-10-31",
+    "q": "q6",
+    "topic": "atmospheric-science",
+    "n": 43,
+    "limits": 340,
+    "dir": "above",
+    "source": "co2",
+    "score_bands": [
+      3.0,
+      7.0,
+      13.0,
+      17.0,
+      23.0
+    ],
+    "counts": {
+      "1200": 1,
+      "1000": 2,
+      "800": 3,
+      "600": 3,
+      "400": 4,
+      "200": 3
+    },
+    "zero_count": 27,
+    "candidates": 1,
+    "note": "1958 only partial and listed as unscored candidate; some other years have missing weeks that are not imputed."
+  }
+]
