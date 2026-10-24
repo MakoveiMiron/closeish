@@ -1,0 +1,101 @@
+canonical,metric_value,points,source
+The Shawshank Redemption,142.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Godfather,175.0,200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Dark Knight,152.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Godfather: Part II,202.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+12 Angry Men,96.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Lord of the Rings: The Return of the King,201.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Pulp Fiction,154.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Schindler's List,195.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Inception,148.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Fight Club,139.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Lord of the Rings: The Fellowship of the Ring,178.0,200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Forrest Gump,142.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+"Il buono, il brutto, il cattivo",161.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Lord of the Rings: The Two Towers,179.0,200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Matrix,136.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Goodfellas,146.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Star Wars: Episode V - The Empire Strikes Back,124.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+One Flew Over the Cuckoo's Nest,133.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Hamilton,160.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Gisaengchung,132.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Soorarai Pottru,153.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Interstellar,169.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Cidade de Deus,130.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Sen to Chihiro no kamikakushi,125.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Saving Private Ryan,169.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Green Mile,189.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+La vita è bella,116.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Se7en,127.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Silence of the Lambs,118.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Star Wars,121.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Seppuku,133.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Shichinin no samurai,207.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+It's a Wonderful Life,130.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Joker,122.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Whiplash,106.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Intouchables,112.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Prestige,130.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Departed,151.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Pianist,150.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Gladiator,155.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+American History X,119.0,1200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Usual Suspects,106.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Léon,110.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Lion King,88.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Terminator 2: Judgment Day,137.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Nuovo Cinema Paradiso,155.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Hotaru no haka,89.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Back to the Future,116.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Once Upon a Time in the West,165.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Psycho,109.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Casablanca,102.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Modern Times,87.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+City Lights,87.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Capharnaüm,126.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Ayla: The Daughter of War,125.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Vikram Vedha,147.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Kimi no na wa.,106.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Dangal,161.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Spider-Man: Into the Spider-Verse,117.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Avengers: Endgame,181.0,200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Avengers: Infinity War,149.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Coco,105.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Django Unchained,165.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Dark Knight Rises,164.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+3 Idiots,170.0,200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Taare Zameen Par,165.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+WALL·E,98.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Lives of Others,137.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Oldeuboi,101.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Memento,113.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Mononoke-hime,134.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Once Upon a Time in America,229.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Raiders of the Lost Ark,115.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Shining,146.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Apocalypse Now,147.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Alien,117.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Anand,122.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Tengoku to jigoku,143.0,600,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,95.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Witness for the Prosecution,116.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Paths of Glory,88.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Rear Window,112.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Sunset Blvd.,110.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+The Great Dictator,125.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+1917,119.0,1200,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Tumbbad,104.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Andhadhun,139.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Drishyam,160.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Jagten,115.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Jodaeiye Nader az Simin,123.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Incendies,131.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Miracle in cell NO.7,132.0,800,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Babam ve Oglum,112.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Inglourious Basterds,153.0,400,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Eternal Sunshine of the Spotless Mind,108.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Amélie,122.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Snatch,104.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Requiem for a Dream,102.0,0,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+American Beauty,122.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv
+Good Will Hunting,126.0,1000,https://github.com/ibiscp/LLM-IMDB/blob/main/data/imdb_top_1000.csv

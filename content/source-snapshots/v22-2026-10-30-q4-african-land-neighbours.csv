@@ -1,0 +1,60 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+Algeria,7,borders,600,SOLID HIT,https://github.com/porimol/countryinfo,african-land-neighbours-001
+Angola,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-002
+Benin,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-003
+Botswana,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-004
+British Indian Ocean Territory,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-005
+Burkina Faso,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-006
+Burundi,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-007
+Cameroon,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-008
+Cape Verde,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-009
+Central African Republic,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-010
+Chad,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-011
+Comoros,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-012
+Democratic Republic of the Congo,9,borders,200,ON THE BOARD,https://github.com/porimol/countryinfo,african-land-neighbours-013
+Djibouti,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-014
+Egypt,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-015
+Equatorial Guinea,2,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-016
+Eritrea,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-017
+Ethiopia,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-018
+Gabon,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-019
+Ghana,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-020
+Guinea,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-021
+Guinea-Bissau,2,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-022
+Ivory Coast,5,borders,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-land-neighbours-023
+Kenya,5,borders,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-land-neighbours-024
+Lesotho,1,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-025
+Liberia,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-026
+Libya,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-027
+Madagascar,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-028
+Malawi,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-029
+Mali,7,borders,600,SOLID HIT,https://github.com/porimol/countryinfo,african-land-neighbours-030
+Mauritania,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-031
+Mauritius,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-032
+Mayotte,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-033
+Morocco,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-034
+Mozambique,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-035
+Namibia,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-036
+Niger,7,borders,600,SOLID HIT,https://github.com/porimol/countryinfo,african-land-neighbours-037
+Nigeria,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-038
+Republic of the Congo,5,borders,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-land-neighbours-039
+Rwanda,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-040
+Réunion,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-041
+Saint Helena,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-042
+Senegal,5,borders,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-land-neighbours-043
+Seychelles,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-044
+Sierra Leone,2,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-045
+Somalia,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-046
+South Africa,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-047
+South Sudan,6,borders,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-land-neighbours-048
+Sudan,7,borders,600,SOLID HIT,https://github.com/porimol/countryinfo,african-land-neighbours-049
+Swaziland,2,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-050
+São Tomé and Príncipe,0,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-051
+Tanzania,8,borders,400,IN THE ZONE,https://github.com/porimol/countryinfo,african-land-neighbours-052
+The Gambia,1,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-053
+Togo,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-054
+Tunisia,2,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-055
+Uganda,5,borders,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-land-neighbours-056
+Western Sahara,3,borders,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-land-neighbours-057
+Zambia,8,borders,400,IN THE ZONE,https://github.com/porimol/countryinfo,african-land-neighbours-058
+Zimbabwe,4,borders,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-land-neighbours-059

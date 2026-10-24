@@ -1,0 +1,49 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+Albania,41,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-001
+Austria,48,degrees,1200,PERFECT HIT,https://github.com/porimol/countryinfo,europe-capital-latitude-002
+Belarus,54,degrees,600,SOLID HIT,https://github.com/porimol/countryinfo,europe-capital-latitude-003
+Belgium,51,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,europe-capital-latitude-004
+Bosnia and Herzegovina,44,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-005
+Bulgaria,15,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-006
+Croatia,46,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-007
+Cyprus,35,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-008
+Czech Republic,50,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,europe-capital-latitude-009
+Denmark,56,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,europe-capital-latitude-010
+Estonia,59,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,europe-capital-latitude-011
+Faroe Islands,62,degrees,200,ON THE BOARD,https://github.com/porimol/countryinfo,europe-capital-latitude-012
+Finland,60,degrees,200,ON THE BOARD,https://github.com/porimol/countryinfo,europe-capital-latitude-013
+France,49,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,europe-capital-latitude-014
+Germany,53,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,europe-capital-latitude-015
+Gibraltar,36,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-016
+Greece,38,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-017
+Guernsey,49,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,europe-capital-latitude-018
+Hungary,47,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-019
+Iceland,64,degrees,0,TOO FAR,https://github.com/porimol/countryinfo,europe-capital-latitude-020
+Ireland,53,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,europe-capital-latitude-021
+Isle of Man,40,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-022
+Italy,42,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-023
+Jersey,47,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-024
+Latvia,57,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,europe-capital-latitude-025
+Liechtenstein,47,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-026
+Lithuania,55,degrees,600,SOLID HIT,https://github.com/porimol/countryinfo,europe-capital-latitude-027
+Luxembourg,50,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,europe-capital-latitude-028
+Malta,36,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-029
+Moldova,47,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-030
+Monaco,44,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-031
+Netherlands,52,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,europe-capital-latitude-032
+Norway,60,degrees,200,ON THE BOARD,https://github.com/porimol/countryinfo,europe-capital-latitude-033
+Poland,52,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,europe-capital-latitude-034
+Portugal,39,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-035
+Republic of Macedonia,42,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-036
+Romania,44,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-037
+Russia,56,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,europe-capital-latitude-038
+San Marino,44,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-039
+Serbia,45,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-040
+Slovakia,48,degrees,1200,PERFECT HIT,https://github.com/porimol/countryinfo,europe-capital-latitude-041
+Slovenia,46,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-042
+Spain,40,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-043
+Svalbard and Jan Mayen,78,degrees,0,TOO FAR,https://github.com/porimol/countryinfo,europe-capital-latitude-044
+Sweden,59,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,europe-capital-latitude-045
+Switzerland,47,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,europe-capital-latitude-046
+Ukraine,50,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,europe-capital-latitude-047
+United Kingdom,52,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,europe-capital-latitude-048

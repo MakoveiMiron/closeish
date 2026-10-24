@@ -9,7 +9,7 @@ async function serve(options,run) {
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   try{await run('http://127.0.0.1:'+server.address().port)}finally{await new Promise(resolve=>server.close(resolve))}
 }
-test('all 42 questions: every stored numeric score validates and each scoring tier survives server resolution',()=>{
+test('all 60 questions: every stored numeric score validates and each scoring tier survives server resolution',()=>{
   for(const {questions} of days.values()) for(const c of questions) {
     for(const points of [0,200,400,600,800,1000,1200]) {
       const sample=c.q.answers.find(a=>a.points===points && c.index.get(a.canonical.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase())?.length===1)
@@ -58,15 +58,16 @@ test('Budapest midnight, DST, no stale date clamp and production preview rejecti
     const first=await fetch(base+'/api/v1/today'),etag=first.headers.get('etag');
     now=new Date('2026-10-22T22:00:00Z');
     const next=await fetch(base+'/api/v1/today',{headers:{'If-None-Match':etag}});assert.equal(next.status,200);assert.equal((await next.json()).date,'2026-10-23');
-    now=new Date('2026-10-30T12:00:00Z');const absent=await (await fetch(base+'/api/v1/today')).json();assert.equal(absent.available,false);assert.deepEqual(absent.questions,{});
+    now=new Date('2026-10-30T12:00:00Z');const scheduled=await (await fetch(base+'/api/v1/today')).json();assert.equal(scheduled.available,true);assert.equal(scheduled.date,'2026-10-30');
+    now=new Date('2026-11-02T12:00:00Z');const absent=await (await fetch(base+'/api/v1/today')).json();assert.equal(absent.available,false);assert.deepEqual(absent.questions,{});
   });
 });
-test('large dictionary, frozen city snapshot, no runtime external lookup',()=>{
+test('large dictionary preserved and updated Scrabble bank uses the full 26-letter universe',()=>{
   const word=days.get('2026-10-24').questions[0];assert.equal(word.q.answers.length,188798);
   assert.ok(hints(word,'inter').length<=4);
-  const city=days.get('2026-10-26').questions[4];assert.equal(city.q.answers.length,2035);
-  assert.equal(scoreAnswer(city,'Aksu, CN').points,1200);
-  assert.equal(scoreAnswer(city,'Unlisted fictional town').metric_value,null);
+  const scrabble=days.get('2026-10-26').questions[4];assert.equal(scrabble.q.answers.length,26);
+  assert.equal(scoreAnswer(scrabble,'letter B').points,1000);
+  assert.equal(scoreAnswer(scrabble,'not a letter').metric_value,null);
   assert.ok(!fs.readFileSync(new URL('../src/content.mjs',import.meta.url),'utf8').includes('geocoding-api'));
 });
 test('rate limit bounds requests; draft sets are never published',async()=>{

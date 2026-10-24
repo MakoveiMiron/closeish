@@ -1,0 +1,62 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+AAA,-3.9,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-001
+AAC,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-002
+AAG,-3.9,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-003
+AAT,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-004
+ACA,-0.7,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-005
+ACC,-0.7,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-006
+ACG,-0.7,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-007
+ACT,-0.7,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-008
+AGA,-4.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-009
+AGC,-0.8,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-010
+AGG,-4.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-011
+AGT,-0.8,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-012
+ATA,4.5,index,200,ON THE BOARD,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-013
+ATC,4.5,index,200,ON THE BOARD,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-014
+ATG,1.9,index,1000,RAZOR EDGE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-015
+ATT,4.5,index,200,ON THE BOARD,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-016
+CAA,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-017
+CAC,-3.2,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-018
+CAG,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-019
+CAT,-3.2,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-020
+CCA,-1.6,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-021
+CCC,-1.6,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-022
+CCG,-1.6,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-023
+CCT,-1.6,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-024
+CGA,-4.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-025
+CGC,-4.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-026
+CGG,-4.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-027
+CGT,-4.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-028
+CTA,3.8,index,600,SOLID HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-029
+CTC,3.8,index,600,SOLID HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-030
+CTG,3.8,index,600,SOLID HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-031
+CTT,3.8,index,600,SOLID HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-032
+GAA,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-033
+GAC,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-034
+GAG,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-035
+GAT,-3.5,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-036
+GCA,1.8,index,1200,PERFECT HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-037
+GCC,1.8,index,1200,PERFECT HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-038
+GCG,1.8,index,1200,PERFECT HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-039
+GCT,1.8,index,1200,PERFECT HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-040
+GGA,-0.4,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-041
+GGC,-0.4,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-042
+GGG,-0.4,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-043
+GGT,-0.4,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-044
+GTA,4.2,index,400,IN THE ZONE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-045
+GTC,4.2,index,400,IN THE ZONE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-046
+GTG,4.2,index,400,IN THE ZONE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-047
+GTT,4.2,index,400,IN THE ZONE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-048
+TAC,-1.3,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-049
+TAT,-1.3,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-050
+TCA,-0.8,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-051
+TCC,-0.8,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-052
+TCG,-0.8,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-053
+TCT,-0.8,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-054
+TGC,2.5,index,1000,RAZOR EDGE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-055
+TGG,-0.9,index,0,CROSSED LIMIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-056
+TGT,2.5,index,1000,RAZOR EDGE,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-057
+TTA,3.8,index,600,SOLID HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-058
+TTC,2.8,index,800,CLOSE CALL,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-059
+TTG,3.8,index,600,SOLID HIT,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-060
+TTT,2.8,index,800,CLOSE CALL,https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi,dna-sense-codon-hydropathy-061

@@ -1,0 +1,361 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+1980-01,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-151
+1980-02,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-152
+1980-03,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-153
+1980-04,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-154
+1980-05,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-155
+1980-06,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-156
+1980-07,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-157
+1980-08,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-158
+1980-09,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-159
+1980-10,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-160
+1980-11,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-161
+1980-12,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-162
+1981-01,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-163
+1981-02,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-164
+1981-03,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-165
+1981-04,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-166
+1981-05,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-167
+1981-06,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-168
+1981-07,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-169
+1981-08,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-170
+1981-09,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-171
+1981-10,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-172
+1981-11,9000000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-173
+1981-12,9300000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-174
+1982-01,9400000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-175
+1982-02,9700000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-176
+1982-03,9900000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-177
+1982-04,10200000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-178
+1982-05,10300000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-179
+1982-06,10500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-180
+1982-07,10800000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-181
+1982-08,10900000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-182
+1982-09,11200000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-183
+1982-10,11500000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-184
+1982-11,11900000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-185
+1982-12,12100000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-186
+1983-01,11500000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-187
+1983-02,11500000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-188
+1983-03,11400000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-189
+1983-04,11300000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-190
+1983-05,11200000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-191
+1983-06,11200000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-192
+1983-07,10500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-193
+1983-08,10600000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-194
+1983-09,10300000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-195
+1983-10,9900000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-196
+1983-11,9500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-197
+1983-12,9300000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-198
+1984-01,9000000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-199
+1984-02,8800000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-200
+1984-03,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-201
+1984-04,8800000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-202
+1984-05,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-203
+1984-06,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-204
+1984-07,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-205
+1984-08,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-206
+1984-09,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-207
+1984-10,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-208
+1984-11,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-209
+1984-12,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-210
+1985-01,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-211
+1985-02,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-212
+1985-03,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-213
+1985-04,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-214
+1985-05,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-215
+1985-06,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-216
+1985-07,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-217
+1985-08,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-218
+1985-09,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-219
+1985-10,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-220
+1985-11,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-221
+1985-12,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-222
+1986-01,7800000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-223
+1986-02,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-224
+1986-03,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-225
+1986-04,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-226
+1986-05,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-227
+1986-06,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-228
+1986-07,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-229
+1986-08,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-230
+1986-09,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-231
+1986-10,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-232
+1986-11,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-233
+1986-12,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-234
+1987-01,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-235
+1987-02,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-236
+1987-03,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-237
+1987-04,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-238
+1987-05,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-239
+1987-06,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-240
+1987-07,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-241
+1987-08,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-242
+1987-09,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-243
+1987-10,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-244
+1987-11,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-245
+1987-12,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-246
+1988-01,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-247
+1988-02,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-248
+1988-03,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-249
+1988-04,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-250
+1988-05,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-251
+1988-06,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-252
+1988-07,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-253
+1988-08,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-254
+1988-09,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-255
+1988-10,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-256
+1988-11,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-257
+1988-12,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-258
+1989-01,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-259
+1989-02,6400000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-260
+1989-03,6200000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-261
+1989-04,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-262
+1989-05,6400000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-263
+1989-06,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-264
+1989-07,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-265
+1989-08,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-266
+1989-09,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-267
+1989-10,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-268
+1989-11,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-269
+1989-12,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-270
+1990-01,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-271
+1990-02,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-272
+1990-03,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-273
+1990-04,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-274
+1990-05,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-275
+1990-06,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-276
+1990-07,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-277
+1990-08,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-278
+1990-09,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-279
+1990-10,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-280
+1990-11,7800000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-281
+1990-12,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-282
+1991-01,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-283
+1991-02,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-284
+1991-03,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-285
+1991-04,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-286
+1991-05,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-287
+1991-06,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-288
+1991-07,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-289
+1991-08,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-290
+1991-09,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-291
+1991-10,8800000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-292
+1991-11,8900000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-293
+1991-12,9200000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-294
+1992-01,9300000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-295
+1992-02,9500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-296
+1992-03,9500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-297
+1992-04,9400000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-298
+1992-05,9700000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-299
+1992-06,10000000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-300
+1992-07,9800000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-301
+1992-08,9800000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-302
+1992-09,9800000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-303
+1992-10,9400000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-304
+1992-11,9600000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-305
+1992-12,9600000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-306
+1993-01,9300000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-307
+1993-02,9200000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-308
+1993-03,9100000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-309
+1993-04,9100000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-310
+1993-05,9100000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-311
+1993-06,9100000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-312
+1993-07,8900000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-313
+1993-08,8800000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-314
+1993-09,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-315
+1993-10,8800000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-316
+1993-11,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-317
+1993-12,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-318
+1994-01,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-319
+1994-02,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-320
+1994-03,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-321
+1994-04,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-322
+1994-05,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-323
+1994-06,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-324
+1994-07,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-325
+1994-08,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-326
+1994-09,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-327
+1994-10,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-328
+1994-11,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-329
+1994-12,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-330
+1995-01,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-331
+1995-02,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-332
+1995-03,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-333
+1995-04,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-334
+1995-05,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-335
+1995-06,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-336
+1995-07,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-337
+1995-08,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-338
+1995-09,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-339
+1995-10,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-340
+1995-11,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-341
+1995-12,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-342
+1996-01,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-343
+1996-02,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-344
+1996-03,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-345
+1996-04,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-346
+1996-05,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-347
+1996-06,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-348
+1996-07,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-349
+1996-08,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-350
+1996-09,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-351
+1996-10,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-352
+1996-11,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-353
+1996-12,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-354
+1997-01,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-355
+1997-02,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-356
+1997-03,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-357
+1997-04,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-358
+1997-05,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-359
+1997-06,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-360
+1997-07,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-361
+1997-08,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-362
+1997-09,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-363
+1997-10,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-364
+1997-11,6300000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-365
+1997-12,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-366
+1998-01,6400000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-367
+1998-02,6300000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-368
+1998-03,6400000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-369
+1998-04,5900000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-370
+1998-05,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-371
+1998-06,6200000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-372
+1998-07,6300000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-373
+1998-08,6200000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-374
+1998-09,6300000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-375
+1998-10,6300000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-376
+1998-11,6100000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-377
+1998-12,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-378
+1999-01,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-379
+1999-02,6100000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-380
+1999-03,5800000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-381
+1999-04,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-382
+1999-05,5800000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-383
+1999-06,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-384
+1999-07,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-385
+1999-08,5800000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-386
+1999-09,5900000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-387
+1999-10,5800000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-388
+1999-11,5700000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-389
+1999-12,5700000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-390
+2000-01,5700000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-391
+2000-02,5900000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-392
+2000-03,5700000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-393
+2000-04,5500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-394
+2000-05,5800000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-395
+2000-06,5700000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-396
+2000-07,5700000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-397
+2000-08,5900000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-398
+2000-09,5600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-399
+2000-10,5500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-400
+2000-11,5600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-401
+2000-12,5600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-402
+2001-01,6000000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-403
+2001-02,6100000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-404
+2001-03,6100000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-405
+2001-04,6300000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-406
+2001-05,6200000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-407
+2001-06,6500000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-408
+2001-07,6600000,people,0,CROSSED LIMIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-409
+2001-08,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-410
+2001-09,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-411
+2001-10,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-412
+2001-11,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-413
+2001-12,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-414
+2002-01,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-415
+2002-02,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-416
+2002-03,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-417
+2002-04,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-418
+2002-05,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-419
+2002-06,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-420
+2002-07,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-421
+2002-08,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-422
+2002-09,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-423
+2002-10,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-424
+2002-11,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-425
+2002-12,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-426
+2003-01,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-427
+2003-02,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-428
+2003-03,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-429
+2003-04,8800000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-430
+2003-05,9000000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-431
+2003-06,9300000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-432
+2003-07,9000000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-433
+2003-08,8900000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-434
+2003-09,8900000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-435
+2003-10,8700000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-436
+2003-11,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-437
+2003-12,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-438
+2004-01,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-439
+2004-02,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-440
+2004-03,8500000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-441
+2004-04,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-442
+2004-05,8200000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-443
+2004-06,8300000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-444
+2004-07,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-445
+2004-08,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-446
+2004-09,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-447
+2004-10,8100000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-448
+2004-11,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-449
+2004-12,7900000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-450
+2005-01,7800000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-451
+2005-02,8000000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-452
+2005-03,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-453
+2005-04,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-454
+2005-05,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-455
+2005-06,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-456
+2005-07,7400000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-457
+2005-08,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-458
+2005-09,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-459
+2005-10,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-460
+2005-11,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-461
+2005-12,7300000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-462
+2006-01,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-463
+2006-02,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-464
+2006-03,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-465
+2006-04,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-466
+2006-05,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-467
+2006-06,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-468
+2006-07,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-469
+2006-08,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-470
+2006-09,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-471
+2006-10,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-472
+2006-11,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-473
+2006-12,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-474
+2007-01,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-475
+2007-02,6900000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-476
+2007-03,6700000,people,1200,PERFECT HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-477
+2007-04,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-478
+2007-05,6800000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-479
+2007-06,7000000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-480
+2007-07,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-481
+2007-08,7100000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-482
+2007-09,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-483
+2007-10,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-484
+2007-11,7200000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-485
+2007-12,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-486
+2008-01,7700000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-487
+2008-02,7500000,people,1000,RAZOR EDGE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-488
+2008-03,7800000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-489
+2008-04,7600000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-490
+2008-05,8400000,people,800,CLOSE CALL,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-491
+2008-06,8600000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-492
+2008-07,8900000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-493
+2008-08,9400000,people,600,SOLID HIT,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-494
+2008-09,9500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-495
+2008-10,10100000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-496
+2008-11,10500000,people,400,IN THE ZONE,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-497
+2008-12,11300000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-498
+2009-01,12100000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-499
+2009-02,12900000,people,200,ON THE BOARD,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-500
+2009-03,13400000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-501
+2009-04,13900000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-502
+2009-05,14500000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-503
+2009-06,14700000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-504
+2009-07,14600000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-505
+2009-08,14800000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-506
+2009-09,15000000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-507
+2009-10,15400000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-508
+2009-11,15200000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-509
+2009-12,15100000,people,0,TOO FAR,https://github.com/tidyverse/ggplot2/blob/main/data-raw/economics.csv,unemployment-510

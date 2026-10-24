@@ -1,53 +1,14 @@
-# CLOSEISH – önálló kérdéscsomag AI-nak
+# CLOSEISH V23 – AI kérdéscsomag
 
-Ezt a teljes `content` mappát add át ZIP-ben. Minden nap teljes kérdés- és válaszbankja benne van; más projektfájl nem szükséges a tartalom folytatásához.
+**Elsődleges szerkesztői szabályzat:** `content/KERDES-VALASZ-SZABALYZAT.md` (V23). A 2026. november 1-jei napon szereplő hat különböző témacsaládot vedd minőségi mércének. A V21/V22 és régebbi szabályok csak történeti dokumentumok; a V23 elsőbbséget élvez.
 
-- `days/YYYY-MM-DD.json`: egy dátum, hat kérdés, minden válasz és forráshivatkozás.
-- `KERDES-VALASZ-SZABALYZAT.md`: az új tartalom elsődleges összeállítási szabályzata.
-- `day.schema.json`: a JSON formai sémája.
-- `question-index.json`: a 54 kérdés (36 eredeti és 18 új, utóbbiak draft) gyors, szerkesztői áttekintése. Segédindex, nem az alkalmazás adatforrása.
-- `reference-rules/`: a V15-ből megőrzött részletes szabályok és korábbi jelentések. Eltérésnél az elsődleges szabályzat és a napi fájl tényleges mezői az irányadók; történeti jelentés nem bizonyít új ellenőrzést.
+## A kérdésbank szerkezete
 
-## V18 (2026-10-23): a 30–31-i napok teljes, véges válaszbankjai – FELÜLÍRJA A KORÁBBI AUDITOKAT
+- `content/days/YYYY-MM-DD.json` – naponta pontosan hat kérdés és a teljes, 0 pontos válaszokat is tartalmazó válaszkatalógus.
+- `content/source-snapshots/v23-*.csv` – a V23 új kérdéseinek forrás- és pontadatainak önálló, tételes kivonata.
+- `content/question-index.json` – újragenerált keresőindex; nem a backend éles adatforrása.
+- `content/reference-rules/AUDIT-V23-2026-10-24-HU.md` – a V23 cserejegyzék, források és témalefedettség.
 
-A `2026-10-30.json` és `2026-10-31.json` **mind a 12 kérdésénél** a kérdés által ígért teljes, véges kategória vagy dokumentált időintervallum összes tagja szerepel, a rossz oldali és túl távoli tagokkal együtt (446 + 403 rekord). **Hat kérdést lecseréltünk** a korábbi részleges/félreérthető/ismétlődő tartalom helyett. A változások és a fennmaradó korlátok a `reference-rules/V18-COMPLETE-BANK-AUDIT-HU.md` dokumentumban olvashatók.
+Minden következő nap készítése előtt **az összes korábbi napot** vizsgáld át a tematika és entitáslista ismétlődése miatt. Önálló tudásfeladatokat tervezz; ugyanazon a napon ne legyen két országföldrajzos vagy két évszámba rejtett díjazási kérdés. Csak ellenőrizhető, természetesen teljes és megfelelő nehézségű bank kerülhet `scheduled` státuszba.
 
-A hat lecserélt kérdés ellenőrizhető forráslistái `source-snapshots/` alatt találhatók, az ellenőrző kód: `python reference-rules/verify-v18-complete-universes.py`. A 29-i napot nem módosítottuk: annak korábbi részleges bankjai továbbra is szerkesztésre várnak. A 30–31-i napok továbbra is `draft` státuszúak az éles szerverintegrációs és licencellenőrzésig. A régebbi V17 és V17.8 auditszövegek **történeti dokumentumok**, a 30–31-i napokra vonatkozó bankhiány-megállapításaikat a V18-as frissítés felülírja.
-
-
-## Másolható folytatási kérés
-
-Olvasd végig a KERDES-VALASZ-SZABALYZAT.md fájlt, a day.schema.json sémát és a meglévő napokat. Készíts új napi CLOSEISH-kérdéscsomagot a kért dátumra, pontosan hat, változatos angol nyelvű kérdéssel. Ne ismételd meg a meglévő kérdéseket pusztán más határértékkel, más mérőszámmal ugyanazon entitásbankból, más évvel vagy más fogalmazással. A napi hat kérdés egymástól és az összes korábbi nap kérdéseitől is érdemben különbözzön; a legutóbbi 14 napot kiemelten hasonlítsd össze. Előbb készíts hat közérthető, valóban különböző angol kérdésötletet, csak azután keress hozzájuk adatforrást. A játékosnak megjelenő promptban NE szerepeljen háttéradatbázis, könyvtár, táblázat, csomag vagy frozen/snapshot/sample megnevezés: a források a belső metadata mezőkbe kerüljenek. Legyen világos a kért entitás, a mutató, a limit, az egyértelmű at least/at most irány, és időfüggő adatnál a dátum/év. Ne rejts el minta-korlátot pusztán a forrásnév törlésével: ha a bank nem igazolja a természetesen megfogalmazott teljes kategóriát, bővítsd a forrást vagy cseréld le a kérdést.  A válaszbank legyen a kimondott kategória és a rögzített forráskészlet lehető legteljesebb lefedése, a rossz oldali és túl távoli ismert válaszokkal együtt. Minden mérési értéket, jogosultsági feltételt és aliast forrással ellenőrizz. Hiányzó számot ne találj ki és ne helyettesíts nullával. Az új fájl neve YYYY-MM-DD.json, publication_status értéke először draft legyen. Tartsd meg a dokumentált pontozást, pontosan egy megközelítési irányt és a kérdésenkénti 30 másodpercet. Adj rövid magyar auditot a lefedettségről, hiányokról, forrásokról és lehetséges névütközésekről. Ha egy teljes, ellenőrzött nap nem állítható elő, jelezd pontosan a hiányokat; ne állítsd késznek.
-
-## Beillesztés
-
-1. Másold a kapott új fájlt a `content/days` mappába.
-2. Futtasd a projekt gyökerében: `npm run validate`.
-3. Ellenőrizd a szakmai auditot, majd állítsd a nap `publication_status` mezőjét `scheduled` értékre.
-4. Újra validálj és indítsd újra / telepítsd újra **mindegyik** backendpéldányt. A kiszolgáló induláskor olvassa be a tartalmat.
-5. `npm run export:questions`: friss segédindexet és új AI-ZIP-et készít. Ne a régi ZIP-et egészítsd ki kézzel.
-
-A tartalom nem töltődik fel magától sehova. Az új dátumú fájlokhoz nem kell frontendkódot vagy kézi schedule-listát módosítani. A sémán túl a backend validátora ellenőrzi a pontokat és a dátumok/azonosítók összhangját.
-
-## V17.7 nyitónap és egységrendszer
-
-A CLOSEISH első játszható napja **2026-10-23** (CHALLENGE #001), az utolsó jelenleg mellékelt nap **2026-10-31** (#009); **2026-10-29–31** (#007–#009) egyelőre draft. Új kérdéscsomaghoz csak metrikus fizikai mértékegységet használj; a prompt, a limit, a válaszértékek és a score-bands ugyanabban az egységben legyenek.
-
-## 2026-10-29–31 tartalomellenőrzés
-
-A részletes gépi és szakmai ellenőrzés: `reference-rules/AUDIT-2026-10-23-31-HU.md`. A V15 importált napok három azonosított belső konzisztenciahibáját kijavítottuk; a többi mérés külső szakmai hitelesítése változatlanul nem teljes. A három új nap `draft`; a V17 tartalmi változatossági és forrásuniverzum-követelmények miatt is felülvizsgálandók. Ne állítsd `scheduled` értékre a blokkoló auditpontok és szerkesztői forrásellenőrzés nélkül. A mellékelt generálószkript dokumentáció, futtatásához külön Python-függőségek kellenek, a backendnek nem.
-
-## Konkrét javítások és utóellenőrzés (2026-10-23)
-
-- `2026-10-23/q6`: `approach_rule` javítása a kérdés eredeti `below`/`at_most` irányához.
-- `2026-10-25/q3` és `2026-10-26/q5`: csak a különböző entitások között ütköző rövid aliasokat töröltük, a teljes és egyértelmű nevek megmaradtak.
-- A `days` fájlok és a `question-index.json` megfelelő `revision`/`content_revision` azonosítói frissültek.
-- Futatható tartalmi konzisztenciateszt: `python reference-rules/validate-content-consistency.py`. Ehhez Python 3 szükséges, a `jsonschema` opcionális.
-- A részleteket a `reference-rules/AUDIT-CORRECTIONS-2026-10-23-HU.md` fájl tartalmazza. Ez **nem** jelent külső adathitelesítést, illetve a 2026-10-29–31-i napok továbbra is `draft` állapotúak.
-
-## V17 szerkesztői szövegezés és tartalmi felülvizsgálat (2026-10-23)
-
-- A `KERDES-VALASZ-SZABALYZAT.md` 2. fejezete kötelezővé teszi a természetes, adatbázisnév nélküli angol promptokat és a valódi, archívumhoz mért változatosságot.
-- A három új draft nap mind a 18 promptját szerkesztettük; **a 18 kérdés válaszbankját nem bővítettük és nem hitelesítettük újra**.
-- Mivel több kérdés forrása szűk minta vagy a korábbi napokon használt entitáskészlet, **a három draft nap még nem felel meg maradéktalanul a V17 szabályzatnak**. A megoldandó cserék és bankhiányok: `reference-rules/EDITORIAL-REVIEW-V17-HU.md`.
-- A prompt átírása nem módosítja a jogosultságot vagy a backend pontozását, és önmagában nem igazolja a promptból sejthető összes választ.
+A szerveres validáció `npm run validate`, a tesztek `npm test`, az index és AI csomag generálása `npm run export:questions`. A backend production: Railway + PostgreSQL. A V23 játékosoldali HTML-t **nem** szabad szerverkóddal vagy admin/test végpontokkal együtt productionre telepíteni.

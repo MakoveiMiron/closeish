@@ -1,0 +1,101 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+1871,112,billion m³,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-001
+1872,116,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-002
+1873,96,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-003
+1874,121,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-004
+1875,116,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-005
+1876,116,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-006
+1877,81,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-007
+1878,123,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-008
+1879,137,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-009
+1880,114,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-010
+1881,100,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-011
+1882,94,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-012
+1883,111,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-013
+1884,99,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-014
+1885,102,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-015
+1886,96,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-016
+1887,118,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-017
+1888,80,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-018
+1889,96,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-019
+1890,114,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-020
+1891,110,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-021
+1892,121,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-022
+1893,115,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-023
+1894,125,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-024
+1895,126,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-025
+1896,122,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-026
+1897,103,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-027
+1898,110,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-028
+1899,77,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-029
+1900,84,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-030
+1901,87,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-031
+1902,69,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-032
+1903,94,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-033
+1904,83,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-034
+1905,70,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-035
+1906,92,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-036
+1907,69,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-037
+1908,102,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-038
+1909,105,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-039
+1910,97,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-040
+1911,83,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-041
+1912,73,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-042
+1913,46,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-043
+1914,82,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-044
+1915,70,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-045
+1916,112,billion m³,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-046
+1917,110,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-047
+1918,83,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-048
+1919,76,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-049
+1920,82,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-050
+1921,77,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-051
+1922,84,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-052
+1923,86,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-053
+1924,86,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-054
+1925,70,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-055
+1926,84,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-056
+1927,74,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-057
+1928,80,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-058
+1929,104,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-059
+1930,76,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-060
+1931,78,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-061
+1932,86,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-062
+1933,84,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-063
+1934,94,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-064
+1935,98,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-065
+1936,90,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-066
+1937,82,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-067
+1938,101,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-068
+1939,77,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-069
+1940,68,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-070
+1941,65,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-071
+1942,85,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-072
+1943,81,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-073
+1944,74,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-074
+1945,80,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-075
+1946,104,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-076
+1947,86,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-077
+1948,87,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-078
+1949,85,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-079
+1950,89,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-080
+1951,74,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-081
+1952,75,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-082
+1953,84,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-083
+1954,105,billion m³,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-084
+1955,92,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-085
+1956,99,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-086
+1957,80,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-087
+1958,92,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-088
+1959,98,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-089
+1960,82,billion m³,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-090
+1961,102,billion m³,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-091
+1962,91,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-092
+1963,90,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-093
+1964,117,billion m³,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-094
+1965,91,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-095
+1966,75,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-096
+1967,92,billion m³,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-097
+1968,72,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-098
+1969,71,billion m³,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-099
+1970,74,billion m³,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/nile.html,nile-annual-aswan-1871-1970-100

@@ -1,0 +1,15 @@
+entity_id,canonical,metric_value,unit,source_record_locator
+eight-thousander-01,Mount Everest,8849,m,Mount Everest
+eight-thousander-02,K2,8611,m,K2
+eight-thousander-03,Kangchenjunga,8586,m,Kangchenjunga
+eight-thousander-04,Lhotse,8516,m,Lhotse
+eight-thousander-05,Makalu,8485,m,Makalu
+eight-thousander-06,Cho Oyu,8188,m,Cho Oyu
+eight-thousander-07,Dhaulagiri I,8167,m,Dhaulagiri I
+eight-thousander-08,Manaslu,8163,m,Manaslu
+eight-thousander-09,Nanga Parbat,8125,m,Nanga Parbat
+eight-thousander-10,Annapurna I,8091,m,Annapurna I
+eight-thousander-11,Gasherbrum I,8080,m,Gasherbrum I
+eight-thousander-12,Broad Peak,8051,m,Broad Peak
+eight-thousander-13,Gasherbrum II,8034,m,Gasherbrum II
+eight-thousander-14,Shishapangma,8027,m,Shishapangma

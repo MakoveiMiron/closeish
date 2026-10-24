@@ -1,0 +1,60 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+Algeria,38700000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-001
+Angola,24400000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-002
+Benin,10000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-003
+Botswana,2000000,people,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-population-archive-004
+British Indian Ocean Territory,0,people,0,TOO FAR,https://github.com/porimol/countryinfo,african-population-archive-005
+Burkina Faso,17300000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-006
+Burundi,9500000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-007
+Cameroon,20400000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-008
+Cape Verde,500000,people,200,ON THE BOARD,https://github.com/porimol/countryinfo,african-population-archive-009
+Central African Republic,4700000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-010
+Chad,13200000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-011
+Comoros,800000,people,400,IN THE ZONE,https://github.com/porimol/countryinfo,african-population-archive-012
+Democratic Republic of the Congo,69400000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-013
+Djibouti,900000,people,400,IN THE ZONE,https://github.com/porimol/countryinfo,african-population-archive-014
+Egypt,87700000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-015
+Equatorial Guinea,1400000,people,600,SOLID HIT,https://github.com/porimol/countryinfo,african-population-archive-016
+Eritrea,6500000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-017
+Ethiopia,88000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-018
+Gabon,1700000,people,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-population-archive-019
+Ghana,27000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-020
+Guinea,10600000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-021
+Guinea-Bissau,1700000,people,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-population-archive-022
+Ivory Coast,23800000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-023
+Kenya,41800000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-024
+Lesotho,2100000,people,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-population-archive-025
+Liberia,4400000,people,1200,PERFECT HIT,https://github.com/porimol/countryinfo,african-population-archive-026
+Libya,6300000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-027
+Madagascar,21800000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-028
+Malawi,15800000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-029
+Mali,15800000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-030
+Mauritania,3500000,people,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-population-archive-031
+Mauritius,1300000,people,600,SOLID HIT,https://github.com/porimol/countryinfo,african-population-archive-032
+Mayotte,200000,people,200,ON THE BOARD,https://github.com/porimol/countryinfo,african-population-archive-033
+Morocco,33500000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-034
+Mozambique,25000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-035
+Namibia,2100000,people,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,african-population-archive-036
+Niger,17100000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-037
+Nigeria,178500000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-038
+Republic of the Congo,4600000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-039
+Rwanda,11000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-040
+Réunion,800000,people,400,IN THE ZONE,https://github.com/porimol/countryinfo,african-population-archive-041
+Saint Helena,0,people,0,TOO FAR,https://github.com/porimol/countryinfo,african-population-archive-042
+Senegal,13500000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-043
+Seychelles,100000,people,0,TOO FAR,https://github.com/porimol/countryinfo,african-population-archive-044
+Sierra Leone,6200000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-045
+Somalia,10800000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-046
+South Africa,54000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-047
+South Sudan,11400000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-048
+Sudan,37300000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-049
+Swaziland,1100000,people,400,IN THE ZONE,https://github.com/porimol/countryinfo,african-population-archive-050
+São Tomé and Príncipe,200000,people,200,ON THE BOARD,https://github.com/porimol/countryinfo,african-population-archive-051
+Tanzania,47400000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-052
+The Gambia,1900000,people,800,CLOSE CALL,https://github.com/porimol/countryinfo,african-population-archive-053
+Togo,7000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-054
+Tunisia,11000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-055
+Uganda,34900000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-056
+Western Sahara,600000,people,200,ON THE BOARD,https://github.com/porimol/countryinfo,african-population-archive-057
+Zambia,15000000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-058
+Zimbabwe,13100000,people,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,african-population-archive-059

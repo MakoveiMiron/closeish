@@ -1,0 +1,191 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+Aruba,1.7,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-001
+Afghanistan,5.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-002
+Angola,6.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-003
+Albania,1.7,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-004
+United Arab Emirates,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-005
+Argentina,2.2,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-006
+Armenia,1.7,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-007
+Antigua and Barbuda,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-008
+Australia,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-009
+Austria,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-010
+Azerbaijan,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-011
+Burundi,6.3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-012
+Belgium,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-013
+Benin,5.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-014
+Burkina Faso,5.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-015
+Bangladesh,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-016
+Bulgaria,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-017
+Bahrain,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-018
+"Bahamas, The",1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-019
+Bosnia and Herzegovina,1.2,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-020
+Belarus,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-021
+Belize,2.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-022
+Bolivia,3.4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-023
+Brazil,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-024
+Barbados,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-025
+Brunei Darussalam,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-026
+Bhutan,2.4,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-027
+Botswana,2.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-028
+Central African Republic,4.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-029
+Canada,1.6,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-030
+Switzerland,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-031
+Channel Islands,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-032
+Chile,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-033
+China,1.6,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-034
+Cote d'Ivoire,4.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-035
+Cameroon,5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-036
+"Congo, Rep.",5.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-037
+Colombia,2.4,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-038
+Comoros,4.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-039
+Cabo Verde,2.4,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-040
+Costa Rica,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-041
+Cuba,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-042
+Cyprus,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-043
+Czech Republic,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-044
+Germany,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-045
+Djibouti,3.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-046
+Denmark,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-047
+Dominican Republic,2.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-048
+Algeria,2.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-049
+Ecuador,2.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-050
+"Egypt, Arab Rep.",2.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-051
+Eritrea,5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-052
+Spain,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-053
+Estonia,1.6,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-054
+Ethiopia,4.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-055
+Finland,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-056
+Fiji,2.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-057
+France,2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-058
+"Micronesia, Fed. Sts.",3.5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-059
+Gabon,4.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-060
+United Kingdom,2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-061
+Georgia,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-062
+Ghana,4.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-063
+Guinea,5.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-064
+"Gambia, The",5.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-065
+Guinea-Bissau,5.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-066
+Equatorial Guinea,5.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-067
+Greece,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-068
+Grenada,2.2,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-069
+Guatemala,4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-070
+Guam,2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-071
+Guyana,2.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-072
+"Hong Kong SAR, China",1.1,births per woman,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-073
+Honduras,3.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-074
+Croatia,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-075
+Haiti,3.4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-076
+Hungary,1.2,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-077
+Indonesia,2.4,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-078
+India,2.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-079
+Ireland,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-080
+"Iran, Islamic Rep.",1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-081
+Iraq,4.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-082
+Iceland,2.2,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-083
+Israel,3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-084
+Italy,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-085
+Jamaica,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-086
+Jordan,3.5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-087
+Japan,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-088
+Kazakhstan,2.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-089
+Kenya,4.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-090
+Kyrgyz Republic,3.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-091
+Cambodia,3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-092
+Kiribati,3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-093
+"Korea, Rep.",1.2,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-094
+Kuwait,2.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-095
+Lao PDR,3.3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-096
+Lebanon,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-097
+Liberia,5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-098
+Libya,2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-099
+St. Lucia,2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-100
+Sri Lanka,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-101
+Lesotho,3.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-102
+Lithuania,1.6,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-103
+Luxembourg,1.6,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-104
+Latvia,1.2,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-105
+"Macao SAR, China",1,births per woman,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-106
+Morocco,2.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-107
+Moldova,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-108
+Madagascar,4.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-109
+Maldives,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-110
+Mexico,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-111
+"Macedonia, FYR",1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-112
+Mali,6.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-113
+Malta,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-114
+Myanmar,2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-115
+Montenegro,1.7,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-116
+Mongolia,2.4,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-117
+Mozambique,5.4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-118
+Mauritania,4.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-119
+Mauritius,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-120
+Malawi,5.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-121
+Malaysia,2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-122
+Namibia,3.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-123
+New Caledonia,2.2,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-124
+Niger,7.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-125
+Nigeria,6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-126
+Nicaragua,2.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-127
+Netherlands,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-128
+Norway,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-129
+Nepal,2.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-130
+New Zealand,2.2,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-131
+Oman,2.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-132
+Pakistan,3.4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-133
+Panama,2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-134
+Peru,2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-135
+Philippines,3.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-136
+Papua New Guinea,4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-137
+Poland,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-138
+Puerto Rico,1.7,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-139
+"Korea, Dem. Rep.",2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-140
+Portugal,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-141
+Paraguay,3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-142
+French Polynesia,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-143
+Qatar,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-144
+Romania,1.3,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-145
+Russian Federation,1.5,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-146
+Rwanda,4.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-147
+Saudi Arabia,2.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-148
+Sudan,4.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-149
+Senegal,5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-150
+Singapore,1.1,births per woman,0,TOO FAR,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-151
+Solomon Islands,4.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-152
+Sierra Leone,4.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-153
+El Salvador,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-154
+Somalia,6.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-155
+South Sudan,5.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-156
+Sao Tome and Principe,4.3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-157
+Suriname,2.3,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-158
+Slovak Republic,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-159
+Slovenia,1.6,births per woman,400,IN THE ZONE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-160
+Sweden,2,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-161
+Swaziland,3.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-162
+Syrian Arab Republic,3.1,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-163
+Chad,6.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-164
+Togo,4.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-165
+Thailand,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-166
+Tajikistan,3.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-167
+Turkmenistan,2.4,births per woman,1000,RAZOR EDGE,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-168
+Timor-Leste,5.6,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-169
+Tonga,3.9,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-170
+Trinidad and Tobago,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-171
+Tunisia,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-172
+Turkey,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-173
+Tanzania,5.4,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-174
+Uganda,6.2,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-175
+Ukraine,1.4,births per woman,200,ON THE BOARD,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-176
+Uruguay,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-177
+United States,1.9,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-178
+Uzbekistan,2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-179
+St. Vincent and the Grenadines,2.1,births per woman,800,CLOSE CALL,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-180
+"Venezuela, RB",2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-181
+Virgin Islands (U.S.),1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-182
+Vietnam,1.8,births per woman,600,SOLID HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-183
+Vanuatu,3.5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-184
+Samoa,4.3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-185
+"Yemen, Rep.",4.5,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-186
+South Africa,2.5,births per woman,1200,PERFECT HIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-187
+"Congo, Dem. Rep.",6.3,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-188
+Zambia,5.8,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-189
+Zimbabwe,3.7,births per woman,0,CROSSED LIMIT,https://www.statsmodels.org/stable/datasets/generated/fertility.html,world-fertility-2010-per-woman-190

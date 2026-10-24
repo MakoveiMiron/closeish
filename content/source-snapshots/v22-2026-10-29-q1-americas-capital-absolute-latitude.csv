@@ -1,0 +1,49 @@
+canonical,metric_value,unit,points,tier,source,entity_id
+Anguilla,42,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-001
+Antigua and Barbuda,48,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-002
+Argentina,35,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-003
+Aruba,13,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-004
+Barbados,13,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-005
+Belize,17,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-006
+Bermuda,43,degrees,600,SOLID HIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-007
+Bolivia,19,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-008
+Brazil,10,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-009
+Canada,45,degrees,600,SOLID HIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-010
+Cayman Islands,5,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-011
+Chile,10,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-012
+Colombia,5,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-013
+Costa Rica,10,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-014
+Cuba,23,degrees,1200,PERFECT HIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-015
+Dominica,49,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-016
+Dominican Republic,18,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-017
+Ecuador,0,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-018
+El Salvador,14,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-019
+Falkland Islands,52,degrees,200,ON THE BOARD,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-020
+French Guiana,5,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-021
+Greenland,64,degrees,0,TOO FAR,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-022
+Grenada,49,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-023
+Guadeloupe,16,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-024
+Guatemala,15,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-025
+Guyana,7,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-026
+Haiti,19,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-027
+Honduras,14,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-028
+Jamaica,18,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-029
+Martinique,15,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-030
+Mexico,19,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-031
+Montserrat,50,degrees,200,ON THE BOARD,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-032
+Nicaragua,12,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-033
+Panama,9,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-034
+Paraguay,25,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-035
+Peru,12,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-036
+Puerto Rico,18,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-037
+Saint Kitts and Nevis,17,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-038
+Saint Lucia,14,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-039
+Saint Pierre and Miquelon,48,degrees,400,IN THE ZONE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-040
+Saint Vincent and the Grenadines,13,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-041
+South Georgia,54,degrees,0,TOO FAR,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-042
+Suriname,6,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-043
+The Bahamas,25,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-044
+Trinidad and Tobago,11,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-045
+United States,39,degrees,800,CLOSE CALL,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-046
+Uruguay,35,degrees,1000,RAZOR EDGE,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-047
+Venezuela,11,degrees,0,CROSSED LIMIT,https://github.com/porimol/countryinfo,americas-capital-absolute-latitude-048

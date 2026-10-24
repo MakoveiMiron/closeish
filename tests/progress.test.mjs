@@ -15,7 +15,7 @@ async function scenario(callback){
  try{await callback({base,post})}finally{await app.close()}
 }
 test('lazy load does not deserialize all historical banks at startup',()=>{
- assert.equal(days.size,9);assert.deepEqual([...days.keys()].slice(0,2),['2026-10-23','2026-10-24']);
+ assert.equal(days.size,10);assert.deepEqual([...days.keys()].slice(0,2),['2026-10-23','2026-10-24']);
  assert.equal(days.get('2026-10-23').questions.length,6);
 });
 test('progress is authoritative: persists each server-scored answer and forbids replay',async()=>scenario(async({base,post})=>{

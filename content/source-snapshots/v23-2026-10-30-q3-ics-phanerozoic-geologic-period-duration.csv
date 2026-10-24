@@ -1,0 +1,13 @@
+canonical,metric_value,unit,points,tier,source_url
+Cambrian,52,million years,800,CLOSE CALL,https://stratigraphy.org/chart/
+Ordovician,44,million years,400,IN THE ZONE,https://stratigraphy.org/chart/
+Silurian,23,million years,200,ON THE BOARD,https://stratigraphy.org/chart/
+Devonian,61,million years,0,CROSSED LIMIT,https://stratigraphy.org/chart/
+Carboniferous,60,million years,1200,PERFECT HIT,https://stratigraphy.org/chart/
+Permian,47,million years,600,SOLID HIT,https://stratigraphy.org/chart/
+Triassic,51,million years,600,SOLID HIT,https://stratigraphy.org/chart/
+Jurassic,58,million years,1000,RAZOR EDGE,https://stratigraphy.org/chart/
+Cretaceous,77,million years,0,CROSSED LIMIT,https://stratigraphy.org/chart/
+Paleogene,43,million years,400,IN THE ZONE,https://stratigraphy.org/chart/
+Neogene,20,million years,200,ON THE BOARD,https://stratigraphy.org/chart/
+Quaternary,3,million years,0,TOO FAR,https://stratigraphy.org/chart/

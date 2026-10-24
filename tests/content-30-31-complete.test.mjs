@@ -5,13 +5,13 @@ import {createRequire} from 'node:module';
 const require = createRequire(import.meta.url);
 const Core = require('../src/core.cjs');
 const expected = {
-  '2026-10-30':[143,64,80,38,97,24],
-  '2026-10-31':[51,25,151,107,26,43]
+  '2026-10-30':[143, 18, 12, 59, 97, 21],
+  '2026-10-31':[16, 25, 151, 107, 59, 43]
 };
 for(const [dayDate,sizes] of Object.entries(expected)) {
   const day=JSON.parse(readFileSync(new URL('../content/days/'+dayDate+'.json',import.meta.url)));
   test(`${dayDate}: all six complete sources, score matches and unambiguous names`,()=>{
-    assert.equal(day.publication_status,'draft');
+    assert.equal(day.publication_status,'scheduled');
     assert.equal(Object.keys(day.questions).length,6);
     for(let i=1;i<=6;i++){
       const q=day.questions['q'+i], ix=Core.index(q);

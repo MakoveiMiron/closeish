@@ -6,8 +6,8 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
   const TIERS={1200:'PERFECT HIT',1000:'RAZOR EDGE',800:'CLOSE CALL',600:'SOLID HIT',400:'IN THE ZONE',200:'ON THE BOARD'};
-  const START='2026-10-23',END='2026-10-31',DAY_MS=86400000;
-  const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/♀/g,' female ').replace(/♂/g,' male ').replace(/ß/g,'ss').replace(/œ/g,'oe').replace(/ð/g,'d').replace(/þ/g,'th').replace(/đ/g,'d').replace(/ı/g,'i').replace(/ø/g,'o').replace(/ł/g,'l').replace(/æ/g,'ae').replace(/&/g,' and ').replace(/c\+\+/g,' cplusplus ').replace(/c#/g,' csharp ').replace(/f#/g,' fsharp ').replace(/[^a-z0-9]+/g,' ').trim();
+  const START='2026-10-23',END='2026-11-01',DAY_MS=86400000;
+  const norm=s=>String(s??'').replace(/([A-Ga-g])\s*[#♯]\s*([0-8])\b/g,(_,note,octave)=>note+'sharp'+octave).replace(/([A-Ga-g])\s*[b♭]\s*([0-8])\b/g,(_,note,octave)=>note+'flat'+octave).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/♀/g,' female ').replace(/♂/g,' male ').replace(/ß/g,'ss').replace(/œ/g,'oe').replace(/ð/g,'d').replace(/þ/g,'th').replace(/đ/g,'d').replace(/ı/g,'i').replace(/ø/g,'o').replace(/ł/g,'l').replace(/æ/g,'ae').replace(/&/g,' and ').replace(/c\+\+/g,' cplusplus ').replace(/c#/g,' csharp ').replace(/f#/g,' fsharp ').replace(/[^a-z0-9]+/g,' ').trim();
   // Decimal comparison avoids floating-point boundary drift (e.g. 0.3 - 0.1).
   function decimal(n){
     if(typeof n!=='number'||!Number.isFinite(n))throw new TypeError('Expected a finite number');
@@ -71,7 +71,7 @@
     return ms;
   }
   function dayNumber(iso){return Math.floor((isoTime(iso)-isoTime(START))/DAY_MS)+1;}
-  function dateForDay(n){if(!Number.isInteger(n)||(n<1||n>9))throw new Error('Available days are 1–9');return new Date(isoTime(START)+(n-1)*DAY_MS).toISOString().slice(0,10);}
+  function dateForDay(n){if(!Number.isInteger(n)||n<1||n>100000)throw new Error('Invalid day number');return new Date(isoTime(START)+(n-1)*DAY_MS).toISOString().slice(0,10);}
   function questions(day){return day?Array.from({length:6},(_,i)=>day['q'+(i+1)]):[];}
   function progressKey(data,n){
     const revisions=questions(data[String(n)]).filter(Boolean).filter(q=>q.content_revision).map(q=>q.id+':'+q.content_revision);

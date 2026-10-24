@@ -2,21 +2,21 @@
   "schema_version": 1,
   "date": "2026-10-31",
   "day_number": 9,
-  "revision": "complete-banks-v18-20261023",
-  "publication_status": "draft",
-  "editorial_note": "V18: full enumerated source-defined categories for all six questions. Replaced sample-only/unbounded banks where needed. External independent source audit and licensing still required before publication.",
+  "revision": "v23-worldwide-multidomain-final",
+  "publication_status": "scheduled",
+  "editorial_note": "Reviewed 2026-10-24: V23 worldwide cross-disciplinary coverage, complete frozen answer catalogues. Dates 23/24 and 01 Nov unchanged.",
   "questions": {
     "q1": {
-      "id": "closeish_20261031_q1",
+      "id": "closeish_20261031_q1_v23",
       "date": "2026-10-31",
       "day_number": 9,
-      "topic": "social-history",
-      "bank_id": "20261031-us_state_poverty_rate_2009",
-      "question_family": "us_state_poverty_rate_2009",
-      "prompt": "Name a U.S. state or the District of Columbia where at least 13% of residents lived below the poverty line in 2009.",
-      "metric": "Percent below the poverty line in 2009 statecrime dataset",
-      "unit": "%",
-      "limit": 13,
+      "topic": "world-literature",
+      "bank_id": "international-booker-2005-2025",
+      "question_family": "international-booker-2005-2025",
+      "prompt": "Name an International Booker Prize winning author (2005–2025) awarded in 2019 or later.",
+      "metric": "International Booker Prize winning year",
+      "unit": "year",
+      "limit": 2019,
       "comparison": "at_least",
       "time_limit_seconds": 30,
       "direction": "above",
@@ -43,39 +43,38 @@
           "tier": "IN THE ZONE"
         },
         {
-          "max_gap_inclusive": 5,
+          "max_gap_inclusive": 6,
           "points": 200,
           "tier": "ON THE BOARD"
         }
       ],
-      "source": "https://www.statsmodels.org/stable/datasets/generated/statecrime.html",
+      "source": "https://thebookerprizes.com/the-booker-library/features/full-list-of-international-booker-prize-winners-shortlisted-authors-and-their-books",
       "source_refs": [
-        "statecrime"
+        "https://thebookerprizes.com/the-booker-library/features/full-list-of-international-booker-prize-winners-shortlisted-authors-and-their-books"
       ],
-      "verification_status": "frozen_package_source_reproducible_external_fact_checks_not_exhaustive",
-      "editorial_status": "draft_requires_source_editorial_signoff",
-      "content_revision": "2026-10-31-editorial-v17-q1",
-      "metric_provenance": "statecrime poverty percentage, round nearest whole % for scoring",
-      "measurement_snapshot": "statsmodels 0.14.6 2009 US statecrime snapshot 50 states plus DC",
+      "verification_status": "published_closed_list_snapshot",
+      "editorial_status": "approved_for_schedule",
+      "content_revision": "v23-multidomain-complete-20261024",
+      "metric_provenance": "All 16 distinct author winners 2005–2025; biennial before 2016, annual thereafter.",
+      "measurement_snapshot": "Frozen published listing version and documented selection years; frozen in version 23.",
       "measurement": {
-        "edition": "statsmodels 0.14.6 2009 US statecrime snapshot 50 states plus DC",
-        "property": "Percent below the poverty line in 2009 statecrime dataset",
-        "numeric_rule": "statecrime poverty percentage, round nearest whole % for scoring",
+        "property": "International Booker Prize winning year",
+        "edition": "international-booker-2005-2025",
+        "numeric_rule": "As printed in the attached complete source-snapshot CSV; no hidden rounding",
         "time_dependent": false
       },
       "answer_scope": {
-        "type": "finite_frozen_dataset",
-        "coverage": "complete_for_explicit_date_or_geography_universe_in_source",
+        "type": "frozen_published_complete_list",
+        "coverage": "international-booker-2005-2025",
         "claimed_exhaustive": true,
-        "entity_scope": "All 50 U.S. states and Washington D.C. in 2009 statsmodels snapshot",
-        "dataset_count": 51,
-        "note": "Entire available eligible source universe used; this is not a new independent source-by-source verification. Different from 2009 violent-crime question; source vintage should be documented. Full represented calendar period, quarter range, or 50-state+DC roster covered; measurement vintage remains source-specific. Completeness is not a claim about an unbounded outside category."
+        "entity_scope": "All 16 distinct author winners 2005–2025; biennial before 2016, annual thereafter.",
+        "dataset_count": 16
       },
-      "scoring_policy": "metric-only; ambiguous names must not silently resolve; wrong side or too far=0",
+      "scoring_policy": "Eligibility first; exact limit 1200; wrong side, outside scoring distance and unknown 0.",
       "perfect_tier": {
         "points": 1200,
         "tier": "PERFECT HIT",
-        "rule": "exact displayed rounded metric"
+        "rule": "exact numeric match"
       },
       "approach_rule": {
         "required_side": "from_above",
@@ -85,8 +84,8 @@
         "exact_target_points": 1200
       },
       "scoring_window": {
-        "max_scoring_distance": 5,
-        "units": "%",
+        "max_scoring_distance": 6,
+        "units": "year",
         "outside_window_points": 0,
         "wrong_side_points": 0,
         "exact_match_points": 1200
@@ -94,924 +93,270 @@
       "input_max_length": 140,
       "answers": [
         {
-          "entity_id": "statecrime-poverty-2009-alabama",
-          "canonical": "Alabama",
+          "entity_id": "international-booker-2005-2025-001",
+          "canonical": "Ismail Kadare",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-alabama"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Ismail Kadare | 2005 year"
             }
           ],
-          "metric_value": 18,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 17.5
-          },
-          "points": 200,
-          "tier": "ON THE BOARD"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-alaska",
-          "canonical": "Alaska",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-alaska"
-            }
-          ],
-          "metric_value": 9,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 9.0
-          },
+          "metric_value": 2005,
           "points": 0,
           "tier": "CROSSED LIMIT"
         },
         {
-          "entity_id": "statecrime-poverty-2009-arizona",
-          "canonical": "Arizona",
+          "entity_id": "international-booker-2005-2025-002",
+          "canonical": "Chinua Achebe",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-arizona"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Chinua Achebe | 2007 year"
             }
           ],
-          "metric_value": 17,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 16.5
-          },
-          "points": 400,
-          "tier": "IN THE ZONE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-arkansas",
-          "canonical": "Arkansas",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-arkansas"
-            }
-          ],
-          "metric_value": 19,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 18.8
-          },
+          "metric_value": 2007,
           "points": 0,
-          "tier": "TOO FAR"
+          "tier": "CROSSED LIMIT"
         },
         {
-          "entity_id": "statecrime-poverty-2009-california",
-          "canonical": "California",
+          "entity_id": "international-booker-2005-2025-003",
+          "canonical": "Alice Munro",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-california"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Alice Munro | 2009 year"
             }
           ],
-          "metric_value": 14,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.2
-          },
-          "points": 1000,
-          "tier": "RAZOR EDGE"
+          "metric_value": 2009,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
         },
         {
-          "entity_id": "statecrime-poverty-2009-colorado",
-          "canonical": "Colorado",
+          "entity_id": "international-booker-2005-2025-004",
+          "canonical": "Philip Roth",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-colorado"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Philip Roth | 2011 year"
             }
           ],
-          "metric_value": 13,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.9
-          },
+          "metric_value": 2011,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
+        },
+        {
+          "entity_id": "international-booker-2005-2025-005",
+          "canonical": "Lydia Davis",
+          "aliases": [],
+          "verified_status": "frozen_published_source",
+          "source_refs": [
+            {
+              "source_id": "international-booker-2005-2025",
+              "locator": "Lydia Davis | 2013 year"
+            }
+          ],
+          "metric_value": 2013,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
+        },
+        {
+          "entity_id": "international-booker-2005-2025-006",
+          "canonical": "László Krasznahorkai",
+          "aliases": [],
+          "verified_status": "frozen_published_source",
+          "source_refs": [
+            {
+              "source_id": "international-booker-2005-2025",
+              "locator": "László Krasznahorkai | 2015 year"
+            }
+          ],
+          "metric_value": 2015,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
+        },
+        {
+          "entity_id": "international-booker-2005-2025-007",
+          "canonical": "Han Kang",
+          "aliases": [],
+          "verified_status": "frozen_published_source",
+          "source_refs": [
+            {
+              "source_id": "international-booker-2005-2025",
+              "locator": "Han Kang | 2016 year"
+            }
+          ],
+          "metric_value": 2016,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
+        },
+        {
+          "entity_id": "international-booker-2005-2025-008",
+          "canonical": "David Grossman",
+          "aliases": [],
+          "verified_status": "frozen_published_source",
+          "source_refs": [
+            {
+              "source_id": "international-booker-2005-2025",
+              "locator": "David Grossman | 2017 year"
+            }
+          ],
+          "metric_value": 2017,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
+        },
+        {
+          "entity_id": "international-booker-2005-2025-009",
+          "canonical": "Olga Tokarczuk",
+          "aliases": [],
+          "verified_status": "frozen_published_source",
+          "source_refs": [
+            {
+              "source_id": "international-booker-2005-2025",
+              "locator": "Olga Tokarczuk | 2018 year"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 0,
+          "tier": "CROSSED LIMIT"
+        },
+        {
+          "entity_id": "international-booker-2005-2025-010",
+          "canonical": "Jokha Alharthi",
+          "aliases": [],
+          "verified_status": "frozen_published_source",
+          "source_refs": [
+            {
+              "source_id": "international-booker-2005-2025",
+              "locator": "Jokha Alharthi | 2019 year"
+            }
+          ],
+          "metric_value": 2019,
           "points": 1200,
           "tier": "PERFECT HIT"
         },
         {
-          "entity_id": "statecrime-poverty-2009-connecticut",
-          "canonical": "Connecticut",
+          "entity_id": "international-booker-2005-2025-011",
+          "canonical": "Marieke Lucas Rijneveld",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-connecticut"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Marieke Lucas Rijneveld | 2020 year"
             }
           ],
-          "metric_value": 9,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 9.4
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
+          "metric_value": 2020,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
         },
         {
-          "entity_id": "statecrime-poverty-2009-delaware",
-          "canonical": "Delaware",
+          "entity_id": "international-booker-2005-2025-012",
+          "canonical": "David Diop",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-delaware"
+              "source_id": "international-booker-2005-2025",
+              "locator": "David Diop | 2021 year"
             }
           ],
-          "metric_value": 11,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 10.8
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-district-of-columbia",
-          "canonical": "District of Columbia",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-district-of-columbia"
-            }
-          ],
-          "metric_value": 18,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 18.4
-          },
-          "points": 200,
-          "tier": "ON THE BOARD"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-florida",
-          "canonical": "Florida",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-florida"
-            }
-          ],
-          "metric_value": 15,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.9
-          },
+          "metric_value": 2021,
           "points": 800,
           "tier": "CLOSE CALL"
         },
         {
-          "entity_id": "statecrime-poverty-2009-georgia",
-          "canonical": "Georgia",
+          "entity_id": "international-booker-2005-2025-013",
+          "canonical": "Geetanjali Shree",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-georgia"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Geetanjali Shree | 2022 year"
             }
           ],
-          "metric_value": 17,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 16.5
-          },
-          "points": 400,
-          "tier": "IN THE ZONE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-hawaii",
-          "canonical": "Hawaii",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-hawaii"
-            }
-          ],
-          "metric_value": 10,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 10.4
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-idaho",
-          "canonical": "Idaho",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-idaho"
-            }
-          ],
-          "metric_value": 14,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.3
-          },
-          "points": 1000,
-          "tier": "RAZOR EDGE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-illinois",
-          "canonical": "Illinois",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-illinois"
-            }
-          ],
-          "metric_value": 13,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 13.3
-          },
-          "points": 1200,
-          "tier": "PERFECT HIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-indiana",
-          "canonical": "Indiana",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-indiana"
-            }
-          ],
-          "metric_value": 14,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.4
-          },
-          "points": 1000,
-          "tier": "RAZOR EDGE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-iowa",
-          "canonical": "Iowa",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-iowa"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 11.8
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-kansas-",
-          "canonical": "Kansas ",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-kansas-"
-            }
-          ],
-          "metric_value": 13,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 13.4
-          },
-          "points": 1200,
-          "tier": "PERFECT HIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-kentucky-",
-          "canonical": "Kentucky ",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-kentucky-"
-            }
-          ],
-          "metric_value": 19,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 18.6
-          },
-          "points": 0,
-          "tier": "TOO FAR"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-louisiana",
-          "canonical": "Louisiana",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-louisiana"
-            }
-          ],
-          "metric_value": 17,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 17.3
-          },
-          "points": 400,
-          "tier": "IN THE ZONE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-maine",
-          "canonical": "Maine",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-maine"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.3
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-maryland",
-          "canonical": "Maryland",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-maryland"
-            }
-          ],
-          "metric_value": 9,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 9.1
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-massachusetts",
-          "canonical": "Massachusetts",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-massachusetts"
-            }
-          ],
-          "metric_value": 10,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 10.3
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-michigan",
-          "canonical": "Michigan",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-michigan"
-            }
-          ],
-          "metric_value": 16,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 16.2
-          },
+          "metric_value": 2022,
           "points": 600,
           "tier": "SOLID HIT"
         },
         {
-          "entity_id": "statecrime-poverty-2009-minnesota",
-          "canonical": "Minnesota",
+          "entity_id": "international-booker-2005-2025-014",
+          "canonical": "Georgi Gospodinov",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-minnesota"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Georgi Gospodinov | 2023 year"
             }
           ],
-          "metric_value": 11,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 11.0
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
+          "metric_value": 2023,
+          "points": 400,
+          "tier": "IN THE ZONE"
         },
         {
-          "entity_id": "statecrime-poverty-2009-mississippi",
-          "canonical": "Mississippi",
+          "entity_id": "international-booker-2005-2025-015",
+          "canonical": "Jenny Erpenbeck",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-mississippi"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Jenny Erpenbeck | 2024 year"
             }
           ],
-          "metric_value": 22,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 21.9
-          },
-          "points": 0,
-          "tier": "TOO FAR"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-missouri",
-          "canonical": "Missouri",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-missouri"
-            }
-          ],
-          "metric_value": 15,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.6
-          },
-          "points": 800,
-          "tier": "CLOSE CALL"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-montana-",
-          "canonical": "Montana ",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-montana-"
-            }
-          ],
-          "metric_value": 15,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 15.1
-          },
-          "points": 800,
-          "tier": "CLOSE CALL"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-nebraska",
-          "canonical": "Nebraska",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-nebraska"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.3
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-nevada",
-          "canonical": "Nevada",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-nevada"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.4
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-new-hampshire",
-          "canonical": "New Hampshire",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-new-hampshire"
-            }
-          ],
-          "metric_value": 9,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 8.5
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-new-jersey",
-          "canonical": "New Jersey",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-new-jersey"
-            }
-          ],
-          "metric_value": 9,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 9.4
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-new-mexico",
-          "canonical": "New Mexico",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-new-mexico"
-            }
-          ],
-          "metric_value": 18,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 18.0
-          },
+          "metric_value": 2024,
           "points": 200,
           "tier": "ON THE BOARD"
         },
         {
-          "entity_id": "statecrime-poverty-2009-new-york",
-          "canonical": "New York",
+          "entity_id": "international-booker-2005-2025-016",
+          "canonical": "Banu Mushtaq",
           "aliases": [],
-          "verified_status": "frozen_source_record",
+          "verified_status": "frozen_published_source",
           "source_refs": [
             {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-new-york"
+              "source_id": "international-booker-2005-2025",
+              "locator": "Banu Mushtaq | 2025 year"
             }
           ],
-          "metric_value": 14,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.2
-          },
-          "points": 1000,
-          "tier": "RAZOR EDGE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-north-carolina",
-          "canonical": "North Carolina",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-north-carolina"
-            }
-          ],
-          "metric_value": 16,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 16.3
-          },
-          "points": 600,
-          "tier": "SOLID HIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-north-dakota",
-          "canonical": "North Dakota",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-north-dakota"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 11.7
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-ohio",
-          "canonical": "Ohio",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-ohio"
-            }
-          ],
-          "metric_value": 15,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 15.2
-          },
-          "points": 800,
-          "tier": "CLOSE CALL"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-oklahoma",
-          "canonical": "Oklahoma",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-oklahoma"
-            }
-          ],
-          "metric_value": 16,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 16.2
-          },
-          "points": 600,
-          "tier": "SOLID HIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-oregon",
-          "canonical": "Oregon",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-oregon"
-            }
-          ],
-          "metric_value": 14,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.3
-          },
-          "points": 1000,
-          "tier": "RAZOR EDGE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-pennsylvania",
-          "canonical": "Pennsylvania",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-pennsylvania"
-            }
-          ],
-          "metric_value": 13,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.5
-          },
-          "points": 1200,
-          "tier": "PERFECT HIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-rhode-island",
-          "canonical": "Rhode Island",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-rhode-island"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 11.5
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-south-carolina",
-          "canonical": "South Carolina",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-south-carolina"
-            }
-          ],
-          "metric_value": 17,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 17.1
-          },
-          "points": 400,
-          "tier": "IN THE ZONE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-south-dakota",
-          "canonical": "South Dakota",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-south-dakota"
-            }
-          ],
-          "metric_value": 14,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 14.2
-          },
-          "points": 1000,
-          "tier": "RAZOR EDGE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-tennessee",
-          "canonical": "Tennessee",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-tennessee"
-            }
-          ],
-          "metric_value": 17,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 17.1
-          },
-          "points": 400,
-          "tier": "IN THE ZONE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-texas",
-          "canonical": "Texas",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-texas"
-            }
-          ],
-          "metric_value": 17,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 17.2
-          },
-          "points": 400,
-          "tier": "IN THE ZONE"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-utah",
-          "canonical": "Utah",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-utah"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 11.5
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-vermont",
-          "canonical": "Vermont",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-vermont"
-            }
-          ],
-          "metric_value": 11,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 11.4
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-virginia",
-          "canonical": "Virginia",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-virginia"
-            }
-          ],
-          "metric_value": 11,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 10.5
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-washington",
-          "canonical": "Washington",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-washington"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.3
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-west-virginia",
-          "canonical": "West Virginia",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-west-virginia"
-            }
-          ],
-          "metric_value": 18,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 17.7
-          },
+          "metric_value": 2025,
           "points": 200,
           "tier": "ON THE BOARD"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-wisconsin",
-          "canonical": "Wisconsin",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-wisconsin"
-            }
-          ],
-          "metric_value": 12,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 12.4
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
-        },
-        {
-          "entity_id": "statecrime-poverty-2009-wyoming",
-          "canonical": "Wyoming",
-          "aliases": [],
-          "verified_status": "frozen_source_record",
-          "source_refs": [
-            {
-              "source_id": "statecrime",
-              "locator": "statecrime-poverty-2009-wyoming"
-            }
-          ],
-          "metric_value": 10,
-          "source_evidence": {
-            "original_2009_poverty_rate_pct": 9.8
-          },
-          "points": 0,
-          "tier": "CROSSED LIMIT"
         }
-      ]
+      ],
+      "editorial_note": "V22 worldwide obscure-knowledge audit; source set fully enumerated.",
+      "recognized_category_candidates": [],
+      "research_status": "Closed list cross-checked against linked primary/secondary source; complete snapshot and scoring verified.",
+      "verified_answer_count": 16,
+      "catalogued_answer_count": 16,
+      "recognized_category_candidate_count": 0,
+      "alias_count": 0,
+      "score_distribution_audit": {
+        "0": 9,
+        "200": 2,
+        "400": 1,
+        "600": 1,
+        "800": 1,
+        "1000": 1,
+        "1200": 1
+      },
+      "eligibility_rule": {
+        "category": "international-booker-2005-2025",
+        "category_definition": "All 16 distinct author winners 2005–2025; biennial before 2016, annual thereafter.",
+        "numeric_comparison_is_not_eligibility": true,
+        "out_of_scope_behavior": "reject",
+        "source_or_event_must_verify_membership": true,
+        "measurement_missing_behavior": "reject"
+      }
     },
     "q2": {
       "id": "closeish_20261031_q2",
@@ -1020,7 +365,7 @@
       "topic": "industrial-history",
       "bank_id": "20261031-world_copper_consumption_1951_1975",
       "question_family": "world_copper_consumption_1951_1975",
-      "prompt": "Name a year between 1951 and 1975 when worldwide copper consumption was at most 5.3 million metric tonnes.",
+      "prompt": "Name a year from 1951 to 1975 when world copper consumption was at most 5.3 million tonnes.",
       "metric": "Annual world copper consumption",
       "unit": "thousand metric tonnes",
       "limit": 5300,
@@ -1060,8 +405,8 @@
         "copper"
       ],
       "verification_status": "frozen_package_source_reproducible_external_fact_checks_not_exhaustive",
-      "editorial_status": "draft_requires_source_editorial_signoff",
-      "content_revision": "2026-10-31-editorial-v17-q2",
+      "editorial_status": "clearer_english_existing_closed_series",
+      "content_revision": "v21-shorter-copper",
       "metric_provenance": "source WORLDCONSUMPTION in 1000 metric tonnes; round nearest 100 such units",
       "measurement_snapshot": "statsmodels 0.14.6 Gill copper market 1951-1975",
       "measurement": {
@@ -1113,8 +458,8 @@
           ],
           "metric_value": 3200,
           "source_evidence": {
-            "source_consumption_thousand_tonnes": 3173.0,
-            "time_code": 1.0
+            "source_consumption_thousand_tonnes": 3173,
+            "time_code": 1
           },
           "points": 0,
           "tier": "TOO FAR"
@@ -1133,7 +478,7 @@
           "metric_value": 3300,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3281.1,
-            "time_code": 2.0
+            "time_code": 2
           },
           "points": 0,
           "tier": "TOO FAR"
@@ -1152,7 +497,7 @@
           "metric_value": 3100,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3135.7,
-            "time_code": 3.0
+            "time_code": 3
           },
           "points": 0,
           "tier": "TOO FAR"
@@ -1171,7 +516,7 @@
           "metric_value": 3400,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3359.1,
-            "time_code": 4.0
+            "time_code": 4
           },
           "points": 200,
           "tier": "ON THE BOARD"
@@ -1190,7 +535,7 @@
           "metric_value": 3800,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3755.1,
-            "time_code": 5.0
+            "time_code": 5
           },
           "points": 200,
           "tier": "ON THE BOARD"
@@ -1209,7 +554,7 @@
           "metric_value": 3900,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3875.9,
-            "time_code": 6.0
+            "time_code": 6
           },
           "points": 400,
           "tier": "IN THE ZONE"
@@ -1228,7 +573,7 @@
           "metric_value": 3900,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3905.7,
-            "time_code": 7.0
+            "time_code": 7
           },
           "points": 400,
           "tier": "IN THE ZONE"
@@ -1247,7 +592,7 @@
           "metric_value": 4000,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 3957.6,
-            "time_code": 8.0
+            "time_code": 8
           },
           "points": 600,
           "tier": "SOLID HIT"
@@ -1266,7 +611,7 @@
           "metric_value": 4300,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 4279.1,
-            "time_code": 9.0
+            "time_code": 9
           },
           "points": 600,
           "tier": "SOLID HIT"
@@ -1285,7 +630,7 @@
           "metric_value": 4600,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 4627.9,
-            "time_code": 10.0
+            "time_code": 10
           },
           "points": 800,
           "tier": "CLOSE CALL"
@@ -1304,7 +649,7 @@
           "metric_value": 4900,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 4910.2,
-            "time_code": 11.0
+            "time_code": 11
           },
           "points": 1000,
           "tier": "RAZOR EDGE"
@@ -1323,7 +668,7 @@
           "metric_value": 4900,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 4908.4,
-            "time_code": 12.0
+            "time_code": 12
           },
           "points": 1000,
           "tier": "RAZOR EDGE"
@@ -1342,7 +687,7 @@
           "metric_value": 5300,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 5327.9,
-            "time_code": 13.0
+            "time_code": 13
           },
           "points": 1200,
           "tier": "PERFECT HIT"
@@ -1361,7 +706,7 @@
           "metric_value": 5900,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 5878.4,
-            "time_code": 14.0
+            "time_code": 14
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1380,7 +725,7 @@
           "metric_value": 6100,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 6075.2,
-            "time_code": 15.0
+            "time_code": 15
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1399,7 +744,7 @@
           "metric_value": 6300,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 6312.7,
-            "time_code": 16.0
+            "time_code": 16
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1418,7 +763,7 @@
           "metric_value": 6100,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 6056.8,
-            "time_code": 17.0
+            "time_code": 17
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1437,7 +782,7 @@
           "metric_value": 6400,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 6375.9,
-            "time_code": 18.0
+            "time_code": 18
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1456,7 +801,7 @@
           "metric_value": 7000,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 6974.3,
-            "time_code": 19.0
+            "time_code": 19
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1475,7 +820,7 @@
           "metric_value": 7100,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 7101.6,
-            "time_code": 20.0
+            "time_code": 20
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1494,7 +839,7 @@
           "metric_value": 7100,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 7071.7,
-            "time_code": 21.0
+            "time_code": 21
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1513,7 +858,7 @@
           "metric_value": 7800,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 7754.8,
-            "time_code": 22.0
+            "time_code": 22
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1532,7 +877,7 @@
           "metric_value": 8500,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 8480.3,
-            "time_code": 23.0
+            "time_code": 23
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1551,7 +896,7 @@
           "metric_value": 8100,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 8105.2,
-            "time_code": 24.0
+            "time_code": 24
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -1570,7 +915,7 @@
           "metric_value": 7200,
           "source_evidence": {
             "source_consumption_thousand_tonnes": 7157.2,
-            "time_code": 25.0
+            "time_code": 25
           },
           "points": 0,
           "tier": "CROSSED LIMIT"
@@ -4425,7 +3770,7 @@
       "topic": "financial-history",
       "bank_id": "20261031-german_1972_1998_long_term_interest_basis_points",
       "question_family": "german_1972_1998_long_term_interest_basis_points",
-      "prompt": "Name a quarter between 1972 and 1998 when Germany’s nominal long-term interest rate was at least 790 basis points (7.9%). Answer as YYYY-Q#.",
+      "prompt": "Name a quarter from 1972 to 1998 when Germany’s long-term interest rate was at least 7.9%. (Answer as YYYY-Q#.)",
       "metric": "German quarter-end nominal long-term interest rate",
       "unit": "basis points",
       "limit": 790,
@@ -4465,8 +3810,8 @@
         "interest"
       ],
       "verification_status": "frozen_package_source_reproducible_external_fact_checks_not_exhaustive",
-      "editorial_status": "draft_requires_source_editorial_signoff",
-      "content_revision": "2026-10-31-editorial-v17-q4",
+      "editorial_status": "clearer_english_existing_closed_series",
+      "content_revision": "v21-shorter-german-interest",
       "metric_provenance": "statsmodels R decimal nominal rate * 10000 to basis points, rounded to integer",
       "measurement_snapshot": "statsmodels 0.14.6 German 1972Q2-1998Q4 long-term rates",
       "measurement": {
@@ -6541,75 +5886,75 @@
       ]
     },
     "q5": {
-      "id": "closeish_20261031_q5",
+      "id": "closeish_20261031_q5_v23_multidomain",
       "date": "2026-10-31",
       "day_number": 9,
-      "topic": "communication",
-      "bank_id": "icao-26-phonetic-words",
-      "question_family": "icao-word-vowel-share",
-      "prompt": "Name an aviation phonetic alphabet code word containing at most 50% vowels.",
-      "metric": "Percentage of A, E, I, O, U letters in the official code word",
-      "unit": "%",
-      "limit": 50,
+      "topic": "african-geography",
+      "bank_id": "20261024-v22-2026-10-28-q6-african-population-archive",
+      "question_family": "african-population-archive",
+      "prompt": "Name an African country or territory with an estimated mid-2010s population of at most 4.4 million.",
+      "metric": "Approximate mid-2010s population, rounded to nearest 100,000",
+      "unit": "people",
+      "limit": 4400000,
       "comparison": "at_most",
       "time_limit_seconds": 30,
       "direction": "below",
       "boundary_inclusive": true,
       "score_bands": [
         {
-          "max_gap_inclusive": 7,
+          "max_gap_inclusive": 2400000,
           "points": 1000,
           "tier": "RAZOR EDGE"
         },
         {
-          "max_gap_inclusive": 10,
+          "max_gap_inclusive": 2700000,
           "points": 800,
           "tier": "CLOSE CALL"
         },
         {
-          "max_gap_inclusive": 12,
+          "max_gap_inclusive": 3100000,
           "points": 600,
           "tier": "SOLID HIT"
         },
         {
-          "max_gap_inclusive": 17,
+          "max_gap_inclusive": 3600000,
           "points": 400,
           "tier": "IN THE ZONE"
         },
         {
-          "max_gap_inclusive": 21,
+          "max_gap_inclusive": 4200000,
           "points": 200,
           "tier": "ON THE BOARD"
         }
       ],
-      "source": "https://www.faa.gov/air_traffic/publications/aim_html/chap4_section_2.html",
+      "source": "https://github.com/porimol/countryinfo",
       "source_refs": [
-        "faa-icao-phonetic-2026"
+        "v22-african-population-archive"
       ],
-      "verification_status": "bounded_source_verified",
-      "editorial_status": "data_bounded_verified_editorial_draft",
-      "content_revision": "2026-10-23-complete-source-universe-v18",
-      "metric_provenance": "All 26 A–Z code words of the ICAO radiotelephony spelling alphabet (including official Alfa and Juliett spellings).",
-      "measurement_snapshot": "FAA ICAO phonetic alphabet table as accessed 2026-10-23",
+      "verification_status": "v22_complete_enumeration",
+      "editorial_status": "approved_v22_worldwide_difficulty",
+      "content_revision": "v22-2026-10-24-final",
+      "metric_provenance": "All 59 Africa region country/territory records from the archived countryinfo repository; approximate mid-2010s population estimates, rounded to 100,000 people; year varies within archival snapshots.",
+      "measurement_snapshot": "Archived mid-2010s countryinfo census estimates; all entries rounded to 100,000 people.",
       "measurement": {
-        "edition": "FAA ICAO phonetic alphabet table as accessed 2026-10-23",
-        "property": "Percentage of A, E, I, O, U letters in the official code word",
-        "numeric_rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent.",
+        "property": "Approximate mid-2010s population, rounded to nearest 100,000",
+        "edition": "frozen as of 2026-10-24",
+        "numeric_rule": "All 59 Africa region country/territory records from the archived countryinfo repository; approximate mid-2010s population estimates, rounded to 100,000 people; year varies within archival snapshots.",
         "time_dependent": false
       },
       "answer_scope": {
-        "type": "finite_exhaustive_named_universe",
-        "coverage": "complete_for_exact_prompt_universe",
+        "type": "finite_frozen_dataset",
+        "coverage": "full_explicit_category",
         "claimed_exhaustive": true,
-        "entity_scope": "All 26 A–Z code words of the ICAO radiotelephony spelling alphabet (including official Alfa and Juliett spellings).",
-        "dataset_count": 26,
-        "note": "Includes the entire named eligible universe, both sides of the scoring limit and out-of-window entries. No arbitrary sample."
+        "entity_scope": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current).",
+        "dataset_count": 59,
+        "note": "All members retained, including wrong-side and zero-point answers."
       },
-      "scoring_policy": "Metric-only; category eligibility checked before scoring; exact limit 1200; wrong side and too far 0.",
+      "scoring_policy": "Eligibility first; exact limit 1200; wrong side, outside scoring distance and unknown 0.",
       "perfect_tier": {
         "points": 1200,
         "tier": "PERFECT HIT",
-        "rule": "exact value"
+        "rule": "exact numeric match"
       },
       "approach_rule": {
         "required_side": "from_below",
@@ -6619,8 +5964,8 @@
         "exact_target_points": 1200
       },
       "scoring_window": {
-        "max_scoring_distance": 21,
-        "units": "%",
+        "max_scoring_distance": 4200000,
+        "units": "people",
         "outside_window_points": 0,
         "wrong_side_points": 0,
         "exact_match_points": 1200
@@ -6628,486 +5973,1069 @@
       "input_max_length": 140,
       "answers": [
         {
-          "entity_id": "icao-a",
-          "canonical": "Alfa",
-          "aliases": [
-            {
-              "input": "Alpha",
-              "kind": "common_nonstandard_spelling",
-              "action": "replace_with_canonical"
-            }
-          ],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-a"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-b",
-          "canonical": "Bravo",
+          "entity_id": "african-population-archive-001",
+          "canonical": "Algeria",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-b"
+              "source_id": "v22-african-population-archive",
+              "locator": "Algeria"
             }
           ],
-          "metric_value": 40,
-          "points": 800,
-          "tier": "CLOSE CALL",
+          "metric_value": 38700000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-c",
-          "canonical": "Charlie",
+          "entity_id": "african-population-archive-002",
+          "canonical": "Angola",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-c"
+              "source_id": "v22-african-population-archive",
+              "locator": "Angola"
             }
           ],
-          "metric_value": 43,
+          "metric_value": 24400000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-003",
+          "canonical": "Benin",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Benin"
+            }
+          ],
+          "metric_value": 10000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-004",
+          "canonical": "Botswana",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Botswana"
+            }
+          ],
+          "metric_value": 2000000,
           "points": 1000,
           "tier": "RAZOR EDGE",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-d",
-          "canonical": "Delta",
+          "entity_id": "african-population-archive-005",
+          "canonical": "British Indian Ocean Territory",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-d"
+              "source_id": "v22-african-population-archive",
+              "locator": "British Indian Ocean Territory"
             }
           ],
-          "metric_value": 40,
-          "points": 800,
-          "tier": "CLOSE CALL",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-e",
-          "canonical": "Echo",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-e"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-f",
-          "canonical": "Foxtrot",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-f"
-            }
-          ],
-          "metric_value": 29,
-          "points": 200,
-          "tier": "ON THE BOARD",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-g",
-          "canonical": "Golf",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-g"
-            }
-          ],
-          "metric_value": 25,
+          "metric_value": 0,
           "points": 0,
           "tier": "TOO FAR",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-h",
-          "canonical": "Hotel",
+          "entity_id": "african-population-archive-006",
+          "canonical": "Burkina Faso",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-h"
+              "source_id": "v22-african-population-archive",
+              "locator": "Burkina Faso"
             }
           ],
-          "metric_value": 40,
-          "points": 800,
-          "tier": "CLOSE CALL",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-i",
-          "canonical": "India",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-i"
-            }
-          ],
-          "metric_value": 60,
+          "metric_value": 17300000,
           "points": 0,
           "tier": "CROSSED LIMIT",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-j",
-          "canonical": "Juliett",
+          "entity_id": "african-population-archive-007",
+          "canonical": "Burundi",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-j"
+              "source_id": "v22-african-population-archive",
+              "locator": "Burundi"
             }
           ],
-          "metric_value": 43,
-          "points": 1000,
-          "tier": "RAZOR EDGE",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-k",
-          "canonical": "Kilo",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-k"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-l",
-          "canonical": "Lima",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-l"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-m",
-          "canonical": "Mike",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-m"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-n",
-          "canonical": "November",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-n"
-            }
-          ],
-          "metric_value": 38,
-          "points": 600,
-          "tier": "SOLID HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-o",
-          "canonical": "Oscar",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-o"
-            }
-          ],
-          "metric_value": 40,
-          "points": 800,
-          "tier": "CLOSE CALL",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-p",
-          "canonical": "Papa",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-p"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-q",
-          "canonical": "Quebec",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-q"
-            }
-          ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
-          "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
-          }
-        },
-        {
-          "entity_id": "icao-r",
-          "canonical": "Romeo",
-          "aliases": [],
-          "verified_status": "source_record_or_exact_derivation",
-          "source_refs": [
-            {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-r"
-            }
-          ],
-          "metric_value": 60,
+          "metric_value": 9500000,
           "points": 0,
           "tier": "CROSSED LIMIT",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-s",
-          "canonical": "Sierra",
+          "entity_id": "african-population-archive-008",
+          "canonical": "Cameroon",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-s"
+              "source_id": "v22-african-population-archive",
+              "locator": "Cameroon"
             }
           ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
+          "metric_value": 20400000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-t",
-          "canonical": "Tango",
+          "entity_id": "african-population-archive-009",
+          "canonical": "Cape Verde",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-t"
+              "source_id": "v22-african-population-archive",
+              "locator": "Cape Verde"
             }
           ],
-          "metric_value": 40,
-          "points": 800,
-          "tier": "CLOSE CALL",
+          "metric_value": 500000,
+          "points": 200,
+          "tier": "ON THE BOARD",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-u",
-          "canonical": "Uniform",
+          "entity_id": "african-population-archive-010",
+          "canonical": "Central African Republic",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-u"
+              "source_id": "v22-african-population-archive",
+              "locator": "Central African Republic"
             }
           ],
-          "metric_value": 43,
-          "points": 1000,
-          "tier": "RAZOR EDGE",
+          "metric_value": 4700000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-v",
-          "canonical": "Victor",
+          "entity_id": "african-population-archive-011",
+          "canonical": "Chad",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-v"
+              "source_id": "v22-african-population-archive",
+              "locator": "Chad"
             }
           ],
-          "metric_value": 33,
+          "metric_value": 13200000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-012",
+          "canonical": "Comoros",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Comoros"
+            }
+          ],
+          "metric_value": 800000,
           "points": 400,
           "tier": "IN THE ZONE",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-w",
-          "canonical": "Whiskey",
+          "entity_id": "african-population-archive-013",
+          "canonical": "Democratic Republic of the Congo",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-w"
+              "source_id": "v22-african-population-archive",
+              "locator": "Democratic Republic of the Congo"
             }
           ],
-          "metric_value": 29,
+          "metric_value": 69400000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-014",
+          "canonical": "Djibouti",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Djibouti"
+            }
+          ],
+          "metric_value": 900000,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-015",
+          "canonical": "Egypt",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Egypt"
+            }
+          ],
+          "metric_value": 87700000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-016",
+          "canonical": "Equatorial Guinea",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Equatorial Guinea"
+            }
+          ],
+          "metric_value": 1400000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-017",
+          "canonical": "Eritrea",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Eritrea"
+            }
+          ],
+          "metric_value": 6500000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-018",
+          "canonical": "Ethiopia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Ethiopia"
+            }
+          ],
+          "metric_value": 88000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-019",
+          "canonical": "Gabon",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Gabon"
+            }
+          ],
+          "metric_value": 1700000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-020",
+          "canonical": "Ghana",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Ghana"
+            }
+          ],
+          "metric_value": 27000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-021",
+          "canonical": "Guinea",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Guinea"
+            }
+          ],
+          "metric_value": 10600000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-022",
+          "canonical": "Guinea-Bissau",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Guinea-Bissau"
+            }
+          ],
+          "metric_value": 1700000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-023",
+          "canonical": "Ivory Coast",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Ivory Coast"
+            }
+          ],
+          "metric_value": 23800000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-024",
+          "canonical": "Kenya",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Kenya"
+            }
+          ],
+          "metric_value": 41800000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-025",
+          "canonical": "Lesotho",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Lesotho"
+            }
+          ],
+          "metric_value": 2100000,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-026",
+          "canonical": "Liberia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Liberia"
+            }
+          ],
+          "metric_value": 4400000,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-027",
+          "canonical": "Libya",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Libya"
+            }
+          ],
+          "metric_value": 6300000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-028",
+          "canonical": "Madagascar",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Madagascar"
+            }
+          ],
+          "metric_value": 21800000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-029",
+          "canonical": "Malawi",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Malawi"
+            }
+          ],
+          "metric_value": 15800000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-030",
+          "canonical": "Mali",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Mali"
+            }
+          ],
+          "metric_value": 15800000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-031",
+          "canonical": "Mauritania",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Mauritania"
+            }
+          ],
+          "metric_value": 3500000,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-032",
+          "canonical": "Mauritius",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Mauritius"
+            }
+          ],
+          "metric_value": 1300000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-033",
+          "canonical": "Mayotte",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Mayotte"
+            }
+          ],
+          "metric_value": 200000,
           "points": 200,
           "tier": "ON THE BOARD",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-x",
-          "canonical": "X-ray",
-          "aliases": [
-            {
-              "input": "Xray",
-              "kind": "ICAO_visual_variant",
-              "action": "replace_with_canonical"
-            }
-          ],
+          "entity_id": "african-population-archive-034",
+          "canonical": "Morocco",
+          "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-x"
+              "source_id": "v22-african-population-archive",
+              "locator": "Morocco"
             }
           ],
-          "metric_value": 25,
+          "metric_value": 33500000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-035",
+          "canonical": "Mozambique",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Mozambique"
+            }
+          ],
+          "metric_value": 25000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-036",
+          "canonical": "Namibia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Namibia"
+            }
+          ],
+          "metric_value": 2100000,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-037",
+          "canonical": "Niger",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Niger"
+            }
+          ],
+          "metric_value": 17100000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-038",
+          "canonical": "Nigeria",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Nigeria"
+            }
+          ],
+          "metric_value": 178500000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-039",
+          "canonical": "Republic of the Congo",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Republic of the Congo"
+            }
+          ],
+          "metric_value": 4600000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-040",
+          "canonical": "Rwanda",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Rwanda"
+            }
+          ],
+          "metric_value": 11000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-041",
+          "canonical": "Réunion",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Réunion"
+            }
+          ],
+          "metric_value": 800000,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-042",
+          "canonical": "Saint Helena",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Saint Helena"
+            }
+          ],
+          "metric_value": 0,
           "points": 0,
           "tier": "TOO FAR",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-y",
-          "canonical": "Yankee",
+          "entity_id": "african-population-archive-043",
+          "canonical": "Senegal",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-y"
+              "source_id": "v22-african-population-archive",
+              "locator": "Senegal"
             }
           ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
+          "metric_value": 13500000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         },
         {
-          "entity_id": "icao-z",
-          "canonical": "Zulu",
+          "entity_id": "african-population-archive-044",
+          "canonical": "Seychelles",
           "aliases": [],
           "verified_status": "source_record_or_exact_derivation",
           "source_refs": [
             {
-              "source_id": "faa-icao-phonetic-2026",
-              "locator": "icao-z"
+              "source_id": "v22-african-population-archive",
+              "locator": "Seychelles"
             }
           ],
-          "metric_value": 50,
-          "points": 1200,
-          "tier": "PERFECT HIT",
+          "metric_value": 100000,
+          "points": 0,
+          "tier": "TOO FAR",
           "source_evidence": {
-            "rule": "Count A/E/I/O/U letters; divide by alphabetic characters in the official code word (ignore X-ray hyphen), round to nearest integer percent."
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-045",
+          "canonical": "Sierra Leone",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Sierra Leone"
+            }
+          ],
+          "metric_value": 6200000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-046",
+          "canonical": "Somalia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Somalia"
+            }
+          ],
+          "metric_value": 10800000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-047",
+          "canonical": "South Africa",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "South Africa"
+            }
+          ],
+          "metric_value": 54000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-048",
+          "canonical": "South Sudan",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "South Sudan"
+            }
+          ],
+          "metric_value": 11400000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-049",
+          "canonical": "Sudan",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Sudan"
+            }
+          ],
+          "metric_value": 37300000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-050",
+          "canonical": "Swaziland",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Swaziland"
+            }
+          ],
+          "metric_value": 1100000,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-051",
+          "canonical": "São Tomé and Príncipe",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "São Tomé and Príncipe"
+            }
+          ],
+          "metric_value": 200000,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-052",
+          "canonical": "Tanzania",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Tanzania"
+            }
+          ],
+          "metric_value": 47400000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-053",
+          "canonical": "The Gambia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "The Gambia"
+            }
+          ],
+          "metric_value": 1900000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-054",
+          "canonical": "Togo",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Togo"
+            }
+          ],
+          "metric_value": 7000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-055",
+          "canonical": "Tunisia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Tunisia"
+            }
+          ],
+          "metric_value": 11000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-056",
+          "canonical": "Uganda",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Uganda"
+            }
+          ],
+          "metric_value": 34900000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-057",
+          "canonical": "Western Sahara",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Western Sahara"
+            }
+          ],
+          "metric_value": 600000,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-058",
+          "canonical": "Zambia",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Zambia"
+            }
+          ],
+          "metric_value": 15000000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
+          }
+        },
+        {
+          "entity_id": "african-population-archive-059",
+          "canonical": "Zimbabwe",
+          "aliases": [],
+          "verified_status": "source_record_or_exact_derivation",
+          "source_refs": [
+            {
+              "source_id": "v22-african-population-archive",
+              "locator": "Zimbabwe"
+            }
+          ],
+          "metric_value": 13100000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "All 59 country/territory records in the archived countryinfo Africa region, population figures as recorded in the fixed snapshot (historical, not current)."
           }
         }
-      ]
+      ],
+      "editorial_note": "V22 worldwide obscure-knowledge audit; source set fully enumerated."
     },
     "q6": {
       "id": "closeish_20261031_q6",

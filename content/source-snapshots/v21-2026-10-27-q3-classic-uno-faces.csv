@@ -1,0 +1,55 @@
+canonical,metric_value,points,source
+Red 0,0,200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 1,1,400,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 2,2,600,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 3,3,800,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 4,4,1000,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 5,5,1200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 6,6,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 7,7,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 8,8,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red 9,9,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 0,0,200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 1,1,400,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 2,2,600,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 3,3,800,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 4,4,1000,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 5,5,1200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 6,6,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 7,7,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 8,8,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow 9,9,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 0,0,200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 1,1,400,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 2,2,600,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 3,3,800,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 4,4,1000,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 5,5,1200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 6,6,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 7,7,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 8,8,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green 9,9,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 0,0,200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 1,1,400,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 2,2,600,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 3,3,800,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 4,4,1000,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 5,5,1200,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 6,6,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 7,7,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 8,8,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue 9,9,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red Skip,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red Reverse,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Red Draw Two,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow Skip,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow Reverse,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Yellow Draw Two,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green Skip,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green Reverse,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Green Draw Two,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue Skip,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue Reverse,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Blue Draw Two,20,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Wild,50,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
+Wild Draw Four,50,0,https://service.mattel.com/instruction_sheets/42001pr.pdf
