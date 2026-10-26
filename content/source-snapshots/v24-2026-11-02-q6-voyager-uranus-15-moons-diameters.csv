@@ -1,0 +1,16 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+voyager-uranus-15-moons-diameters-001,Cordelia,26,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,1
+voyager-uranus-15-moons-diameters-002,Ophelia,30,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,2
+voyager-uranus-15-moons-diameters-003,Bianca,42,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,3
+voyager-uranus-15-moons-diameters-004,Juliet,62,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,4
+voyager-uranus-15-moons-diameters-005,Desdemona,54,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,5
+voyager-uranus-15-moons-diameters-006,Rosalind,84,1200,PERFECT HIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,6
+voyager-uranus-15-moons-diameters-007,Portia,108,1000,RAZOR EDGE,km,https://science.nasa.gov/mission/voyager/fact-sheet/,7
+voyager-uranus-15-moons-diameters-008,Cressida,54,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,8
+voyager-uranus-15-moons-diameters-009,Belinda,66,0,CROSSED LIMIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,9
+voyager-uranus-15-moons-diameters-010,Puck,154,800,CLOSE CALL,km,https://science.nasa.gov/mission/voyager/fact-sheet/,10
+voyager-uranus-15-moons-diameters-011,Miranda,472,600,SOLID HIT,km,https://science.nasa.gov/mission/voyager/fact-sheet/,11
+voyager-uranus-15-moons-diameters-012,Ariel,1158,400,IN THE ZONE,km,https://science.nasa.gov/mission/voyager/fact-sheet/,12
+voyager-uranus-15-moons-diameters-013,Umbriel,1172,400,IN THE ZONE,km,https://science.nasa.gov/mission/voyager/fact-sheet/,13
+voyager-uranus-15-moons-diameters-014,Titania,1580,200,ON THE BOARD,km,https://science.nasa.gov/mission/voyager/fact-sheet/,14
+voyager-uranus-15-moons-diameters-015,Oberon,1524,200,ON THE BOARD,km,https://science.nasa.gov/mission/voyager/fact-sheet/,15

@@ -1,0 +1,21 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+titanic-20-lifeboats-historical-aboard-tally-001,Lifeboat 1,12,0,TOO FAR,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,1
+titanic-20-lifeboats-historical-aboard-tally-002,Lifeboat 2,18,200,ON THE BOARD,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,2
+titanic-20-lifeboats-historical-aboard-tally-003,Lifeboat 3,32,800,CLOSE CALL,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,3
+titanic-20-lifeboats-historical-aboard-tally-004,Lifeboat 4,30,600,SOLID HIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,4
+titanic-20-lifeboats-historical-aboard-tally-005,Lifeboat 5,36,1000,RAZOR EDGE,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,5
+titanic-20-lifeboats-historical-aboard-tally-006,Lifeboat 6,24,400,IN THE ZONE,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,6
+titanic-20-lifeboats-historical-aboard-tally-007,Lifeboat 7,28,600,SOLID HIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,7
+titanic-20-lifeboats-historical-aboard-tally-008,Lifeboat 8,27,400,IN THE ZONE,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,8
+titanic-20-lifeboats-historical-aboard-tally-009,Lifeboat 9,40,1200,PERFECT HIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,9
+titanic-20-lifeboats-historical-aboard-tally-010,Lifeboat 10,57,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,10
+titanic-20-lifeboats-historical-aboard-tally-011,Lifeboat 11,50,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,11
+titanic-20-lifeboats-historical-aboard-tally-012,Lifeboat 12,41,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,12
+titanic-20-lifeboats-historical-aboard-tally-013,Lifeboat 13,55,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,13
+titanic-20-lifeboats-historical-aboard-tally-014,Lifeboat 14,40,1200,PERFECT HIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,14
+titanic-20-lifeboats-historical-aboard-tally-015,Lifeboat 15,66,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,15
+titanic-20-lifeboats-historical-aboard-tally-016,Lifeboat 16,52,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,16
+titanic-20-lifeboats-historical-aboard-tally-017,Collapsible A,13,0,TOO FAR,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,17
+titanic-20-lifeboats-historical-aboard-tally-018,Collapsible B,28,600,SOLID HIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,18
+titanic-20-lifeboats-historical-aboard-tally-019,Collapsible C,43,0,CROSSED LIMIT,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,19
+titanic-20-lifeboats-historical-aboard-tally-020,Collapsible D,20,200,ON THE BOARD,people,https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic,20

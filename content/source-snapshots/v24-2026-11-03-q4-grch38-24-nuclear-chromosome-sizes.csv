@@ -1,0 +1,25 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+grch38-24-nuclear-chromosome-sizes-001,Chromosome 1,249,200,ON THE BOARD,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,1
+grch38-24-nuclear-chromosome-sizes-002,Chromosome 2,242,200,ON THE BOARD,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,2
+grch38-24-nuclear-chromosome-sizes-003,Chromosome 3,198,400,IN THE ZONE,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,3
+grch38-24-nuclear-chromosome-sizes-004,Chromosome 4,190,400,IN THE ZONE,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,4
+grch38-24-nuclear-chromosome-sizes-005,Chromosome 5,182,600,SOLID HIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,5
+grch38-24-nuclear-chromosome-sizes-006,Chromosome 6,171,800,CLOSE CALL,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,6
+grch38-24-nuclear-chromosome-sizes-007,Chromosome 7,159,1000,RAZOR EDGE,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,7
+grch38-24-nuclear-chromosome-sizes-008,Chromosome 8,145,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,8
+grch38-24-nuclear-chromosome-sizes-009,Chromosome 9,138,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,9
+grch38-24-nuclear-chromosome-sizes-010,Chromosome 10,134,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,10
+grch38-24-nuclear-chromosome-sizes-011,Chromosome 11,135,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,11
+grch38-24-nuclear-chromosome-sizes-012,Chromosome 12,133,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,12
+grch38-24-nuclear-chromosome-sizes-013,Chromosome 13,114,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,13
+grch38-24-nuclear-chromosome-sizes-014,Chromosome 14,107,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,14
+grch38-24-nuclear-chromosome-sizes-015,Chromosome 15,102,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,15
+grch38-24-nuclear-chromosome-sizes-016,Chromosome 16,90,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,16
+grch38-24-nuclear-chromosome-sizes-017,Chromosome 17,83,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,17
+grch38-24-nuclear-chromosome-sizes-018,Chromosome 18,80,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,18
+grch38-24-nuclear-chromosome-sizes-019,Chromosome 19,59,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,19
+grch38-24-nuclear-chromosome-sizes-020,Chromosome 20,64,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,20
+grch38-24-nuclear-chromosome-sizes-021,Chromosome 21,47,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,21
+grch38-24-nuclear-chromosome-sizes-022,Chromosome 22,51,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,22
+grch38-24-nuclear-chromosome-sizes-023,Chromosome X,156,1200,PERFECT HIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,23
+grch38-24-nuclear-chromosome-sizes-024,Chromosome Y,57,0,CROSSED LIMIT,million bp,https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38,24

@@ -658,5 +658,137 @@
     "unit": "year",
     "answers": 41,
     "content_revision": "2026-10-24-complete-v1"
+  },
+  {
+    "date": "2026-11-02",
+    "id": "closeish_20261102_q1",
+    "topic": "world-literature-text",
+    "prompt": "Name a Shakespeare play with at most 24,000 words (rounded to the nearest 1,000).",
+    "direction": "below",
+    "limit": 24000,
+    "unit": "words",
+    "answers": 37,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-02",
+    "id": "closeish_20261102_q2",
+    "topic": "road-cycling",
+    "prompt": "Name a 2025 Tour de France stage at most 184.9 km long (as raced).",
+    "direction": "below",
+    "limit": 184.9,
+    "unit": "km",
+    "answers": 21,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-02",
+    "id": "closeish_20261102_q3",
+    "topic": "maritime-history",
+    "prompt": "Name a Titanic lifeboat recorded with at most 40 occupants in the 712-person historical tally.",
+    "direction": "below",
+    "limit": 40,
+    "unit": "people",
+    "answers": 20,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-02",
+    "id": "closeish_20261102_q4",
+    "topic": "scientific-metrology",
+    "prompt": "Name an SI prefix whose base-10 exponent is at most +3.",
+    "direction": "below",
+    "limit": 3,
+    "unit": "exponent",
+    "answers": 24,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-02",
+    "id": "closeish_20261102_q5",
+    "topic": "global-hospitality",
+    "prompt": "Name a hotel in the 2024 world top 50 ranked 30th or better (rank ≤ 30).",
+    "direction": "below",
+    "limit": 30,
+    "unit": "rank",
+    "answers": 50,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-02",
+    "id": "closeish_20261102_q6",
+    "topic": "planetary-astronomy",
+    "prompt": "Name a Uranian moon known by 1986 with a diameter of at least 84 km.",
+    "direction": "above",
+    "limit": 84,
+    "unit": "km",
+    "answers": 15,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "closeish_20261103_q1",
+    "topic": "world-architecture",
+    "prompt": "Name one of the 50 tallest completed buildings in 2024 standing at least 450 m tall.",
+    "direction": "above",
+    "limit": 450,
+    "unit": "m",
+    "answers": 50,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "closeish_20261103_q2",
+    "topic": "animation-cinema",
+    "prompt": "Name a Best Animated Feature Oscar-winning film with a film year of at least 2014.",
+    "direction": "above",
+    "limit": 2014,
+    "unit": "year",
+    "answers": 25,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "closeish_20261103_q3",
+    "topic": "computer-language-culture",
+    "prompt": "Name a top-20 programming language in October 2026 with a popularity score of at least 0.97 percentage points.",
+    "direction": "above",
+    "limit": 0.97,
+    "unit": "percentage points",
+    "answers": 20,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "closeish_20261103_q4",
+    "topic": "human-genomics",
+    "prompt": "Name a human nuclear chromosome at least 156 million base pairs long (GRCh38, nearest million).",
+    "direction": "above",
+    "limit": 156,
+    "unit": "million bp",
+    "answers": 24,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "closeish_20261103_q5",
+    "topic": "recorded-popular-music",
+    "prompt": "Name a song from the 2025 year-end Global 200 top 50 ranked 18th or better (rank ≤ 18).",
+    "direction": "below",
+    "limit": 18,
+    "unit": "rank",
+    "answers": 50,
+    "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-03",
+    "id": "closeish_20261103_q6",
+    "topic": "lake-hydrology",
+    "prompt": "Name one of the world’s 30 deepest lakes with a reported maximum depth of at most 594 m.",
+    "direction": "below",
+    "limit": 594,
+    "unit": "m",
+    "answers": 30,
+    "content_revision": "v24-20261026-nov02-nov03-1"
   }
 ]

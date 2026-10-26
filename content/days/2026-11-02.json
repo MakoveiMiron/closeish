@@ -1,0 +1,3831 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "day_number": 11,
+  "revision": "v24-november-02-03-complete-1",
+  "publication_status": "scheduled",
+  "editorial_note": "V23 diversity requirements + complete, source-scoped member banks; 2026-10-23 through 2026-11-01 days are unchanged. Future date remains API-gated.",
+  "questions": {
+    "q1": {
+      "id": "closeish_20261102_q1",
+      "date": "2026-11-02",
+      "day_number": 11,
+      "topic": "world-literature-text",
+      "bank_id": "oss-37-shakespeare-play-spoken-words",
+      "question_family": "oss-37-shakespeare-play-spoken-words",
+      "prompt": "Name a Shakespeare play with at most 24,000 words (rounded to the nearest 1,000).",
+      "metric": "Words per play, rounded to nearest 1,000",
+      "unit": "words",
+      "limit": 24000,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1000,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 2000,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 3000,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 4000,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 5000,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 5000,
+        "units": "words",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.opensourceshakespeare.org/views/plays/plays_numwords.php",
+      "source_refs": [
+        "oss-37-shakespeare-play-spoken-words-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 37 plays with word counts in the Open Source Shakespeare 37-play table. The Two Noble Kinsmen is not in this edition.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-02-q1-oss-37-shakespeare-play-spoken-words.csv",
+      "measurement": {
+        "property": "Words per play, rounded to nearest 1,000",
+        "numeric_rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring.",
+        "unit": "words",
+        "time_dependent": false,
+        "source_urls": [
+          "https://www.opensourceshakespeare.org/views/plays/plays_numwords.php",
+          "https://www.folger.edu/explore/shakespeares-works/frequently-asked-questions/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 37 plays with word counts in the Open Source Shakespeare 37-play table. The Two Noble Kinsmen is not in this edition.",
+        "dataset_count": 37,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-001",
+          "canonical": "Hamlet",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 31000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-002",
+          "canonical": "Richard III",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 29000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-003",
+          "canonical": "Coriolanus",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 28000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-004",
+          "canonical": "Cymbeline",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 28000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-005",
+          "canonical": "Othello",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 26000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-006",
+          "canonical": "King Lear",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 26000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-007",
+          "canonical": "Henry V",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 26000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-008",
+          "canonical": "Troilus and Cressida",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 26000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-009",
+          "canonical": "Henry IV, Part II",
+          "aliases": [
+            {
+              "input": "Henry IV Part 2",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 26000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-010",
+          "canonical": "Henry VI, Part II",
+          "aliases": [
+            {
+              "input": "Henry VI Part 2",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 25000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-011",
+          "canonical": "The Winter's Tale",
+          "aliases": [
+            {
+              "input": "Winter's Tale",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 25000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-012",
+          "canonical": "Antony and Cleopatra",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 25000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-013",
+          "canonical": "Henry VIII",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 25000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-014",
+          "canonical": "Henry IV, Part I",
+          "aliases": [
+            {
+              "input": "Henry IV Part 1",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 25000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-015",
+          "canonical": "Romeo and Juliet",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 25000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-016",
+          "canonical": "Henry VI, Part III",
+          "aliases": [
+            {
+              "input": "Henry VI Part 3",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 24000,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-017",
+          "canonical": "All's Well That Ends Well",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 23000,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-018",
+          "canonical": "Richard II",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 22000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-019",
+          "canonical": "The Merry Wives of Windsor",
+          "aliases": [
+            {
+              "input": "Merry Wives of Windsor",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 22000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-020",
+          "canonical": "Measure for Measure",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 22000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-021",
+          "canonical": "As You Like It",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 22000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-022",
+          "canonical": "Henry VI, Part I",
+          "aliases": [
+            {
+              "input": "Henry VI Part 1",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 22000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-023",
+          "canonical": "Love's Labour's Lost",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 21000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-024",
+          "canonical": "The Merchant of Venice",
+          "aliases": [
+            {
+              "input": "Merchant of Venice",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 21000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-025",
+          "canonical": "Much Ado About Nothing",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 21000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-026",
+          "canonical": "The Taming of the Shrew",
+          "aliases": [
+            {
+              "input": "Taming of the Shrew",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 21000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-027",
+          "canonical": "King John",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 21000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-028",
+          "canonical": "Titus Andronicus",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 21000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-029",
+          "canonical": "Twelfth Night",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 20000,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-030",
+          "canonical": "Julius Caesar",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 20000,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-031",
+          "canonical": "Pericles",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 19000,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-032",
+          "canonical": "Timon of Athens",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 18000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-033",
+          "canonical": "The Two Gentlemen of Verona",
+          "aliases": [
+            {
+              "input": "Two Gentlemen of Verona",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-033"
+            }
+          ],
+          "metric_value": 17000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-034",
+          "canonical": "Macbeth",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-034"
+            }
+          ],
+          "metric_value": 17000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-035",
+          "canonical": "The Tempest",
+          "aliases": [
+            {
+              "input": "Tempest",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-035"
+            }
+          ],
+          "metric_value": 17000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-036",
+          "canonical": "A Midsummer Night's Dream",
+          "aliases": [
+            {
+              "input": "Midsummer Night's Dream",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-036"
+            }
+          ],
+          "metric_value": 17000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        },
+        {
+          "entity_id": "oss-37-shakespeare-play-spoken-words-037",
+          "canonical": "The Comedy of Errors",
+          "aliases": [
+            {
+              "input": "Comedy of Errors",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oss-37-shakespeare-play-spoken-words-source",
+              "locator": "row-037"
+            }
+          ],
+          "metric_value": 15000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use Open Source Shakespeare fixed play word count, nearest thousand (half up) before scoring."
+          }
+        }
+      ]
+    },
+    "q2": {
+      "id": "closeish_20261102_q2",
+      "date": "2026-11-02",
+      "day_number": 11,
+      "topic": "road-cycling",
+      "bank_id": "tour-de-france-2025-21-raced-stage-distances",
+      "question_family": "tour-de-france-2025-21-raced-stage-distances",
+      "prompt": "Name a 2025 Tour de France stage at most 184.9 km long (as raced).",
+      "metric": "Actual raced stage length in kilometres",
+      "unit": "km",
+      "limit": 184.9,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 3,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 5,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 7,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 11,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 11,
+        "units": "km",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://en.wikipedia.org/wiki/2025_Tour_de_France",
+      "source_refs": [
+        "tour-de-france-2025-21-raced-stage-distances-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 21 numbered 2025 Tour de France stages, as actually ridden; stage 19 is the shortened 93.1 km route.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-02-q2-tour-de-france-2025-21-raced-stage-distances.csv",
+      "measurement": {
+        "property": "Actual raced stage length in kilometres",
+        "numeric_rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km.",
+        "unit": "km",
+        "time_dependent": true,
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/2025_Tour_de_France",
+          "https://www.procyclingstats.com/race/tour-de-france/2025/route/stage-profiles"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 21 numbered 2025 Tour de France stages, as actually ridden; stage 19 is the shortened 93.1 km route.",
+        "dataset_count": 21,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-001",
+          "canonical": "Stage 1",
+          "aliases": [
+            {
+              "input": "Stage 01",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 184.9,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-002",
+          "canonical": "Stage 2",
+          "aliases": [
+            {
+              "input": "Stage 02",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 209.1,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-003",
+          "canonical": "Stage 3",
+          "aliases": [
+            {
+              "input": "Stage 03",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 178.3,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-004",
+          "canonical": "Stage 4",
+          "aliases": [
+            {
+              "input": "Stage 04",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 174.2,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-005",
+          "canonical": "Stage 5",
+          "aliases": [
+            {
+              "input": "Stage 05",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 33.0,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-006",
+          "canonical": "Stage 6",
+          "aliases": [
+            {
+              "input": "Stage 06",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 201.5,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-007",
+          "canonical": "Stage 7",
+          "aliases": [
+            {
+              "input": "Stage 07",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 197.0,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-008",
+          "canonical": "Stage 8",
+          "aliases": [
+            {
+              "input": "Stage 08",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 171.4,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-009",
+          "canonical": "Stage 9",
+          "aliases": [
+            {
+              "input": "Stage 09",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 174.1,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-010",
+          "canonical": "Stage 10",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 165.3,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-011",
+          "canonical": "Stage 11",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 156.8,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-012",
+          "canonical": "Stage 12",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 180.6,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-013",
+          "canonical": "Stage 13",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 10.9,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-014",
+          "canonical": "Stage 14",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 182.6,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-015",
+          "canonical": "Stage 15",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 169.3,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-016",
+          "canonical": "Stage 16",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 171.5,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-017",
+          "canonical": "Stage 17",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 160.4,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-018",
+          "canonical": "Stage 18",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 171.5,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-019",
+          "canonical": "Stage 19",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 93.1,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-020",
+          "canonical": "Stage 20",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 184.2,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        },
+        {
+          "entity_id": "tour-de-france-2025-21-raced-stage-distances-021",
+          "canonical": "Stage 21",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tour-de-france-2025-21-raced-stage-distances-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 132.3,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use completed race as ridden: stage 19 officially shortened to 93.1 km, not pre-race projected 129.9 km."
+          }
+        }
+      ]
+    },
+    "q3": {
+      "id": "closeish_20261102_q3",
+      "date": "2026-11-02",
+      "day_number": 11,
+      "topic": "maritime-history",
+      "bank_id": "titanic-20-lifeboats-historical-aboard-tally",
+      "question_family": "titanic-20-lifeboats-historical-aboard-tally",
+      "prompt": "Name a Titanic lifeboat recorded with at most 40 occupants in the 712-person historical tally.",
+      "metric": "Recorded occupants assigned to lifeboat, 712-person historical reconstruction",
+      "unit": "people",
+      "limit": 40,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 4,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 8,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 12,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 16,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 22,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 22,
+        "units": "people",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic",
+      "source_refs": [
+        "titanic-20-lifeboats-historical-aboard-tally-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 20 Titanic lifeboats 1–16 and collapsibles A–D, using the 712-person recorded tally. Alternative historical reconstructions can differ.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-02-q3-titanic-20-lifeboats-historical-aboard-tally.csv",
+      "measurement": {
+        "property": "Recorded occupants assigned to lifeboat, 712-person historical reconstruction",
+        "numeric_rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ.",
+        "unit": "people",
+        "time_dependent": true,
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic",
+          "https://www.titanicinquiry.org/BOTInq/BOTReport/BOTRepBoats.php"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 20 Titanic lifeboats 1–16 and collapsibles A–D, using the 712-person recorded tally. Alternative historical reconstructions can differ.",
+        "dataset_count": 20,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-001",
+          "canonical": "Lifeboat 1",
+          "aliases": [
+            {
+              "input": "Boat 1",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 12,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-002",
+          "canonical": "Lifeboat 2",
+          "aliases": [
+            {
+              "input": "Boat 2",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 18,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-003",
+          "canonical": "Lifeboat 3",
+          "aliases": [
+            {
+              "input": "Boat 3",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 32,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-004",
+          "canonical": "Lifeboat 4",
+          "aliases": [
+            {
+              "input": "Boat 4",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 30,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-005",
+          "canonical": "Lifeboat 5",
+          "aliases": [
+            {
+              "input": "Boat 5",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 36,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-006",
+          "canonical": "Lifeboat 6",
+          "aliases": [
+            {
+              "input": "Boat 6",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 24,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-007",
+          "canonical": "Lifeboat 7",
+          "aliases": [
+            {
+              "input": "Boat 7",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 28,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-008",
+          "canonical": "Lifeboat 8",
+          "aliases": [
+            {
+              "input": "Boat 8",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 27,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-009",
+          "canonical": "Lifeboat 9",
+          "aliases": [
+            {
+              "input": "Boat 9",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 40,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-010",
+          "canonical": "Lifeboat 10",
+          "aliases": [
+            {
+              "input": "Boat 10",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 57,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-011",
+          "canonical": "Lifeboat 11",
+          "aliases": [
+            {
+              "input": "Boat 11",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 50,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-012",
+          "canonical": "Lifeboat 12",
+          "aliases": [
+            {
+              "input": "Boat 12",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 41,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-013",
+          "canonical": "Lifeboat 13",
+          "aliases": [
+            {
+              "input": "Boat 13",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 55,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-014",
+          "canonical": "Lifeboat 14",
+          "aliases": [
+            {
+              "input": "Boat 14",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 40,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-015",
+          "canonical": "Lifeboat 15",
+          "aliases": [
+            {
+              "input": "Boat 15",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 66,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-016",
+          "canonical": "Lifeboat 16",
+          "aliases": [
+            {
+              "input": "Boat 16",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 52,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-017",
+          "canonical": "Collapsible A",
+          "aliases": [
+            {
+              "input": "Collapsible Boat A",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 13,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-018",
+          "canonical": "Collapsible B",
+          "aliases": [
+            {
+              "input": "Collapsible Boat B",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 28,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-019",
+          "canonical": "Collapsible C",
+          "aliases": [
+            {
+              "input": "Collapsible Boat C",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 43,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        },
+        {
+          "entity_id": "titanic-20-lifeboats-historical-aboard-tally-020",
+          "canonical": "Collapsible D",
+          "aliases": [
+            {
+              "input": "Collapsible Boat D",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "titanic-20-lifeboats-historical-aboard-tally-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 20,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Freeze the published 712-person lifeboat tally (not seating capacity); collapse boat tallies include swimmers recovered after launching. Historical estimates differ."
+          }
+        }
+      ]
+    },
+    "q4": {
+      "id": "closeish_20261102_q4",
+      "date": "2026-11-02",
+      "day_number": 11,
+      "topic": "scientific-metrology",
+      "bank_id": "bipm-24-current-si-prefix-exponents",
+      "question_family": "bipm-24-current-si-prefix-exponents",
+      "prompt": "Name an SI prefix whose base-10 exponent is at most +3.",
+      "metric": "Base-10 exponent in the SI prefix multiplying factor",
+      "unit": "exponent",
+      "limit": 3,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 2,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 4,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 6,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 9,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 9,
+        "units": "exponent",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.bipm.org/en/measurement-units/si-prefixes",
+      "source_refs": [
+        "bipm-24-current-si-prefix-exponents-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 24 decimal SI prefixes recognized by the BIPM as of the 2022 SI revisions.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-02-q4-bipm-24-current-si-prefix-exponents.csv",
+      "measurement": {
+        "property": "Base-10 exponent in the SI prefix multiplying factor",
+        "numeric_rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself.",
+        "unit": "exponent",
+        "time_dependent": false,
+        "source_urls": [
+          "https://www.bipm.org/en/measurement-units/si-prefixes",
+          "https://www.nist.gov/pml/owm/metric-si-prefixes"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 24 decimal SI prefixes recognized by the BIPM as of the 2022 SI revisions.",
+        "dataset_count": 24,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-001",
+          "canonical": "quetta",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 30,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-002",
+          "canonical": "ronna",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 27,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-003",
+          "canonical": "yotta",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 24,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-004",
+          "canonical": "zetta",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 21,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-005",
+          "canonical": "exa",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 18,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-006",
+          "canonical": "peta",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 15,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-007",
+          "canonical": "tera",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 12,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-008",
+          "canonical": "giga",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 9,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-009",
+          "canonical": "mega",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 6,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-010",
+          "canonical": "kilo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 3,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-011",
+          "canonical": "hecto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 2,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-012",
+          "canonical": "deca",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 1,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-013",
+          "canonical": "deci",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": -1,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-014",
+          "canonical": "centi",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": -2,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-015",
+          "canonical": "milli",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": -3,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-016",
+          "canonical": "micro",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": -6,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-017",
+          "canonical": "nano",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": -9,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-018",
+          "canonical": "pico",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": -12,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-019",
+          "canonical": "femto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": -15,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-020",
+          "canonical": "atto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": -18,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-021",
+          "canonical": "zepto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": -21,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-022",
+          "canonical": "yocto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": -24,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-023",
+          "canonical": "ronto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": -27,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        },
+        {
+          "entity_id": "bipm-24-current-si-prefix-exponents-024",
+          "canonical": "quecto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "bipm-24-current-si-prefix-exponents-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": -30,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "The metric is signed n in 10^n for the 24 officially adopted prefixes, not the multiplier itself."
+          }
+        }
+      ]
+    },
+    "q5": {
+      "id": "closeish_20261102_q5",
+      "date": "2026-11-02",
+      "day_number": 11,
+      "topic": "global-hospitality",
+      "bank_id": "50-best-hotels-2024-ranked-50",
+      "question_family": "50-best-hotels-2024-ranked-50",
+      "prompt": "Name a hotel in the 2024 world top 50 ranked 30th or better (rank ≤ 30).",
+      "metric": "Position on the 2024 global hotels ranking",
+      "unit": "rank",
+      "limit": 30,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 2,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 5,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 10,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 17,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 27,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 27,
+        "units": "rank",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.the50.com/hotels/best-in-the-world/previous-list/2023",
+      "source_refs": [
+        "50-best-hotels-2024-ranked-50-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "Exactly the 50 hotels with ranks 1–50 on the original 2024 The World’s 50 Best Hotels list, frozen in 2024.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-02-q5-50-best-hotels-2024-ranked-50.csv",
+      "measurement": {
+        "property": "Position on the 2024 global hotels ranking",
+        "numeric_rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better.",
+        "unit": "rank",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.the50.com/hotels/best-in-the-world/previous-list/2023",
+          "https://mma.prnewswire.com/media/2506830/50_Best_Hotels_2024_PDF.pdf"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly the 50 hotels with ranks 1–50 on the original 2024 The World’s 50 Best Hotels list, frozen in 2024.",
+        "dataset_count": 50,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-001",
+          "canonical": "Capella Bangkok",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-002",
+          "canonical": "Passalacqua",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 2,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-003",
+          "canonical": "Rosewood Hong Kong",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 3,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-004",
+          "canonical": "Cheval Blanc",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 4,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-005",
+          "canonical": "The Upper House",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 5,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-006",
+          "canonical": "Raffles Singapore",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 6,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-007",
+          "canonical": "Aman Tokyo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 7,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-008",
+          "canonical": "Soneva Fushi",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 8,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-009",
+          "canonical": "Atlantis The Royal",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 9,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-010",
+          "canonical": "Nihi Sumba",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 10,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-011",
+          "canonical": "Claridge's",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 11,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-012",
+          "canonical": "Mandarin Oriental Bangkok",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 12,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-013",
+          "canonical": "Raffles London at The OWO",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 13,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-014",
+          "canonical": "Four Seasons Bangkok at Chao Phraya River",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 14,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-015",
+          "canonical": "Hôtel de Crillon",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 15,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-016",
+          "canonical": "Chablé Yucatán",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 16,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-017",
+          "canonical": "Hotel du Cap-Eden-Roc",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 17,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-018",
+          "canonical": "Maroma",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 18,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-019",
+          "canonical": "Four Seasons Firenze",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 19,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-020",
+          "canonical": "Borgo Santandrea",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 20,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-021",
+          "canonical": "Desa Potato Head",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 21,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-022",
+          "canonical": "Bulgari Tokyo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 22,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-023",
+          "canonical": "The Lana",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 23,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-024",
+          "canonical": "Rosewood São Paulo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 24,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-025",
+          "canonical": "The Calile",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 25,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-026",
+          "canonical": "The Siam",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 26,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-027",
+          "canonical": "Park Hyatt Kyoto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 27,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-028",
+          "canonical": "Mount Nelson",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 28,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-029",
+          "canonical": "One&Only Mandarina",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 29,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-030",
+          "canonical": "The Carlyle",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 30,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-031",
+          "canonical": "La Mamounia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 31,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-032",
+          "canonical": "Four Seasons Madrid",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 32,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-033",
+          "canonical": "Capella Singapore",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-033"
+            }
+          ],
+          "metric_value": 33,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-034",
+          "canonical": "Four Seasons at The Surf Club",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-034"
+            }
+          ],
+          "metric_value": 34,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-035",
+          "canonical": "Hotel Bel-Air",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-035"
+            }
+          ],
+          "metric_value": 35,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-036",
+          "canonical": "Eden Rock",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-036"
+            }
+          ],
+          "metric_value": 36,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-037",
+          "canonical": "Aman New York",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-037"
+            }
+          ],
+          "metric_value": 37,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-038",
+          "canonical": "Royal Mansour",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-038"
+            }
+          ],
+          "metric_value": 38,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-039",
+          "canonical": "Amangalla",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-039"
+            }
+          ],
+          "metric_value": 39,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-040",
+          "canonical": "Le Bristol",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-040"
+            }
+          ],
+          "metric_value": 40,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-041",
+          "canonical": "Gleneagles",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-041"
+            }
+          ],
+          "metric_value": 41,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-042",
+          "canonical": "Castello di Reschio",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-042"
+            }
+          ],
+          "metric_value": 42,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-043",
+          "canonical": "Suján Jawai",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-043"
+            }
+          ],
+          "metric_value": 43,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-044",
+          "canonical": "Singita – Kruger National Park",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-044"
+            }
+          ],
+          "metric_value": 44,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-045",
+          "canonical": "Six Senses Zighy Bay",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-045"
+            }
+          ],
+          "metric_value": 45,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-046",
+          "canonical": "The Connaught",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-046"
+            }
+          ],
+          "metric_value": 46,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-047",
+          "canonical": "The Brando",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-047"
+            }
+          ],
+          "metric_value": 47,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-048",
+          "canonical": "Hotel Esencia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-048"
+            }
+          ],
+          "metric_value": 48,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-049",
+          "canonical": "The Tasman",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-049"
+            }
+          ],
+          "metric_value": 49,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        },
+        {
+          "entity_id": "50-best-hotels-2024-ranked-50-050",
+          "canonical": "Kokomo Private Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "50-best-hotels-2024-ranked-50-source",
+              "locator": "row-050"
+            }
+          ],
+          "metric_value": 50,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the official 2024 positions, not a 2025/2026 ranking. Lower position number is better."
+          }
+        }
+      ]
+    },
+    "q6": {
+      "id": "closeish_20261102_q6",
+      "date": "2026-11-02",
+      "day_number": 11,
+      "topic": "planetary-astronomy",
+      "bank_id": "voyager-uranus-15-moons-diameters",
+      "question_family": "voyager-uranus-15-moons-diameters",
+      "prompt": "Name a Uranian moon known by 1986 with a diameter of at least 84 km.",
+      "metric": "Diameter reported by the NASA Voyager fact sheet in kilometres",
+      "unit": "km",
+      "limit": 84,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 24,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 70,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 400,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 1100,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 1500,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 1500,
+        "units": "km",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://science.nasa.gov/mission/voyager/fact-sheet/",
+      "source_refs": [
+        "voyager-uranus-15-moons-diameters-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "The 15 pre-1997 Uranus satellites listed with single-kilometre diameters in the historic NASA Voyager fact sheet; newer discovered moons intentionally outside scope.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-02-q6-voyager-uranus-15-moons-diameters.csv",
+      "measurement": {
+        "property": "Diameter reported by the NASA Voyager fact sheet in kilometres",
+        "numeric_rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km.",
+        "unit": "km",
+        "time_dependent": false,
+        "source_urls": [
+          "https://science.nasa.gov/mission/voyager/fact-sheet/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "The 15 pre-1997 Uranus satellites listed with single-kilometre diameters in the historic NASA Voyager fact sheet; newer discovered moons intentionally outside scope.",
+        "dataset_count": 15,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-001",
+          "canonical": "Cordelia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 26,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-002",
+          "canonical": "Ophelia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 30,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-003",
+          "canonical": "Bianca",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 42,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-004",
+          "canonical": "Juliet",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 62,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-005",
+          "canonical": "Desdemona",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 54,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-006",
+          "canonical": "Rosalind",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 84,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-007",
+          "canonical": "Portia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 108,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-008",
+          "canonical": "Cressida",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 54,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-009",
+          "canonical": "Belinda",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 66,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-010",
+          "canonical": "Puck",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 154,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-011",
+          "canonical": "Miranda",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 472,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-012",
+          "canonical": "Ariel",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 1158,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-013",
+          "canonical": "Umbriel",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 1172,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-014",
+          "canonical": "Titania",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 1580,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        },
+        {
+          "entity_id": "voyager-uranus-15-moons-diameters-015",
+          "canonical": "Oberon",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "voyager-uranus-15-moons-diameters-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 1524,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use only the 15 historical Uranus-moon records in NASA Voyager fact-sheet table; diameters are rounded to integer km."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+tiobe-october-2026-20-ratings-001,Python,19.23,0,TOO FAR,percentage points,https://www.tiobe.com/tiobe-index/,1
+tiobe-october-2026-20-ratings-002,C,11.33,0,TOO FAR,percentage points,https://www.tiobe.com/tiobe-index/,2
+tiobe-october-2026-20-ratings-003,C++,8.87,0,TOO FAR,percentage points,https://www.tiobe.com/tiobe-index/,3
+tiobe-october-2026-20-ratings-004,Java,8.41,0,TOO FAR,percentage points,https://www.tiobe.com/tiobe-index/,4
+tiobe-october-2026-20-ratings-005,C#,3.79,0,TOO FAR,percentage points,https://www.tiobe.com/tiobe-index/,5
+tiobe-october-2026-20-ratings-006,JavaScript,2.77,0,TOO FAR,percentage points,https://www.tiobe.com/tiobe-index/,6
+tiobe-october-2026-20-ratings-007,Visual Basic,2.2,200,ON THE BOARD,percentage points,https://www.tiobe.com/tiobe-index/,7
+tiobe-october-2026-20-ratings-008,R,2.06,200,ON THE BOARD,percentage points,https://www.tiobe.com/tiobe-index/,8
+tiobe-october-2026-20-ratings-009,SQL,1.97,200,ON THE BOARD,percentage points,https://www.tiobe.com/tiobe-index/,9
+tiobe-october-2026-20-ratings-010,Rust,1.44,400,IN THE ZONE,percentage points,https://www.tiobe.com/tiobe-index/,10
+tiobe-october-2026-20-ratings-011,Go,1.39,400,IN THE ZONE,percentage points,https://www.tiobe.com/tiobe-index/,11
+tiobe-october-2026-20-ratings-012,PHP,1.26,600,SOLID HIT,percentage points,https://www.tiobe.com/tiobe-index/,12
+tiobe-october-2026-20-ratings-013,Fortran,1.12,800,CLOSE CALL,percentage points,https://www.tiobe.com/tiobe-index/,13
+tiobe-october-2026-20-ratings-014,Swift,1.03,1000,RAZOR EDGE,percentage points,https://www.tiobe.com/tiobe-index/,14
+tiobe-october-2026-20-ratings-015,Scratch,0.97,1200,PERFECT HIT,percentage points,https://www.tiobe.com/tiobe-index/,15
+tiobe-october-2026-20-ratings-016,COBOL,0.89,0,CROSSED LIMIT,percentage points,https://www.tiobe.com/tiobe-index/,16
+tiobe-october-2026-20-ratings-017,Perl,0.88,0,CROSSED LIMIT,percentage points,https://www.tiobe.com/tiobe-index/,17
+tiobe-october-2026-20-ratings-018,Julia,0.88,0,CROSSED LIMIT,percentage points,https://www.tiobe.com/tiobe-index/,18
+tiobe-october-2026-20-ratings-019,Delphi/Object Pascal,0.83,0,CROSSED LIMIT,percentage points,https://www.tiobe.com/tiobe-index/,19
+tiobe-october-2026-20-ratings-020,MATLAB,0.83,0,CROSSED LIMIT,percentage points,https://www.tiobe.com/tiobe-index/,20

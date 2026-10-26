@@ -1,0 +1,25 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+bipm-24-current-si-prefix-exponents-001,quetta,30,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,1
+bipm-24-current-si-prefix-exponents-002,ronna,27,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,2
+bipm-24-current-si-prefix-exponents-003,yotta,24,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,3
+bipm-24-current-si-prefix-exponents-004,zetta,21,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,4
+bipm-24-current-si-prefix-exponents-005,exa,18,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,5
+bipm-24-current-si-prefix-exponents-006,peta,15,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,6
+bipm-24-current-si-prefix-exponents-007,tera,12,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,7
+bipm-24-current-si-prefix-exponents-008,giga,9,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,8
+bipm-24-current-si-prefix-exponents-009,mega,6,0,CROSSED LIMIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,9
+bipm-24-current-si-prefix-exponents-010,kilo,3,1200,PERFECT HIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,10
+bipm-24-current-si-prefix-exponents-011,hecto,2,1000,RAZOR EDGE,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,11
+bipm-24-current-si-prefix-exponents-012,deca,1,800,CLOSE CALL,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,12
+bipm-24-current-si-prefix-exponents-013,deci,-1,600,SOLID HIT,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,13
+bipm-24-current-si-prefix-exponents-014,centi,-2,400,IN THE ZONE,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,14
+bipm-24-current-si-prefix-exponents-015,milli,-3,400,IN THE ZONE,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,15
+bipm-24-current-si-prefix-exponents-016,micro,-6,200,ON THE BOARD,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,16
+bipm-24-current-si-prefix-exponents-017,nano,-9,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,17
+bipm-24-current-si-prefix-exponents-018,pico,-12,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,18
+bipm-24-current-si-prefix-exponents-019,femto,-15,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,19
+bipm-24-current-si-prefix-exponents-020,atto,-18,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,20
+bipm-24-current-si-prefix-exponents-021,zepto,-21,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,21
+bipm-24-current-si-prefix-exponents-022,yocto,-24,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,22
+bipm-24-current-si-prefix-exponents-023,ronto,-27,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,23
+bipm-24-current-si-prefix-exponents-024,quecto,-30,0,TOO FAR,exponent,https://www.bipm.org/en/measurement-units/si-prefixes,24

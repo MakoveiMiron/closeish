@@ -1,0 +1,38 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+oss-37-shakespeare-play-spoken-words-001,Hamlet,31000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,1
+oss-37-shakespeare-play-spoken-words-002,Richard III,29000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,2
+oss-37-shakespeare-play-spoken-words-003,Coriolanus,28000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,3
+oss-37-shakespeare-play-spoken-words-004,Cymbeline,28000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,4
+oss-37-shakespeare-play-spoken-words-005,Othello,26000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,5
+oss-37-shakespeare-play-spoken-words-006,King Lear,26000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,6
+oss-37-shakespeare-play-spoken-words-007,Henry V,26000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,7
+oss-37-shakespeare-play-spoken-words-008,Troilus and Cressida,26000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,8
+oss-37-shakespeare-play-spoken-words-009,"Henry IV, Part II",26000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,9
+oss-37-shakespeare-play-spoken-words-010,"Henry VI, Part II",25000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,10
+oss-37-shakespeare-play-spoken-words-011,The Winter's Tale,25000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,11
+oss-37-shakespeare-play-spoken-words-012,Antony and Cleopatra,25000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,12
+oss-37-shakespeare-play-spoken-words-013,Henry VIII,25000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,13
+oss-37-shakespeare-play-spoken-words-014,"Henry IV, Part I",25000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,14
+oss-37-shakespeare-play-spoken-words-015,Romeo and Juliet,25000,0,CROSSED LIMIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,15
+oss-37-shakespeare-play-spoken-words-016,"Henry VI, Part III",24000,1200,PERFECT HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,16
+oss-37-shakespeare-play-spoken-words-017,All's Well That Ends Well,23000,1000,RAZOR EDGE,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,17
+oss-37-shakespeare-play-spoken-words-018,Richard II,22000,800,CLOSE CALL,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,18
+oss-37-shakespeare-play-spoken-words-019,The Merry Wives of Windsor,22000,800,CLOSE CALL,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,19
+oss-37-shakespeare-play-spoken-words-020,Measure for Measure,22000,800,CLOSE CALL,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,20
+oss-37-shakespeare-play-spoken-words-021,As You Like It,22000,800,CLOSE CALL,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,21
+oss-37-shakespeare-play-spoken-words-022,"Henry VI, Part I",22000,800,CLOSE CALL,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,22
+oss-37-shakespeare-play-spoken-words-023,Love's Labour's Lost,21000,600,SOLID HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,23
+oss-37-shakespeare-play-spoken-words-024,The Merchant of Venice,21000,600,SOLID HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,24
+oss-37-shakespeare-play-spoken-words-025,Much Ado About Nothing,21000,600,SOLID HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,25
+oss-37-shakespeare-play-spoken-words-026,The Taming of the Shrew,21000,600,SOLID HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,26
+oss-37-shakespeare-play-spoken-words-027,King John,21000,600,SOLID HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,27
+oss-37-shakespeare-play-spoken-words-028,Titus Andronicus,21000,600,SOLID HIT,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,28
+oss-37-shakespeare-play-spoken-words-029,Twelfth Night,20000,400,IN THE ZONE,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,29
+oss-37-shakespeare-play-spoken-words-030,Julius Caesar,20000,400,IN THE ZONE,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,30
+oss-37-shakespeare-play-spoken-words-031,Pericles,19000,200,ON THE BOARD,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,31
+oss-37-shakespeare-play-spoken-words-032,Timon of Athens,18000,0,TOO FAR,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,32
+oss-37-shakespeare-play-spoken-words-033,The Two Gentlemen of Verona,17000,0,TOO FAR,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,33
+oss-37-shakespeare-play-spoken-words-034,Macbeth,17000,0,TOO FAR,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,34
+oss-37-shakespeare-play-spoken-words-035,The Tempest,17000,0,TOO FAR,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,35
+oss-37-shakespeare-play-spoken-words-036,A Midsummer Night's Dream,17000,0,TOO FAR,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,36
+oss-37-shakespeare-play-spoken-words-037,The Comedy of Errors,15000,0,TOO FAR,words,https://www.opensourceshakespeare.org/views/plays/plays_numwords.php,37

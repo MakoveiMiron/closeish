@@ -1,0 +1,4622 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "day_number": 12,
+  "revision": "v24-november-02-03-complete-1",
+  "publication_status": "scheduled",
+  "editorial_note": "V23 diversity requirements + complete, source-scoped member banks; 2026-10-23 through 2026-11-01 days are unchanged. Future date remains API-gated.",
+  "questions": {
+    "q1": {
+      "id": "closeish_20261103_q1",
+      "date": "2026-11-03",
+      "day_number": 12,
+      "topic": "world-architecture",
+      "bank_id": "ctbuh-2024-world-50-tallest-buildings",
+      "question_family": "ctbuh-2024-world-50-tallest-buildings",
+      "prompt": "Name one of the 50 tallest completed buildings in 2024 standing at least 450 m tall.",
+      "metric": "Architectural height in metres of a ranked completed building in 2024",
+      "unit": "m",
+      "limit": 450,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 4,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 14,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 40,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 95,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 195,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 195,
+        "units": "m",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.skyscrapercenter.com/buildings/?function=all&location=world&material=all&status=completed&year=2024",
+      "source_refs": [
+        "ctbuh-2024-world-50-tallest-buildings-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "Exactly the first 50 entries of the CTBUH historical 2024 tallest completed buildings list; twin towers count separately.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-03-q1-ctbuh-2024-world-50-tallest-buildings.csv",
+      "measurement": {
+        "property": "Architectural height in metres of a ranked completed building in 2024",
+        "numeric_rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list.",
+        "unit": "m",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.skyscrapercenter.com/buildings/?function=all&location=world&material=all&status=completed&year=2024"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly the first 50 entries of the CTBUH historical 2024 tallest completed buildings list; twin towers count separately.",
+        "dataset_count": 50,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-001",
+          "canonical": "Burj Khalifa",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 828,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-002",
+          "canonical": "Menara Merdeka Maybank",
+          "aliases": [
+            {
+              "input": "Merdeka 118",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 679,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-003",
+          "canonical": "Shanghai Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 632,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-004",
+          "canonical": "Makkah Royal Clock Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 601,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-005",
+          "canonical": "Ping An Finance Center",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 599,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-006",
+          "canonical": "Lotte World Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 555,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-007",
+          "canonical": "One World Trade Center",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 541,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-008",
+          "canonical": "Guangzhou CTF Finance Centre",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 530,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-009",
+          "canonical": "Tianjin CTF Finance Centre",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 530,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-010",
+          "canonical": "CITIC Tower",
+          "aliases": [
+            {
+              "input": "China Zun",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 528,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-011",
+          "canonical": "TAIPEI 101",
+          "aliases": [
+            {
+              "input": "Taipei 101",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 508,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-012",
+          "canonical": "Shanghai World Financial Center",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 492,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-013",
+          "canonical": "International Commerce Centre",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 484,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-014",
+          "canonical": "Wuhan Greenland Center",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 476,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-015",
+          "canonical": "Central Park Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 472,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-016",
+          "canonical": "Lakhta Center",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 462,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-017",
+          "canonical": "Vincom Landmark 81",
+          "aliases": [
+            {
+              "input": "Landmark 81",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 461,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-018",
+          "canonical": "The Exchange 106",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 454,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-019",
+          "canonical": "Changsha IFS Tower T1",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 452,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-020",
+          "canonical": "Petronas Twin Tower 1",
+          "aliases": [
+            {
+              "input": "Petronas Tower 1",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 452,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-021",
+          "canonical": "Petronas Twin Tower 2",
+          "aliases": [
+            {
+              "input": "Petronas Tower 2",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 452,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-022",
+          "canonical": "Suzhou IFS",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 450,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-023",
+          "canonical": "Zifeng Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 450,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-024",
+          "canonical": "Wuhan Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 443,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-025",
+          "canonical": "Willis Tower",
+          "aliases": [
+            {
+              "input": "Sears Tower",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 442,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-026",
+          "canonical": "KK100",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 442,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-027",
+          "canonical": "Guangzhou International Finance Center",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 439,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-028",
+          "canonical": "111 West 57th Street",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 435,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-029",
+          "canonical": "One Vanderbilt Avenue",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 427,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-030",
+          "canonical": "432 Park Avenue",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 426,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-031",
+          "canonical": "Marina 101",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 425,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-032",
+          "canonical": "Trump International Hotel & Tower",
+          "aliases": [
+            {
+              "input": "Trump International Hotel and Tower Chicago",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 423,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-033",
+          "canonical": "Minying International Trade Center T2",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-033"
+            }
+          ],
+          "metric_value": 423,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-034",
+          "canonical": "Jin Mao Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-034"
+            }
+          ],
+          "metric_value": 421,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-035",
+          "canonical": "Princess Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-035"
+            }
+          ],
+          "metric_value": 413,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-036",
+          "canonical": "Al Hamra Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-036"
+            }
+          ],
+          "metric_value": 413,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-037",
+          "canonical": "Two International Finance Centre",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-037"
+            }
+          ],
+          "metric_value": 412,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-038",
+          "canonical": "LCT The Sharp Landmark Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-038"
+            }
+          ],
+          "metric_value": 412,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-039",
+          "canonical": "Guangxi China Resources Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-039"
+            }
+          ],
+          "metric_value": 403,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-040",
+          "canonical": "Guiyang International Financial Center T1",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-040"
+            }
+          ],
+          "metric_value": 401,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-041",
+          "canonical": "Iconic Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-041"
+            }
+          ],
+          "metric_value": 394,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-042",
+          "canonical": "China Resources Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-042"
+            }
+          ],
+          "metric_value": 393,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-043",
+          "canonical": "23 Marina",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-043"
+            }
+          ],
+          "metric_value": 392,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-044",
+          "canonical": "CITIC Plaza",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-044"
+            }
+          ],
+          "metric_value": 390,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-045",
+          "canonical": "CITYMARK CENTRE",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-045"
+            }
+          ],
+          "metric_value": 388,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-046",
+          "canonical": "Shum Yip Upperhills Tower 1",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-046"
+            }
+          ],
+          "metric_value": 388,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-047",
+          "canonical": "30 Hudson Yards",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-047"
+            }
+          ],
+          "metric_value": 387,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-048",
+          "canonical": "PIF Tower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-048"
+            }
+          ],
+          "metric_value": 385,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-049",
+          "canonical": "Shun Hing Square",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-049"
+            }
+          ],
+          "metric_value": 384,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        },
+        {
+          "entity_id": "ctbuh-2024-world-50-tallest-buildings-050",
+          "canonical": "Eton Place Dalian Tower 1",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ctbuh-2024-world-50-tallest-buildings-source",
+              "locator": "row-050"
+            }
+          ],
+          "metric_value": 383,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Architectural CTBUH height (spire included, antenna excluded), reported to nearest metre in published list."
+          }
+        }
+      ]
+    },
+    "q2": {
+      "id": "closeish_20261103_q2",
+      "date": "2026-11-03",
+      "day_number": 12,
+      "topic": "animation-cinema",
+      "bank_id": "oscars-animated-feature-winners-film-years-2001-2025",
+      "question_family": "oscars-animated-feature-winners-film-years-2001-2025",
+      "prompt": "Name a Best Animated Feature Oscar-winning film with a film year of at least 2014.",
+      "metric": "Film year recognized for the Academy Award for Best Animated Feature",
+      "unit": "year",
+      "limit": 2014,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 2,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 4,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 6,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 8,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 11,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 11,
+        "units": "year",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://awardsdatabase.oscars.org/",
+      "source_refs": [
+        "oscars-animated-feature-winners-film-years-2001-2025-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 25 Academy Award Best Animated Feature winners for film years 2001–2025; excludes other animation categories and nominees.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-03-q2-oscars-animated-feature-winners-film-years-2001-2025.csv",
+      "measurement": {
+        "property": "Film year recognized for the Academy Award for Best Animated Feature",
+        "numeric_rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters.",
+        "unit": "year",
+        "time_dependent": true,
+        "source_urls": [
+          "https://awardsdatabase.oscars.org/",
+          "https://www.atogt.com/askoscar/winners-only-by-category.php?cat=animated&origin=winners-by-cat&yr=1"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 25 Academy Award Best Animated Feature winners for film years 2001–2025; excludes other animation categories and nominees.",
+        "dataset_count": 25,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-001",
+          "canonical": "Shrek",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 2001,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-002",
+          "canonical": "Spirited Away",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 2002,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-003",
+          "canonical": "Finding Nemo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 2003,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-004",
+          "canonical": "The Incredibles",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 2004,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-005",
+          "canonical": "Wallace & Gromit: The Curse of the Were-Rabbit",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 2005,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-006",
+          "canonical": "Happy Feet",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-007",
+          "canonical": "Ratatouille",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 2007,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-008",
+          "canonical": "WALL-E",
+          "aliases": [
+            {
+              "input": "Wall·E",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Wall E",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 2008,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-009",
+          "canonical": "Up",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 2009,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-010",
+          "canonical": "Toy Story 3",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 2010,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-011",
+          "canonical": "Rango",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 2011,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-012",
+          "canonical": "Brave",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 2012,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-013",
+          "canonical": "Frozen",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 2013,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-014",
+          "canonical": "Big Hero 6",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-015",
+          "canonical": "Inside Out",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 2015,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-016",
+          "canonical": "Zootopia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 2016,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-017",
+          "canonical": "Coco",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 2017,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-018",
+          "canonical": "Spider-Man: Into the Spider-Verse",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-019",
+          "canonical": "Toy Story 4",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 2019,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-020",
+          "canonical": "Soul",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 2020,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-021",
+          "canonical": "Encanto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 2021,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-022",
+          "canonical": "Guillermo del Toro's Pinocchio",
+          "aliases": [
+            {
+              "input": "Pinocchio (2022)",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-023",
+          "canonical": "The Boy and the Heron",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 2023,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-024",
+          "canonical": "Flow",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 2024,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        },
+        {
+          "entity_id": "oscars-animated-feature-winners-film-years-2001-2025-025",
+          "canonical": "KPop Demon Hunters",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "oscars-animated-feature-winners-film-years-2001-2025-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 2025,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use award film year, not next-calendar-year Oscars ceremony date; as of March 2026, include 2025 KPop Demon Hunters."
+          }
+        }
+      ]
+    },
+    "q3": {
+      "id": "closeish_20261103_q3",
+      "date": "2026-11-03",
+      "day_number": 12,
+      "topic": "computer-language-culture",
+      "bank_id": "tiobe-october-2026-20-ratings",
+      "question_family": "tiobe-october-2026-20-ratings",
+      "prompt": "Name a top-20 programming language in October 2026 with a popularity score of at least 0.97 percentage points.",
+      "metric": "October 2026 TIOBE ranking rate in percent, rounded to two decimals",
+      "unit": "percentage points",
+      "limit": 0.97,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 0.07,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 0.16,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 0.32,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 0.5,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 1.5,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 1.5,
+        "units": "percentage points",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.tiobe.com/tiobe-index/",
+      "source_refs": [
+        "tiobe-october-2026-20-ratings-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 20 named languages in the October 2026 TIOBE published top 20, including tied decimal ratings.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-03-q3-tiobe-october-2026-20-ratings.csv",
+      "measurement": {
+        "property": "October 2026 TIOBE ranking rate in percent, rounded to two decimals",
+        "numeric_rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead.",
+        "unit": "percentage points",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.tiobe.com/tiobe-index/",
+          "https://safeguard.sh/resources/blog/programming-language-market-share-every-index-compared"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 20 named languages in the October 2026 TIOBE published top 20, including tied decimal ratings.",
+        "dataset_count": 20,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-001",
+          "canonical": "Python",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 19.23,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-002",
+          "canonical": "C",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 11.33,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-003",
+          "canonical": "C++",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 8.87,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-004",
+          "canonical": "Java",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 8.41,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-005",
+          "canonical": "C#",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 3.79,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-006",
+          "canonical": "JavaScript",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 2.77,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-007",
+          "canonical": "Visual Basic",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 2.2,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-008",
+          "canonical": "R",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 2.06,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-009",
+          "canonical": "SQL",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 1.97,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-010",
+          "canonical": "Rust",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 1.44,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-011",
+          "canonical": "Go",
+          "aliases": [
+            {
+              "input": "Golang",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 1.39,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-012",
+          "canonical": "PHP",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 1.26,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-013",
+          "canonical": "Fortran",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 1.12,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-014",
+          "canonical": "Swift",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 1.03,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-015",
+          "canonical": "Scratch",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 0.97,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-016",
+          "canonical": "COBOL",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 0.89,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-017",
+          "canonical": "Perl",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 0.88,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-018",
+          "canonical": "Julia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 0.88,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-019",
+          "canonical": "Delphi/Object Pascal",
+          "aliases": [
+            {
+              "input": "Delphi",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Object Pascal",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 0.83,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        },
+        {
+          "entity_id": "tiobe-october-2026-20-ratings-020",
+          "canonical": "MATLAB",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "tiobe-october-2026-20-ratings-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 0.83,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use exactly the October 2026 snapshot percentages, 2 decimal places. Percentage scorer rounds to nearest integer in backend: DO NOT use % unit for fractional percent! Use pp instead."
+          }
+        }
+      ]
+    },
+    "q4": {
+      "id": "closeish_20261103_q4",
+      "date": "2026-11-03",
+      "day_number": 12,
+      "topic": "human-genomics",
+      "bank_id": "grch38-24-nuclear-chromosome-sizes",
+      "question_family": "grch38-24-nuclear-chromosome-sizes",
+      "prompt": "Name a human nuclear chromosome at least 156 million base pairs long (GRCh38, nearest million).",
+      "metric": "Reference nuclear chromosome sequence length, rounded to nearest million base pairs",
+      "unit": "million bp",
+      "limit": 156,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 4,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 17,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 27,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 43,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 95,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 95,
+        "units": "million bp",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38",
+      "source_refs": [
+        "grch38-24-nuclear-chromosome-sizes-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 24 primary human nuclear chromosome reference sequences 1–22, X and Y in GRCh38, excluding mitochondrial DNA and unplaced scaffolds.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-03-q4-grch38-24-nuclear-chromosome-sizes.csv",
+      "measurement": {
+        "property": "Reference nuclear chromosome sequence length, rounded to nearest million base pairs",
+        "numeric_rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding.",
+        "unit": "million bp",
+        "time_dependent": false,
+        "source_urls": [
+          "https://www.ncbi.nlm.nih.gov/grc/human/data?asm=GRCh38",
+          "https://github.com/ENCODE-DCC/encValData/blob/master/GRCh38/GRCh38.chrom.sizes"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 24 primary human nuclear chromosome reference sequences 1–22, X and Y in GRCh38, excluding mitochondrial DNA and unplaced scaffolds.",
+        "dataset_count": 24,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-001",
+          "canonical": "Chromosome 1",
+          "aliases": [
+            {
+              "input": "chr1",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 1",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 249,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-002",
+          "canonical": "Chromosome 2",
+          "aliases": [
+            {
+              "input": "chr2",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 2",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 242,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-003",
+          "canonical": "Chromosome 3",
+          "aliases": [
+            {
+              "input": "chr3",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 3",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 198,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-004",
+          "canonical": "Chromosome 4",
+          "aliases": [
+            {
+              "input": "chr4",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 4",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 190,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-005",
+          "canonical": "Chromosome 5",
+          "aliases": [
+            {
+              "input": "chr5",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 5",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 182,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-006",
+          "canonical": "Chromosome 6",
+          "aliases": [
+            {
+              "input": "chr6",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 6",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 171,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-007",
+          "canonical": "Chromosome 7",
+          "aliases": [
+            {
+              "input": "chr7",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 7",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 159,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-008",
+          "canonical": "Chromosome 8",
+          "aliases": [
+            {
+              "input": "chr8",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 8",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 145,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-009",
+          "canonical": "Chromosome 9",
+          "aliases": [
+            {
+              "input": "chr9",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 9",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 138,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-010",
+          "canonical": "Chromosome 10",
+          "aliases": [
+            {
+              "input": "chr10",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 10",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 134,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-011",
+          "canonical": "Chromosome 11",
+          "aliases": [
+            {
+              "input": "chr11",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 11",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 135,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-012",
+          "canonical": "Chromosome 12",
+          "aliases": [
+            {
+              "input": "chr12",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 12",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 133,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-013",
+          "canonical": "Chromosome 13",
+          "aliases": [
+            {
+              "input": "chr13",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 13",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 114,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-014",
+          "canonical": "Chromosome 14",
+          "aliases": [
+            {
+              "input": "chr14",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 14",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 107,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-015",
+          "canonical": "Chromosome 15",
+          "aliases": [
+            {
+              "input": "chr15",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 15",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 102,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-016",
+          "canonical": "Chromosome 16",
+          "aliases": [
+            {
+              "input": "chr16",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 16",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 90,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-017",
+          "canonical": "Chromosome 17",
+          "aliases": [
+            {
+              "input": "chr17",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 17",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 83,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-018",
+          "canonical": "Chromosome 18",
+          "aliases": [
+            {
+              "input": "chr18",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 18",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 80,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-019",
+          "canonical": "Chromosome 19",
+          "aliases": [
+            {
+              "input": "chr19",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 19",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 59,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-020",
+          "canonical": "Chromosome 20",
+          "aliases": [
+            {
+              "input": "chr20",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 20",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 64,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-021",
+          "canonical": "Chromosome 21",
+          "aliases": [
+            {
+              "input": "chr21",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 21",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 47,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-022",
+          "canonical": "Chromosome 22",
+          "aliases": [
+            {
+              "input": "chr22",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Chromosome 22",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 51,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-023",
+          "canonical": "Chromosome X",
+          "aliases": [
+            {
+              "input": "chrX",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "X",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 156,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        },
+        {
+          "entity_id": "grch38-24-nuclear-chromosome-sizes-024",
+          "canonical": "Chromosome Y",
+          "aliases": [
+            {
+              "input": "chrY",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Y",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "grch38-24-nuclear-chromosome-sizes-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 57,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use total chromosome length in NCBI GRCh38 assembly 1–22,X,Y, before nearest-million-half-up rounding."
+          }
+        }
+      ]
+    },
+    "q5": {
+      "id": "closeish_20261103_q5",
+      "date": "2026-11-03",
+      "day_number": 12,
+      "topic": "recorded-popular-music",
+      "bank_id": "billboard-2025-global-yearend-first-50",
+      "question_family": "billboard-2025-global-yearend-first-50",
+      "prompt": "Name a song from the 2025 year-end Global 200 top 50 ranked 18th or better (rank ≤ 18).",
+      "metric": "2025 Global 200 year-end placement",
+      "unit": "rank",
+      "limit": 18,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 2,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 5,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 9,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 13,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 17,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 17,
+        "units": "rank",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://chartsdatabase.me/global200?view=yearend",
+      "source_refs": [
+        "billboard-2025-global-yearend-first-50-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "Exactly ranks 1–50 of the published 2025 year-end Billboard Global 200 songs listing, not the weekly chart.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-03-q5-billboard-2025-global-yearend-first-50.csv",
+      "measurement": {
+        "property": "2025 Global 200 year-end placement",
+        "numeric_rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases).",
+        "unit": "rank",
+        "time_dependent": true,
+        "source_urls": [
+          "https://chartsdatabase.me/global200?view=yearend",
+          "https://www.billboard.com/charts/year-end/2025/billboard-global-200/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly ranks 1–50 of the published 2025 year-end Billboard Global 200 songs listing, not the weekly chart.",
+        "dataset_count": 50,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-001",
+          "canonical": "APT.",
+          "aliases": [
+            {
+              "input": "APT",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-002",
+          "canonical": "Die With A Smile",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 2,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-003",
+          "canonical": "Birds Of A Feather",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 3,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-004",
+          "canonical": "Ordinary",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 4,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-005",
+          "canonical": "Beautiful Things",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 5,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-006",
+          "canonical": "Lose Control",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 6,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-007",
+          "canonical": "That's So True",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 7,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-008",
+          "canonical": "Luther",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 8,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-009",
+          "canonical": "Espresso",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 9,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-010",
+          "canonical": "Golden",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 10,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-011",
+          "canonical": "Not Like Us",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 11,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-012",
+          "canonical": "Timeless",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 12,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-013",
+          "canonical": "Wildflower",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 13,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-014",
+          "canonical": "DTMF",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 14,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-015",
+          "canonical": "A Bar Song (Tipsy)",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 15,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-016",
+          "canonical": "Sailor Song",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 16,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-017",
+          "canonical": "Messy",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 17,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-018",
+          "canonical": "Good Luck, Babe!",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 18,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-019",
+          "canonical": "Si Antes Te Hubiera Conocido",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 19,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-020",
+          "canonical": "Taste",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 20,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-021",
+          "canonical": "Who",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 21,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-022",
+          "canonical": "Baile Inolvidable",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 22,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-023",
+          "canonical": "Pink Pony Club",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 23,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-024",
+          "canonical": "Too Sweet",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 24,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-025",
+          "canonical": "Please Please Please",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 25,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-026",
+          "canonical": "I Had Some Help",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 26,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-027",
+          "canonical": "Bad Dreams",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 27,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-028",
+          "canonical": "Save Your Tears",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 28,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-029",
+          "canonical": "Iris",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 29,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-030",
+          "canonical": "The Door",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 30,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-031",
+          "canonical": "The Night We Met",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 31,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-032",
+          "canonical": "TV Off",
+          "aliases": [
+            {
+              "input": "TV Off (feat. Lefty Gunplay)",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 32,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-033",
+          "canonical": "Abracadabra",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-033"
+            }
+          ],
+          "metric_value": 33,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-034",
+          "canonical": "Sweater Weather",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-034"
+            }
+          ],
+          "metric_value": 34,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-035",
+          "canonical": "Back To Friends",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-035"
+            }
+          ],
+          "metric_value": 35,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-036",
+          "canonical": "No One Noticed",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-036"
+            }
+          ],
+          "metric_value": 36,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-037",
+          "canonical": "Gata Only",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-037"
+            }
+          ],
+          "metric_value": 37,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-038",
+          "canonical": "Nuevayol",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-038"
+            }
+          ],
+          "metric_value": 38,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-039",
+          "canonical": "One Of The Girls",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-039"
+            }
+          ],
+          "metric_value": 39,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-040",
+          "canonical": "Yellow",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-040"
+            }
+          ],
+          "metric_value": 40,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-041",
+          "canonical": "All The Stars",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-041"
+            }
+          ],
+          "metric_value": 41,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-042",
+          "canonical": "Every Breath You Take",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-042"
+            }
+          ],
+          "metric_value": 42,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-043",
+          "canonical": "Creep",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-043"
+            }
+          ],
+          "metric_value": 43,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-044",
+          "canonical": "La Plena (W Sound 05)",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-044"
+            }
+          ],
+          "metric_value": 44,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-045",
+          "canonical": "Tu Boda",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-045"
+            }
+          ],
+          "metric_value": 45,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-046",
+          "canonical": "We Can't Be Friends (Wait For Your Love)",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-046"
+            }
+          ],
+          "metric_value": 46,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-047",
+          "canonical": "Cruel Summer",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-047"
+            }
+          ],
+          "metric_value": 47,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-048",
+          "canonical": "Perfect",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-048"
+            }
+          ],
+          "metric_value": 48,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-049",
+          "canonical": "like JENNIE",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-049"
+            }
+          ],
+          "metric_value": 49,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        },
+        {
+          "entity_id": "billboard-2025-global-yearend-first-50-050",
+          "canonical": "Viva La Vida",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "billboard-2025-global-yearend-first-50-source",
+              "locator": "row-050"
+            }
+          ],
+          "metric_value": 50,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use positions 1–50 from 2025 year-end chart. Distinct tracks; submission is song title (avoid artist-only aliases)."
+          }
+        }
+      ]
+    },
+    "q6": {
+      "id": "closeish_20261103_q6",
+      "date": "2026-11-03",
+      "day_number": 12,
+      "topic": "lake-hydrology",
+      "bank_id": "journeyz-2021-thirty-deepest-lakes",
+      "question_family": "journeyz-2021-thirty-deepest-lakes",
+      "prompt": "Name one of the world’s 30 deepest lakes with a reported maximum depth of at most 594 m.",
+      "metric": "Maximum cited lake depth in metres from frozen editorial ranking",
+      "unit": "m",
+      "limit": 594,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 10,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 85,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 95,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 133,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 151,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 151,
+        "units": "m",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://journeyz.co/deepest-lakes-in-the-world-depth/",
+      "source_refs": [
+        "journeyz-2021-thirty-deepest-lakes-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v24-20261026-nov02-nov03-1",
+      "metric_provenance": "All 30 listed lakes in the 2021 Journeyz 30-deepest-lakes editorial table, including the Caspian Sea and subglacial Lake Vostok.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v24-2026-11-03-q6-journeyz-2021-thirty-deepest-lakes.csv",
+      "measurement": {
+        "property": "Maximum cited lake depth in metres from frozen editorial ranking",
+        "numeric_rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths.",
+        "unit": "m",
+        "time_dependent": true,
+        "source_urls": [
+          "https://journeyz.co/deepest-lakes-in-the-world-depth/",
+          "https://www.macrodiscovery.com/deepest-lakes/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 30 listed lakes in the 2021 Journeyz 30-deepest-lakes editorial table, including the Caspian Sea and subglacial Lake Vostok.",
+        "dataset_count": 30,
+        "known_unmeasured_count": 0,
+        "note": "Every member of the explicitly bounded source list is included, including wrong-side and zero-point entries. No examples-only selection."
+      },
+      "scoring_policy": "Category membership verified first; then measured value and one-sided backend bands. Wrong side and beyond window return zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-001",
+          "canonical": "Lake Baikal",
+          "aliases": [
+            {
+              "input": "Baikal",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1642,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-002",
+          "canonical": "Lake Tanganyika",
+          "aliases": [
+            {
+              "input": "Tanganyika",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 1470,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-003",
+          "canonical": "Caspian Sea",
+          "aliases": [
+            {
+              "input": "Caspian",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 1025,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-004",
+          "canonical": "Lake Vostok",
+          "aliases": [
+            {
+              "input": "Vostok",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 1000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-005",
+          "canonical": "O'Higgins Lake",
+          "aliases": [
+            {
+              "input": "O'Higgins/San Martín Lake",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Lago O'Higgins",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "San Martin Lake",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 836,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-006",
+          "canonical": "Lake Malawi",
+          "aliases": [
+            {
+              "input": "Lake Nyasa",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Nyasa",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 706,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-007",
+          "canonical": "Issyk-Kul",
+          "aliases": [
+            {
+              "input": "Issyk Kul",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 668,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-008",
+          "canonical": "Great Slave Lake",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 614,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-009",
+          "canonical": "Crater Lake",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 594,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-010",
+          "canonical": "Lake Matano",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 590,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-011",
+          "canonical": "General Carrera Lake",
+          "aliases": [
+            {
+              "input": "Lake General Carrera",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Buenos Aires Lake",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 586,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-012",
+          "canonical": "Hornindalsvatnet",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 514,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-013",
+          "canonical": "Quesnel Lake",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 511,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-014",
+          "canonical": "Lake Toba",
+          "aliases": [
+            {
+              "input": "Toba",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 505,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-015",
+          "canonical": "Sarez Lake",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 505,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-016",
+          "canonical": "Lake Tahoe",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 501,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-017",
+          "canonical": "Lake Argentino",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 500,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-018",
+          "canonical": "Lake Kivu",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 480,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-019",
+          "canonical": "Salvatnet",
+          "aliases": [
+            {
+              "input": "Salsvatnet",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 464,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-020",
+          "canonical": "Lake Nahuel Huapi",
+          "aliases": [
+            {
+              "input": "Nahuel Huapi",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 464,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-021",
+          "canonical": "Lake Hauroko",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 462,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-022",
+          "canonical": "Cochrane/Pueyrredón Lake",
+          "aliases": [
+            {
+              "input": "Lake Cochrane",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Lake Pueyrredon",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 460,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-023",
+          "canonical": "Lake Tinn",
+          "aliases": [
+            {
+              "input": "Tinnsjå",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 460,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-024",
+          "canonical": "Adams Lake",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 457,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-025",
+          "canonical": "Lake Chelan",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 453,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-026",
+          "canonical": "Lake Van",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 451,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-027",
+          "canonical": "Lake Poso",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 450,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-028",
+          "canonical": "Lake Fagnano",
+          "aliases": [
+            {
+              "input": "Fagnano Lake",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 449,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-029",
+          "canonical": "Great Bear Lake",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 446,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        },
+        {
+          "entity_id": "journeyz-2021-thirty-deepest-lakes-030",
+          "canonical": "Lake Manapouri",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "journeyz-2021-thirty-deepest-lakes-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 444,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Pinned list-specific bathymetric approximations; competing published surveys disagree for individual depths."
+          }
+        }
+      ]
+    }
+  }
+}
