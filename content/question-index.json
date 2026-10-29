@@ -790,5 +790,137 @@
     "unit": "m",
     "answers": 30,
     "content_revision": "v24-20261026-nov02-nov03-1"
+  },
+  {
+    "date": "2026-11-04",
+    "id": "closeish_20261104_q1",
+    "topic": "opera-cultural-history",
+    "prompt": "Name a Verdi opera that premiered in 1849 or earlier (at most 1849).",
+    "direction": "below",
+    "limit": 1849,
+    "unit": "year",
+    "answers": 26,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-04",
+    "id": "closeish_20261104_q2",
+    "topic": "international-peace",
+    "prompt": "Name a Nobel Peace Prize laureate (2000–2025) awarded in 2014 or earlier (at most 2014).",
+    "direction": "below",
+    "limit": 2014,
+    "unit": "year",
+    "answers": 37,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-04",
+    "id": "closeish_20261104_q3",
+    "topic": "football-awards",
+    "prompt": "Name a player in the 2024 men’s Ballon d’Or top 30 ranked at most 14th.",
+    "direction": "below",
+    "limit": 14,
+    "unit": "rank",
+    "answers": 30,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-04",
+    "id": "closeish_20261104_q4",
+    "topic": "spy-franchise-film",
+    "prompt": "Name an Eon-produced James Bond film lasting at most 130 minutes.",
+    "direction": "below",
+    "limit": 130,
+    "unit": "min",
+    "answers": 25,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-04",
+    "id": "closeish_20261104_q5",
+    "topic": "video-game-sales",
+    "prompt": "Name a game in the 2026 all-time bestseller top 30 with at least 31 million sales (nearest million).",
+    "direction": "above",
+    "limit": 31,
+    "unit": "million copies",
+    "answers": 32,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-04",
+    "id": "closeish_20261104_q6",
+    "topic": "subjective-wellbeing",
+    "prompt": "Name a 2025 World Happiness Report top-30 country scoring at least 6.810 out of 10.",
+    "direction": "above",
+    "limit": 6.81,
+    "unit": "ladder points",
+    "answers": 30,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-05",
+    "id": "closeish_20261105_q1",
+    "topic": "british-royal-dynasty",
+    "prompt": "Name an English or British monarch since Henry VII who began reigning in 1558 or later (at least 1558).",
+    "direction": "above",
+    "limit": 1558,
+    "unit": "year",
+    "answers": 24,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-05",
+    "id": "closeish_20261105_q2",
+    "topic": "paralympic-medals",
+    "prompt": "Name a Paris 2024 Paralympic top-30 national delegation with at most 30 medals.",
+    "direction": "below",
+    "limit": 30,
+    "unit": "medals",
+    "answers": 29,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-05",
+    "id": "closeish_20261105_q3",
+    "topic": "mathematical-history",
+    "prompt": "Name a Fields Medal laureate (1936–2022) awarded in 1998 or later (at least 1998).",
+    "direction": "above",
+    "limit": 1998,
+    "unit": "year",
+    "answers": 64,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-05",
+    "id": "closeish_20261105_q4",
+    "topic": "naked-eye-astronomy",
+    "prompt": "Name one of the 30 brightest night-sky stars with apparent magnitude at least +1.25.",
+    "direction": "above",
+    "limit": 1.25,
+    "unit": "mag",
+    "answers": 30,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-05",
+    "id": "closeish_20261105_q5",
+    "topic": "physical-island-geography",
+    "prompt": "Name one of the 30 largest islands with area at least 105,000 km² (nearest 1,000 km²).",
+    "direction": "above",
+    "limit": 105000,
+    "unit": "km²",
+    "answers": 30,
+    "content_revision": "v25-20261029-nov04-nov05-1"
+  },
+  {
+    "date": "2026-11-05",
+    "id": "closeish_20261105_q6",
+    "topic": "art-museum-attendance",
+    "prompt": "Name a museum among the 20 most visited art museums in 2024 ranked at most 12th.",
+    "direction": "below",
+    "limit": 12,
+    "unit": "rank",
+    "answers": 20,
+    "content_revision": "v25-20261029-nov04-nov05-1"
   }
 ]

@@ -1,0 +1,31 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+astronomywiki-30-brightest-night-stars-magnitude-001,Sirius,-1.44,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,1
+astronomywiki-30-brightest-night-stars-magnitude-002,Canopus,-0.62,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,2
+astronomywiki-30-brightest-night-stars-magnitude-003,Arcturus,-0.05,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,3
+astronomywiki-30-brightest-night-stars-magnitude-004,Alpha Centauri,-0.01,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,4
+astronomywiki-30-brightest-night-stars-magnitude-005,Vega,0.03,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,5
+astronomywiki-30-brightest-night-stars-magnitude-006,Capella,0.08,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,6
+astronomywiki-30-brightest-night-stars-magnitude-007,Rigel,0.18,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,7
+astronomywiki-30-brightest-night-stars-magnitude-008,Procyon,0.4,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,8
+astronomywiki-30-brightest-night-stars-magnitude-009,Betelgeuse,0.45,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,9
+astronomywiki-30-brightest-night-stars-magnitude-010,Achernar,0.45,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,10
+astronomywiki-30-brightest-night-stars-magnitude-011,Hadar,0.61,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,11
+astronomywiki-30-brightest-night-stars-magnitude-012,Altair,0.76,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,12
+astronomywiki-30-brightest-night-stars-magnitude-013,Acrux,0.77,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,13
+astronomywiki-30-brightest-night-stars-magnitude-014,Aldebaran,0.87,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,14
+astronomywiki-30-brightest-night-stars-magnitude-015,Spica,0.98,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,15
+astronomywiki-30-brightest-night-stars-magnitude-016,Antares,1.06,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,16
+astronomywiki-30-brightest-night-stars-magnitude-017,Pollux,1.16,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,17
+astronomywiki-30-brightest-night-stars-magnitude-018,Fomalhaut,1.17,0,CROSSED LIMIT,mag,https://astronomy.wiki/brightest-stars,18
+astronomywiki-30-brightest-night-stars-magnitude-019,Deneb,1.25,1200,PERFECT HIT,mag,https://astronomy.wiki/brightest-stars,19
+astronomywiki-30-brightest-night-stars-magnitude-020,Mimosa,1.25,1200,PERFECT HIT,mag,https://astronomy.wiki/brightest-stars,20
+astronomywiki-30-brightest-night-stars-magnitude-021,Regulus,1.36,1000,RAZOR EDGE,mag,https://astronomy.wiki/brightest-stars,21
+astronomywiki-30-brightest-night-stars-magnitude-022,Adhara,1.5,800,CLOSE CALL,mag,https://astronomy.wiki/brightest-stars,22
+astronomywiki-30-brightest-night-stars-magnitude-023,Castor,1.58,600,SOLID HIT,mag,https://astronomy.wiki/brightest-stars,23
+astronomywiki-30-brightest-night-stars-magnitude-024,Gacrux,1.59,600,SOLID HIT,mag,https://astronomy.wiki/brightest-stars,24
+astronomywiki-30-brightest-night-stars-magnitude-025,Shaula,1.62,400,IN THE ZONE,mag,https://astronomy.wiki/brightest-stars,25
+astronomywiki-30-brightest-night-stars-magnitude-026,Bellatrix,1.64,400,IN THE ZONE,mag,https://astronomy.wiki/brightest-stars,26
+astronomywiki-30-brightest-night-stars-magnitude-027,Beta Tauri,1.65,200,ON THE BOARD,mag,https://astronomy.wiki/brightest-stars,27
+astronomywiki-30-brightest-night-stars-magnitude-028,Beta Carinae,1.67,200,ON THE BOARD,mag,https://astronomy.wiki/brightest-stars,28
+astronomywiki-30-brightest-night-stars-magnitude-029,Alnilam,1.69,200,ON THE BOARD,mag,https://astronomy.wiki/brightest-stars,29
+astronomywiki-30-brightest-night-stars-magnitude-030,Alpha Gruis,1.73,0,TOO FAR,mag,https://astronomy.wiki/brightest-stars,30

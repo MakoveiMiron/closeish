@@ -22,8 +22,8 @@ function csvParse(input){
 }
 
 test('V24: two complete new days, 12 distinct topics, all source CSVs and all 7 tiers',()=>{
- assert.equal(content.size,12);
- assert.equal(Core.END,'2026-11-03');
+ assert.equal(content.size,14);
+ assert.equal(Core.END,'2026-11-05');
  assert.equal(Core.dateForDay(11),dates[0]);
  assert.equal(Core.dateForDay(12),dates[1]);
  const topics=new Set(),families=new Set();

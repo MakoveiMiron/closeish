@@ -1,0 +1,31 @@
+entity_id,canonical,metric_value,points,tier,unit,source_url,source_row
+islands-world-30-largest-nearest-1000km2-001,Greenland,2108000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,1
+islands-world-30-largest-nearest-1000km2-002,New Guinea,774000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,2
+islands-world-30-largest-nearest-1000km2-003,Borneo,723000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,3
+islands-world-30-largest-nearest-1000km2-004,Madagascar,593000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,4
+islands-world-30-largest-nearest-1000km2-005,Baffin Island,507000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,5
+islands-world-30-largest-nearest-1000km2-006,Sumatra,428000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,6
+islands-world-30-largest-nearest-1000km2-007,Honshu,228000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,7
+islands-world-30-largest-nearest-1000km2-008,Victoria Island,219000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,8
+islands-world-30-largest-nearest-1000km2-009,Great Britain,219000,0,TOO FAR,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,9
+islands-world-30-largest-nearest-1000km2-010,Ellesmere Island,198000,200,ON THE BOARD,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,10
+islands-world-30-largest-nearest-1000km2-011,Sulawesi,170000,200,ON THE BOARD,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,11
+islands-world-30-largest-nearest-1000km2-012,South Island,151000,400,IN THE ZONE,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,12
+islands-world-30-largest-nearest-1000km2-013,Java,127000,600,SOLID HIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,13
+islands-world-30-largest-nearest-1000km2-014,North Island,115000,800,CLOSE CALL,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,14
+islands-world-30-largest-nearest-1000km2-015,Newfoundland,109000,1000,RAZOR EDGE,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,15
+islands-world-30-largest-nearest-1000km2-016,Cuba,105000,1200,PERFECT HIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,16
+islands-world-30-largest-nearest-1000km2-017,Luzon,105000,1200,PERFECT HIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,17
+islands-world-30-largest-nearest-1000km2-018,Iceland,100000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,18
+islands-world-30-largest-nearest-1000km2-019,Mindanao,94000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,19
+islands-world-30-largest-nearest-1000km2-020,Ireland,84000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,20
+islands-world-30-largest-nearest-1000km2-021,Hokkaido,78000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,21
+islands-world-30-largest-nearest-1000km2-022,Hispaniola,74000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,22
+islands-world-30-largest-nearest-1000km2-023,Sakhalin,74000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,23
+islands-world-30-largest-nearest-1000km2-024,Banks Island,70000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,24
+islands-world-30-largest-nearest-1000km2-025,Sri Lanka,66000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,25
+islands-world-30-largest-nearest-1000km2-026,Tasmania,64000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,26
+islands-world-30-largest-nearest-1000km2-027,Devon Island,56000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,27
+islands-world-30-largest-nearest-1000km2-028,Alexander Island,52000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,28
+islands-world-30-largest-nearest-1000km2-029,Isla Grande de Tierra del Fuego,47000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,29
+islands-world-30-largest-nearest-1000km2-030,Severny Island,45000,0,CROSSED LIMIT,km²,https://en.wikipedia.org/wiki/List_of_islands_by_area,30

@@ -18,3 +18,9 @@ A szerveres validáció `npm run validate`, a tesztek `npm test`, az index és A
 ## Új, ütemezett tartalom – 2026. november 2–3.
 
 A 11. és 12. nap (`2026-11-02.json` és `2026-11-03.json`) összesen 12 eltérő kérdést, 366 teljesen enumerált forrásrekordot, 12 új CSV snapshotot tartalmaz. A `content/reference-rules/GENERATE-2026-11-02-03.py` reprodukálja az új napokat; régi napot nem érint. A `tests/content-v24-nov02-03.test.mjs` a backend valódi normalizálását és pontozását használja. A nyilvános API továbbra sem adja ki az új napokat a helyi dátumuk előtt.
+
+## Új, ütemezett tartalom – 2026. november 4–5. (V25)
+
+A 13. és 14. nap (`2026-11-04.json` és `2026-11-05.json`) további **12 eltérő kérdést, 377 forráslistához kötött válaszrekordot és 12 új V25 CSV pillanatképet** tartalmaz. A teljes backend így **14 napból, 84 kérdésből** áll. A régebbi napok JSON-állományai változatlanok; a 2026. november 5-ig kibővített dátumhatár mellett az idő előtt közzététel tiltása megmarad.
+
+Újrafuttatható generátor: `content/reference-rules/GENERATE-2026-11-04-05.py` (kizárólag a két új napot érinti). Tételes forrás- és szerkesztői audit: `content/reference-rules/AUDIT-V25-2026-10-29-HU.md`. Teszt: `tests/content-v25-nov04-05.test.mjs`. Az új forrásfájlok `content/source-snapshots/v25-*.csv` néven találhatók. A teljes tesztcsomaghoz PostgreSQL-kliens (`pg`) és a `package.json` által előírt Node.js verzió szükséges.

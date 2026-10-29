@@ -1,0 +1,4059 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "day_number": 13,
+  "revision": "v25-november-04-05-complete-1",
+  "publication_status": "scheduled",
+  "editorial_note": "V23 six-topic diversity, frozen source-bounded full answer banks, server date gating; previous 12 days untouched.",
+  "questions": {
+    "q1": {
+      "id": "closeish_20261104_q1",
+      "date": "2026-11-04",
+      "day_number": 13,
+      "topic": "opera-cultural-history",
+      "bank_id": "verdi-26-original-opera-premieres",
+      "question_family": "verdi-26-original-opera-premieres",
+      "prompt": "Name a Verdi opera that premiered in 1849 or earlier (at most 1849).",
+      "metric": "Original opera premiere year",
+      "unit": "year",
+      "limit": 1849,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 2,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 3,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 4,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 6,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 6,
+        "units": "year",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://en.wikipedia.org/wiki/List_of_compositions_by_Giuseppe_Verdi",
+      "source_refs": [
+        "verdi-26-original-opera-premieres-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 26 original operas by Giuseppe Verdi, based on initial opera premiere dates, not later revised or retitled versions.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-04-q1-verdi-26-original-opera-premieres.csv",
+      "measurement": {
+        "property": "Original opera premiere year",
+        "numeric_rule": "Use the first premiere year; later revisions of the same opera do not create separate entries.",
+        "unit": "year",
+        "time_dependent": true,
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/List_of_compositions_by_Giuseppe_Verdi",
+          "https://theopera101.com/composers/verdi/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 26 original operas by Giuseppe Verdi, based on initial opera premiere dates, not later revised or retitled versions.",
+        "dataset_count": 26,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "verdi-26-original-opera-premieres-001",
+          "canonical": "Oberto, conte di San Bonifacio",
+          "aliases": [
+            {
+              "input": "Oberto",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1839,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-002",
+          "canonical": "Un giorno di regno",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 1840,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-003",
+          "canonical": "Nabucco",
+          "aliases": [
+            {
+              "input": "Nabucodonosor",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 1842,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-004",
+          "canonical": "I Lombardi alla prima crociata",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 1843,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-005",
+          "canonical": "Ernani",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 1844,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-006",
+          "canonical": "I due Foscari",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 1844,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-007",
+          "canonical": "Giovanna d'Arco",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 1845,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-008",
+          "canonical": "Alzira",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 1845,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-009",
+          "canonical": "Attila",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 1846,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-010",
+          "canonical": "Macbeth",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 1847,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-011",
+          "canonical": "I masnadieri",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 1847,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-012",
+          "canonical": "Il corsaro",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 1848,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-013",
+          "canonical": "La battaglia di Legnano",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 1849,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-014",
+          "canonical": "Luisa Miller",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 1849,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-015",
+          "canonical": "Stiffelio",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 1850,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-016",
+          "canonical": "Rigoletto",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 1851,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-017",
+          "canonical": "Il trovatore",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 1853,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-018",
+          "canonical": "La traviata",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 1853,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-019",
+          "canonical": "Les vêpres siciliennes",
+          "aliases": [
+            {
+              "input": "The Sicilian Vespers",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 1855,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-020",
+          "canonical": "Simon Boccanegra",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 1857,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-021",
+          "canonical": "Un ballo in maschera",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 1859,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-022",
+          "canonical": "La forza del destino",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 1862,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-023",
+          "canonical": "Don Carlos",
+          "aliases": [
+            {
+              "input": "Don Carlo",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 1867,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-024",
+          "canonical": "Aida",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 1871,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-025",
+          "canonical": "Otello",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 1887,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        },
+        {
+          "entity_id": "verdi-26-original-opera-premieres-026",
+          "canonical": "Falstaff",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "verdi-26-original-opera-premieres-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 1893,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use the first premiere year; later revisions of the same opera do not create separate entries."
+          }
+        }
+      ]
+    },
+    "q2": {
+      "id": "closeish_20261104_q2",
+      "date": "2026-11-04",
+      "day_number": 13,
+      "topic": "international-peace",
+      "bank_id": "nobel-peace-2000-to-2025-all-laureates",
+      "question_family": "nobel-peace-2000-to-2025-all-laureates",
+      "prompt": "Name a Nobel Peace Prize laureate (2000–2025) awarded in 2014 or earlier (at most 2014).",
+      "metric": "Nobel Peace Prize award year",
+      "unit": "year",
+      "limit": 2014,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 3,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 5,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 8,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 12,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 12,
+        "units": "year",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.nobelprize.org/prizes/lists/all-nobel-peace-prizes/all/",
+      "source_refs": [
+        "nobel-peace-2000-to-2025-all-laureates-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "Every named individual and organisation awarded the Nobel Peace Prize from 2000 through 2025, each co-laureate represented separately.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-04-q2-nobel-peace-2000-to-2025-all-laureates.csv",
+      "measurement": {
+        "property": "Nobel Peace Prize award year",
+        "numeric_rule": "Annual Nobel committee award year, including all named joint laureates and organizations.",
+        "unit": "year",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.nobelprize.org/prizes/lists/all-nobel-peace-prizes/all/",
+          "https://www.nobelpeaceprize.org/laureates/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Every named individual and organisation awarded the Nobel Peace Prize from 2000 through 2025, each co-laureate represented separately.",
+        "dataset_count": 37,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-001",
+          "canonical": "Maria Corina Machado",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 2025,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-002",
+          "canonical": "Nihon Hidankyo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 2024,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-003",
+          "canonical": "Narges Mohammadi",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 2023,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-004",
+          "canonical": "Ales Bialiatski",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-005",
+          "canonical": "Memorial",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-006",
+          "canonical": "Center for Civil Liberties",
+          "aliases": [
+            {
+              "input": "Centre for Civil Liberties",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-007",
+          "canonical": "Maria Ressa",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 2021,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-008",
+          "canonical": "Dmitry Muratov",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 2021,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-009",
+          "canonical": "World Food Programme",
+          "aliases": [
+            {
+              "input": "WFP",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 2020,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-010",
+          "canonical": "Abiy Ahmed Ali",
+          "aliases": [
+            {
+              "input": "Abiy Ahmed",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 2019,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-011",
+          "canonical": "Denis Mukwege",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-012",
+          "canonical": "Nadia Murad",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-013",
+          "canonical": "International Campaign to Abolish Nuclear Weapons",
+          "aliases": [
+            {
+              "input": "ICAN",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 2017,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-014",
+          "canonical": "Juan Manuel Santos",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 2016,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-015",
+          "canonical": "National Dialogue Quartet",
+          "aliases": [
+            {
+              "input": "Tunisian National Dialogue Quartet",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 2015,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-016",
+          "canonical": "Kailash Satyarthi",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-017",
+          "canonical": "Malala Yousafzai",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-018",
+          "canonical": "Organisation for the Prohibition of Chemical Weapons",
+          "aliases": [
+            {
+              "input": "OPCW",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 2013,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-019",
+          "canonical": "European Union",
+          "aliases": [
+            {
+              "input": "EU",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 2012,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-020",
+          "canonical": "Ellen Johnson Sirleaf",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 2011,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-021",
+          "canonical": "Leymah Gbowee",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 2011,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-022",
+          "canonical": "Tawakkol Karman",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 2011,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-023",
+          "canonical": "Liu Xiaobo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 2010,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-024",
+          "canonical": "Barack Obama",
+          "aliases": [
+            {
+              "input": "Barack Hussein Obama",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 2009,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-025",
+          "canonical": "Martti Ahtisaari",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 2008,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-026",
+          "canonical": "Intergovernmental Panel on Climate Change",
+          "aliases": [
+            {
+              "input": "IPCC",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 2007,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-027",
+          "canonical": "Al Gore",
+          "aliases": [
+            {
+              "input": "Albert Arnold Gore Jr.",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 2007,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-028",
+          "canonical": "Muhammad Yunus",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-029",
+          "canonical": "Grameen Bank",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-030",
+          "canonical": "International Atomic Energy Agency",
+          "aliases": [
+            {
+              "input": "IAEA",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 2005,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-031",
+          "canonical": "Mohamed ElBaradei",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 2005,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-032",
+          "canonical": "Wangari Maathai",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 2004,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-033",
+          "canonical": "Shirin Ebadi",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-033"
+            }
+          ],
+          "metric_value": 2003,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-034",
+          "canonical": "Jimmy Carter",
+          "aliases": [
+            {
+              "input": "James Earl Carter Jr.",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-034"
+            }
+          ],
+          "metric_value": 2002,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-035",
+          "canonical": "United Nations",
+          "aliases": [
+            {
+              "input": "UN",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-035"
+            }
+          ],
+          "metric_value": 2001,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-036",
+          "canonical": "Kofi Annan",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-036"
+            }
+          ],
+          "metric_value": 2001,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        },
+        {
+          "entity_id": "nobel-peace-2000-to-2025-all-laureates-037",
+          "canonical": "Kim Dae-jung",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "nobel-peace-2000-to-2025-all-laureates-source",
+              "locator": "row-037"
+            }
+          ],
+          "metric_value": 2000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Annual Nobel committee award year, including all named joint laureates and organizations."
+          }
+        }
+      ]
+    },
+    "q3": {
+      "id": "closeish_20261104_q3",
+      "date": "2026-11-04",
+      "day_number": 13,
+      "topic": "football-awards",
+      "bank_id": "ballondor-mens-2024-ranked-30",
+      "question_family": "ballondor-mens-2024-ranked-30",
+      "prompt": "Name a player in the 2024 men’s Ballon d’Or top 30 ranked at most 14th.",
+      "metric": "Official 2024 men’s Ballon d’Or placement",
+      "unit": "rank",
+      "limit": 14,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 2,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 4,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 7,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 11,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 11,
+        "units": "rank",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://ballondor.com/all-rankings?year=2024",
+      "source_refs": [
+        "ballondor-mens-2024-ranked-30-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 30 players on the official 2024 men’s Ballon d’Or ranking, using published ordinal position.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-04-q3-ballondor-mens-2024-ranked-30.csv",
+      "measurement": {
+        "property": "Official 2024 men’s Ballon d’Or placement",
+        "numeric_rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers).",
+        "unit": "rank",
+        "time_dependent": true,
+        "source_urls": [
+          "https://ballondor.com/all-rankings?year=2024"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 30 players on the official 2024 men’s Ballon d’Or ranking, using published ordinal position.",
+        "dataset_count": 30,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-001",
+          "canonical": "Rodri",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-002",
+          "canonical": "Vinicius Jr.",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 2,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-003",
+          "canonical": "Jude Bellingham",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 3,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-004",
+          "canonical": "Dani Carvajal",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 4,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-005",
+          "canonical": "Erling Haaland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 5,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-006",
+          "canonical": "Kylian Mbappé",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 6,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-007",
+          "canonical": "Lautaro Martínez",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 7,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-008",
+          "canonical": "Lamine Yamal",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 8,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-009",
+          "canonical": "Toni Kroos",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 9,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-010",
+          "canonical": "Harry Kane",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 10,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-011",
+          "canonical": "Phil Foden",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 11,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-012",
+          "canonical": "Florian Wirtz",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 12,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-013",
+          "canonical": "Dani Olmo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 13,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-014",
+          "canonical": "Ademola Lookman",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 14,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-015",
+          "canonical": "Nico Williams",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 15,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-016",
+          "canonical": "Granit Xhaka",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 16,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-017",
+          "canonical": "Federico Valverde",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 17,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-018",
+          "canonical": "Emiliano Martínez",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 18,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-019",
+          "canonical": "Martin Ødegaard",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 19,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-020",
+          "canonical": "Hakan Çalhanoğlu",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 20,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-021",
+          "canonical": "Bukayo Saka",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 21,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-022",
+          "canonical": "Antonio Rüdiger",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 22,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-023",
+          "canonical": "Rúben Dias",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 23,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-024",
+          "canonical": "William Saliba",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 24,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-025",
+          "canonical": "Cole Palmer",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 25,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-026",
+          "canonical": "Declan Rice",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 26,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-027",
+          "canonical": "Vitinha",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 27,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-028",
+          "canonical": "Alejandro Grimaldo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 28,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-029",
+          "canonical": "Mats Hummels",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 29,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        },
+        {
+          "entity_id": "ballondor-mens-2024-ranked-30-030",
+          "canonical": "Artem Dovbyk",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "ballondor-mens-2024-ranked-30-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 30,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-published 1–30 ordinal row order (tied placements are displayed differently by some secondary publishers)."
+          }
+        }
+      ]
+    },
+    "q4": {
+      "id": "closeish_20261104_q4",
+      "date": "2026-11-04",
+      "day_number": 13,
+      "topic": "spy-franchise-film",
+      "bank_id": "eon-james-bond-25-cinema-runtimes",
+      "question_family": "eon-james-bond-25-cinema-runtimes",
+      "prompt": "Name an Eon-produced James Bond film lasting at most 130 minutes.",
+      "metric": "Film runtime in minutes",
+      "unit": "min",
+      "limit": 130,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 2,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 4,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 8,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 15,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 22,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 22,
+        "units": "min",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://007magazine.co.uk/factfiles/factfiles_movies1.htm",
+      "source_refs": [
+        "eon-james-bond-25-cinema-runtimes-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 25 Eon Productions official James Bond feature films released through 2021. Other Bond film adaptations are out of scope.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-04-q4-eon-james-bond-25-cinema-runtimes.csv",
+      "measurement": {
+        "property": "Film runtime in minutes",
+        "numeric_rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only.",
+        "unit": "min",
+        "time_dependent": true,
+        "source_urls": [
+          "https://007magazine.co.uk/factfiles/factfiles_movies1.htm",
+          "https://www.bondmovies.com/movies/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 25 Eon Productions official James Bond feature films released through 2021. Other Bond film adaptations are out of scope.",
+        "dataset_count": 25,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-001",
+          "canonical": "Dr. No",
+          "aliases": [
+            {
+              "input": "Doctor No",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 109,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-002",
+          "canonical": "From Russia with Love",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 116,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-003",
+          "canonical": "Goldfinger",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 109,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-004",
+          "canonical": "Thunderball",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 130,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-005",
+          "canonical": "You Only Live Twice",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 116,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-006",
+          "canonical": "On Her Majesty's Secret Service",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 142,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-007",
+          "canonical": "Diamonds Are Forever",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 119,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-008",
+          "canonical": "Live and Let Die",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 121,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-009",
+          "canonical": "The Man with the Golden Gun",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 125,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-010",
+          "canonical": "The Spy Who Loved Me",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 125,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-011",
+          "canonical": "Moonraker",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 126,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-012",
+          "canonical": "For Your Eyes Only",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 127,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-013",
+          "canonical": "Octopussy",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 131,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-014",
+          "canonical": "A View to a Kill",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 131,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-015",
+          "canonical": "The Living Daylights",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 130,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-016",
+          "canonical": "Licence to Kill",
+          "aliases": [
+            {
+              "input": "License to Kill",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 133,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-017",
+          "canonical": "GoldenEye",
+          "aliases": [
+            {
+              "input": "Golden Eye",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 130,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-018",
+          "canonical": "Tomorrow Never Dies",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 119,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-019",
+          "canonical": "The World Is Not Enough",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 128,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-020",
+          "canonical": "Die Another Day",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 132,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-021",
+          "canonical": "Casino Royale",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 144,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-022",
+          "canonical": "Quantum of Solace",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 106,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-023",
+          "canonical": "Skyfall",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 143,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-024",
+          "canonical": "Spectre",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 148,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        },
+        {
+          "entity_id": "eon-james-bond-25-cinema-runtimes-025",
+          "canonical": "No Time to Die",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "eon-james-bond-25-cinema-runtimes-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 163,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use published theatrical film runtime in whole minutes, Eon Productions series only."
+          }
+        }
+      ]
+    },
+    "q5": {
+      "id": "closeish_20261104_q5",
+      "date": "2026-11-04",
+      "day_number": 13,
+      "topic": "video-game-sales",
+      "bank_id": "alltime-video-game-2026-top30-ranked-32-games",
+      "question_family": "alltime-video-game-2026-top30-ranked-32-games",
+      "prompt": "Name a game in the 2026 all-time bestseller top 30 with at least 31 million sales (nearest million).",
+      "metric": "Reported global software sales, rounded to nearest million copies",
+      "unit": "million copies",
+      "limit": 31,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 2,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 5,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 9,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 14,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 25,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 25,
+        "units": "million copies",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://en.wikipedia.org/wiki/List_of_best-selling_video_games",
+      "source_refs": [
+        "alltime-video-game-2026-top30-ranked-32-games-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "Exactly all 32 game titles occupying published top-30 ranks, including ties at first and 30th, in the global best-selling games list on 2026-10-29. Separate games bundled by the source are treated as one combined item; sales values rounded nearest million.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-04-q5-alltime-video-game-2026-top30-ranked-32-games.csv",
+      "measurement": {
+        "property": "Reported global software sales, rounded to nearest million copies",
+        "numeric_rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher.",
+        "unit": "million copies",
+        "time_dependent": true,
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/List_of_best-selling_video_games"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly all 32 game titles occupying published top-30 ranks, including ties at first and 30th, in the global best-selling games list on 2026-10-29. Separate games bundled by the source are treated as one combined item; sales values rounded nearest million.",
+        "dataset_count": 32,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-001",
+          "canonical": "Tetris",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 520,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-002",
+          "canonical": "Minecraft",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 425,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-003",
+          "canonical": "Grand Theft Auto V",
+          "aliases": [
+            {
+              "input": "GTA V",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "GTA 5",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 230,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-004",
+          "canonical": "Red Dead Redemption 2",
+          "aliases": [
+            {
+              "input": "RDR2",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 87,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-005",
+          "canonical": "Wii Sports",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 83,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-006",
+          "canonical": "Mario Kart 8 / Deluxe",
+          "aliases": [
+            {
+              "input": "Mario Kart 8 Deluxe",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Mario Kart 8",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 80,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-007",
+          "canonical": "PUBG: Battlegrounds",
+          "aliases": [
+            {
+              "input": "PUBG",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "PlayerUnknown's Battlegrounds",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 75,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-008",
+          "canonical": "Terraria",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 70,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-009",
+          "canonical": "The Elder Scrolls V: Skyrim",
+          "aliases": [
+            {
+              "input": "Skyrim",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 65,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-010",
+          "canonical": "The Witcher 3: Wild Hunt",
+          "aliases": [
+            {
+              "input": "The Witcher 3",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 65,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-011",
+          "canonical": "Super Mario Bros.",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 58,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-012",
+          "canonical": "Human: Fall Flat",
+          "aliases": [
+            {
+              "input": "Human Fall Flat",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 58,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-013",
+          "canonical": "Animal Crossing: New Horizons",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 50,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-014",
+          "canonical": "The Sims",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 50,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-015",
+          "canonical": "Stardew Valley",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 50,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-016",
+          "canonical": "Overwatch",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 50,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-017",
+          "canonical": "Pokémon Red / Blue / Yellow",
+          "aliases": [
+            {
+              "input": "Pokemon Red Blue Yellow",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 47,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-018",
+          "canonical": "Wii Fit / Plus",
+          "aliases": [
+            {
+              "input": "Wii Fit Plus",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "Wii Fit",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 44,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-019",
+          "canonical": "Call of Duty: Black Ops III",
+          "aliases": [
+            {
+              "input": "COD Black Ops 3",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 43,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-020",
+          "canonical": "Call of Duty: Modern Warfare (2019)",
+          "aliases": [
+            {
+              "input": "Call of Duty Modern Warfare 2019",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 41,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-021",
+          "canonical": "Sonic the Hedgehog (1991)",
+          "aliases": [
+            {
+              "input": "Sonic the Hedgehog 1991",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 40,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-022",
+          "canonical": "Payday 2",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 40,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-023",
+          "canonical": "Cyberpunk 2077",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 40,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-024",
+          "canonical": "Hogwarts Legacy",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 40,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-025",
+          "canonical": "Super Smash Bros. Ultimate",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 38,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-026",
+          "canonical": "Mario Kart Wii",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 37,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-027",
+          "canonical": "The Legend of Zelda: Breath of the Wild",
+          "aliases": [
+            {
+              "input": "Breath of the Wild",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 36,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-028",
+          "canonical": "Fallout 4",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 35,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-029",
+          "canonical": "Wii Sports Resort",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 33,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-030",
+          "canonical": "Borderlands 2",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 31,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-031",
+          "canonical": "New Super Mario Bros.",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 31,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        },
+        {
+          "entity_id": "alltime-video-game-2026-top30-ranked-32-games-032",
+          "canonical": "Super Mario Odyssey",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "alltime-video-game-2026-top30-ranked-32-games-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 31,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use source 2026-10-29 figures rounded to the nearest million, half up; original ranking includes tied positions and combined-version titles. Estimates vary by publisher."
+          }
+        }
+      ]
+    },
+    "q6": {
+      "id": "closeish_20261104_q6",
+      "date": "2026-11-04",
+      "day_number": 13,
+      "topic": "subjective-wellbeing",
+      "bank_id": "whr-2025-ranked-top-30-ladder-scores",
+      "question_family": "whr-2025-ranked-top-30-ladder-scores",
+      "prompt": "Name a 2025 World Happiness Report top-30 country scoring at least 6.810 out of 10.",
+      "metric": "2025 life evaluation score (Cantril ladder 0–10)",
+      "unit": "ladder points",
+      "limit": 6.81,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 0.02,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 0.08,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 0.13,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 0.18,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 0.32,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 0.32,
+        "units": "ladder points",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.happierlivesinstitute.org/2025/03/20/the-top-25-happiest-countries-in-2025-plus-our-four-favourite-findings-from-the-2025-world-happiness-report/",
+      "source_refs": [
+        "whr-2025-ranked-top-30-ladder-scores-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "Exactly the top 30 ranked countries/territories in the World Happiness Report 2025 ranking. Values are frozen three-decimal life-evaluation scores.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-04-q6-whr-2025-ranked-top-30-ladder-scores.csv",
+      "measurement": {
+        "property": "2025 life evaluation score (Cantril ladder 0–10)",
+        "numeric_rule": "Published 2025 three-decimal ladder score; do not round to whole percent.",
+        "unit": "ladder points",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.happierlivesinstitute.org/2025/03/20/the-top-25-happiest-countries-in-2025-plus-our-four-favourite-findings-from-the-2025-world-happiness-report/",
+          "https://worldhappiness.report/ed/2025/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly the top 30 ranked countries/territories in the World Happiness Report 2025 ranking. Values are frozen three-decimal life-evaluation scores.",
+        "dataset_count": 30,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-001",
+          "canonical": "Finland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 7.736,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-002",
+          "canonical": "Denmark",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 7.521,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-003",
+          "canonical": "Iceland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 7.515,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-004",
+          "canonical": "Sweden",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 7.345,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-005",
+          "canonical": "Netherlands",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 7.306,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-006",
+          "canonical": "Costa Rica",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 7.274,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-007",
+          "canonical": "Norway",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 7.262,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-008",
+          "canonical": "Israel",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 7.234,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-009",
+          "canonical": "Luxembourg",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 7.122,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-010",
+          "canonical": "Mexico",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 6.979,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-011",
+          "canonical": "Australia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 6.974,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-012",
+          "canonical": "New Zealand",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 6.952,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-013",
+          "canonical": "Switzerland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 6.935,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-014",
+          "canonical": "Belgium",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 6.91,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-015",
+          "canonical": "Ireland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 6.889,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-016",
+          "canonical": "Lithuania",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 6.829,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-017",
+          "canonical": "Austria",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 6.81,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-018",
+          "canonical": "Canada",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 6.803,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-019",
+          "canonical": "Slovenia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 6.792,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-020",
+          "canonical": "Czechia",
+          "aliases": [
+            {
+              "input": "Czech Republic",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 6.775,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-021",
+          "canonical": "United Arab Emirates",
+          "aliases": [
+            {
+              "input": "UAE",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 6.759,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-022",
+          "canonical": "Germany",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 6.753,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-023",
+          "canonical": "United Kingdom",
+          "aliases": [
+            {
+              "input": "UK",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 6.728,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-024",
+          "canonical": "United States",
+          "aliases": [
+            {
+              "input": "USA",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "United States of America",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 6.724,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-025",
+          "canonical": "Belize",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 6.711,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-026",
+          "canonical": "Poland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 6.673,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-027",
+          "canonical": "Taiwan",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 6.669,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-028",
+          "canonical": "Uruguay",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 6.661,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-029",
+          "canonical": "Kosovo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 6.659,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        },
+        {
+          "entity_id": "whr-2025-ranked-top-30-ladder-scores-030",
+          "canonical": "Kuwait",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "whr-2025-ranked-top-30-ladder-scores-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 6.629,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published 2025 three-decimal ladder score; do not round to whole percent."
+          }
+        }
+      ]
+    }
+  }
+}

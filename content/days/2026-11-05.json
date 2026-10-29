@@ -1,0 +1,4366 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "day_number": 14,
+  "revision": "v25-november-04-05-complete-1",
+  "publication_status": "scheduled",
+  "editorial_note": "V23 six-topic diversity, frozen source-bounded full answer banks, server date gating; previous 12 days untouched.",
+  "questions": {
+    "q1": {
+      "id": "closeish_20261105_q1",
+      "date": "2026-11-05",
+      "day_number": 14,
+      "topic": "british-royal-dynasty",
+      "bank_id": "british-monarchs-henryvii-to-charlesiii-24",
+      "question_family": "british-monarchs-henryvii-to-charlesiii-24",
+      "prompt": "Name an English or British monarch since Henry VII who began reigning in 1558 or later (at least 1558).",
+      "metric": "Year of first accession as English or British sovereign",
+      "unit": "year",
+      "limit": 1558,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 50,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 90,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 120,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 145,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 165,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 165,
+        "units": "year",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.hrp.org.uk/kings-and-queens-of-england-and-britain/",
+      "source_refs": [
+        "british-monarchs-henryvii-to-charlesiii-24-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 24 Tudor-through-Windsor crowned or formally accessioned monarchs from Henry VII to Charles III. Includes William III and Mary II individually; excludes non-monarch protectors and disputed nine-day claimant.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-05-q1-british-monarchs-henryvii-to-charlesiii-24.csv",
+      "measurement": {
+        "property": "Year of first accession as English or British sovereign",
+        "numeric_rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named.",
+        "unit": "year",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.hrp.org.uk/kings-and-queens-of-england-and-britain/"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 24 Tudor-through-Windsor crowned or formally accessioned monarchs from Henry VII to Charles III. Includes William III and Mary II individually; excludes non-monarch protectors and disputed nine-day claimant.",
+        "dataset_count": 24,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-001",
+          "canonical": "Henry VII",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1485,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-002",
+          "canonical": "Henry VIII",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 1509,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-003",
+          "canonical": "Edward VI",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 1547,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-004",
+          "canonical": "Mary I",
+          "aliases": [
+            {
+              "input": "Mary Tudor",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 1553,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-005",
+          "canonical": "Elizabeth I",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 1558,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-006",
+          "canonical": "James I",
+          "aliases": [
+            {
+              "input": "James VI and I",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 1603,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-007",
+          "canonical": "Charles I",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 1625,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-008",
+          "canonical": "Charles II",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 1660,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-009",
+          "canonical": "James II",
+          "aliases": [
+            {
+              "input": "James VII and II",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 1685,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-010",
+          "canonical": "William III",
+          "aliases": [
+            {
+              "input": "William of Orange",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 1689,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-011",
+          "canonical": "Mary II",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 1689,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-012",
+          "canonical": "Anne",
+          "aliases": [
+            {
+              "input": "Queen Anne",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 1702,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-013",
+          "canonical": "George I",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 1714,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-014",
+          "canonical": "George II",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 1727,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-015",
+          "canonical": "George III",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 1760,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-016",
+          "canonical": "George IV",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 1820,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-017",
+          "canonical": "William IV",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 1830,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-018",
+          "canonical": "Victoria",
+          "aliases": [
+            {
+              "input": "Queen Victoria",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 1837,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-019",
+          "canonical": "Edward VII",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 1901,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-020",
+          "canonical": "George V",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 1910,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-021",
+          "canonical": "Edward VIII",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 1936,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-022",
+          "canonical": "George VI",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 1936,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-023",
+          "canonical": "Elizabeth II",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 1952,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        },
+        {
+          "entity_id": "british-monarchs-henryvii-to-charlesiii-24-024",
+          "canonical": "Charles III",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "british-monarchs-henryvii-to-charlesiii-24-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "First year of reign per Historic Royal Palaces monarch timeline. Co-sovereigns William III and Mary II are separately named."
+          }
+        }
+      ]
+    },
+    "q2": {
+      "id": "closeish_20261105_q2",
+      "date": "2026-11-05",
+      "day_number": 14,
+      "topic": "paralympic-medals",
+      "bank_id": "paris-2024-official-top30-national-medal-totals",
+      "question_family": "paris-2024-official-top30-national-medal-totals",
+      "prompt": "Name a Paris 2024 Paralympic top-30 national delegation with at most 30 medals.",
+      "metric": "Total 2024 Paris Paralympic medals for a national delegation",
+      "unit": "medals",
+      "limit": 30,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 2,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 5,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 10,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 16,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 16,
+        "units": "medals",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.paralympic.org/paris-2024-paralympic-games/results/medalstandings",
+      "source_refs": [
+        "paris-2024-official-top30-national-medal-totals-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 29 named national delegations (NPCs) occupying published positions 1–30 in official Paris 2024 Paralympic medal table; neutral athletes are not a national delegation and are excluded.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-05-q2-paris-2024-official-top30-national-medal-totals.csv",
+      "measurement": {
+        "property": "Total 2024 Paris Paralympic medals for a national delegation",
+        "numeric_rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes.",
+        "unit": "medals",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.paralympic.org/paris-2024-paralympic-games/results/medalstandings"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 29 named national delegations (NPCs) occupying published positions 1–30 in official Paris 2024 Paralympic medal table; neutral athletes are not a national delegation and are excluded.",
+        "dataset_count": 29,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-001",
+          "canonical": "China",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 221,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-002",
+          "canonical": "Great Britain",
+          "aliases": [
+            {
+              "input": "United Kingdom",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 124,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-003",
+          "canonical": "United States",
+          "aliases": [
+            {
+              "input": "USA",
+              "kind": "documented_variant",
+              "action": "accept"
+            },
+            {
+              "input": "United States of America",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 105,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-004",
+          "canonical": "Netherlands",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 56,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-005",
+          "canonical": "Brazil",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 89,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-006",
+          "canonical": "Italy",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 72,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-007",
+          "canonical": "Ukraine",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 82,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-008",
+          "canonical": "France",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 75,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-009",
+          "canonical": "Australia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 62,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-010",
+          "canonical": "Japan",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 41,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-011",
+          "canonical": "Germany",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 49,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-012",
+          "canonical": "Canada",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 29,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-013",
+          "canonical": "Uzbekistan",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 26,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-014",
+          "canonical": "Iran",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 25,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-015",
+          "canonical": "Switzerland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 21,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-016",
+          "canonical": "Poland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 23,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-017",
+          "canonical": "India",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 29,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-018",
+          "canonical": "Colombia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 28,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-019",
+          "canonical": "Belgium",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 14,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-020",
+          "canonical": "Spain",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 39,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-021",
+          "canonical": "Thailand",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 30,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-022",
+          "canonical": "South Korea",
+          "aliases": [
+            {
+              "input": "Republic of Korea",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 30,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-023",
+          "canonical": "Türkiye",
+          "aliases": [
+            {
+              "input": "Turkey",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 28,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-024",
+          "canonical": "Cuba",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 10,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-025",
+          "canonical": "Algeria",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 11,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-026",
+          "canonical": "Hungary",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 15,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-027",
+          "canonical": "Tunisia",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 11,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-028",
+          "canonical": "Azerbaijan",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 11,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        },
+        {
+          "entity_id": "paris-2024-official-top30-national-medal-totals-029",
+          "canonical": "Israel",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "paris-2024-official-top30-national-medal-totals-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 10,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use official national delegation totals in official ranking order at source snapshot; excluding Neutral Paralympic Athletes."
+          }
+        }
+      ]
+    },
+    "q3": {
+      "id": "closeish_20261105_q3",
+      "date": "2026-11-05",
+      "day_number": 14,
+      "topic": "mathematical-history",
+      "bank_id": "imu-fields-medal-1936-to-2022",
+      "question_family": "imu-fields-medal-1936-to-2022",
+      "prompt": "Name a Fields Medal laureate (1936–2022) awarded in 1998 or later (at least 1998).",
+      "metric": "Fields Medal award year",
+      "unit": "year",
+      "limit": 1998,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 4,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 8,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 12,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 16,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 24,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 24,
+        "units": "year",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.mathunion.org/imu-awards/fields-medal",
+      "source_refs": [
+        "imu-fields-medal-1936-to-2022-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 64 Fields Medal awardees officially listed by the International Mathematical Union for the 1936–2022 ceremonies; includes a named award declined by recipient.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-05-q3-imu-fields-medal-1936-to-2022.csv",
+      "measurement": {
+        "property": "Fields Medal award year",
+        "numeric_rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman.",
+        "unit": "year",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.mathunion.org/imu-awards/fields-medal"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 64 Fields Medal awardees officially listed by the International Mathematical Union for the 1936–2022 ceremonies; includes a named award declined by recipient.",
+        "dataset_count": 64,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-001",
+          "canonical": "Lars Valerian Ahlfors",
+          "aliases": [
+            {
+              "input": "Lars Ahlfors",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1936,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-002",
+          "canonical": "Jesse Douglas",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 1936,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-003",
+          "canonical": "Laurent Schwartz",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 1950,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-004",
+          "canonical": "Atle Selberg",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 1950,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-005",
+          "canonical": "Kunihiko Kodaira",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 1954,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-006",
+          "canonical": "Jean-Pierre Serre",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 1954,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-007",
+          "canonical": "Klaus Friedrich Roth",
+          "aliases": [
+            {
+              "input": "Klaus Roth",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 1958,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-008",
+          "canonical": "René Thom",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 1958,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-009",
+          "canonical": "Lars Hörmander",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 1962,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-010",
+          "canonical": "John Willard Milnor",
+          "aliases": [
+            {
+              "input": "John Milnor",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 1962,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-011",
+          "canonical": "Michael Francis Atiyah",
+          "aliases": [
+            {
+              "input": "Michael Atiyah",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 1966,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-012",
+          "canonical": "Paul Joseph Cohen",
+          "aliases": [
+            {
+              "input": "Paul Cohen",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 1966,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-013",
+          "canonical": "Alexander Grothendieck",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 1966,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-014",
+          "canonical": "Stephen Smale",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 1966,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-015",
+          "canonical": "Alan Baker",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 1970,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-016",
+          "canonical": "Heisuke Hironaka",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 1970,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-017",
+          "canonical": "Serge Novikov",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 1970,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-018",
+          "canonical": "John Griggs Thompson",
+          "aliases": [
+            {
+              "input": "John Thompson",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 1970,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-019",
+          "canonical": "Enrico Bombieri",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 1974,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-020",
+          "canonical": "David Bryant Mumford",
+          "aliases": [
+            {
+              "input": "David Mumford",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 1974,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-021",
+          "canonical": "Pierre René Deligne",
+          "aliases": [
+            {
+              "input": "Pierre Deligne",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 1978,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-022",
+          "canonical": "Charles Louis Fefferman",
+          "aliases": [
+            {
+              "input": "Charles Fefferman",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 1978,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-023",
+          "canonical": "Gregori Alexandrovitch Margulis",
+          "aliases": [
+            {
+              "input": "Grigori Margulis",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 1978,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-024",
+          "canonical": "Daniel G. Quillen",
+          "aliases": [
+            {
+              "input": "Daniel Quillen",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 1978,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-025",
+          "canonical": "Alain Connes",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 1982,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-026",
+          "canonical": "William P. Thurston",
+          "aliases": [
+            {
+              "input": "William Thurston",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 1982,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-027",
+          "canonical": "Shing-Tung Yau",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 1982,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-028",
+          "canonical": "Simon K. Donaldson",
+          "aliases": [
+            {
+              "input": "Simon Donaldson",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 1986,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-029",
+          "canonical": "Gerd Faltings",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 1986,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-030",
+          "canonical": "Michael H. Freedman",
+          "aliases": [
+            {
+              "input": "Michael Freedman",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 1986,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-031",
+          "canonical": "Vladimir Drinfeld",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-031"
+            }
+          ],
+          "metric_value": 1990,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-032",
+          "canonical": "Vaughan F.R. Jones",
+          "aliases": [
+            {
+              "input": "Vaughan Jones",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-032"
+            }
+          ],
+          "metric_value": 1990,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-033",
+          "canonical": "Shigefumi Mori",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-033"
+            }
+          ],
+          "metric_value": 1990,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-034",
+          "canonical": "Edward Witten",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-034"
+            }
+          ],
+          "metric_value": 1990,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-035",
+          "canonical": "Jean Bourgain",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-035"
+            }
+          ],
+          "metric_value": 1994,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-036",
+          "canonical": "Pierre-Louis Lions",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-036"
+            }
+          ],
+          "metric_value": 1994,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-037",
+          "canonical": "Jean-Christophe Yoccoz",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-037"
+            }
+          ],
+          "metric_value": 1994,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-038",
+          "canonical": "Efim Zelmanov",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-038"
+            }
+          ],
+          "metric_value": 1994,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-039",
+          "canonical": "Richard E. Borcherds",
+          "aliases": [
+            {
+              "input": "Richard Borcherds",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-039"
+            }
+          ],
+          "metric_value": 1998,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-040",
+          "canonical": "W. Timothy Gowers",
+          "aliases": [
+            {
+              "input": "Timothy Gowers",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-040"
+            }
+          ],
+          "metric_value": 1998,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-041",
+          "canonical": "Maxim Kontsevich",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-041"
+            }
+          ],
+          "metric_value": 1998,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-042",
+          "canonical": "Curtis T. McMullen",
+          "aliases": [
+            {
+              "input": "Curtis McMullen",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-042"
+            }
+          ],
+          "metric_value": 1998,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-043",
+          "canonical": "Laurent Lafforgue",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-043"
+            }
+          ],
+          "metric_value": 2002,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-044",
+          "canonical": "Vladimir Voevodsky",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-044"
+            }
+          ],
+          "metric_value": 2002,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-045",
+          "canonical": "Andrei Okounkov",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-045"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-046",
+          "canonical": "Grigori Perelman",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-046"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-047",
+          "canonical": "Terence Tao",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-047"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-048",
+          "canonical": "Wendelin Werner",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-048"
+            }
+          ],
+          "metric_value": 2006,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-049",
+          "canonical": "Elon Lindenstrauss",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-049"
+            }
+          ],
+          "metric_value": 2010,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-050",
+          "canonical": "Ngô Bảo Châu",
+          "aliases": [
+            {
+              "input": "Ngo Bao Chau",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-050"
+            }
+          ],
+          "metric_value": 2010,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-051",
+          "canonical": "Stanislav Smirnov",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-051"
+            }
+          ],
+          "metric_value": 2010,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-052",
+          "canonical": "Cédric Villani",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-052"
+            }
+          ],
+          "metric_value": 2010,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-053",
+          "canonical": "Artur Avila",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-053"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-054",
+          "canonical": "Manjul Bhargava",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-054"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-055",
+          "canonical": "Martin Hairer",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-055"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-056",
+          "canonical": "Maryam Mirzakhani",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-056"
+            }
+          ],
+          "metric_value": 2014,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-057",
+          "canonical": "Caucher Birkar",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-057"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-058",
+          "canonical": "Alessio Figalli",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-058"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-059",
+          "canonical": "Peter Scholze",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-059"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-060",
+          "canonical": "Akshay Venkatesh",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-060"
+            }
+          ],
+          "metric_value": 2018,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-061",
+          "canonical": "Hugo Duminil-Copin",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-061"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-062",
+          "canonical": "June Huh",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-062"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-063",
+          "canonical": "James Maynard",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-063"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        },
+        {
+          "entity_id": "imu-fields-medal-1936-to-2022-064",
+          "canonical": "Maryna Viazovska",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "imu-fields-medal-1936-to-2022-source",
+              "locator": "row-064"
+            }
+          ],
+          "metric_value": 2022,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use IMU listing and year of award, including the 2006 medal declined by Grigori Perelman."
+          }
+        }
+      ]
+    },
+    "q4": {
+      "id": "closeish_20261105_q4",
+      "date": "2026-11-05",
+      "day_number": 14,
+      "topic": "naked-eye-astronomy",
+      "bank_id": "astronomywiki-30-brightest-night-stars-magnitude",
+      "question_family": "astronomywiki-30-brightest-night-stars-magnitude",
+      "prompt": "Name one of the 30 brightest night-sky stars with apparent magnitude at least +1.25.",
+      "metric": "Listed apparent visual magnitude (lower is brighter)",
+      "unit": "mag",
+      "limit": 1.25,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 0.12,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 0.27,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 0.34,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 0.39,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 0.46,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 0.46,
+        "units": "mag",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://astronomy.wiki/brightest-stars",
+      "source_refs": [
+        "astronomywiki-30-brightest-night-stars-magnitude-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 30 entries in the published brightest-stars table, using its fixed two-decimal apparent magnitude readings, with source typo Formalhaut corrected to Fomalhaut.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-05-q4-astronomywiki-30-brightest-night-stars-magnitude.csv",
+      "measurement": {
+        "property": "Listed apparent visual magnitude (lower is brighter)",
+        "numeric_rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch.",
+        "unit": "mag",
+        "time_dependent": true,
+        "source_urls": [
+          "https://astronomy.wiki/brightest-stars"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 30 entries in the published brightest-stars table, using its fixed two-decimal apparent magnitude readings, with source typo Formalhaut corrected to Fomalhaut.",
+        "dataset_count": 30,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-001",
+          "canonical": "Sirius",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": -1.44,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-002",
+          "canonical": "Canopus",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": -0.62,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-003",
+          "canonical": "Arcturus",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": -0.05,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-004",
+          "canonical": "Alpha Centauri",
+          "aliases": [
+            {
+              "input": "Rigil Kentaurus",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": -0.01,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-005",
+          "canonical": "Vega",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 0.03,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-006",
+          "canonical": "Capella",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 0.08,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-007",
+          "canonical": "Rigel",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 0.18,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-008",
+          "canonical": "Procyon",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 0.4,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-009",
+          "canonical": "Betelgeuse",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 0.45,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-010",
+          "canonical": "Achernar",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 0.45,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-011",
+          "canonical": "Hadar",
+          "aliases": [
+            {
+              "input": "Beta Centauri",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 0.61,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-012",
+          "canonical": "Altair",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 0.76,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-013",
+          "canonical": "Acrux",
+          "aliases": [
+            {
+              "input": "Alpha Crucis",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 0.77,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-014",
+          "canonical": "Aldebaran",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 0.87,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-015",
+          "canonical": "Spica",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 0.98,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-016",
+          "canonical": "Antares",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 1.06,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-017",
+          "canonical": "Pollux",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 1.16,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-018",
+          "canonical": "Fomalhaut",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 1.17,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-019",
+          "canonical": "Deneb",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 1.25,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-020",
+          "canonical": "Mimosa",
+          "aliases": [
+            {
+              "input": "Becrux",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 1.25,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-021",
+          "canonical": "Regulus",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 1.36,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-022",
+          "canonical": "Adhara",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 1.5,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-023",
+          "canonical": "Castor",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 1.58,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-024",
+          "canonical": "Gacrux",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 1.59,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-025",
+          "canonical": "Shaula",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 1.62,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-026",
+          "canonical": "Bellatrix",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 1.64,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-027",
+          "canonical": "Beta Tauri",
+          "aliases": [
+            {
+              "input": "Elnath",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 1.65,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-028",
+          "canonical": "Beta Carinae",
+          "aliases": [
+            {
+              "input": "Miaplacidus",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 1.67,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-029",
+          "canonical": "Alnilam",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 1.69,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        },
+        {
+          "entity_id": "astronomywiki-30-brightest-night-stars-magnitude-030",
+          "canonical": "Alpha Gruis",
+          "aliases": [
+            {
+              "input": "Alnair",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "astronomywiki-30-brightest-night-stars-magnitude-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 1.73,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Use source-reported apparent magnitudes, not brightness rank. Values for variable stars may differ by observation epoch."
+          }
+        }
+      ]
+    },
+    "q5": {
+      "id": "closeish_20261105_q5",
+      "date": "2026-11-05",
+      "day_number": 14,
+      "topic": "physical-island-geography",
+      "bank_id": "islands-world-30-largest-nearest-1000km2",
+      "question_family": "islands-world-30-largest-nearest-1000km2",
+      "prompt": "Name one of the 30 largest islands with area at least 105,000 km² (nearest 1,000 km²).",
+      "metric": "Land area rounded to nearest 1,000 square kilometres",
+      "unit": "km²",
+      "limit": 105000,
+      "direction": "above",
+      "comparison": "at_least",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 5000,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 12000,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 25000,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 50000,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 100000,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 100000,
+        "units": "km²",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://en.wikipedia.org/wiki/List_of_islands_by_area",
+      "source_refs": [
+        "islands-world-30-largest-nearest-1000km2-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "All 30 islands in the global largest-islands-by-area ranking, excluding continental landmasses, using source area rounded to nearest 1,000 square kilometres before scoring.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-05-q5-islands-world-30-largest-nearest-1000km2.csv",
+      "measurement": {
+        "property": "Land area rounded to nearest 1,000 square kilometres",
+        "numeric_rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases.",
+        "unit": "km²",
+        "time_dependent": true,
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/List_of_islands_by_area"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "All 30 islands in the global largest-islands-by-area ranking, excluding continental landmasses, using source area rounded to nearest 1,000 square kilometres before scoring.",
+        "dataset_count": 30,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_above",
+        "operator": ">=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-001",
+          "canonical": "Greenland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 2108000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-002",
+          "canonical": "New Guinea",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 774000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-003",
+          "canonical": "Borneo",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 723000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-004",
+          "canonical": "Madagascar",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 593000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-005",
+          "canonical": "Baffin Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 507000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-006",
+          "canonical": "Sumatra",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 428000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-007",
+          "canonical": "Honshu",
+          "aliases": [
+            {
+              "input": "Honshū",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 228000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-008",
+          "canonical": "Victoria Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 219000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-009",
+          "canonical": "Great Britain",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 219000,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-010",
+          "canonical": "Ellesmere Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 198000,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-011",
+          "canonical": "Sulawesi",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 170000,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-012",
+          "canonical": "South Island",
+          "aliases": [
+            {
+              "input": "New Zealand South Island",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 151000,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-013",
+          "canonical": "Java",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 127000,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-014",
+          "canonical": "North Island",
+          "aliases": [
+            {
+              "input": "New Zealand North Island",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 115000,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-015",
+          "canonical": "Newfoundland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 109000,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-016",
+          "canonical": "Cuba",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 105000,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-017",
+          "canonical": "Luzon",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 105000,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-018",
+          "canonical": "Iceland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 100000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-019",
+          "canonical": "Mindanao",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 94000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-020",
+          "canonical": "Ireland",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 84000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-021",
+          "canonical": "Hokkaido",
+          "aliases": [
+            {
+              "input": "Hokkaidō",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-021"
+            }
+          ],
+          "metric_value": 78000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-022",
+          "canonical": "Hispaniola",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-022"
+            }
+          ],
+          "metric_value": 74000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-023",
+          "canonical": "Sakhalin",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-023"
+            }
+          ],
+          "metric_value": 74000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-024",
+          "canonical": "Banks Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-024"
+            }
+          ],
+          "metric_value": 70000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-025",
+          "canonical": "Sri Lanka",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-025"
+            }
+          ],
+          "metric_value": 66000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-026",
+          "canonical": "Tasmania",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-026"
+            }
+          ],
+          "metric_value": 64000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-027",
+          "canonical": "Devon Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-027"
+            }
+          ],
+          "metric_value": 56000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-028",
+          "canonical": "Alexander Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-028"
+            }
+          ],
+          "metric_value": 52000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-029",
+          "canonical": "Isla Grande de Tierra del Fuego",
+          "aliases": [
+            {
+              "input": "Tierra del Fuego (main island)",
+              "kind": "documented_variant",
+              "action": "accept"
+            }
+          ],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-029"
+            }
+          ],
+          "metric_value": 47000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        },
+        {
+          "entity_id": "islands-world-30-largest-nearest-1000km2-030",
+          "canonical": "Severny Island",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "islands-world-30-largest-nearest-1000km2-source",
+              "locator": "row-030"
+            }
+          ],
+          "metric_value": 45000,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Freeze area figures in source table and round to nearest 1,000 km² half up, including boundary cases."
+          }
+        }
+      ]
+    },
+    "q6": {
+      "id": "closeish_20261105_q6",
+      "date": "2026-11-05",
+      "day_number": 14,
+      "topic": "art-museum-attendance",
+      "bank_id": "world-most-visited-art-museums-2024-first-20",
+      "question_family": "world-most-visited-art-museums-2024-first-20",
+      "prompt": "Name a museum among the 20 most visited art museums in 2024 ranked at most 12th.",
+      "metric": "Position among top 20 most visited art museums for 2024",
+      "unit": "rank",
+      "limit": 12,
+      "direction": "below",
+      "comparison": "at_most",
+      "time_limit_seconds": 30,
+      "boundary_inclusive": true,
+      "input_max_length": 180,
+      "score_bands": [
+        {
+          "max_gap_inclusive": 1,
+          "points": 1000,
+          "tier": "RAZOR EDGE"
+        },
+        {
+          "max_gap_inclusive": 2,
+          "points": 800,
+          "tier": "CLOSE CALL"
+        },
+        {
+          "max_gap_inclusive": 4,
+          "points": 600,
+          "tier": "SOLID HIT"
+        },
+        {
+          "max_gap_inclusive": 7,
+          "points": 400,
+          "tier": "IN THE ZONE"
+        },
+        {
+          "max_gap_inclusive": 9,
+          "points": 200,
+          "tier": "ON THE BOARD"
+        }
+      ],
+      "scoring_window": {
+        "max_scoring_distance": 9,
+        "units": "rank",
+        "outside_window_points": 0,
+        "wrong_side_points": 0,
+        "exact_match_points": 1200
+      },
+      "source": "https://www.theartnewspaper.com/2025/04/01/the-worlds-most-visited-museums-2024-",
+      "source_refs": [
+        "world-most-visited-art-museums-2024-first-20-source"
+      ],
+      "verification_status": "source_list_completely_enumerated",
+      "editorial_status": "complete_checked_scheduled",
+      "content_revision": "v25-20261029-nov04-nov05-1",
+      "metric_provenance": "Exactly ranked places 1–20 of the 2024 published most-visited art museums table, not general history museums outside this art-museum ranking.",
+      "measurement_snapshot": "Pinned source list; complete CSV: content/source-snapshots/v25-2026-11-05-q6-world-most-visited-art-museums-2024-first-20.csv",
+      "measurement": {
+        "property": "Position among top 20 most visited art museums for 2024",
+        "numeric_rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality.",
+        "unit": "rank",
+        "time_dependent": true,
+        "source_urls": [
+          "https://www.theartnewspaper.com/2025/04/01/the-worlds-most-visited-museums-2024-",
+          "https://wiki.ryanmichaelcurry.com/content/wikipedia_en_all_maxi_2025-08/List_of_most-visited_art_museums"
+        ]
+      },
+      "answer_scope": {
+        "type": "source_defined_finite_named_universe",
+        "coverage": "complete_for_exact_prompt_universe",
+        "claimed_exhaustive": true,
+        "entity_scope": "Exactly ranked places 1–20 of the 2024 published most-visited art museums table, not general history museums outside this art-museum ranking.",
+        "dataset_count": 20,
+        "known_unmeasured_count": 0,
+        "note": "All qualifying members of the stated bounded list are included, even wrong-side and no-score entries."
+      },
+      "scoring_policy": "Verify membership; compare backend metric to the stated one-sided limit. Unverified submissions score zero.",
+      "perfect_tier": {
+        "points": 1200,
+        "tier": "PERFECT HIT",
+        "rule": "exact metric_value == limit"
+      },
+      "approach_rule": {
+        "required_side": "from_below",
+        "operator": "<=",
+        "exact_target_allowed": true,
+        "wrong_side_points": 0,
+        "exact_target_points": 1200
+      },
+      "answers": [
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-001",
+          "canonical": "Louvre Museum",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-001"
+            }
+          ],
+          "metric_value": 1,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-002",
+          "canonical": "Vatican Museums",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-002"
+            }
+          ],
+          "metric_value": 2,
+          "points": 0,
+          "tier": "TOO FAR",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-003",
+          "canonical": "British Museum",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-003"
+            }
+          ],
+          "metric_value": 3,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-004",
+          "canonical": "Metropolitan Museum of Art",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-004"
+            }
+          ],
+          "metric_value": 4,
+          "points": 200,
+          "tier": "ON THE BOARD",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-005",
+          "canonical": "Tate Modern",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-005"
+            }
+          ],
+          "metric_value": 5,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-006",
+          "canonical": "Shanghai Museum East",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-006"
+            }
+          ],
+          "metric_value": 6,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-007",
+          "canonical": "National Gallery of Art",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-007"
+            }
+          ],
+          "metric_value": 7,
+          "points": 400,
+          "tier": "IN THE ZONE",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-008",
+          "canonical": "National Museum of Korea",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-008"
+            }
+          ],
+          "metric_value": 8,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-009",
+          "canonical": "Musée d'Orsay",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-009"
+            }
+          ],
+          "metric_value": 9,
+          "points": 600,
+          "tier": "SOLID HIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-010",
+          "canonical": "National Museum of Anthropology",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-010"
+            }
+          ],
+          "metric_value": 10,
+          "points": 800,
+          "tier": "CLOSE CALL",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-011",
+          "canonical": "State Russian Museum",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-011"
+            }
+          ],
+          "metric_value": 11,
+          "points": 1000,
+          "tier": "RAZOR EDGE",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-012",
+          "canonical": "State Hermitage Museum",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-012"
+            }
+          ],
+          "metric_value": 12,
+          "points": 1200,
+          "tier": "PERFECT HIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-013",
+          "canonical": "Victoria and Albert Museum",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-013"
+            }
+          ],
+          "metric_value": 13,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-014",
+          "canonical": "Museo del Prado",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-014"
+            }
+          ],
+          "metric_value": 14,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-015",
+          "canonical": "Centre Pompidou",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-015"
+            }
+          ],
+          "metric_value": 15,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-016",
+          "canonical": "National Gallery",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-016"
+            }
+          ],
+          "metric_value": 16,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-017",
+          "canonical": "Wawel Royal Castle",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-017"
+            }
+          ],
+          "metric_value": 17,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-018",
+          "canonical": "Somerset House",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-018"
+            }
+          ],
+          "metric_value": 18,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-019",
+          "canonical": "Uffizi Gallery",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-019"
+            }
+          ],
+          "metric_value": 19,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        },
+        {
+          "entity_id": "world-most-visited-art-museums-2024-first-20-020",
+          "canonical": "Museum of Modern Art",
+          "aliases": [],
+          "verified_status": "source_row_or_rounded_source_value",
+          "source_refs": [
+            {
+              "source_id": "world-most-visited-art-museums-2024-first-20-source",
+              "locator": "row-020"
+            }
+          ],
+          "metric_value": 20,
+          "points": 0,
+          "tier": "CROSSED LIMIT",
+          "source_evidence": {
+            "rule": "Published table row ranking for the 2024 attendance year; this is an attendance ranking, not subjective art quality."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -6,7 +6,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
   const TIERS={1200:'PERFECT HIT',1000:'RAZOR EDGE',800:'CLOSE CALL',600:'SOLID HIT',400:'IN THE ZONE',200:'ON THE BOARD'};
-  const START='2026-10-23',END='2026-11-03',DAY_MS=86400000;
+  const START='2026-10-23',END='2026-11-05',DAY_MS=86400000;
   const norm=s=>String(s??'').replace(/([A-Ga-g])\s*[#♯]\s*([0-8])\b/g,(_,note,octave)=>note+'sharp'+octave).replace(/([A-Ga-g])\s*[b♭]\s*([0-8])\b/g,(_,note,octave)=>note+'flat'+octave).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/♀/g,' female ').replace(/♂/g,' male ').replace(/ß/g,'ss').replace(/œ/g,'oe').replace(/ð/g,'d').replace(/þ/g,'th').replace(/đ/g,'d').replace(/ı/g,'i').replace(/ø/g,'o').replace(/ł/g,'l').replace(/æ/g,'ae').replace(/&/g,' and ').replace(/c\+\+/g,' cplusplus ').replace(/c#/g,' csharp ').replace(/f#/g,' fsharp ').replace(/[^a-z0-9]+/g,' ').trim();
   // Decimal comparison avoids floating-point boundary drift (e.g. 0.3 - 0.1).
   function decimal(n){
